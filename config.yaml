@@ -62,6 +62,12 @@ filters:
   max_edge: 0.08               # an "edge" bigger than this on a liquid exchange is almost always a
                                # model/data error (stale line, wrong player) — skip it and flag it
   stake_usd: 10                # used only to compute Kalshi's per-order fee rounding
+  # Combo legs use a different test from single bets: a combo is bought with ONE quote, so you
+  # don't pay each leg's ask + fee. A combo leg qualifies when fair >= Kalshi's middle price.
+  combo_leg_test: mid          # mid | strict (strict = same test as single bets)
+  combo_min_edge: 0.0          # fair - Kalshi middle price must be at least this
+  combo_cushions: td_only      # td_only = keep the +3c cushion on Yes-only TD prices (measured bias);
+                               # none; all = also the distance cushions used for single bets
 
 model:
   # Historical shapes (data/history_model.json, built by `kalshicombos fit-history` from nflverse

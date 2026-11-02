@@ -380,3 +380,13 @@ def test_pick_the_biggest_payout_rung_that_still_qualifies():
     assert [l.market.ticker for l in ok] == ["R70", "R80"]
     assert pick_rungs(ok, "highest_payout")[0].market.ticker == "R70"
     assert pick_rungs(ok, "best_ev")[0].market.ticker == "R80"
+
+
+def test_combo_legs_use_mid_price_and_single_bets_stay_strict():
+    from kalshicombos.edges import passes, passes_combo
+    leg = _leg({"kind": "rec_yds", "team": "SEA", "player": "X", "threshold": 19.5}, "yes", 0.75)
+    leg.kalshi_prob, leg.ask, leg.fee, leg.fair_prob = 0.74, 0.745, 0.012, 0.75   # +1 pt vs mid, -0.7c vs ask+fee
+    assert passes_combo(leg, CFG["filters"]) and not passes(leg, CFG["filters"])
+    td = _leg({"kind": "td", "team": "SEA", "player": "Y", "threshold": 0.5}, "no", 0.17)
+    td.kalshi_prob, td.fair_prob, td.one_sided = 0.82, 0.83, True                  # Yes-only TD: needs +3 pts
+    assert not passes_combo(td, CFG["filters"])

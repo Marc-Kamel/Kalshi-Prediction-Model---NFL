@@ -56,6 +56,12 @@ Settles every logged leg and combo with Kalshi's own results:
 
 To run it manually: Actions → combos → Run workflow → command `grade` (or `fit-history`).
 
+## Combo legs vs single bets
+- **Single bets** must beat Kalshi's **ask + fee** (you pay both when you buy one leg).
+- **Combo legs** only need the books' fair chance to be **at least Kalshi's middle price**, because a combo is bought with one quote, not leg by leg. The Yes-only TD cushion still applies (`filters.combo_cushions`).
+- On CHI@SEA this lifts combo legs from 2 to 74 and allows combos of up to 25 legs.
+- Each combo shows its **fair payout**, the **accept-if** number (fair + 3%), and what **Kalshi's own leg prices imply**. Market makers usually quote below Kalshi's number, so a quote between accept-if and that number is the window to look for.
+
 ## How combos are built
 - **Pool:** for each game, every qualifying player leg, up to 60.
 - **Ranges:** the same player stat can appear twice, as Yes on a low rung plus No on a higher one. For example, "Swift 30+ rushing" with "No Swift 80+ rushing" means 30 to 79 yards. Two Yes rungs (redundant) or contradictory pairs are never combined.

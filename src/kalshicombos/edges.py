@@ -33,6 +33,10 @@ class Leg:
         return self.fair_prob / self.all_in - 1.0
 
     @property
+    def edge_mid(self) -> float:      # fair vs Kalshi's middle price (no spread, no fee)
+        return self.fair_prob - self.kalshi_prob
+
+    @property
     def label(self) -> str:
         return self.market.label(self.side)
 
@@ -49,6 +53,7 @@ class Leg:
             "all_in": round(self.all_in, 4), "fair_prob": round(self.fair_prob, 4),
             "edge_pts": round(self.edge * 100, 2), "ev_pct": round(self.ev * 100, 2), "books": self.n_books,
             "one_sided": self.one_sided, "dist_from_line": round(self.dist, 3),
+            "edge_vs_mid_pts": round(self.edge_mid * 100, 2),
         }
 
 
@@ -87,6 +92,23 @@ def passes(leg: Leg, f: dict) -> bool:
     need = required_edge(leg, f)
     return (leg.kalshi_prob >= f["min_kalshi_prob"] and leg.fair_prob >= f["min_fair_prob"]
             and need < leg.edge <= f.get("max_edge", 1.0))
+
+
+def passes_combo(leg: Leg, f: dict) -> bool:
+    """Combo-leg test. In a combo you pay one quote for the whole thing, not each leg's ask + fee,
+    so a leg qualifies when the books' fair chance is at least Kalshi's middle price.
+    combo_cushions: "td_only" adds the Yes-only TD cushion (measured bias); "none"; "all" = same
+    cushions as single bets."""
+    if f.get("combo_leg_test", "mid") != "mid":
+        return passes(leg, f)
+    mode = f.get("combo_cushions", "td_only")
+    need = float(f.get("combo_min_edge", 0.0))
+    if mode in ("td_only", "all") and leg.one_sided:
+        need += f.get("one_sided_buffer", 0.0)
+    if mode == "all":
+        need += shape_buffer(leg.dist, f.get("shape_buffer"))
+    return (leg.kalshi_prob >= f["min_kalshi_prob"] and leg.fair_prob >= f["min_fair_prob"]
+            and need <= leg.edge_mid and leg.edge <= f.get("max_edge", 1.0))
 
 
 def suspicious(leg: Leg, f: dict) -> bool:

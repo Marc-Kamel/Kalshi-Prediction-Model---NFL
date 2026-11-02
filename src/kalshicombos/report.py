@@ -18,8 +18,9 @@ def to_markdown(res: RunResult) -> str:
     f = res.config["filters"]
     c = res.config["combos"]
     out = [f"# Kalshi NFL combos — run {res.run_id}", "",
-           f"Leg filter: Kalshi ≥ {_pct(f['min_kalshi_prob'])}, sportsbook fair ≥ {_pct(f['min_fair_prob'])}, "
-           f"and fair beats Kalshi ask + fee. Suggestions only; nothing is bought.", ""]
+           f"Legs: Kalshi ≥ {_pct(f['min_kalshi_prob'])} and sportsbook fair ≥ {_pct(f['min_fair_prob'])}. "
+           f"**Combo legs**: fair ≥ Kalshi's middle price (you pay one quote for a combo, not each leg's ask + fee). "
+           f"**Single bets**: fair beats Kalshi's ask + fee. Suggestions only; nothing is bought.", ""]
     if res.credits_remaining is not None:
         out += [f"Odds API credits left: {res.credits_remaining}", ""]
     for n in res.notes:
@@ -33,7 +34,7 @@ def to_markdown(res: RunResult) -> str:
             out += [f"_{g.note}_", ""]
         if g.combos:
             out += ["### Suggested combos", "",
-                    "| Legs | Picks | Fair chance | Fair payout | **Accept if Kalshi pays ≥** | EV at leg asks |",
+                    "| Legs | Picks | Fair chance | Fair payout | **Accept if Kalshi pays ≥** | Kalshi's legs imply |",
                     "|---|---|---|---|---|---|"]
             for cb in g.combos:
                 legs = "<br>".join(l.label for l in cb.legs)
@@ -42,13 +43,23 @@ def to_markdown(res: RunResult) -> str:
                 if cb.sim_hits < 1000:
                     fc += f" (±{100 / cb.sim_hits ** 0.5:.0f}%)"
                 out.append(f"| {len(cb.legs)}{rng} | {legs} | {fc} | {cb.fair_payout:.2f}x | "
-                           f"**{cb.min_accept_payout:.2f}x** | {cb.ev_at_leg_asks * 100:+.1f}% |")
+                           f"**{cb.min_accept_payout:.2f}x** | "
+                           f"{(1 / cb.kalshi_corr) if cb.kalshi_corr > 0 else float('nan'):.2f}x |")
             out += ["", f"Each bigger combo adds legs to the smaller one. Build it in Kalshi and request a quote; "
                         f"take it only if the payout multiple is at or above the bold number "
-                        f"(fair + {c['accept_margin'] * 100:.0f}%). A range = Yes on a low rung + No on a higher "
-                        f"rung of the same player stat.", ""]
+                        f"(fair + {c['accept_margin'] * 100:.0f}%). 'Kalshi's legs imply' is the payout Kalshi's own "
+                        f"leg prices add up to; market makers usually quote below it, so a quote between the two "
+                        f"numbers is the window to look for. A range = Yes on a low rung + No on a higher rung "
+                        f"of the same player stat.", ""]
+        if g.combo_legs:
+            out += [f"### Combo legs ({len(g.combo_legs)}: fair ≥ Kalshi's middle price)", "",
+                    "| Leg | Kalshi | Fair | Fair − Kalshi | Books |", "|---|---|---|---|---|"]
+            for l in g.combo_legs[:60]:
+                out.append(f"| {l.label} | {_pct(l.kalshi_prob)} | {_pct(l.fair_prob)} | "
+                           f"{l.edge_mid * 100:+.1f} pts | {l.n_books} |")
+            out.append("")
         if g.qualifying:
-            out += ["### Legs that passed", "",
+            out += ["### Single bets (beat Kalshi's ask + fee)", "",
                     "| Leg | Kalshi | Ask + fee | Fair | Edge | Books |", "|---|---|---|---|---|---|"]
             for l in g.qualifying:
                 out.append(f"| {l.label} | {_pct(l.kalshi_prob)} | {l.all_in * 100:.1f}¢ | {_pct(l.fair_prob)} | "
@@ -89,7 +100,8 @@ def write(res: RunResult, out_dir: str | os.PathLike | None = None) -> Path:
     base = Path(out_dir or res.config["output"]["dir"])
     run_dir = base / res.run_id
     run_dir.mkdir(parents=True, exist_ok=True)
-    all_legs = [l.as_row() | {"passes": l in g.qualifying} for g in res.games for l in g.legs]
+    all_legs = [l.as_row() | {"passes": l in g.qualifying, "combo_leg": l in g.combo_legs}
+                for g in res.games for l in g.legs]
     pd.DataFrame(all_legs).to_csv(run_dir / "legs.csv", index=False)
     pd.DataFrame([c.as_row() for g in res.games for c in g.combos]).to_csv(run_dir / "combos.csv", index=False)
     km = [{k: v for k, v in m.__dict__.items() if k != "extra"} | {"kickoff": g.kickoff}

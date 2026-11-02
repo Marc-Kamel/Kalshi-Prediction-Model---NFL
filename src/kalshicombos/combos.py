@@ -31,6 +31,7 @@ class Combo:
     fair_payout: float
     min_accept_payout: float  # accept a Kalshi quote only if it pays at least this multiple
     sim_hits: int = 0         # simulated games the combo won (precision of fair_prob)
+    kalshi_corr: float = 0.0  # chance implied by Kalshi's own leg prices, with correlations
 
     @property
     def ev_at_leg_asks(self) -> float:
@@ -51,6 +52,7 @@ class Combo:
             "accept_if_payout_x_at_least": round(self.min_accept_payout, 2),
             "max_price_per_1_payout": round(1.0 / self.min_accept_payout, 6),
             "leg_ask_payout_x": round(self.leg_ask_payout, 2),
+            "kalshi_implied_payout_x": round(1 / self.kalshi_corr, 2) if self.kalshi_corr > 0 else None,
             "ev_pct_at_leg_asks": round(self.ev_at_leg_asks * 100, 2),
             "sim_hits": self.sim_hits,
             "tickers": ",".join(l.market.ticker for l in self.legs),
@@ -199,7 +201,7 @@ def _make(chosen: list[Leg], mask: np.ndarray, cfg: dict) -> Combo:
 
 def _greedy_path(pool: list[Leg], hits: np.ndarray, cfg: dict) -> list[tuple[int, np.ndarray]]:
     """Add legs one at a time, each time the leg that keeps the combo most +EV (highest chance
-    of still winning per dollar of leg cost). Returns every step, so a k-leg combo is the first
+    of still winning relative to Kalshi's price for it). Returns every step, so a k-leg combo is the first
     k steps. Stops at max_legs, when nothing compatible is left, or when the combo would win in
     fewer than min_sim_hits simulated games (its chance would be too noisy to trust)."""
     allow = bool(cfg.get("allow_ranges", True))
@@ -218,7 +220,7 @@ def _greedy_path(pool: list[Leg], hits: np.ndarray, cfg: dict) -> list[tuple[int
             c = int(m.sum())
             if c < min_hits:
                 continue
-            score = (c / base) / pool[j].all_in   # conditional win rate per cost
+            score = (c / base) / pool[j].kalshi_prob   # conditional win rate per Kalshi price
             if score > best_score:
                 best, best_score, best_mask = j, score, m
         if best is None:
@@ -269,4 +271,12 @@ def build_for_game(candidates: list[Leg], cfg: dict, shapes=None) -> list[Combo]
             continue
         done.add(k)
         out.append(_make([pool[i] for i, _ in path[:k]], path[k - 1][1], cfg))
+    if out:  # what Kalshi's own leg prices imply for each combo (same correlations)
+        import dataclasses
+        kal = [dataclasses.replace(l, fair_prob=l.kalshi_prob) for l in pool]
+        kh = simulate_hits(kal, cfg, shapes)
+        idx = {id(l): i for i, l in enumerate(pool)}
+        for cb in out:
+            cols = [idx[id(l)] for l in cb.legs]
+            cb.kalshi_corr = float(kh[:, cols].all(axis=1).mean())
     return sorted(out, key=lambda c: len(c.legs))

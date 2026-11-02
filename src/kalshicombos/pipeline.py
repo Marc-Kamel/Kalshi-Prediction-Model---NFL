@@ -11,7 +11,7 @@ from typing import Callable
 import yaml
 
 from .combos import Combo, build_for_game
-from .edges import Leg, evaluate, passes, suspicious
+from .edges import Leg, evaluate, passes, passes_combo, suspicious
 from .fair import BookLines, FairPricer
 from .kalshi import KalshiClient
 from .odds import OddsClient, match_event
@@ -22,7 +22,8 @@ class GameResult:
     game: str
     kickoff: str
     legs: list[Leg] = field(default_factory=list)       # every priced leg (both sides)
-    qualifying: list[Leg] = field(default_factory=list)
+    qualifying: list[Leg] = field(default_factory=list)   # single bets: beat ask + fee
+    combo_legs: list[Leg] = field(default_factory=list)   # combo legs: fair >= Kalshi middle price
     combos: list[Combo] = field(default_factory=list)
     suspicious: list[Leg] = field(default_factory=list)  # edges too big to trust
     raw_quotes: list[dict] = field(default_factory=list)  # saved so a run can be audited/replayed
@@ -126,10 +127,12 @@ def _price_game(gr: GameResult, quotes: list, cfg: dict) -> GameResult:
     gr.legs = evaluate(gr.markets, pricer, cfg["filters"]["stake_usd"], cfg["kalshi"]["taker_fee_rate"])
     gr.qualifying = sorted([l for l in gr.legs if passes(l, cfg["filters"])], key=lambda l: l.ev, reverse=True)
     gr.suspicious = sorted([l for l in gr.legs if suspicious(l, cfg["filters"])], key=lambda l: l.edge, reverse=True)
-    gr.combos = build_for_game(gr.qualifying, cfg["combos"], _shapes(cfg))
+    gr.combo_legs = sorted([l for l in gr.legs if passes_combo(l, cfg["filters"])],
+                           key=lambda l: l.edge_mid, reverse=True)
+    gr.combos = build_for_game(gr.combo_legs, cfg["combos"], _shapes(cfg))
     gr.note = ""
-    if len(gr.qualifying) < cfg["combos"]["min_legs"]:
-        gr.note = f"only {len(gr.qualifying)} leg(s) passed the filters, so no combo"
+    if len(gr.combo_legs) < cfg["combos"]["min_legs"]:
+        gr.note = f"only {len(gr.combo_legs)} leg(s) passed the combo filters, so no combo"
     elif not gr.combos:
         gr.note = ("legs passed but none can be combined (they're rungs of the same player stat on the "
                    "same side, which say the same thing); treat the best one as a single bet")
