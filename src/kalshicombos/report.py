@@ -50,7 +50,9 @@ def to_markdown(res: RunResult) -> str:
                         f"(fair + {c['accept_margin'] * 100:.0f}%). 'Kalshi's legs imply' is the payout Kalshi's own "
                         f"leg prices add up to; market makers usually quote below it, so a quote between the two "
                         f"numbers is the window to look for. A range = Yes on a low rung + No on a higher rung "
-                        f"of the same player stat.", ""]
+                        f"of the same player stat. Every combo is checked against Kalshi's builder rule: no leg "
+                        f"may already be guaranteed by the others (e.g. No 30+ receiving + No 80+ rushing already "
+                        f"means No 115+ rush+rec), and the legs must be able to all hit together.", ""]
         if g.combo_legs:
             out += [f"### Combo legs ({len(g.combo_legs)}: fair ≥ Kalshi's middle price)", "",
                     "| Leg | Kalshi | Fair | Fair − Kalshi | Books |", "|---|---|---|---|---|"]

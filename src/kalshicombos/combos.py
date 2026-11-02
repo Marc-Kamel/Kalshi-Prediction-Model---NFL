@@ -18,6 +18,7 @@ from dataclasses import dataclass
 import numpy as np
 from scipy import stats
 
+from .buildable import can_add
 from .edges import Leg
 
 
@@ -215,6 +216,8 @@ def _greedy_path(pool: list[Leg], hits: np.ndarray, cfg: dict) -> list[tuple[int
         best, best_score, best_mask = None, -1.0, None
         for j in range(len(pool)):
             if j in chosen or not all(compatible(pool[j], pool[i], allow) for i in chosen):
+                continue
+            if not can_add([pool[i] for i in chosen], pool[j]):   # Kalshi refuses implied/impossible legs
                 continue
             m = mask & hits[:, j]
             c = int(m.sum())

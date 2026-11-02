@@ -65,6 +65,7 @@ To run it manually: Actions → combos → Run workflow → command `grade` (or 
 ## How combos are built
 - **Pool:** for each game, every qualifying player leg, up to 60.
 - **Ranges:** the same player stat can appear twice, as Yes on a low rung plus No on a higher one. For example, "Swift 30+ rushing" with "No Swift 80+ rushing" means 30 to 79 yards. Two Yes rungs (redundant) or contradictory pairs are never combined.
+- **Buildable on Kalshi:** Kalshi refuses a combo when one leg is already guaranteed by the others, even across different stats. For example, "No Swift 30+ receiving" plus "No Swift 80+ rushing" caps him at 108 combined yards, so "No Swift 115+ rush+rec" adds nothing and Kalshi rejects it. `buildable.py` turns each player's rushing, receiving, rush+rec and receptions legs into bounds (rush + receiving = rush+rec; receiving yards need a catch) and skips any leg the others already settle, or that can't hit together with them. This applies to both the regular combos and friend mode.
 - **Sizes:** one combo per size in `combos.sizes` (default 3, 5, 8, 12, 20, and "as many as fit"). The builder adds legs one at a time, each time picking the leg that keeps the combo most +EV, so each bigger combo is the smaller one plus more legs.
 - **Simulation:** it simulates the game 200,000 times with shared factors (team offense, team pass volume, each player's own game).
   - Correlated legs move together: a QB's yards with his WR's yards, or a "No TD" leg with a low-scoring game.

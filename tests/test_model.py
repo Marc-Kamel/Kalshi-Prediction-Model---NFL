@@ -390,3 +390,46 @@ def test_combo_legs_use_mid_price_and_single_bets_stay_strict():
     td = _leg({"kind": "td", "team": "SEA", "player": "Y", "threshold": 0.5}, "no", 0.17)
     td.kalshi_prob, td.fair_prob, td.one_sided = 0.82, 0.83, True                  # Yes-only TD: needs +3 pts
     assert not passes_combo(td, CFG["filters"])
+
+
+def _sw(kind, th, side, ticker):
+    return _leg({"ticker": ticker, "kind": kind, "player": "D'Andre Swift", "threshold": th}, side, 0.5)
+
+
+def test_kalshi_rejects_implied_legs_like_swift():
+    """Real Kalshi rejection (CHI@SEA): No 30+ rec + No 80+ rush already guarantee No 115+ rush+rec."""
+    from kalshicombos.buildable import can_add, problems, prune
+    rec = _sw("rec_yds", 29.5, "no", "REC30")
+    rush = _sw("rush_yds", 79.5, "no", "RSH80")
+    rr = _sw("rr_yds", 114.5, "no", "RR115")
+    assert problems([rec, rush, rr])                 # the exact combo Kalshi refused
+    assert not can_add([rec, rush], rr)
+    assert can_add([rec], rr) and can_add([rush], rr)   # any two of them are fine
+    assert len(prune([rec, rush, rr])) == 2
+    # No 30+ rec + No 80+ rush cap him at 108, so No 110+ rr is implied too, but No 100+ rr is not
+    assert not can_add([rec, rush], _sw("rr_yds", 109.5, "no", "RR110"))
+    assert can_add([rec, rush], _sw("rr_yds", 99.5, "no", "RR100"))
+    # Yes 50+ rush + Yes 30+ rec guarantee Yes 70+ rr (and rule out No 60+ rr)
+    y1, y2 = _sw("rush_yds", 49.5, "yes", "R50"), _sw("rec_yds", 29.5, "yes", "C30")
+    assert not can_add([y1, y2], _sw("rr_yds", 69.5, "yes", "RR70"))
+    assert not can_add([y1, y2], _sw("rr_yds", 59.5, "no", "RR60N"))
+    assert can_add([y1, y2], _sw("rr_yds", 99.5, "yes", "RR100Y"))
+    # Yes 100+ rr + No 30+ rec force rush >= 71, so Yes 60+ rush is implied
+    assert not can_add([_sw("rr_yds", 99.5, "yes", "A"), _sw("rec_yds", 29.5, "no", "B")],
+                       _sw("rush_yds", 59.5, "yes", "C"))
+    # receiving yards need a catch; no catch means no receiving yards
+    assert not can_add([_sw("rec_yds", 9.5, "yes", "D")], _sw("receptions", 0.5, "yes", "E"))
+    assert not can_add([_sw("receptions", 0.5, "no", "F")], _sw("rec_yds", 9.5, "no", "G"))
+    # ranges stay allowed, contradictions don't
+    assert can_add([_sw("rush_yds", 29.5, "yes", "H")], _sw("rush_yds", 79.5, "no", "I"))
+    assert not can_add([_sw("rush_yds", 79.5, "yes", "J")], _sw("rush_yds", 29.5, "no", "K"))
+
+
+def test_suggested_combos_are_buildable_on_kalshi(monkeypatch):
+    from kalshicombos.buildable import problems
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)
+    kg, og = pipeline.fixture_getters(FIX)
+    res = pipeline.run(CFG, kg, og, now=NOW)
+    for g in res.games:
+        for c in g.combos:
+            assert problems(c.legs) == [], problems(c.legs)
