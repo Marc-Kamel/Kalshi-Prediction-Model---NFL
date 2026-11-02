@@ -1,4 +1,4 @@
-# Friend mode — run 20261102T1845Z
+# Friend mode — run 20261102T1855Z
 
 His recipe: every player leg with fair > 55%, +EV after fees, 5+ books, one line per player-stat, alternate lines allowed, all in one combo. Suggestions only; nothing is bought.
 
@@ -6,7 +6,7 @@ His recipe: every player leg with fair > 55%, +EV after fees, 5+ books, one line
 
 | How it's priced | Chance | Fair payout |
 |---|---|---|
-| Friend-style (legs multiplied, like his model) | 30.7% | 3.26x |
+| Friend-style (legs multiplied, like his model) | 30.7% | 3.25x |
 | Friend-style legs, measured correlations | 30.4% | 3.29x |
 | Our strict model, measured correlations | 31.4% | 3.18x |
 | Kalshi's own leg prices, measured correlations | 25.7% | 3.89x |
@@ -17,7 +17,7 @@ His recipe: every player leg with fair > 55%, +EV after fees, 5+ books, one line
 
 | Leg | Kalshi | Ask + fee | Friend fair | Strict fair | Strict edge |
 |---|---|---|---|---|---|
-| AJ Barner: 3+ receptions ¹ | 59.0% | 61.7¢ | 62.9% | 63.7% | +2.0¢ |
+| AJ Barner: 3+ receptions ¹ | 59.0% | 61.7¢ | 63.0% | 63.7% | +2.0¢ |
 | No · D'Andre Swift: 140+ rushing and receiving yards combined ¹ | 90.0% | 91.6¢ | 92.7% | 94.8% | +3.2¢ |
 | Zach Charbonnet: 20+ rushing yards ¹ | 63.5% | 65.7¢ | 66.1% | 66.4% | +0.7¢ |
 | No · Zach Charbonnet: 5+ receptions ¹ | 94.5% | 95.4¢ | 95.8% | — | — |
