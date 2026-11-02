@@ -20,6 +20,9 @@ from typing import Iterable
 from .edges import Leg
 
 LINKED = ("rush_yds", "rec_yds", "rr_yds", "receptions")
+# Stats where Kalshi allows only ONE line per player in a combo (no ranges). Kalshi: "you can only
+# choose one reception line per player". Add other stats here if Kalshi says the same about them.
+SINGLE_LINE_KINDS = {"receptions"}
 INF = float("inf")
 
 
@@ -76,6 +79,10 @@ def problems(legs: list[Leg]) -> list[str]:
         if l.market.ticker in seen:
             out.append(f"same market twice: {l.market.ticker}")
         seen.add(l.market.ticker)
+    for i, a in enumerate(legs):
+        for b in legs[i + 1:]:
+            if _one_line_clash(a, b):
+                out.append(f"{a.market.player}: Kalshi allows only one {a.market.kind} line per player")
     by_player: dict[tuple, list[Leg]] = {}
     for l in legs:
         if l.market.player and l.market.kind in LINKED:
@@ -91,9 +98,15 @@ def problems(legs: list[Leg]) -> list[str]:
     return out
 
 
+def _one_line_clash(a: Leg, b: Leg) -> bool:
+    ma, mb = a.market, b.market
+    return (ma.kind in SINGLE_LINE_KINDS and ma.kind == mb.kind and ma.player is not None
+            and ma.player == mb.player and ma.game == mb.game)
+
+
 def can_add(chosen: list[Leg], cand: Leg) -> bool:
     """True if adding cand keeps the combo buildable on Kalshi (chosen is assumed buildable)."""
-    if any(c.market.ticker == cand.market.ticker for c in chosen):
+    if any(c.market.ticker == cand.market.ticker or _one_line_clash(c, cand) for c in chosen):
         return False
     m = cand.market
     if not m.player or m.kind not in LINKED:
