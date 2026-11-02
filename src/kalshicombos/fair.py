@@ -12,7 +12,7 @@ from . import teams
 from .kalshi import KalshiMarket
 from .names import norm
 from .odds import Quote
-from .odds_math import american_to_prob, devig_power
+from .odds_math import american_to_prob, devig_one_sided, devig_power
 
 PROP_MARKETS = {
     "player_receptions": "receptions",
@@ -39,12 +39,16 @@ class Fair:
     p: float                  # fair probability that the Kalshi market resolves YES
     n_books: int
     by_book: dict[str, float] = field(default_factory=dict)
+    one_sided: bool = False   # True if any book's price had only one side posted (vig guessed)
 
 
 class BookLines:
     """Per-book, vig-free probabilities built from raw quotes for one game."""
 
-    def __init__(self, quotes: list[Quote], one_sided_margin: float, props_margin: float | None = None):
+    def __init__(self, quotes: list[Quote], one_sided_margin: float, props_margin: float | None = None,
+                 allow_one_sided_props: bool = False):
+        self.allow_one_sided_props = allow_one_sided_props
+        self.one_sided_rows: set[tuple] = set()
         self.props: dict[tuple[str, str], dict[str, list[tuple[float, float]]]] = defaultdict(lambda: defaultdict(list))
         self.ml: dict[str, dict[str, float]] = defaultdict(dict)                    # book -> team -> p
         self.spreads: dict[str, list[tuple[str, float, float]]] = defaultdict(list)  # book -> (team, point, p_cover)
@@ -108,9 +112,15 @@ class BookLines:
                 no = sides.get("under", sides.get("no"))
                 if yes is None:
                     continue
-                if no is None:  # Over/Yes only: rebuild the missing side with the book's usual margin
+                if no is None:  # Over/Yes only: rebuild the missing side with an assumed margin
+                    if stat != "td" and not self.allow_one_sided_props:
+                        continue  # vig on one-sided alternate lines is unknowable; don't guess
                     m = m_td if stat == "td" else book_margin.get(book, m_props)
-                    no = max(0.005, 1.0 + m - yes)
+                    self.one_sided_rows.add((stat, player, book, pt))
+                    # Proportional removal. (Rebuilding a fake "No" side and using the power method
+                    # dumps nearly all the margin on the longshot: +1100 TD -> 2% instead of ~8%.)
+                    self.props[(stat, player)][book].append((pt, devig_one_sided(yes, m)))
+                    continue
                 elif yes + no > MAX_PAIR_TOTAL:
                     continue  # both sides priced as favourites: mismatched/stale quote, skip it
                 f = devig_power(yes, no)[0]
@@ -172,13 +182,13 @@ class FairPricer:
         band = max(float(rule.get("abs", 0)), float(rule.get("rel", 0)) * line)
         return abs(target - line) <= band + 1e-9
 
-    def _blend(self, by_book: dict[str, float]) -> Fair | None:
+    def _blend(self, by_book: dict[str, float], one_sided: bool = False) -> Fair | None:
         by_book = {b: p for b, p in by_book.items() if p is not None and 0 < p < 1}
         if len(by_book) < self.min_books:
             return None
         w = {b: float(self.weights.get(b, 1.0)) for b in by_book}
         p = sum(by_book[b] * w[b] for b in by_book) / sum(w.values())
-        return Fair(p=p, n_books=len(by_book), by_book=by_book)
+        return Fair(p=p, n_books=len(by_book), by_book=by_book, one_sided=one_sided)
 
     def price(self, km: KalshiMarket) -> Fair | None:
         try:
@@ -218,12 +228,16 @@ class FairPricer:
         if not books:
             return None
         out = {}
+        used_one_sided = False
+        player = norm(km.player or "")
         for b, rows in books.items():
             if km.kind == "td":
                 p1 = next((p for pt, p in rows if pt == 0.5), None)
                 out[b] = None if p1 is None else _td_from_anytime(p1, km.threshold)
+                used_one_sided |= p1 is not None and ("td", player, b, 0.5) in L.one_sided_rows
                 continue
             line, p = min(rows, key=lambda r: abs(r[0] - km.threshold))
+            used_one_sided |= (km.kind, player, b, line) in L.one_sided_rows
             if abs(line - km.threshold) < 1e-9:
                 out[b] = p
             elif not self._can_extrapolate(km.kind, line, km.threshold):
@@ -232,4 +246,4 @@ class FairPricer:
                 out[b] = _count_sf_from_line(line, p, km.threshold, self.m["receptions_dispersion"])
             else:
                 out[b] = _gamma_sf_from_line(line, p, km.threshold, self.m["cv"][km.kind])
-        return self._blend(out)
+        return self._blend(out, used_one_sided)

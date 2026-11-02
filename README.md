@@ -15,6 +15,8 @@ You can change all three in `config.yaml` under `filters`.
 
 ## How the fair price is made
 - **Books:** prices come from Pinnacle, FanDuel, DraftKings, BetMGM, Caesars and others, through [The Odds API](https://the-odds-api.com).
+- **Two-sided lines only for yards and receptions.** A book's vig can only be measured when it posts both Over and Under. Alternate lines are Over-only. On CHI@SEA (Nov 2) no single vig guess made them agree with Kalshi, and every guess produced a different set of fake edges, so they're off by default (`allow_one_sided_props`).
+- **Anytime TD** is usually Yes-only, so its vig is removed proportionally with an assumed 7% margin, and those legs must clear an extra 3¢ (`one_sided_buffer`).
 - **Vig removal:** each Over/Under or Yes/No pair has its vig removed with the power method. Anytime-TD markets that only show a Yes price get an assumed margin instead.
 - **Kalshi rungs:** a book's line, say Over 64.5 yards, is turned into a full distribution so every Kalshi rung ("40+", "60+", "80+") gets a price.
   - Yards use a gamma distribution.
@@ -45,7 +47,7 @@ You can change all three in `config.yaml` under `filters`.
 It also runs on its own before Thursday, Sunday and Monday games (see `.github/workflows/combos.yml`).
 
 ### Credits
-Each game costs 1 credit per market in `config.yaml`, which is 11 by default: 6 main player markets plus 5 alternate-line markets. The alternate lines are what give exact prices for low and high rungs like "10+ receiving yards". A full week on the default schedule is about 230 credits, so the free 500 lasts about 2 weeks. To stretch it, delete some scheduled runs, or remove alternate markets (cheaper, but fewer rungs get priced). The $30/month tier (20,000 credits) covers every run with plenty to spare.
+Each game costs 1 credit per market in `config.yaml`, which is 6 by default. A full week on the default schedule is about 125 credits, so the free 500 lasts about a month.
 
 ## Run locally
 ```

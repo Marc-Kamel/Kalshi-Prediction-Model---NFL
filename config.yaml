@@ -9,8 +9,10 @@ odds:
   # Up to 10 bookmakers cost the same credits as one region. Pinnacle is the
   # sharpest book and gets the most weight below.
   bookmakers: [pinnacle, fanduel, draftkings, betmgm, williamhill_us, betrivers, espnbet, fanatics, betonlineag, bovada]
-  # Each market costs 1 credit per game per call (11 here). The *_alternate markets give
-  # exact prices for Kalshi's low/high rungs ("10+ receiving yards", "2+ receptions").
+  # Each market costs 1 credit per game per call (6 here).
+  # *_alternate markets (e.g. player_reception_yds_alternate) are supported but OFF: books post
+  # them Over-only, so their vig has to be guessed, and on CHI@SEA (Nov 2) no single guess lined
+  # up with Kalshi — they produced fake edges. Re-add them only with allow_one_sided_props: true.
   markets:
     - player_receptions
     - player_reception_yds
@@ -18,11 +20,6 @@ odds:
     - player_pass_yds
     - player_rush_reception_yds
     - player_anytime_td
-    - player_receptions_alternate
-    - player_reception_yds_alternate
-    - player_rush_yds_alternate
-    - player_pass_yds_alternate
-    - player_rush_reception_yds_alternate
   # Weight of each book in the fair-price average (books not listed get 1.0).
   book_weights:
     pinnacle: 3.0
@@ -34,7 +31,8 @@ odds:
   # assuming the same overround the book charges on its two-sided player lines. If a book
   # has no two-sided lines, these defaults are used.
   one_sided_margin: 0.07       # anytime TD (Yes only)
-  one_sided_margin_props: 0.06 # alternate yardage / receptions lines
+  one_sided_margin_props: 0.06 # alternate yardage / receptions lines (only if allowed below)
+  allow_one_sided_props: false # use Over-only yardage/receptions quotes? (false = two-sided lines only)
 
 kalshi:
   base_url: https://api.elections.kalshi.com/trade-api/v2
@@ -55,7 +53,8 @@ games:
 filters:
   min_kalshi_prob: 0.60        # leg's own Kalshi price (mid) must be >= this
   min_fair_prob: 0.60          # and the sportsbook fair probability must be >= this
-  min_edge: 0.0                # fair - (ask + fee), in probability points; > 0 means +EV
+  min_edge: 0.005              # fair - (ask + fee) must beat this (half a cent) to count as +EV
+  one_sided_buffer: 0.03       # legs priced from Yes-only quotes (most anytime-TD) need this much MORE edge
   max_edge: 0.08               # an "edge" bigger than this on a liquid exchange is almost always a
                                # model/data error (stale line, wrong player) — skip it and flag it
   stake_usd: 10                # used only to compute Kalshi's per-order fee rounding

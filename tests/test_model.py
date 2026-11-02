@@ -199,9 +199,21 @@ def test_over_only_lines_use_the_books_own_margin():
     qs = [Quote("bk", "player_reception_yds", "Over", "X", 49.5, -115),
           Quote("bk", "player_reception_yds", "Under", "X", 49.5, -105),        # ~4.3% overround
           Quote("bk", "player_reception_yds_alternate", "Over", "X", 19.5, -500)]
-    bl = BookLines(qs, 0.07, 0.06)
+    assert 19.5 not in dict(BookLines(qs, 0.07, 0.06).props[("rec_yds", "x")]["bk"])  # ignored by default
+    bl = BookLines(qs, 0.07, 0.06, allow_one_sided_props=True)
     p_alt = dict(bl.props[("rec_yds", "x")]["bk"])[19.5]
-    assert 0.80 < p_alt < american_to_prob(-500)   # vig removed, but not crushed
+    assert 0.78 < p_alt < american_to_prob(-500)   # if allowed: vig removed, but not crushed
+    assert ("rec_yds", "x", "bk", 19.5) in bl.one_sided_rows
+
+
+def test_yes_only_td_legs_need_extra_edge():
+    from kalshicombos.edges import passes
+    leg = _leg({"kind": "td", "team": "SEA", "player": "X", "threshold": 0.5}, "no", 0.15)
+    leg.kalshi_prob, leg.ask, leg.fee = 0.84, 0.84, 0.01        # 0.87 fair vs 0.85 all-in: +2c
+    leg.fair_prob = 0.87
+    assert passes(leg, CFG["filters"])
+    leg.one_sided = True                                        # vig was guessed: needs +3c more
+    assert not passes(leg, CFG["filters"])
 
 
 def test_player_only_and_big_combos(monkeypatch):
@@ -239,3 +251,11 @@ def test_one_bad_game_does_not_sink_the_run(monkeypatch):
     kg, og = pipeline.fixture_getters(FIX)
     res = pl.run(CFG, kg, og, now=NOW)
     assert res.games and "pricing error" in res.games[0].note and res.games[0].raw_quotes
+
+
+def test_yes_only_longshot_td_is_not_crushed():
+    from kalshicombos.fair import BookLines
+    from kalshicombos.odds import Quote
+    bl = BookLines([Quote("dk", "player_anytime_td", "Yes", "Eric Saubert", None, 1100)], 0.07)
+    p = dict(bl.props[("td", "eric saubert")]["dk"])[0.5]
+    assert p == pytest.approx((100 / 1200) / 1.07, abs=1e-6)   # ~7.8%, not ~2%
