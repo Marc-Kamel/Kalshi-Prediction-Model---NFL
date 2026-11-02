@@ -26,6 +26,18 @@ def _run_time(name: str) -> datetime | None:
         return None
 
 
+def load_friend_combos(reports: Path) -> pd.DataFrame:
+    rows = []
+    for d in sorted(p for p in reports.iterdir() if p.is_dir() and _run_time(p.name)):
+        f = d / "friend_combo.csv"
+        if f.exists() and f.stat().st_size > 1:
+            x = pd.read_csv(f, keep_default_na=False)
+            if len(x):
+                x["run"] = d.name
+                rows.append(x)
+    return pd.concat(rows, ignore_index=True) if rows else pd.DataFrame()
+
+
 def load_runs(reports: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
     legs, combos = [], []
     for d in sorted(p for p in reports.iterdir() if p.is_dir() and _run_time(p.name)):
@@ -77,7 +89,11 @@ def grade(reports_dir: str | Path, base_url: str, getter: Callable | None = None
         (out_dir / "summary.md").write_text("# Grades\n\nNo logged runs yet.\n")
         return {}
     L = _pre_kickoff(L)
-    results = fetch_results(sorted(L.ticker.unique()), KalshiClient(base_url, getter))
+    FC = load_friend_combos(reports)
+    tick = set(L.ticker.unique())
+    if not FC.empty:
+        tick |= {t for ts in FC.tickers for t in str(ts).split(",")}
+    results = fetch_results(sorted(tick), KalshiClient(base_url, getter))
     L = L[L.ticker.isin(results)].copy()
     if L.empty:
         (out_dir / "summary.md").write_text("# Grades\n\nNothing has settled yet.\n")
@@ -146,6 +162,20 @@ def grade(reports_dir: str | Path, base_url: str, getter: Callable | None = None
         md += [f"- Settled combos: {len(CB)}, hit {int(CB.won.sum())}, model expected {CB.fair_prob.sum():.2f} hits",
                "- By size: " + ", ".join(f"{k} legs: {int(g.won.sum())}/{len(g)} (exp {g.fair_prob.sum():.2f})"
                                          for k, g in CB.groupby("n_legs"))]
+    md += ["", "## Friend-mode combos", ""]
+    fr = []
+    for _, c in FC.iterrows() if not FC.empty else []:
+        tk, sd = str(c.tickers).split(","), str(c.sides).split(",")
+        if all(t in results for t in tk):
+            fr.append({"won": all(results[t] == s for t, s in zip(tk, sd)), "friend": float(c.friend_fair_prob),
+                       "strict": float(c.strict_corr_prob), "kalshi": float(c.kalshi_corr_prob)})
+    if not fr:
+        md += ["None settled yet."]
+    else:
+        F = pd.DataFrame(fr)
+        md += [f"- Settled: {len(F)}, hit {int(F.won.sum())}. Expected hits — friend-style: {F.friend.sum():.2f}, "
+               f"strict model: {F.strict.sum():.2f}, Kalshi's legs: {F.kalshi.sum():.2f}. "
+               f"Over many combos, whichever expectation tracks the real hits is the better price."]
     (out_dir / "summary.md").write_text("\n".join(md) + "\n")
     return {"bets": len(bets), "legs_calibrated": len(cal), "combos": len(CB),
             "brier_model": brier_fair, "brier_kalshi": brier_kalshi}

@@ -69,6 +69,22 @@ def to_markdown(res: RunResult) -> str:
     return "\n".join(out)
 
 
+def write_raw(res: RunResult, out_dir: str | os.PathLike | None = None) -> Path:
+    """Only the raw prices (Kalshi markets + book quotes) so a run can be replayed. Used by friend
+    mode, which must not overwrite the strict report or add its looser picks to grading."""
+    base = Path(out_dir or res.config["output"]["dir"])
+    run_dir = base / res.run_id
+    run_dir.mkdir(parents=True, exist_ok=True)
+    km = [{k: v for k, v in m.__dict__.items() if k != "extra"} | {"kickoff": g.kickoff}
+          for g in res.games for m in g.markets]
+    if km:
+        pd.DataFrame(km).to_csv(run_dir / "kalshi_markets.csv", index=False)
+    raw = [q | {"game": g.game} for g in res.games for q in g.raw_quotes]
+    if raw:
+        pd.DataFrame(raw).to_csv(run_dir / "book_quotes.csv.gz", index=False)
+    return run_dir
+
+
 def write(res: RunResult, out_dir: str | os.PathLike | None = None) -> Path:
     base = Path(out_dir or res.config["output"]["dir"])
     run_dir = base / res.run_id

@@ -147,8 +147,17 @@ def build(gr: pipeline.GameResult, cfg: dict, basis: str | None = None) -> Frien
 
 # ---------- output ----------
 
+def _mult(x: float) -> str:
+    """Payout multiple with enough precision to matter: 3.28x, 15.4x, 1,213x."""
+    if x < 10:
+        return f"{x:.2f}x"
+    if x < 100:
+        return f"{x:.1f}x"
+    return f"{x:,.0f}x"
+
+
 def _x(p: float) -> str:
-    return f"{1 / p:,.0f}x" if p > 0 else "—"
+    return _mult(1 / p) if p > 0 else "—"
 
 
 def _p(p: float) -> str:
@@ -168,9 +177,9 @@ def to_markdown(run_id: str, combos: list[FriendCombo], skipped: list[str]) -> s
                 f"| Friend-style legs, measured correlations | {_p(c.his_corr)} | {_x(c.his_corr)} |",
                 f"| Our strict model, measured correlations | {_p(c.strict_corr)} | {_x(c.strict_corr)} |",
                 f"| Kalshi's own leg prices, measured correlations | {_p(c.kalshi_corr)} | {_x(c.kalshi_corr)} |", "",
-                f"**Accept only if Kalshi's quote pays ≥ {c.accept_x:,.0f}x** "
+                f"**Accept only if Kalshi's quote pays ≥ {_mult(c.accept_x)}** "
                 f"({'our strict model' if c.basis == 'strict' else 'friend-style price'} + {c.accept_margin * 100:.0f}%). "
-                f"His model would accept ≥ {c.friend_accept_x:,.0f}x.", ""]
+                f"His model would accept ≥ {_mult(c.friend_accept_x)}.", ""]
         out += [f"- {n}" for n in c.notes]
         out += ["", "| Leg | Kalshi | Ask + fee | Friend fair | Strict fair | Strict edge |", "|---|---|---|---|---|---|"]
         for l, s in zip(c.legs, c.strict_p):
@@ -193,8 +202,8 @@ def write(run_id: str, combos: list[FriendCombo], skipped: list[str], out_dir: s
         rows.append({"game": c.game, "n_legs": len(c.legs),
                      "friend_fair_prob": c.his_indep, "friend_corr_prob": c.his_corr,
                      "strict_corr_prob": c.strict_corr, "kalshi_corr_prob": c.kalshi_corr,
-                     "accept_if_payout_x_at_least": round(c.accept_x, 1),
-                     "friend_accept_x": round(c.friend_accept_x, 1),
+                     "accept_if_payout_x_at_least": round(c.accept_x, 2),
+                     "friend_accept_x": round(c.friend_accept_x, 2),
                      "legs": " + ".join(l.label for l in c.legs),
                      "tickers": ",".join(l.market.ticker for l in c.legs),
                      "sides": ",".join(l.side for l in c.legs)})

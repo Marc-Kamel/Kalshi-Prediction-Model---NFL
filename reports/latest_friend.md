@@ -6,12 +6,12 @@ His recipe: every player leg with fair > 55%, +EV after fees, 5+ books, one line
 
 | How it's priced | Chance | Fair payout |
 |---|---|---|
-| Friend-style (legs multiplied, like his model) | 30.7% | 3x |
-| Friend-style legs, measured correlations | 30.4% | 3x |
-| Our strict model, measured correlations | 31.4% | 3x |
-| Kalshi's own leg prices, measured correlations | 25.7% | 4x |
+| Friend-style (legs multiplied, like his model) | 30.7% | 3.26x |
+| Friend-style legs, measured correlations | 30.4% | 3.29x |
+| Our strict model, measured correlations | 31.4% | 3.18x |
+| Kalshi's own leg prices, measured correlations | 25.7% | 3.89x |
 
-**Accept only if Kalshi's quote pays ≥ 3x** (our strict model + 3%). His model would accept ≥ 3x.
+**Accept only if Kalshi's quote pays ≥ 3.28x** (our strict model + 3%). His model would accept ≥ 3.36x.
 
 - 5 of 5 legs are priced from Over/Yes-only lines (vig guessed); those ran ~4–5 pts too high vs Kalshi on CHI@SEA and PHI@WAS.
 

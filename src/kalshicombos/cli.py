@@ -43,7 +43,7 @@ def main(argv: list[str] | None = None) -> int:
             cfg.setdefault("friend_mode", {})["min_fair_prob"] = a.min_fair
         res, combos, skipped = friend.run(cfg, a.game, a.replay, basis=a.basis)
         if not a.replay:
-            report.write(res, a.out)   # also keep the normal logs (quotes/markets) for replay & grading
+            report.write_raw(res, a.out)   # raw prices only: keeps the strict report and grading clean
         folder = friend.write(res.run_id, combos, skipped, a.out or cfg["output"]["dir"])
         print(friend.to_markdown(res.run_id, combos, skipped))
         print(f"\nSaved to {folder}", file=sys.stderr)

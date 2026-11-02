@@ -352,3 +352,17 @@ def test_finished_or_unknown_games_are_explained(monkeypatch):
     _, combos, skipped = friend.run(dict(CFG, friend_mode=dict(CFG["friend_mode"], sims=100000)), ["PHIWAS"],
                                     kalshi_getter=kg, odds_getter=og, now=NOW)
     assert not combos and any("PHIWAS" in s for s in skipped)
+
+
+def test_friend_run_keeps_strict_report_clean(tmp_path, monkeypatch):
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)
+    from kalshicombos import friend, report
+    kg, og = pipeline.fixture_getters(FIX)
+    res, combos, skipped = friend.run(dict(CFG, friend_mode=dict(CFG["friend_mode"], min_books=2, sims=100000)),
+                                      ["CHISEA"], kalshi_getter=kg, odds_getter=og, now=NOW)
+    d = report.write_raw(res, tmp_path)
+    friend.write(res.run_id, combos, skipped, tmp_path)
+    assert (d / "book_quotes.csv.gz").exists() and (d / "kalshi_markets.csv").exists()
+    assert not (d / "legs.csv").exists() and not (tmp_path / "latest.md").exists()
+    if combos:
+        assert "." in friend._mult(combos[0].accept_x)   # e.g. 3.28x, never a bare "3x"
