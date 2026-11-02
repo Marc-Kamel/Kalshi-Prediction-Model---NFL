@@ -423,7 +423,9 @@ def test_kalshi_rejects_implied_legs_like_swift():
     # Kalshi: only one reception line per player (so no receptions ranges)
     assert not can_add([_sw("receptions", 1.5, "yes", "L")], _sw("receptions", 4.5, "no", "M"))
     assert problems([_sw("receptions", 1.5, "yes", "L"), _sw("receptions", 4.5, "no", "M")])
-    # ranges stay allowed on yards, contradictions don't
+    # one receiving-yards line per player too
+    assert not can_add([_sw("rec_yds", 14.5, "yes", "N")], _sw("rec_yds", 59.5, "no", "O"))
+    # rushing-yards ranges stay allowed, contradictions don't
     assert can_add([_sw("rush_yds", 29.5, "yes", "H")], _sw("rush_yds", 79.5, "no", "I"))
     assert not can_add([_sw("rush_yds", 79.5, "yes", "J")], _sw("rush_yds", 29.5, "no", "K"))
 

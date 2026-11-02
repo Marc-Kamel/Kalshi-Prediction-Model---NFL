@@ -72,9 +72,9 @@ class ComboRules:
 
 LINKED = ("rush_yds", "rec_yds", "rr_yds", "receptions")
 # Stats where Kalshi allows only ONE line per player in a combo (no ranges). Kalshi: "you can only
-# choose one reception line per player". Anytime TD (1+ / 2+ TDs) is the same kind of count market,
+# choose one reception line per player"; the user asked for the same on receiving yards. Anytime TD (1+ / 2+ TDs) is the same kind of count market,
 # so it is treated the same way to be safe. Add other stats here if Kalshi says the same about them.
-SINGLE_LINE_KINDS = {"receptions", "td"}
+SINGLE_LINE_KINDS = {"receptions", "td", "rec_yds"}
 INF = float("inf")
 
 
