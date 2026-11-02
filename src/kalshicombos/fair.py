@@ -53,9 +53,9 @@ class BookLines:
                 continue
             if q.market == "h2h":
                 groups[(q.book, "h2h")][q.name] = p
-            elif q.market == "spreads" and q.point is not None:
+            elif q.market in ("spreads", "alternate_spreads") and q.point is not None:
                 groups[(q.book, "spreads", abs(float(q.point)))][f"{q.name}|{q.point}"] = p
-            elif q.market == "totals" and q.point is not None:
+            elif q.market in ("totals", "alternate_totals") and q.point is not None:
                 groups[(q.book, "totals", float(q.point))][q.name.lower()] = p
             else:
                 stat = _stat_of(q.market)
@@ -145,7 +145,8 @@ class FairPricer:
         rule = (self.m.get("extrapolation") or {}).get(kind)
         if not rule:
             return True
-        if line < float(rule.get("min_line", 0)):
+        min_line = float(rule.get("min_line", 0))
+        if min_line > 0 and line < min_line:
             return False
         band = max(float(rule.get("abs", 0)), float(rule.get("rel", 0)) * line)
         return abs(target - line) <= band + 1e-9
@@ -176,6 +177,8 @@ class FairPricer:
                 if not mine:
                     continue
                 pt, p = min(mine, key=lambda r: abs(-r[0] - km.threshold))  # line nearest the rung
+                if not self._can_extrapolate("spread", -pt, km.threshold):
+                    continue
                 mu = -pt + sd * stats.norm.ppf(p)          # expected margin for km.team
                 out[b] = float(stats.norm.sf(km.threshold, loc=mu, scale=sd))
             return self._blend(out)
@@ -184,6 +187,8 @@ class FairPricer:
             out = {}
             for b, rows in L.totals.items():
                 pt, p = min(rows, key=lambda r: abs(r[0] - km.threshold))
+                if not self._can_extrapolate("total", pt, km.threshold):
+                    continue
                 mu = pt + sd * stats.norm.ppf(p)
                 out[b] = float(stats.norm.sf(km.threshold, loc=mu, scale=sd))
             return self._blend(out)

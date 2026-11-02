@@ -15,13 +15,20 @@ def main(argv: list[str] | None = None) -> int:
     r.add_argument("--game", action="append", help="matchup code like CHISEA (repeatable); ignores the time window")
     r.add_argument("--fixtures", help="replay saved Kalshi/odds JSON from this folder instead of calling the APIs")
     r.add_argument("--out", help="output folder (default from config)")
+    rp = sub.add_parser("replay", help="re-price a saved run with the current config (no API calls)")
+    rp.add_argument("run_dir")
+    rp.add_argument("--config", default="config.yaml")
+    rp.add_argument("--out", help="output folder (default from config)")
     a = ap.parse_args(argv)
 
     cfg = pipeline.load_config(a.config)
-    kg = og = None
-    if a.fixtures:
-        kg, og = pipeline.fixture_getters(a.fixtures)
-    res = pipeline.run(cfg, kg, og, only=a.game)
+    if a.cmd == "replay":
+        res = pipeline.replay(a.run_dir, cfg)
+    else:
+        kg = og = None
+        if a.fixtures:
+            kg, og = pipeline.fixture_getters(a.fixtures)
+        res = pipeline.run(cfg, kg, og, only=a.game)
     folder = report.write(res, a.out)
     print(report.to_markdown(res))
     print(f"\nSaved to {folder}", file=sys.stderr)

@@ -68,6 +68,10 @@ def write(res: RunResult, out_dir: str | os.PathLike | None = None) -> Path:
     all_legs = [l.as_row() | {"passes": l in g.qualifying} for g in res.games for l in g.legs]
     pd.DataFrame(all_legs).to_csv(run_dir / "legs.csv", index=False)
     pd.DataFrame([c.as_row() for g in res.games for c in g.combos]).to_csv(run_dir / "combos.csv", index=False)
+    km = [{k: v for k, v in m.__dict__.items() if k != "extra"} | {"kickoff": g.kickoff}
+          for g in res.games for m in g.markets]
+    if km:
+        pd.DataFrame(km).to_csv(run_dir / "kalshi_markets.csv", index=False)
     raw = [q | {"game": g.game} for g in res.games for q in g.raw_quotes]
     if raw:
         pd.DataFrame(raw).to_csv(run_dir / "book_quotes.csv.gz", index=False)

@@ -62,13 +62,17 @@ model:
   receptions_dispersion: 1.15  # variance / mean for receptions (1.0 = Poisson)
   # Only move a book's line to a Kalshi rung that is close to it: within max(abs, rel × line).
   # Lines below min_line (low-volume players) are used only when the book posts that exact line.
+  # (Yards distributions have no "zero catches" mass, so moving far down from a line overstates
+  # the chance; moving far up depends on a tail we can't verify. Keep moves small.)
   extrapolation:
-    rec_yds:    {abs: 10, rel: 0.25, min_line: 19.5}
-    rush_yds:   {abs: 10, rel: 0.25, min_line: 19.5}
-    pass_yds:   {abs: 25, rel: 0.12, min_line: 150}
-    receptions: {abs: 1,  rel: 0.0,  min_line: 1.5}
+    rec_yds:    {abs: 5,  rel: 0.15, min_line: 24.5}
+    rush_yds:   {abs: 5,  rel: 0.15, min_line: 24.5}
+    pass_yds:   {abs: 20, rel: 0.08, min_line: 150}
+    receptions: {abs: 1,  rel: 0.0,  min_line: 2.5}
+    total:      {abs: 3,  rel: 0.0,  min_line: 0}
+    spread:     {abs: 3,  rel: 0.0,  min_line: 0}
   margin_sd: 13.5              # sd of final margin (points) for spreads
-  total_sd: 10.0               # sd of total points
+  total_sd: 13.8               # sd of total points around the line (NFL history ~13-14; matched Kalshi's ladder)
 
 combos:
   min_legs: 2

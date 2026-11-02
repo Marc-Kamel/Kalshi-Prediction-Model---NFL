@@ -26,6 +26,7 @@ class GameResult:
     combos: list[Combo] = field(default_factory=list)
     suspicious: list[Leg] = field(default_factory=list)  # edges too big to trust
     raw_quotes: list[dict] = field(default_factory=list)  # saved so a run can be audited/replayed
+    markets: list = field(default_factory=list)            # Kalshi markets seen (saved for replay)
     note: str = ""
 
 
@@ -73,24 +74,53 @@ def run(cfg: dict, kalshi_getter: Callable | None = None, odds_getter: Callable 
             continue  # started: pre-game prices only
         if not only and kickoff > horizon:
             continue
-        gr = GameResult(game=matchup, kickoff=ev["commence_time"])
+        gr = GameResult(game=matchup, kickoff=ev["commence_time"], markets=markets)
         quotes = oc.event_quotes(ev["id"])
         gr.raw_quotes = [q.__dict__ for q in quotes]
-        if not quotes:
-            gr.note = "no sportsbook prices yet"
-            results.append(gr)
-            continue
-        pricer = FairPricer(BookLines(quotes, cfg["odds"]["one_sided_margin"]), cfg["model"], cfg["odds"])
-        gr.legs = evaluate(markets, pricer, cfg["filters"]["stake_usd"], cfg["kalshi"]["taker_fee_rate"])
-        gr.qualifying = sorted([l for l in gr.legs if passes(l, cfg["filters"])], key=lambda l: l.ev, reverse=True)
-        gr.suspicious = sorted([l for l in gr.legs if suspicious(l, cfg["filters"])], key=lambda l: l.edge, reverse=True)
-        gr.combos = build_for_game(gr.qualifying, cfg["combos"])
-        if len(gr.qualifying) < cfg["combos"]["min_legs"]:
-            gr.note = f"only {len(gr.qualifying)} leg(s) passed the filters, so no combo"
-        results.append(gr)
+        results.append(_price_game(gr, quotes, cfg))
 
     return RunResult(run_id=now.strftime("%Y%m%dT%H%MZ"), games=results,
                      credits_remaining=oc.credits_remaining, config=cfg)
+
+
+def _price_game(gr: GameResult, quotes: list, cfg: dict) -> GameResult:
+    if not quotes:
+        gr.note = "no sportsbook prices yet"
+        return gr
+    pricer = FairPricer(BookLines(quotes, cfg["odds"]["one_sided_margin"]), cfg["model"], cfg["odds"])
+    gr.legs = evaluate(gr.markets, pricer, cfg["filters"]["stake_usd"], cfg["kalshi"]["taker_fee_rate"])
+    gr.qualifying = sorted([l for l in gr.legs if passes(l, cfg["filters"])], key=lambda l: l.ev, reverse=True)
+    gr.suspicious = sorted([l for l in gr.legs if suspicious(l, cfg["filters"])], key=lambda l: l.edge, reverse=True)
+    gr.combos = build_for_game(gr.qualifying, cfg["combos"])
+    gr.note = ""
+    if len(gr.qualifying) < cfg["combos"]["min_legs"]:
+        gr.note = f"only {len(gr.qualifying)} leg(s) passed the filters, so no combo"
+    return gr
+
+
+def replay(run_dir: str | Path, cfg: dict) -> RunResult:
+    """Re-price a saved run (Kalshi prices + book quotes) with the current config. No API calls, no credits."""
+    import pandas as pd
+    from .kalshi import KalshiMarket
+    from .odds import Quote
+    run_dir = Path(run_dir)
+    km = pd.read_csv(run_dir / "kalshi_markets.csv", keep_default_na=False)
+    bq = pd.read_csv(run_dir / "book_quotes.csv.gz", keep_default_na=False)
+    games = []
+    for game, rows in km.groupby("game", sort=False):
+        markets = []
+        for r in rows.to_dict("records"):
+            kickoff = r.pop("kickoff")
+            for k in ("team", "player"):
+                r[k] = r[k] or None
+            r["threshold"] = None if r["threshold"] == "" else float(r["threshold"])
+            markets.append(KalshiMarket(**{k: v for k, v in r.items() if k in KalshiMarket.__dataclass_fields__}))
+        qs = [Quote(book=r["book"], market=r["market"], name=r["name"], description=r["description"],
+                    point=None if r["point"] == "" else float(r["point"]), price=float(r["price"]))
+              for r in bq[bq.game == game].to_dict("records")]
+        gr = GameResult(game=game, kickoff=kickoff, markets=markets, raw_quotes=[q.__dict__ for q in qs])
+        games.append(_price_game(gr, qs, cfg))
+    return RunResult(run_id=run_dir.name + "-replay", games=games, credits_remaining=None, config=cfg)
 
 
 # ---------- offline fixtures (tests / replaying a saved snapshot) ----------

@@ -140,3 +140,31 @@ def test_started_games_are_skipped():
     kg, og = pipeline.fixture_getters(FIX)
     late = datetime(2026, 11, 3, 2, 0, tzinfo=timezone.utc)
     assert pipeline.run(CFG, kg, og, now=late).games == []
+
+
+def test_total_ladder_uses_realistic_spread():
+    from kalshicombos.fair import BookLines, FairPricer
+    from kalshicombos.kalshi import KalshiMarket
+    from kalshicombos.odds import Quote
+    qs = []
+    for b in ("pinnacle", "fanduel"):
+        qs += [Quote(b, "totals", "Over", "", 46.5, -110), Quote(b, "totals", "Under", "", 46.5, -110)]
+    fp = FairPricer(BookLines(qs, 0.07), CFG["model"], CFG["odds"])
+
+    def tot(x):
+        return KalshiMarket(ticker="T", game="CHISEA", date="26NOV02", away="CHI", home="SEA", kind="total",
+                            title="t", yes_bid=.5, yes_ask=.51, no_bid=.49, no_ask=.5, threshold=x)
+    assert fp.price(tot(48.5)).p == pytest.approx(0.443, abs=0.01)   # near the line: priced
+    assert fp.price(tot(58.5)) is None                               # 12 points away: not guessed
+
+
+def test_replay_reproduces_a_saved_run(tmp_path, monkeypatch):
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)
+    from kalshicombos import report
+    kg, og = pipeline.fixture_getters(FIX)
+    res = pipeline.run(CFG, kg, og, now=NOW)
+    out = report.write(res, tmp_path)
+    again = pipeline.replay(out, CFG)
+    a = sorted((l.market.ticker, l.side, round(l.fair_prob, 6)) for l in res.games[0].legs)
+    b = sorted((l.market.ticker, l.side, round(l.fair_prob, 6)) for l in again.games[0].legs)
+    assert a == b
