@@ -1,0 +1,698 @@
+{
+ "id": "test-chi-sea",
+ "bookmakers": [
+  {
+   "key": "pinnacle",
+   "title": "pinnacle",
+   "markets": [
+    {
+     "key": "h2h",
+     "outcomes": [
+      {
+       "name": "Chicago Bears",
+       "price": 150
+      },
+      {
+       "name": "Seattle Seahawks",
+       "price": -178
+      }
+     ]
+    },
+    {
+     "key": "spreads",
+     "outcomes": [
+      {
+       "name": "Chicago Bears",
+       "price": -110,
+       "point": 3.5
+      },
+      {
+       "name": "Seattle Seahawks",
+       "price": -110,
+       "point": -3.5
+      }
+     ]
+    },
+    {
+     "key": "totals",
+     "outcomes": [
+      {
+       "name": "Over",
+       "price": -108,
+       "point": 46.5
+      },
+      {
+       "name": "Under",
+       "price": -112,
+       "point": 46.5
+      }
+     ]
+    },
+    {
+     "key": "player_receptions",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -118,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jaxon Smith-Njigba",
+       "price": -104,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "A.J. Barner",
+       "price": -190,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "A.J. Barner",
+       "price": 150,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Luther Burden",
+       "price": -145,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Luther Burden",
+       "price": 115,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "D'Andre Swift",
+       "price": -180,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "D'Andre Swift",
+       "price": 142,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_reception_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -112,
+       "point": 95.5
+      },
+      {
+       "name": "Under",
+       "description": "Jaxon Smith-Njigba",
+       "price": -110,
+       "point": 95.5
+      },
+      {
+       "name": "Over",
+       "description": "Rome Odunze",
+       "price": -112,
+       "point": 39.5
+      },
+      {
+       "name": "Under",
+       "description": "Rome Odunze",
+       "price": -110,
+       "point": 39.5
+      },
+      {
+       "name": "Over",
+       "description": "Cooper Kupp",
+       "price": -110,
+       "point": 29.5
+      },
+      {
+       "name": "Under",
+       "description": "Cooper Kupp",
+       "price": -112,
+       "point": 29.5
+      }
+     ]
+    },
+    {
+     "key": "player_rush_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "D'Andre Swift",
+       "price": -110,
+       "point": 59.5
+      },
+      {
+       "name": "Under",
+       "description": "D'Andre Swift",
+       "price": -112,
+       "point": 59.5
+      },
+      {
+       "name": "Over",
+       "description": "Zach Charbonnet",
+       "price": -112,
+       "point": 34.5
+      },
+      {
+       "name": "Under",
+       "description": "Zach Charbonnet",
+       "price": -110,
+       "point": 34.5
+      }
+     ]
+    },
+    {
+     "key": "player_pass_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caleb Williams",
+       "price": -110,
+       "point": 224.5
+      },
+      {
+       "name": "Under",
+       "description": "Caleb Williams",
+       "price": -112,
+       "point": 224.5
+      },
+      {
+       "name": "Over",
+       "description": "Sam Darnold",
+       "price": -112,
+       "point": 229.5
+      },
+      {
+       "name": "Under",
+       "description": "Sam Darnold",
+       "price": -110,
+       "point": 229.5
+      }
+     ]
+    },
+    {
+     "key": "player_anytime_td",
+     "outcomes": [
+      {
+       "name": "Yes",
+       "description": "Jaxon Smith-Njigba",
+       "price": 105
+      },
+      {
+       "name": "No",
+       "description": "Jaxon Smith-Njigba",
+       "price": -135
+      },
+      {
+       "name": "Yes",
+       "description": "D'Andre Swift",
+       "price": 100
+      },
+      {
+       "name": "Yes",
+       "description": "AJ Barner",
+       "price": 260
+      },
+      {
+       "name": "Yes",
+       "description": "Caleb Williams",
+       "price": 500
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "fanduel",
+   "title": "fanduel",
+   "markets": [
+    {
+     "key": "h2h",
+     "outcomes": [
+      {
+       "name": "Chicago Bears",
+       "price": 145
+      },
+      {
+       "name": "Seattle Seahawks",
+       "price": -178
+      }
+     ]
+    },
+    {
+     "key": "spreads",
+     "outcomes": [
+      {
+       "name": "Chicago Bears",
+       "price": -110,
+       "point": 3.5
+      },
+      {
+       "name": "Seattle Seahawks",
+       "price": -110,
+       "point": -3.5
+      }
+     ]
+    },
+    {
+     "key": "totals",
+     "outcomes": [
+      {
+       "name": "Over",
+       "price": -108,
+       "point": 46.5
+      },
+      {
+       "name": "Under",
+       "price": -112,
+       "point": 46.5
+      }
+     ]
+    },
+    {
+     "key": "player_receptions",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -123,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jaxon Smith-Njigba",
+       "price": -104,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "A.J. Barner",
+       "price": -195,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "A.J. Barner",
+       "price": 150,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Luther Burden",
+       "price": -150,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Luther Burden",
+       "price": 115,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "D'Andre Swift",
+       "price": -185,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "D'Andre Swift",
+       "price": 142,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_reception_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -117,
+       "point": 95.5
+      },
+      {
+       "name": "Under",
+       "description": "Jaxon Smith-Njigba",
+       "price": -110,
+       "point": 95.5
+      },
+      {
+       "name": "Over",
+       "description": "Rome Odunze",
+       "price": -112,
+       "point": 39.5
+      },
+      {
+       "name": "Under",
+       "description": "Rome Odunze",
+       "price": -110,
+       "point": 39.5
+      },
+      {
+       "name": "Over",
+       "description": "Cooper Kupp",
+       "price": -110,
+       "point": 29.5
+      },
+      {
+       "name": "Under",
+       "description": "Cooper Kupp",
+       "price": -112,
+       "point": 29.5
+      }
+     ]
+    },
+    {
+     "key": "player_rush_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "D'Andre Swift",
+       "price": -110,
+       "point": 59.5
+      },
+      {
+       "name": "Under",
+       "description": "D'Andre Swift",
+       "price": -112,
+       "point": 59.5
+      },
+      {
+       "name": "Over",
+       "description": "Zach Charbonnet",
+       "price": -112,
+       "point": 34.5
+      },
+      {
+       "name": "Under",
+       "description": "Zach Charbonnet",
+       "price": -110,
+       "point": 34.5
+      }
+     ]
+    },
+    {
+     "key": "player_pass_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caleb Williams",
+       "price": -110,
+       "point": 224.5
+      },
+      {
+       "name": "Under",
+       "description": "Caleb Williams",
+       "price": -112,
+       "point": 224.5
+      },
+      {
+       "name": "Over",
+       "description": "Sam Darnold",
+       "price": -112,
+       "point": 229.5
+      },
+      {
+       "name": "Under",
+       "description": "Sam Darnold",
+       "price": -110,
+       "point": 229.5
+      }
+     ]
+    },
+    {
+     "key": "player_anytime_td",
+     "outcomes": [
+      {
+       "name": "Yes",
+       "description": "Jaxon Smith-Njigba",
+       "price": 105
+      },
+      {
+       "name": "No",
+       "description": "Jaxon Smith-Njigba",
+       "price": -135
+      },
+      {
+       "name": "Yes",
+       "description": "D'Andre Swift",
+       "price": 100
+      },
+      {
+       "name": "Yes",
+       "description": "AJ Barner",
+       "price": 260
+      },
+      {
+       "name": "Yes",
+       "description": "Caleb Williams",
+       "price": 500
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "key": "draftkings",
+   "title": "draftkings",
+   "markets": [
+    {
+     "key": "h2h",
+     "outcomes": [
+      {
+       "name": "Chicago Bears",
+       "price": 155
+      },
+      {
+       "name": "Seattle Seahawks",
+       "price": -178
+      }
+     ]
+    },
+    {
+     "key": "spreads",
+     "outcomes": [
+      {
+       "name": "Chicago Bears",
+       "price": -110,
+       "point": 3.5
+      },
+      {
+       "name": "Seattle Seahawks",
+       "price": -110,
+       "point": -3.5
+      }
+     ]
+    },
+    {
+     "key": "totals",
+     "outcomes": [
+      {
+       "name": "Over",
+       "price": -108,
+       "point": 46.5
+      },
+      {
+       "name": "Under",
+       "price": -112,
+       "point": 46.5
+      }
+     ]
+    },
+    {
+     "key": "player_receptions",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -113,
+       "point": 7.5
+      },
+      {
+       "name": "Under",
+       "description": "Jaxon Smith-Njigba",
+       "price": -104,
+       "point": 7.5
+      },
+      {
+       "name": "Over",
+       "description": "A.J. Barner",
+       "price": -185,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "A.J. Barner",
+       "price": 150,
+       "point": 2.5
+      },
+      {
+       "name": "Over",
+       "description": "Luther Burden",
+       "price": -140,
+       "point": 3.5
+      },
+      {
+       "name": "Under",
+       "description": "Luther Burden",
+       "price": 115,
+       "point": 3.5
+      },
+      {
+       "name": "Over",
+       "description": "D'Andre Swift",
+       "price": -175,
+       "point": 2.5
+      },
+      {
+       "name": "Under",
+       "description": "D'Andre Swift",
+       "price": 142,
+       "point": 2.5
+      }
+     ]
+    },
+    {
+     "key": "player_reception_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -107,
+       "point": 95.5
+      },
+      {
+       "name": "Under",
+       "description": "Jaxon Smith-Njigba",
+       "price": -110,
+       "point": 95.5
+      },
+      {
+       "name": "Over",
+       "description": "Rome Odunze",
+       "price": -112,
+       "point": 39.5
+      },
+      {
+       "name": "Under",
+       "description": "Rome Odunze",
+       "price": -110,
+       "point": 39.5
+      },
+      {
+       "name": "Over",
+       "description": "Cooper Kupp",
+       "price": -110,
+       "point": 29.5
+      },
+      {
+       "name": "Under",
+       "description": "Cooper Kupp",
+       "price": -112,
+       "point": 29.5
+      }
+     ]
+    },
+    {
+     "key": "player_rush_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "D'Andre Swift",
+       "price": -110,
+       "point": 59.5
+      },
+      {
+       "name": "Under",
+       "description": "D'Andre Swift",
+       "price": -112,
+       "point": 59.5
+      },
+      {
+       "name": "Over",
+       "description": "Zach Charbonnet",
+       "price": -112,
+       "point": 34.5
+      },
+      {
+       "name": "Under",
+       "description": "Zach Charbonnet",
+       "price": -110,
+       "point": 34.5
+      }
+     ]
+    },
+    {
+     "key": "player_pass_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Caleb Williams",
+       "price": -110,
+       "point": 224.5
+      },
+      {
+       "name": "Under",
+       "description": "Caleb Williams",
+       "price": -112,
+       "point": 224.5
+      },
+      {
+       "name": "Over",
+       "description": "Sam Darnold",
+       "price": -112,
+       "point": 229.5
+      },
+      {
+       "name": "Under",
+       "description": "Sam Darnold",
+       "price": -110,
+       "point": 229.5
+      }
+     ]
+    },
+    {
+     "key": "player_anytime_td",
+     "outcomes": [
+      {
+       "name": "Yes",
+       "description": "Jaxon Smith-Njigba",
+       "price": 105
+      },
+      {
+       "name": "No",
+       "description": "Jaxon Smith-Njigba",
+       "price": -135
+      },
+      {
+       "name": "Yes",
+       "description": "D'Andre Swift",
+       "price": 100
+      },
+      {
+       "name": "Yes",
+       "description": "AJ Barner",
+       "price": 260
+      },
+      {
+       "name": "Yes",
+       "description": "Caleb Williams",
+       "price": 500
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

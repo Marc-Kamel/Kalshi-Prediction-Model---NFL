@@ -1,0 +1,40 @@
+{
+ "markets": [
+  {
+   "ticker": "KXNFLTOTAL-26NOV02CHISEA-41",
+   "event_ticker": "KXNFLTOTAL-26NOV02CHISEA",
+   "title": "Full Game: over 40.5 points scored?",
+   "yes_sub_title": "Over 40.5 points",
+   "status": "active",
+   "yes_bid_dollars": "0.6800",
+   "yes_ask_dollars": "0.6900",
+   "no_bid_dollars": "0.3100",
+   "no_ask_dollars": "0.3200",
+   "floor_strike": 40.5
+  },
+  {
+   "ticker": "KXNFLTOTAL-26NOV02CHISEA-44",
+   "event_ticker": "KXNFLTOTAL-26NOV02CHISEA",
+   "title": "Full Game: over 43.5 points scored?",
+   "yes_sub_title": "Over 43.5 points",
+   "status": "active",
+   "yes_bid_dollars": "0.5900",
+   "yes_ask_dollars": "0.6000",
+   "no_bid_dollars": "0.4000",
+   "no_ask_dollars": "0.4100",
+   "floor_strike": 43.5
+  },
+  {
+   "ticker": "KXNFLTOTAL-26NOV02CHISEA-47",
+   "event_ticker": "KXNFLTOTAL-26NOV02CHISEA",
+   "title": "Full Game: over 46.5 points scored?",
+   "yes_sub_title": "Over 46.5 points",
+   "status": "active",
+   "yes_bid_dollars": "0.4900",
+   "yes_ask_dollars": "0.5000",
+   "no_bid_dollars": "0.5000",
+   "no_ask_dollars": "0.5100",
+   "floor_strike": 46.5
+  }
+ ]
+}

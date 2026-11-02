@@ -1,0 +1,83 @@
+{
+ "markets": [
+  {
+   "ticker": "KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-40",
+   "event_ticker": "KXNFLRSHYDS-26NOV02CHISEA",
+   "title": "D'Andre Swift: 40+ rushing yards",
+   "yes_sub_title": "D'Andre Swift: 40+",
+   "floor_strike": 39.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.7600",
+   "yes_ask_dollars": "0.7700",
+   "no_bid_dollars": "0.2300",
+   "no_ask_dollars": "0.2400"
+  },
+  {
+   "ticker": "KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-50",
+   "event_ticker": "KXNFLRSHYDS-26NOV02CHISEA",
+   "title": "D'Andre Swift: 50+ rushing yards",
+   "yes_sub_title": "D'Andre Swift: 50+",
+   "floor_strike": 49.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.6100",
+   "yes_ask_dollars": "0.6200",
+   "no_bid_dollars": "0.3800",
+   "no_ask_dollars": "0.3900"
+  },
+  {
+   "ticker": "KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-60",
+   "event_ticker": "KXNFLRSHYDS-26NOV02CHISEA",
+   "title": "D'Andre Swift: 60+ rushing yards",
+   "yes_sub_title": "D'Andre Swift: 60+",
+   "floor_strike": 59.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.4800",
+   "yes_ask_dollars": "0.4900",
+   "no_bid_dollars": "0.5100",
+   "no_ask_dollars": "0.5200"
+  },
+  {
+   "ticker": "KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-20",
+   "event_ticker": "KXNFLRSHYDS-26NOV02CHISEA",
+   "title": "Zach Charbonnet: 20+ rushing yards",
+   "yes_sub_title": "Zach Charbonnet: 20+",
+   "floor_strike": 19.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.7000",
+   "yes_ask_dollars": "0.7200",
+   "no_bid_dollars": "0.2800",
+   "no_ask_dollars": "0.3000"
+  },
+  {
+   "ticker": "KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-30",
+   "event_ticker": "KXNFLRSHYDS-26NOV02CHISEA",
+   "title": "Zach Charbonnet: 30+ rushing yards",
+   "yes_sub_title": "Zach Charbonnet: 30+",
+   "floor_strike": 29.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.5600",
+   "yes_ask_dollars": "0.5700",
+   "no_bid_dollars": "0.4300",
+   "no_ask_dollars": "0.4400"
+  },
+  {
+   "ticker": "KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-40",
+   "event_ticker": "KXNFLRSHYDS-26NOV02CHISEA",
+   "title": "Zach Charbonnet: 40+ rushing yards",
+   "yes_sub_title": "Zach Charbonnet: 40+",
+   "floor_strike": 39.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.3900",
+   "yes_ask_dollars": "0.4100",
+   "no_bid_dollars": "0.5900",
+   "no_ask_dollars": "0.6100"
+  }
+ ],
+ "cursor": ""
+}

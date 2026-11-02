@@ -1,0 +1,26 @@
+{
+ "markets": [
+  {
+   "ticker": "KXNFLGAME-26NOV02CHISEA-CHI",
+   "event_ticker": "KXNFLGAME-26NOV02CHISEA",
+   "title": "Chicago wins",
+   "yes_sub_title": "Chicago",
+   "status": "active",
+   "yes_bid_dollars": "0.3800",
+   "yes_ask_dollars": "0.3900",
+   "no_bid_dollars": "0.6100",
+   "no_ask_dollars": "0.6200"
+  },
+  {
+   "ticker": "KXNFLGAME-26NOV02CHISEA-SEA",
+   "event_ticker": "KXNFLGAME-26NOV02CHISEA",
+   "title": "Seattle wins",
+   "yes_sub_title": "Seattle",
+   "status": "active",
+   "yes_bid_dollars": "0.6100",
+   "yes_ask_dollars": "0.6200",
+   "no_bid_dollars": "0.3800",
+   "no_ask_dollars": "0.3900"
+  }
+ ]
+}

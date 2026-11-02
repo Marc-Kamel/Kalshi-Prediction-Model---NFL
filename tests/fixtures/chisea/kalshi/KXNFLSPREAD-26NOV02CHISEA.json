@@ -1,0 +1,40 @@
+{
+ "markets": [
+  {
+   "ticker": "KXNFLSPREAD-26NOV02CHISEA-SEA4",
+   "event_ticker": "KXNFLSPREAD-26NOV02CHISEA",
+   "title": "Seattle wins by over 3.5 points?",
+   "yes_sub_title": "Seattle wins by over 3.5 points",
+   "status": "active",
+   "yes_bid_dollars": "0.4600",
+   "yes_ask_dollars": "0.4700",
+   "no_bid_dollars": "0.5300",
+   "no_ask_dollars": "0.5400",
+   "floor_strike": 3.5
+  },
+  {
+   "ticker": "KXNFLSPREAD-26NOV02CHISEA-SEA3",
+   "event_ticker": "KXNFLSPREAD-26NOV02CHISEA",
+   "title": "Seattle wins by over 2.5 points?",
+   "yes_sub_title": "Seattle wins by over 2.5 points",
+   "status": "active",
+   "yes_bid_dollars": "0.5500",
+   "yes_ask_dollars": "0.5600",
+   "no_bid_dollars": "0.4400",
+   "no_ask_dollars": "0.4500",
+   "floor_strike": 2.5
+  },
+  {
+   "ticker": "KXNFLSPREAD-26NOV02CHISEA-CHI3",
+   "event_ticker": "KXNFLSPREAD-26NOV02CHISEA",
+   "title": "Chicago wins by over 2.5 points?",
+   "yes_sub_title": "Chicago wins by over 2.5 points",
+   "status": "active",
+   "yes_bid_dollars": "0.3400",
+   "yes_ask_dollars": "0.3500",
+   "no_bid_dollars": "0.6500",
+   "no_ask_dollars": "0.6600",
+   "floor_strike": 2.5
+  }
+ ]
+}

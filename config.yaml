@@ -1,0 +1,85 @@
+# kalshicombos configuration. Everything here is safe to tune.
+
+odds:
+  # The Odds API (https://the-odds-api.com). Put your key in the ODDS_API_KEY
+  # environment variable / GitHub secret, never in this file.
+  api_key_env: ODDS_API_KEY
+  sport: americanfootball_nfl
+  # Up to 10 bookmakers cost the same credits as one region. Pinnacle is the
+  # sharpest book and gets the most weight below.
+  bookmakers: [pinnacle, fanduel, draftkings, betmgm, williamhill_us, betrivers, espnbet, fanatics, betonlineag, bovada]
+  # Each market costs 1 credit per game per call. Drop markets to save credits.
+  markets:
+    - h2h
+    - spreads
+    - totals
+    - player_receptions
+    - player_reception_yds
+    - player_rush_yds
+    - player_pass_yds
+    - player_anytime_td
+  # Weight of each book in the fair-price average (books not listed get 1.0).
+  book_weights:
+    pinnacle: 3.0
+    betonlineag: 1.5
+    fanduel: 1.25
+    draftkings: 1.25
+  min_books: 2                 # need this many books agreeing before trusting a fair price
+  one_sided_margin: 0.07       # assumed vig on Yes-only markets (anytime TD with no "No" price)
+
+kalshi:
+  base_url: https://api.elections.kalshi.com/trade-api/v2
+  series:
+    moneyline: KXNFLGAME
+    spread: KXNFLSPREAD
+    total: KXNFLTOTAL
+    receptions: KXNFLREC
+    rec_yds: KXNFLRECYDS
+    rush_yds: KXNFLRSHYDS
+    pass_yds: KXNFLPASSYDS
+    td: KXNFLTD
+  taker_fee_rate: 0.07         # Kalshi taker fee = ceil(rate * C * P * (1-P)) per order
+
+games:
+  hours_ahead: 36              # only price games kicking off within this window (saves credits)
+  only: []                     # e.g. ["CHISEA"] to force specific games
+
+filters:
+  min_kalshi_prob: 0.60        # leg's own Kalshi price (mid) must be >= this
+  min_fair_prob: 0.60          # and the sportsbook fair probability must be >= this
+  min_edge: 0.0                # fair - (ask + fee), in probability points; > 0 means +EV
+  stake_usd: 10                # used only to compute Kalshi's per-order fee rounding
+
+model:
+  # Distribution shape used to price Kalshi rungs ("60+") from a book's line (e.g. O 64.5).
+  # Coefficient of variation (sd / mean) per stat, from typical NFL game-to-game spread.
+  cv:
+    rec_yds: 0.80
+    rush_yds: 0.65
+    pass_yds: 0.30
+  receptions_dispersion: 1.15  # variance / mean for receptions (1.0 = Poisson)
+  margin_sd: 13.5              # sd of final margin (points) for spreads
+  total_sd: 10.0               # sd of total points
+
+combos:
+  min_legs: 2
+  max_legs: 4
+  candidates_per_game: 12      # best legs per game considered for combos
+  combos_per_game: 5
+  max_shared_legs: 2           # two suggested combos may share at most this many legs
+  sims: 200000
+  seed: 7
+  accept_margin: 0.03          # only accept a Kalshi combo quote paying >= fair payout * (1 + this)
+  # Correlation model (latent factors). Loadings are on: team offense, team pass volume,
+  # player's own performance. Heuristic starting values; tune once you have results.
+  loadings:
+    pass_yds:   [0.40, 0.55, 0.35]
+    rec_yds:    [0.30, 0.35, 0.60]
+    receptions: [0.20, 0.35, 0.60]
+    rush_yds:   [0.30, -0.20, 0.60]
+    td:         [0.50, 0.00, 0.35]
+  game_loading: 0.60           # moneyline/spread load +x on own offense and -x on opponent's
+  total_loading: 0.60          # game total loads +x on both offenses
+
+output:
+  dir: reports

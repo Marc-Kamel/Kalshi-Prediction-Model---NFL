@@ -1,0 +1,83 @@
+{
+ "markets": [
+  {
+   "ticker": "KXNFLPASSYDS-26NOV02CHISEA-CHICWILLIAMS18-175",
+   "event_ticker": "KXNFLPASSYDS-26NOV02CHISEA",
+   "title": "Caleb Williams: 175+ passing yards",
+   "yes_sub_title": "Caleb Williams: 175+",
+   "floor_strike": 174.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.7800",
+   "yes_ask_dollars": "0.8000",
+   "no_bid_dollars": "0.2000",
+   "no_ask_dollars": "0.2200"
+  },
+  {
+   "ticker": "KXNFLPASSYDS-26NOV02CHISEA-CHICWILLIAMS18-200",
+   "event_ticker": "KXNFLPASSYDS-26NOV02CHISEA",
+   "title": "Caleb Williams: 200+ passing yards",
+   "yes_sub_title": "Caleb Williams: 200+",
+   "floor_strike": 199.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.6700",
+   "yes_ask_dollars": "0.6800",
+   "no_bid_dollars": "0.3200",
+   "no_ask_dollars": "0.3300"
+  },
+  {
+   "ticker": "KXNFLPASSYDS-26NOV02CHISEA-CHICWILLIAMS18-225",
+   "event_ticker": "KXNFLPASSYDS-26NOV02CHISEA",
+   "title": "Caleb Williams: 225+ passing yards",
+   "yes_sub_title": "Caleb Williams: 225+",
+   "floor_strike": 224.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.5200",
+   "yes_ask_dollars": "0.5300",
+   "no_bid_dollars": "0.4700",
+   "no_ask_dollars": "0.4800"
+  },
+  {
+   "ticker": "KXNFLPASSYDS-26NOV02CHISEA-SEASDARNOLD14-175",
+   "event_ticker": "KXNFLPASSYDS-26NOV02CHISEA",
+   "title": "Sam Darnold: 175+ passing yards",
+   "yes_sub_title": "Sam Darnold: 175+",
+   "floor_strike": 174.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.8100",
+   "yes_ask_dollars": "0.8300",
+   "no_bid_dollars": "0.1700",
+   "no_ask_dollars": "0.1900"
+  },
+  {
+   "ticker": "KXNFLPASSYDS-26NOV02CHISEA-SEASDARNOLD14-200",
+   "event_ticker": "KXNFLPASSYDS-26NOV02CHISEA",
+   "title": "Sam Darnold: 200+ passing yards",
+   "yes_sub_title": "Sam Darnold: 200+",
+   "floor_strike": 199.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.7200",
+   "yes_ask_dollars": "0.7300",
+   "no_bid_dollars": "0.2700",
+   "no_ask_dollars": "0.2800"
+  },
+  {
+   "ticker": "KXNFLPASSYDS-26NOV02CHISEA-SEASDARNOLD14-225",
+   "event_ticker": "KXNFLPASSYDS-26NOV02CHISEA",
+   "title": "Sam Darnold: 225+ passing yards",
+   "yes_sub_title": "Sam Darnold: 225+",
+   "floor_strike": 224.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.5800",
+   "yes_ask_dollars": "0.5900",
+   "no_bid_dollars": "0.4100",
+   "no_ask_dollars": "0.4200"
+  }
+ ],
+ "cursor": ""
+}

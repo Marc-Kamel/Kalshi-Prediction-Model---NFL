@@ -1,0 +1,96 @@
+{
+ "markets": [
+  {
+   "ticker": "KXNFLTD-26NOV02CHISEA-SEAJSMITHNJIGBA11-1",
+   "event_ticker": "KXNFLTD-26NOV02CHISEA",
+   "title": "Jaxon Smith-Njigba: 1+ touchdowns",
+   "yes_sub_title": "Jaxon Smith-Njigba: 1+",
+   "floor_strike": 0.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.4700",
+   "yes_ask_dollars": "0.4800",
+   "no_bid_dollars": "0.5200",
+   "no_ask_dollars": "0.5300"
+  },
+  {
+   "ticker": "KXNFLTD-26NOV02CHISEA-SEAJSMITHNJIGBA11-2",
+   "event_ticker": "KXNFLTD-26NOV02CHISEA",
+   "title": "Jaxon Smith-Njigba: 2+ touchdowns",
+   "yes_sub_title": "Jaxon Smith-Njigba: 2+",
+   "floor_strike": 1.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.1300",
+   "yes_ask_dollars": "0.1400",
+   "no_bid_dollars": "0.8600",
+   "no_ask_dollars": "0.8700"
+  },
+  {
+   "ticker": "KXNFLTD-26NOV02CHISEA-CHIDSWIFT4-1",
+   "event_ticker": "KXNFLTD-26NOV02CHISEA",
+   "title": "D'Andre Swift: 1+ touchdowns",
+   "yes_sub_title": "D'Andre Swift: 1+",
+   "floor_strike": 0.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.4900",
+   "yes_ask_dollars": "0.5000",
+   "no_bid_dollars": "0.5000",
+   "no_ask_dollars": "0.5100"
+  },
+  {
+   "ticker": "KXNFLTD-26NOV02CHISEA-CHIDSWIFT4-2",
+   "event_ticker": "KXNFLTD-26NOV02CHISEA",
+   "title": "D'Andre Swift: 2+ touchdowns",
+   "yes_sub_title": "D'Andre Swift: 2+",
+   "floor_strike": 1.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.1300",
+   "yes_ask_dollars": "0.1400",
+   "no_bid_dollars": "0.8600",
+   "no_ask_dollars": "0.8700"
+  },
+  {
+   "ticker": "KXNFLTD-26NOV02CHISEA-SEAABARNER88-1",
+   "event_ticker": "KXNFLTD-26NOV02CHISEA",
+   "title": "AJ Barner: 1+ touchdowns",
+   "yes_sub_title": "AJ Barner: 1+",
+   "floor_strike": 0.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.2600",
+   "yes_ask_dollars": "0.2700",
+   "no_bid_dollars": "0.7300",
+   "no_ask_dollars": "0.7400"
+  },
+  {
+   "ticker": "KXNFLTD-26NOV02CHISEA-CHICWILLIAMS18-1",
+   "event_ticker": "KXNFLTD-26NOV02CHISEA",
+   "title": "Caleb Williams: 1+ touchdowns",
+   "yes_sub_title": "Caleb Williams: 1+",
+   "floor_strike": 0.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.1500",
+   "yes_ask_dollars": "0.1600",
+   "no_bid_dollars": "0.8400",
+   "no_ask_dollars": "0.8500"
+  },
+  {
+   "ticker": "KXNFLTD-26NOV02CHISEA-SEASEADST-1",
+   "event_ticker": "KXNFLTD-26NOV02CHISEA",
+   "title": "SEA Seahawks D/ST: 1+ touchdowns",
+   "yes_sub_title": "SEA Seahawks D/ST: 1+",
+   "floor_strike": 0.5,
+   "strike_type": "greater",
+   "status": "active",
+   "yes_bid_dollars": "0.1400",
+   "yes_ask_dollars": "0.1500",
+   "no_bid_dollars": "0.8500",
+   "no_ask_dollars": "0.8600"
+  }
+ ],
+ "cursor": ""
+}

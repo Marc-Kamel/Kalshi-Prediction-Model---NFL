@@ -1,0 +1,52 @@
+name: combos
+
+on:
+  workflow_dispatch:
+    inputs:
+      game:
+        description: "Optional matchup code like CHISEA (leave blank for every game in the next 36h)"
+        required: false
+        default: ""
+  schedule:
+    # Times are UTC, set for Eastern Standard Time (Nov–Mar). During daylight time
+    # (Mar–Nov) subtract 1 hour from each to keep the same ET time.
+    - cron: "30 23 * * 4"   # Thu 6:30pm ET  — Thursday night game
+    - cron: "45 16 * * 0"   # Sun 11:45am ET — after 1pm inactives (Sunday slate)
+    - cron: "45 20 * * 0"   # Sun 3:45pm ET  — late games + SNF
+    - cron: "45 0 * * 1"    # Sun 7:45pm ET  — Sunday night game
+    - cron: "30 0 * * 2"    # Mon 7:30pm ET  — Monday night game
+
+permissions:
+  contents: write   # to commit the reports folder
+
+concurrency:
+  group: combos
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+      - name: Build combos (read-only; never places orders)
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.game }}" ]; then
+            kalshicombos run --game "${{ inputs.game }}"
+          else
+            kalshicombos run
+          fi
+      - name: Commit reports
+        run: |
+          git config user.name "combos-bot"
+          git config user.email "combos-bot@users.noreply.github.com"
+          git add reports
+          git diff --cached --quiet || git commit -m "reports: $(date -u +%Y%m%dT%H%MZ)"
+          git push
