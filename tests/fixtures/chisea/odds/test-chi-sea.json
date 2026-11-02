@@ -229,6 +229,81 @@
        "price": 500
       }
      ]
+    },
+    {
+     "key": "player_rush_reception_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "D'Andre Swift",
+       "price": -112,
+       "point": 79.5
+      },
+      {
+       "name": "Under",
+       "description": "D'Andre Swift",
+       "price": -110,
+       "point": 79.5
+      },
+      {
+       "name": "Over",
+       "description": "Zach Charbonnet",
+       "price": -110,
+       "point": 47.5
+      },
+      {
+       "name": "Under",
+       "description": "Zach Charbonnet",
+       "price": -112,
+       "point": 47.5
+      }
+     ]
+    },
+    {
+     "key": "player_reception_yds_alternate",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -400,
+       "point": 59.5
+      },
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -270,
+       "point": 69.5
+      },
+      {
+       "name": "Over",
+       "description": "Rome Odunze",
+       "price": -330,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Cooper Kupp",
+       "price": -260,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_receptions_alternate",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -600,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Luther Burden",
+       "price": -420,
+       "point": 2.5
+      }
+     ]
     }
    ]
   },
@@ -460,6 +535,81 @@
        "price": 500
       }
      ]
+    },
+    {
+     "key": "player_rush_reception_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "D'Andre Swift",
+       "price": -112,
+       "point": 79.5
+      },
+      {
+       "name": "Under",
+       "description": "D'Andre Swift",
+       "price": -110,
+       "point": 79.5
+      },
+      {
+       "name": "Over",
+       "description": "Zach Charbonnet",
+       "price": -110,
+       "point": 47.5
+      },
+      {
+       "name": "Under",
+       "description": "Zach Charbonnet",
+       "price": -112,
+       "point": 47.5
+      }
+     ]
+    },
+    {
+     "key": "player_reception_yds_alternate",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -400,
+       "point": 59.5
+      },
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -270,
+       "point": 69.5
+      },
+      {
+       "name": "Over",
+       "description": "Rome Odunze",
+       "price": -330,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Cooper Kupp",
+       "price": -260,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_receptions_alternate",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -600,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Luther Burden",
+       "price": -420,
+       "point": 2.5
+      }
+     ]
     }
    ]
   },
@@ -689,6 +839,81 @@
        "name": "Yes",
        "description": "Caleb Williams",
        "price": 500
+      }
+     ]
+    },
+    {
+     "key": "player_rush_reception_yds",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "D'Andre Swift",
+       "price": -112,
+       "point": 79.5
+      },
+      {
+       "name": "Under",
+       "description": "D'Andre Swift",
+       "price": -110,
+       "point": 79.5
+      },
+      {
+       "name": "Over",
+       "description": "Zach Charbonnet",
+       "price": -110,
+       "point": 47.5
+      },
+      {
+       "name": "Under",
+       "description": "Zach Charbonnet",
+       "price": -112,
+       "point": 47.5
+      }
+     ]
+    },
+    {
+     "key": "player_reception_yds_alternate",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -400,
+       "point": 59.5
+      },
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -270,
+       "point": 69.5
+      },
+      {
+       "name": "Over",
+       "description": "Rome Odunze",
+       "price": -330,
+       "point": 19.5
+      },
+      {
+       "name": "Over",
+       "description": "Cooper Kupp",
+       "price": -260,
+       "point": 14.5
+      }
+     ]
+    },
+    {
+     "key": "player_receptions_alternate",
+     "outcomes": [
+      {
+       "name": "Over",
+       "description": "Jaxon Smith-Njigba",
+       "price": -600,
+       "point": 4.5
+      },
+      {
+       "name": "Over",
+       "description": "Luther Burden",
+       "price": -420,
+       "point": 2.5
       }
      ]
     }

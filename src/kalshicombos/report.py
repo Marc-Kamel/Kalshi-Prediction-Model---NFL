@@ -31,14 +31,20 @@ def to_markdown(res: RunResult) -> str:
             out += [f"_{g.note}_", ""]
         if g.combos:
             out += ["### Suggested combos", "",
-                    "| # | Legs | Fair chance | Fair payout | **Accept if Kalshi pays ≥** | EV at leg asks |",
+                    "| Legs | Picks | Fair chance | Fair payout | **Accept if Kalshi pays ≥** | EV at leg asks |",
                     "|---|---|---|---|---|---|"]
-            for i, cb in enumerate(g.combos, 1):
+            for cb in g.combos:
                 legs = "<br>".join(l.label for l in cb.legs)
-                out.append(f"| {i} | {legs} | {_pct(cb.fair_prob)} | {cb.fair_payout:.2f}x | "
+                rng = f" ({cb.n_ranges} range{'s' if cb.n_ranges != 1 else ''})" if cb.n_ranges else ""
+                fc = f"{cb.fair_prob * 100:.2f}%" if cb.fair_prob < 0.01 else _pct(cb.fair_prob)
+                if cb.sim_hits < 1000:
+                    fc += f" (±{100 / cb.sim_hits ** 0.5:.0f}%)"
+                out.append(f"| {len(cb.legs)}{rng} | {legs} | {fc} | {cb.fair_payout:.2f}x | "
                            f"**{cb.min_accept_payout:.2f}x** | {cb.ev_at_leg_asks * 100:+.1f}% |")
-            out += ["", f"Build the combo in Kalshi and request a quote. Take it only if the payout multiple "
-                        f"is at or above the bold number (fair + {c['accept_margin'] * 100:.0f}% after fees).", ""]
+            out += ["", f"Each bigger combo adds legs to the smaller one. Build it in Kalshi and request a quote; "
+                        f"take it only if the payout multiple is at or above the bold number "
+                        f"(fair + {c['accept_margin'] * 100:.0f}%). A range = Yes on a low rung + No on a higher "
+                        f"rung of the same player stat.", ""]
         if g.qualifying:
             out += ["### Legs that passed", "",
                     "| Leg | Kalshi | Ask + fee | Fair | Edge | Books |", "|---|---|---|---|---|---|"]

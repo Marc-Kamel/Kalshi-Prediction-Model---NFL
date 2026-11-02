@@ -1,4 +1,5 @@
 # kalshicombos configuration. Everything here is safe to tune.
+# Scope: PLAYER markets only (no moneyline / spread / total).
 
 odds:
   # The Odds API (https://the-odds-api.com). Put your key in the ODDS_API_KEY
@@ -8,16 +9,20 @@ odds:
   # Up to 10 bookmakers cost the same credits as one region. Pinnacle is the
   # sharpest book and gets the most weight below.
   bookmakers: [pinnacle, fanduel, draftkings, betmgm, williamhill_us, betrivers, espnbet, fanatics, betonlineag, bovada]
-  # Each market costs 1 credit per game per call. Drop markets to save credits.
+  # Each market costs 1 credit per game per call (11 here). The *_alternate markets give
+  # exact prices for Kalshi's low/high rungs ("10+ receiving yards", "2+ receptions").
   markets:
-    - h2h
-    - spreads
-    - totals
     - player_receptions
     - player_reception_yds
     - player_rush_yds
     - player_pass_yds
+    - player_rush_reception_yds
     - player_anytime_td
+    - player_receptions_alternate
+    - player_reception_yds_alternate
+    - player_rush_yds_alternate
+    - player_pass_yds_alternate
+    - player_rush_reception_yds_alternate
   # Weight of each book in the fair-price average (books not listed get 1.0).
   book_weights:
     pinnacle: 3.0
@@ -25,18 +30,21 @@ odds:
     fanduel: 1.25
     draftkings: 1.25
   min_books: 2                 # need this many books agreeing before trusting a fair price
-  one_sided_margin: 0.07       # assumed vig on Yes-only markets (anytime TD with no "No" price)
+  # Over-only prices (most alternate lines, Yes-only anytime TD) have their vig removed by
+  # assuming the same overround the book charges on its two-sided player lines. If a book
+  # has no two-sided lines, these defaults are used.
+  one_sided_margin: 0.07       # anytime TD (Yes only)
+  one_sided_margin_props: 0.06 # alternate yardage / receptions lines
 
 kalshi:
   base_url: https://api.elections.kalshi.com/trade-api/v2
+  discovery_series: KXNFLGAME  # used only to list this week's games
   series:
-    moneyline: KXNFLGAME
-    spread: KXNFLSPREAD
-    total: KXNFLTOTAL
     receptions: KXNFLREC
     rec_yds: KXNFLRECYDS
     rush_yds: KXNFLRSHYDS
     pass_yds: KXNFLPASSYDS
+    rr_yds: KXNFLRRYDS         # rushing + receiving yards combined
     td: KXNFLTD
   taker_fee_rate: 0.07         # Kalshi taker fee = ceil(rate * C * P * (1-P)) per order
 
@@ -58,6 +66,7 @@ model:
   cv:
     rec_yds: 0.80
     rush_yds: 0.65
+    rr_yds: 0.60
     pass_yds: 0.30
   receptions_dispersion: 1.15  # variance / mean for receptions (1.0 = Poisson)
   # Only move a book's line to a Kalshi rung that is close to it: within max(abs, rel × line).
@@ -67,32 +76,34 @@ model:
   extrapolation:
     rec_yds:    {abs: 5,  rel: 0.15, min_line: 24.5}
     rush_yds:   {abs: 5,  rel: 0.15, min_line: 24.5}
+    rr_yds:     {abs: 5,  rel: 0.15, min_line: 24.5}
     pass_yds:   {abs: 20, rel: 0.08, min_line: 150}
     receptions: {abs: 1,  rel: 0.0,  min_line: 2.5}
-    total:      {abs: 3,  rel: 0.0,  min_line: 0}
-    spread:     {abs: 3,  rel: 0.0,  min_line: 0}
-  margin_sd: 13.5              # sd of final margin (points) for spreads
-  total_sd: 13.8               # sd of total points around the line (NFL history ~13-14; matched Kalshi's ladder)
 
 combos:
   min_legs: 2
-  max_legs: 4
-  candidates_per_game: 12      # best legs per game considered for combos
-  combos_per_game: 5
-  max_shared_legs: 2           # two suggested combos may share at most this many legs
-  sims: 200000
+  # Combo sizes to build per game (0 = as many qualifying legs as fit). One combo per size.
+  sizes: [3, 5, 8, 12, 20, 0]
+  max_legs: 40
+  candidates_per_game: 60      # best legs per game considered for combos
+  allow_ranges: true           # same player-stat twice as Yes on a low rung + No on a high rung
+                               # (e.g. "30+ rushing" and "No 80+ rushing" = 30–79 yards)
+  sims: 400000
+  min_sim_hits: 300            # stop growing a combo once it wins in fewer simulated games than this
   seed: 7
   accept_margin: 0.03          # only accept a Kalshi combo quote paying >= fair payout * (1 + this)
   # Correlation model (latent factors). Loadings are on: team offense, team pass volume,
-  # player's own performance. Heuristic starting values; tune once you have results.
+  # player's own performance. Rungs of the SAME player stat share one latent exactly.
+  # Heuristic starting values; tune once you have results.
   loadings:
     pass_yds:   [0.40, 0.55, 0.35]
     rec_yds:    [0.30, 0.35, 0.60]
     receptions: [0.20, 0.35, 0.60]
     rush_yds:   [0.30, -0.20, 0.60]
+    rr_yds:     [0.35, 0.05, 0.70]
     td:         [0.50, 0.00, 0.35]
-  game_loading: 0.60           # moneyline/spread load +x on own offense and -x on opponent's
-  total_loading: 0.60          # game total loads +x on both offenses
+  game_loading: 0.60           # (unused for player-only runs)
+  total_loading: 0.60
 
 output:
   dir: reports

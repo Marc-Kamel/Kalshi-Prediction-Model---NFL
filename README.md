@@ -1,6 +1,8 @@
 # kalshi-combos
 
-Finds Kalshi NFL legs that are **likely (60%+) and priced better than the sportsbooks say they should be**, then builds same-game combos from them with a correlated simulation. It only suggests; it never logs in to Kalshi or places a bet.
+Finds Kalshi NFL **player** legs that are **likely (60%+) and priced better than the sportsbooks say they should be**, then builds same-game combos from them, from 3 legs up to 30+, with a correlated simulation. It only suggests; it never logs in to Kalshi or places a bet.
+
+Markets covered: receptions, receiving yards, rushing yards, rushing + receiving yards, passing yards, and touchdowns. Both Yes and No sides are checked. Game lines (moneyline, spread, total) are left out.
 
 Every run writes `reports/latest.md`. It's also shown on the run's page under **Actions**.
 
@@ -22,10 +24,13 @@ You can change all three in `config.yaml` under `filters`.
 - **Averaging:** books are averaged with sharp books weighted higher (Pinnacle ×3). A price needs at least 2 books.
 
 ## How combos are built
-- **Pool:** for each game, the model takes the best qualifying legs, one per player-stat, and never both moneyline and spread together.
+- **Pool:** for each game, every qualifying player leg, up to 60.
+- **Ranges:** the same player stat can appear twice, as Yes on a low rung plus No on a higher one. For example, "Swift 30+ rushing" with "No Swift 80+ rushing" means 30 to 79 yards. Two Yes rungs (redundant) or contradictory pairs are never combined.
+- **Sizes:** one combo per size in `combos.sizes` (default 3, 5, 8, 12, 20, and "as many as fit"). The builder adds legs one at a time, each time picking the leg that keeps the combo most +EV, so each bigger combo is the smaller one plus more legs.
 - **Simulation:** it simulates the game 200,000 times with shared factors (team offense, team pass volume, each player's own game).
   - Correlated legs move together: a QB's yards with his WR's yards, or a "No TD" leg with a low-scoring game.
-  - Every leg still hits at exactly its fair chance.
+  - Every leg still hits at exactly its fair chance, and different lines of the same player stat share one simulated number, so ranges are priced exactly.
+  - A combo stops growing once it wins in fewer than 300 simulated games, so very long combos still have a trustworthy chance. Below 1,000 wins the report shows the margin of error.
 - **Output:** for each combo you get:
   - **Fair chance**, from the simulation, with correlation included.
   - **Fair payout** = 1 ÷ fair chance.
@@ -40,7 +45,7 @@ You can change all three in `config.yaml` under `filters`.
 It also runs on its own before Thursday, Sunday and Monday games (see `.github/workflows/combos.yml`).
 
 ### Credits
-Each game costs about 1 credit per market listed in `config.yaml` (8 by default). A full week on the default schedule uses roughly 150–200 credits, which is about 3 weeks of the free tier. To stretch it, remove markets, delete scheduled runs, or use the $30/month tier.
+Each game costs 1 credit per market in `config.yaml`, which is 11 by default: 6 main player markets plus 5 alternate-line markets. The alternate lines are what give exact prices for low and high rungs like "10+ receiving yards". A full week on the default schedule is about 230 credits, so the free 500 lasts about 2 weeks. To stretch it, delete some scheduled runs, or remove alternate markets (cheaper, but fewer rungs get priced). The $30/month tier (20,000 credits) covers every run with plenty to spare.
 
 ## Run locally
 ```

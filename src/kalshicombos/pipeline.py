@@ -58,7 +58,7 @@ def run(cfg: dict, kalshi_getter: Callable | None = None, odds_getter: Callable 
 
     events = oc.events()
     results: list[GameResult] = []
-    for suffix in kc.open_games(series["moneyline"]):
+    for suffix in kc.open_games(cfg["kalshi"].get("discovery_series", "KXNFLGAME")):
         matchup = suffix[7:]
         if only and matchup not in only:
             continue
@@ -87,7 +87,8 @@ def _price_game(gr: GameResult, quotes: list, cfg: dict) -> GameResult:
     if not quotes:
         gr.note = "no sportsbook prices yet"
         return gr
-    pricer = FairPricer(BookLines(quotes, cfg["odds"]["one_sided_margin"]), cfg["model"], cfg["odds"])
+    pricer = FairPricer(BookLines(quotes, cfg["odds"]["one_sided_margin"], cfg["odds"].get("one_sided_margin_props")),
+                        cfg["model"], cfg["odds"])
     gr.legs = evaluate(gr.markets, pricer, cfg["filters"]["stake_usd"], cfg["kalshi"]["taker_fee_rate"])
     gr.qualifying = sorted([l for l in gr.legs if passes(l, cfg["filters"])], key=lambda l: l.ev, reverse=True)
     gr.suspicious = sorted([l for l in gr.legs if suspicious(l, cfg["filters"])], key=lambda l: l.edge, reverse=True)

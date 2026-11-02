@@ -1,18 +1,18 @@
-"""Monte Carlo same-game combo builder.
+"""Monte Carlo same-game combo builder (player markets).
 
 Legs in one game are correlated (a QB's passing yards and his WR's receiving yards rise
-together; a "No TD" leg wins more often when the game is low scoring). Each leg gets a latent
-performance score built from shared factors:
+together; a "No TD" leg wins more often when the offence stalls). Each player stat gets one
+latent performance score built from shared factors:
 
-    team offense (OFF_T)   team pass volume (PASS_T)   player's own game (PLAYER_p)
+    team offense (OFF_T)   team pass volume (PASS_T)   player's own game (PL_p)
 
-plus independent noise. A YES leg wins when its score clears the cut that reproduces the
-leg's fair probability, so every leg keeps its exact fair chance and only the joint
-behaviour comes from the factors. Loadings live in config.yaml.
+plus noise. Every rung of the same player stat reads the SAME score, so "30+ rushing" and
+"No 80+ rushing" behave exactly like the 30–79 range they describe. A leg wins when the
+score clears the cut that reproduces its fair probability, so each leg keeps its exact fair
+chance; only the joint behaviour comes from the factors (loadings in config.yaml).
 """
 from __future__ import annotations
 
-import itertools
 from dataclasses import dataclass
 
 import numpy as np
@@ -30,40 +30,54 @@ class Combo:
     leg_ask_payout: float     # payout multiple if priced at the product of leg asks + fees
     fair_payout: float
     min_accept_payout: float  # accept a Kalshi quote only if it pays at least this multiple
+    sim_hits: int = 0         # simulated games the combo won (precision of fair_prob)
 
     @property
     def ev_at_leg_asks(self) -> float:
         return self.fair_prob * self.leg_ask_payout - 1.0
 
+    @property
+    def n_ranges(self) -> int:
+        return sum(1 for a in self.legs for b in self.legs
+                   if a.side == "yes" and b.side == "no" and _same_stat(a, b))
+
     def as_row(self) -> dict:
         return {
-            "game": self.legs[0].market.game, "n_legs": len(self.legs),
+            "game": self.legs[0].market.game, "n_legs": len(self.legs), "ranges": self.n_ranges,
             "legs": " + ".join(l.label for l in self.legs),
-            "fair_prob": round(self.fair_prob, 4), "indep_prob": round(self.indep_prob, 4),
-            "kalshi_prob": round(self.kalshi_prob, 4),
+            "fair_prob": round(self.fair_prob, 6), "indep_prob": round(self.indep_prob, 6),
+            "kalshi_prob": round(self.kalshi_prob, 6),
             "fair_payout_x": round(self.fair_payout, 2),
             "accept_if_payout_x_at_least": round(self.min_accept_payout, 2),
-            "max_price_per_1_payout": round(1.0 / self.min_accept_payout, 4),
+            "max_price_per_1_payout": round(1.0 / self.min_accept_payout, 6),
             "leg_ask_payout_x": round(self.leg_ask_payout, 2),
             "ev_pct_at_leg_asks": round(self.ev_at_leg_asks * 100, 2),
+            "sim_hits": self.sim_hits,
             "tickers": ",".join(l.market.ticker for l in self.legs),
             "sides": ",".join(l.side for l in self.legs),
         }
 
 
-def _group(leg: Leg) -> tuple:
-    """Legs in the same group can't go in one combo (same stat for the same player, or both
-    moneyline/spread on one game, which are near-duplicates)."""
-    m = leg.market
-    if m.kind in ("moneyline", "spread"):
-        return (m.game, "side")
-    if m.kind == "total":
-        return (m.game, "total")
-    return (m.game, m.kind, m.player)
+def _same_stat(a: Leg, b: Leg) -> bool:
+    ma, mb = a.market, b.market
+    return ma.game == mb.game and ma.kind == mb.kind and ma.player == mb.player and ma.player is not None
 
 
-def _loadings(leg: Leg, idx: dict[str, int], cfg: dict) -> np.ndarray:
-    m = leg.market
+def compatible(a: Leg, b: Leg, allow_ranges: bool = True) -> bool:
+    """Can these two legs sit in one combo?"""
+    if a.market.ticker == b.market.ticker:
+        return False
+    if a.market.player is None or b.market.player is None:   # game lines: one per kind
+        return a.market.kind != b.market.kind or a.market.game != b.market.game
+    if not _same_stat(a, b):
+        return True                       # different stat or player: fine
+    if not allow_ranges or a.side == b.side:
+        return False                      # two Yes rungs (or two No rungs) are redundant
+    yes, no = (a, b) if a.side == "yes" else (b, a)
+    return yes.market.threshold < no.market.threshold   # Yes 30+ & No 80+ = 30–79; else impossible
+
+
+def _loadings(m, idx: dict[str, int], cfg: dict) -> np.ndarray:
     w = np.zeros(len(idx))
     if m.kind in ("moneyline", "spread"):
         g = cfg["game_loading"]
@@ -81,7 +95,7 @@ def _loadings(leg: Leg, idx: dict[str, int], cfg: dict) -> np.ndarray:
             w[idx[f"PASS_{m.team}"]] = pas
         w[idx[f"PL_{m.player}"]] = own
     ss = float(np.sum(w ** 2))
-    if ss >= 0.98:  # keep room for leg-specific noise
+    if ss >= 0.98:  # keep room for stat-specific noise
         w *= np.sqrt(0.98 / ss)
     return w
 
@@ -95,52 +109,77 @@ def simulate_hits(legs: list[Leg], cfg: dict) -> np.ndarray:
     rng = np.random.default_rng(cfg.get("seed", 7))
     n = int(cfg["sims"])
     F = rng.standard_normal((n, len(names)))
+    latent: dict[tuple, np.ndarray] = {}
     hits = np.empty((n, len(legs)), dtype=bool)
     for j, leg in enumerate(legs):
-        w = _loadings(leg, idx, cfg)
-        resid = np.sqrt(max(1e-6, 1.0 - float(np.sum(w ** 2))))
-        x = F @ w + resid * rng.standard_normal(n)
+        m = leg.market
+        key = (m.kind, m.player) if m.player else (m.kind, m.ticker)
+        if key not in latent:  # one score per player stat, shared by all its rungs
+            w = _loadings(m, idx, cfg)
+            resid = np.sqrt(max(1e-6, 1.0 - float(np.sum(w ** 2))))
+            latent[key] = F @ w + resid * rng.standard_normal(n)
+        x = latent[key]
         cut = stats.norm.ppf(1.0 - leg.p_yes)
         hits[:, j] = (x > cut) if leg.side == "yes" else (x <= cut)
     return hits
 
 
+def _make(chosen: list[Leg], mask: np.ndarray, cfg: dict) -> Combo:
+    h = int(mask.sum())
+    p = h / mask.size
+    ask_cost = float(np.prod([l.all_in for l in chosen]))
+    return Combo(legs=list(chosen), fair_prob=p,
+                 indep_prob=float(np.prod([l.fair_prob for l in chosen])),
+                 kalshi_prob=float(np.prod([l.kalshi_prob for l in chosen])),
+                 leg_ask_payout=1.0 / ask_cost, fair_payout=1.0 / p,
+                 min_accept_payout=(1.0 / p) * (1.0 + float(cfg["accept_margin"])), sim_hits=h)
+
+
+def _greedy_path(pool: list[Leg], hits: np.ndarray, cfg: dict) -> list[tuple[int, np.ndarray]]:
+    """Add legs one at a time, each time the leg that keeps the combo most +EV (highest chance
+    of still winning per dollar of leg cost). Returns every step, so a k-leg combo is the first
+    k steps. Stops at max_legs, when nothing compatible is left, or when the combo would win in
+    fewer than min_sim_hits simulated games (its chance would be too noisy to trust)."""
+    allow = bool(cfg.get("allow_ranges", True))
+    min_hits = int(cfg.get("min_sim_hits", 300))
+    limit = int(cfg.get("max_legs", 40))
+    mask = np.ones(hits.shape[0], dtype=bool)
+    chosen: list[int] = []
+    path: list[tuple[int, np.ndarray]] = []
+    while len(chosen) < limit:
+        base = max(1, int(mask.sum()))
+        best, best_score, best_mask = None, -1.0, None
+        for j in range(len(pool)):
+            if j in chosen or not all(compatible(pool[j], pool[i], allow) for i in chosen):
+                continue
+            m = mask & hits[:, j]
+            c = int(m.sum())
+            if c < min_hits:
+                continue
+            score = (c / base) / pool[j].all_in   # conditional win rate per cost
+            if score > best_score:
+                best, best_score, best_mask = j, score, m
+        if best is None:
+            break
+        chosen.append(best)
+        mask = best_mask
+        path.append((best, mask))
+    return path
+
+
 def build_for_game(candidates: list[Leg], cfg: dict) -> list[Combo]:
-    legs = sorted(candidates, key=lambda l: l.ev, reverse=True)
-    # one leg per group (the best-EV one), then cap the pool
-    seen, pool = set(), []
-    for l in legs:
-        g = _group(l)
-        if g not in seen:
-            seen.add(g)
-            pool.append(l)
-    pool = pool[: int(cfg["candidates_per_game"])]
+    pool = sorted(candidates, key=lambda l: l.ev, reverse=True)[: int(cfg["candidates_per_game"])]
     if len(pool) < int(cfg["min_legs"]):
         return []
-
     hits = simulate_hits(pool, cfg)
-    combos: list[Combo] = []
-    for k in range(int(cfg["min_legs"]), min(int(cfg["max_legs"]), len(pool)) + 1):
-        for ids in itertools.combinations(range(len(pool)), k):
-            chosen = [pool[i] for i in ids]
-            p = float(hits[:, list(ids)].all(axis=1).mean())
-            if p <= 0:
-                continue
-            ask_cost = float(np.prod([l.all_in for l in chosen]))
-            combos.append(Combo(
-                legs=chosen, fair_prob=p,
-                indep_prob=float(np.prod([l.fair_prob for l in chosen])),
-                kalshi_prob=float(np.prod([l.kalshi_prob for l in chosen])),
-                leg_ask_payout=1.0 / ask_cost, fair_payout=1.0 / p,
-                min_accept_payout=(1.0 / p) * (1.0 + float(cfg["accept_margin"])),
-            ))
-
-    combos.sort(key=lambda c: (c.ev_at_leg_asks, len(c.legs)), reverse=True)
-    picked: list[Combo] = []
-    for c in combos:
-        ids = {l.market.ticker + l.side for l in c.legs}
-        if all(len(ids & {l.market.ticker + l.side for l in p.legs}) <= int(cfg["max_shared_legs"]) for p in picked):
-            picked.append(c)
-        if len(picked) >= int(cfg["combos_per_game"]):
-            break
-    return picked
+    path = _greedy_path(pool, hits, cfg)
+    sizes = cfg.get("sizes") or [cfg.get("max_legs", 4)]
+    out: list[Combo] = []
+    done: set[int] = set()
+    for s in sizes:
+        k = len(path) if int(s) == 0 else int(s)
+        if k < int(cfg["min_legs"]) or k > len(path) or k in done:
+            continue
+        done.add(k)
+        out.append(_make([pool[i] for i, _ in path[:k]], path[k - 1][1], cfg))
+    return sorted(out, key=lambda c: len(c.legs))

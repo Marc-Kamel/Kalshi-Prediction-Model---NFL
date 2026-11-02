@@ -1,0 +1,76 @@
+{
+ "markets": [
+  {
+   "ticker": "KXNFLRRYDS-26NOV02CHISEA-SEAZCHARBONNET26-25",
+   "event_ticker": "KXNFLRRYDS-26NOV02CHISEA",
+   "title": "Zach Charbonnet: 25+ rushing and receiving yards combined",
+   "yes_sub_title": "Zach Charbonnet: 25+",
+   "floor_strike": 24.5,
+   "status": "active",
+   "yes_bid_dollars": "0.8000",
+   "yes_ask_dollars": "0.8200",
+   "no_bid_dollars": "0.1800",
+   "no_ask_dollars": "0.2000"
+  },
+  {
+   "ticker": "KXNFLRRYDS-26NOV02CHISEA-SEAZCHARBONNET26-50",
+   "event_ticker": "KXNFLRRYDS-26NOV02CHISEA",
+   "title": "Zach Charbonnet: 50+ rushing and receiving yards combined",
+   "yes_sub_title": "Zach Charbonnet: 50+",
+   "floor_strike": 49.5,
+   "status": "active",
+   "yes_bid_dollars": "0.4700",
+   "yes_ask_dollars": "0.4900",
+   "no_bid_dollars": "0.5100",
+   "no_ask_dollars": "0.5300"
+  },
+  {
+   "ticker": "KXNFLRRYDS-26NOV02CHISEA-SEAZCHARBONNET26-75",
+   "event_ticker": "KXNFLRRYDS-26NOV02CHISEA",
+   "title": "Zach Charbonnet: 75+ rushing and receiving yards combined",
+   "yes_sub_title": "Zach Charbonnet: 75+",
+   "floor_strike": 74.5,
+   "status": "active",
+   "yes_bid_dollars": "0.1500",
+   "yes_ask_dollars": "0.1700",
+   "no_bid_dollars": "0.8300",
+   "no_ask_dollars": "0.8500"
+  },
+  {
+   "ticker": "KXNFLRRYDS-26NOV02CHISEA-CHIDSWIFT4-50",
+   "event_ticker": "KXNFLRRYDS-26NOV02CHISEA",
+   "title": "D'Andre Swift: 50+ rushing and receiving yards combined",
+   "yes_sub_title": "D'Andre Swift: 50+",
+   "floor_strike": 49.5,
+   "status": "active",
+   "yes_bid_dollars": "0.7900",
+   "yes_ask_dollars": "0.8100",
+   "no_bid_dollars": "0.1900",
+   "no_ask_dollars": "0.2100"
+  },
+  {
+   "ticker": "KXNFLRRYDS-26NOV02CHISEA-CHIDSWIFT4-75",
+   "event_ticker": "KXNFLRRYDS-26NOV02CHISEA",
+   "title": "D'Andre Swift: 75+ rushing and receiving yards combined",
+   "yes_sub_title": "D'Andre Swift: 75+",
+   "floor_strike": 74.5,
+   "status": "active",
+   "yes_bid_dollars": "0.5100",
+   "yes_ask_dollars": "0.5300",
+   "no_bid_dollars": "0.4700",
+   "no_ask_dollars": "0.4900"
+  },
+  {
+   "ticker": "KXNFLRRYDS-26NOV02CHISEA-CHIDSWIFT4-100",
+   "event_ticker": "KXNFLRRYDS-26NOV02CHISEA",
+   "title": "D'Andre Swift: 100+ rushing and receiving yards combined",
+   "yes_sub_title": "D'Andre Swift: 100+",
+   "floor_strike": 99.5,
+   "status": "active",
+   "yes_bid_dollars": "0.2400",
+   "yes_ask_dollars": "0.2600",
+   "no_bid_dollars": "0.7400",
+   "no_ask_dollars": "0.7600"
+  }
+ ]
+}

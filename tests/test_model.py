@@ -168,3 +168,51 @@ def test_replay_reproduces_a_saved_run(tmp_path, monkeypatch):
     a = sorted((l.market.ticker, l.side, round(l.fair_prob, 6)) for l in res.games[0].legs)
     b = sorted((l.market.ticker, l.side, round(l.fair_prob, 6)) for l in again.games[0].legs)
     assert a == b
+
+
+def test_ranges_are_compatible_and_contradictions_are_not():
+    from kalshicombos.combos import compatible
+    y30 = _leg({"ticker": "Y30", "kind": "rush_yds", "team": "CHI", "player": "Swift", "threshold": 29.5}, "yes", 0.8)
+    y50 = _leg({"ticker": "Y50", "kind": "rush_yds", "team": "CHI", "player": "Swift", "threshold": 49.5}, "yes", 0.6)
+    n80 = _leg({"ticker": "N80", "kind": "rush_yds", "team": "CHI", "player": "Swift", "threshold": 79.5}, "no", 0.25)
+    n20 = _leg({"ticker": "N20", "kind": "rush_yds", "team": "CHI", "player": "Swift", "threshold": 19.5}, "no", 0.9)
+    rec = _leg({"ticker": "R", "kind": "rec_yds", "team": "CHI", "player": "Swift", "threshold": 14.5}, "yes", 0.6)
+    assert compatible(y30, n80)            # 30–79 yards: a range
+    assert not compatible(y30, y50)        # two Yes rungs: redundant
+    assert not compatible(y30, n20)        # 30+ and under 20: impossible
+    assert compatible(y30, rec)            # different stat, same player: fine
+    assert not compatible(y30, n80, allow_ranges=False)
+
+
+def test_range_probability_is_exact():
+    cfg = dict(CFG["combos"], sims=300000)
+    y30 = _leg({"ticker": "Y30", "kind": "rush_yds", "team": "CHI", "player": "Swift", "threshold": 29.5}, "yes", 0.80)
+    n80 = _leg({"ticker": "N80", "kind": "rush_yds", "team": "CHI", "player": "Swift", "threshold": 79.5}, "no", 0.25)
+    hits = simulate_hits([y30, n80], cfg)
+    # P(30 <= X < 80) = P(30+) - P(80+) = 0.80 - 0.25 because both rungs read the same latent
+    assert (hits[:, 0] & hits[:, 1]).mean() == pytest.approx(0.55, abs=0.004)
+
+
+def test_over_only_lines_use_the_books_own_margin():
+    from kalshicombos.fair import BookLines
+    from kalshicombos.odds import Quote
+    qs = [Quote("bk", "player_reception_yds", "Over", "X", 49.5, -115),
+          Quote("bk", "player_reception_yds", "Under", "X", 49.5, -105),        # ~4.3% overround
+          Quote("bk", "player_reception_yds_alternate", "Over", "X", 19.5, -500)]
+    bl = BookLines(qs, 0.07, 0.06)
+    p_alt = dict(bl.props[("rec_yds", "x")]["bk"])[19.5]
+    assert 0.80 < p_alt < american_to_prob(-500)   # vig removed, but not crushed
+
+
+def test_player_only_and_big_combos(monkeypatch):
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)
+    kg, og = pipeline.fixture_getters(FIX)
+    g = pipeline.run(CFG, kg, og, now=NOW).games[0]
+    assert all(l.market.player for l in g.legs)                     # no game lines
+    assert any(l.market.kind == "rr_yds" for l in g.legs)           # rush+rec yards priced
+    sizes = [len(c.legs) for c in g.combos]
+    assert sizes == sorted(sizes) and all(s >= 2 for s in sizes)
+    for c in g.combos:
+        from kalshicombos.combos import compatible
+        assert all(compatible(a, b) for i, a in enumerate(c.legs) for b in c.legs[i + 1:])
+        assert c.sim_hits >= CFG["combos"]["min_sim_hits"]
