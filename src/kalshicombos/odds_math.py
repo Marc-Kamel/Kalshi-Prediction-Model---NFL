@@ -19,9 +19,15 @@ def devig_power(p_a: float, p_b: float) -> tuple[float, float]:
     """Power method: find k with p_a**k + p_b**k == 1. Handles favourite/longshot bias
     better than simple normalisation."""
     total = p_a + p_b
-    if total <= 1.0:  # no vig (or arbitrage) — just normalise
+    if total <= 1.0 or max(p_a, p_b) >= 1.0:  # no vig (or degenerate) — just normalise
         return p_a / total, p_b / total
-    k = brentq(lambda k: p_a ** k + p_b ** k - 1.0, 1.0, 50.0)
+    f = lambda k: p_a ** k + p_b ** k - 1.0
+    hi = 50.0
+    while f(hi) > 0 and hi < 1e5:  # very lopsided pairs need a bigger exponent
+        hi *= 4
+    if f(hi) > 0:
+        return p_a / total, p_b / total
+    k = brentq(f, 1.0, hi)
     return p_a ** k, p_b ** k
 
 

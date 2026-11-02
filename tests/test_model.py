@@ -216,3 +216,26 @@ def test_player_only_and_big_combos(monkeypatch):
         from kalshicombos.combos import compatible
         assert all(compatible(a, b) for i, a in enumerate(c.legs) for b in c.legs[i + 1:])
         assert c.sim_hits >= CFG["combos"]["min_sim_hits"]
+
+
+def test_devig_survives_garbage_pairs():
+    a, b = devig_power(0.995, 0.99)          # both sides "favourites": must not crash
+    assert a + b == pytest.approx(1.0)
+    a, b = devig_power(0.9999, 0.02)         # extremely lopsided alt line
+    assert 0.97 < a < 1.0 and a + b == pytest.approx(1.0, abs=1e-6)
+    from kalshicombos.fair import BookLines
+    from kalshicombos.odds import Quote
+    bl = BookLines([Quote("bk", "player_receptions", "Over", "X", 1.5, -2000),
+                    Quote("bk", "player_receptions", "Under", "X", 1.5, -1500)], 0.07)
+    assert ("receptions", "x") not in bl.props   # skipped, not crashed
+
+
+def test_one_bad_game_does_not_sink_the_run(monkeypatch):
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)
+    import kalshicombos.pipeline as pl
+    def boom(*a, **k):
+        raise ValueError("bad data")
+    monkeypatch.setattr(pl, "_price_game", boom)
+    kg, og = pipeline.fixture_getters(FIX)
+    res = pl.run(CFG, kg, og, now=NOW)
+    assert res.games and "pricing error" in res.games[0].note and res.games[0].raw_quotes

@@ -22,6 +22,8 @@ PROP_MARKETS = {
     "player_rush_reception_yds": "rr_yds",
     "player_anytime_td": "td",
 }
+MAX_PAIR_TOTAL = 1.25   # an Over+Under pair implying more than this is bad data
+
 # Game lines are out of scope by default; these keep them sane if they're re-enabled.
 GAME_LINE_EXTRAPOLATION = {"total": {"abs": 3}, "spread": {"abs": 3}}
 YARD_STATS = ("rec_yds", "rush_yds", "rr_yds", "pass_yds")
@@ -109,6 +111,8 @@ class BookLines:
                 if no is None:  # Over/Yes only: rebuild the missing side with the book's usual margin
                     m = m_td if stat == "td" else book_margin.get(book, m_props)
                     no = max(0.005, 1.0 + m - yes)
+                elif yes + no > MAX_PAIR_TOTAL:
+                    continue  # both sides priced as favourites: mismatched/stale quote, skip it
                 f = devig_power(yes, no)[0]
                 self.props[(stat, player)][book].append((pt, f))
 

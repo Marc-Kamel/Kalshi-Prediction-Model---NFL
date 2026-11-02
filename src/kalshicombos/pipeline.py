@@ -77,7 +77,11 @@ def run(cfg: dict, kalshi_getter: Callable | None = None, odds_getter: Callable 
         gr = GameResult(game=matchup, kickoff=ev["commence_time"], markets=markets)
         quotes = oc.event_quotes(ev["id"])
         gr.raw_quotes = [q.__dict__ for q in quotes]
-        results.append(_price_game(gr, quotes, cfg))
+        try:
+            results.append(_price_game(gr, quotes, cfg))
+        except Exception as e:  # one bad game must not sink the run; raw data is still saved
+            gr.note = f"skipped: pricing error ({type(e).__name__}: {e}). Raw quotes saved for a replay."
+            results.append(gr)
 
     return RunResult(run_id=now.strftime("%Y%m%dT%H%MZ"), games=results,
                      credits_remaining=oc.credits_remaining, config=cfg)
