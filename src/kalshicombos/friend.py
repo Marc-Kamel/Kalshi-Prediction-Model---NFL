@@ -98,12 +98,12 @@ def combo_probability(legs: list[Leg], probs: list[float], cfg: dict, shapes, si
 
 
 def select_legs(gr: pipeline.GameResult, fcfg: dict) -> list[Leg]:
-    """His filter: passes his gates, best EV per player-stat, sorted by EV."""
+    """His filter: passes his gates, one line per player-stat, sorted by EV. Which line is kept
+    follows rung_choice (default: the biggest payout that still qualifies; his model kept best EV)."""
+    from .combos import pick_rungs
     ok = [l for l in gr.legs if passes(l, fcfg["filters"]) and l.market.player]
-    best: dict[tuple, Leg] = {}
-    for l in sorted(ok, key=lambda l: l.ev, reverse=True):
-        best.setdefault((l.market.player, l.market.kind), l)
-    legs = sorted(best.values(), key=lambda l: l.ev, reverse=True)
+    rule = fcfg.get("friend_mode", {}).get("rung_choice", fcfg["combos"].get("rung_choice", "highest_payout"))
+    legs = sorted(pick_rungs(ok, rule, per_side=False), key=lambda l: l.ev, reverse=True)
     cap = int(fcfg.get("friend_mode", {}).get("max_legs", 0))
     return legs[:cap] if cap > 0 else legs
 

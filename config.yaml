@@ -105,6 +105,10 @@ combos:
   sizes: [3, 5, 8, 12, 20, 0]
   max_legs: 40
   candidates_per_game: 60      # best legs per game considered for combos
+  # When several lines of one player stat qualify (60%+ and +EV), which to keep:
+  #   highest_payout = the least likely one that still qualifies (e.g. No 70+ at 61% over No 80+ at 87%)
+  #   best_ev        = the one with the biggest edge
+  rung_choice: highest_payout
   allow_ranges: true           # same player-stat twice as Yes on a low rung + No on a high rung
                                # (e.g. "30+ rushing" and "No 80+ rushing" = 30–79 yards)
   sims: 400000
@@ -142,6 +146,7 @@ friend_mode:
     - player_pass_yds_alternate
     - player_rush_reception_yds_alternate
   max_legs: 0                  # 0 = every qualifying leg (his PHI@WAS combo had 34)
+  rung_choice: highest_payout  # his model used best_ev; set best_ev to copy him exactly
   sims: 2000000                # combo chances for 30+ legs need many simulated games
   # accept-if basis: "strict" = our two-sided model + correlations (recommended);
   # "friend" = his price (legs multiplied). On PHI@WAS: friend 357x vs Kalshi-implied ~1,213x.

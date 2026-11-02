@@ -229,7 +229,32 @@ def _greedy_path(pool: list[Leg], hits: np.ndarray, cfg: dict) -> list[tuple[int
     return path
 
 
+def pick_rungs(legs: list[Leg], rule: str = "highest_payout", per_side: bool = True) -> list[Leg]:
+    """When several lines of the same player stat qualify, keep one.
+    highest_payout: the least likely qualifying line (biggest payout), e.g. No 70+ at 61% over No 80+ at 87%.
+    best_ev: the line with the best EV.
+    per_side=True keeps one Yes and one No per player stat (so ranges stay possible)."""
+    if rule not in ("highest_payout", "best_ev"):
+        raise ValueError(f"unknown rung_choice: {rule}")
+    best: dict[tuple, Leg] = {}
+    for l in legs:
+        m = l.market
+        if not m.player:
+            best[(m.ticker, l.side)] = l
+            continue
+        key = (m.game, m.player, m.kind) + ((l.side,) if per_side else ())
+        cur = best.get(key)
+        if cur is None:
+            best[key] = l
+        elif rule == "best_ev" and l.ev > cur.ev:
+            best[key] = l
+        elif rule == "highest_payout" and (l.kalshi_prob, -l.ev) < (cur.kalshi_prob, -cur.ev):
+            best[key] = l
+    return list(best.values())
+
+
 def build_for_game(candidates: list[Leg], cfg: dict, shapes=None) -> list[Combo]:
+    candidates = pick_rungs(candidates, cfg.get("rung_choice", "highest_payout"), per_side=True)
     pool = sorted(candidates, key=lambda l: l.ev, reverse=True)[: int(cfg["candidates_per_game"])]
     if len(pool) < int(cfg["min_legs"]):
         return []

@@ -366,3 +366,17 @@ def test_friend_run_keeps_strict_report_clean(tmp_path, monkeypatch):
     assert not (d / "legs.csv").exists() and not (tmp_path / "latest.md").exists()
     if combos:
         assert "." in friend._mult(combos[0].accept_x)   # e.g. 3.28x, never a bare "3x"
+
+
+def test_pick_the_biggest_payout_rung_that_still_qualifies():
+    from kalshicombos.combos import pick_rungs
+    from kalshicombos.edges import passes
+    def no_leg(thr, kalshi, fair):
+        l = _leg({"ticker": f"R{thr}", "kind": "rush_yds", "team": "SEA", "player": "RB", "threshold": thr - 0.5}, "no", 1 - fair)
+        l.kalshi_prob, l.ask, l.fee = kalshi, kalshi + 0.01, 0.01
+        return l
+    legs = [no_leg(60, 0.40, 0.43), no_leg(70, 0.61, 0.645), no_leg(80, 0.87, 0.94)]   # 80+ has the best EV
+    ok = [l for l in legs if passes(l, CFG["filters"])]            # 60+ fails the 60% rule
+    assert [l.market.ticker for l in ok] == ["R70", "R80"]
+    assert pick_rungs(ok, "highest_payout")[0].market.ticker == "R70"
+    assert pick_rungs(ok, "best_ev")[0].market.ticker == "R80"
