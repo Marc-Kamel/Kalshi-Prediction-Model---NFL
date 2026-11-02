@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "run = build combos, grade = settle past legs/combos, fit-history = refit from game logs"
+        description: "run = build combos, friend = one big combo his way (needs game), grade = settle past legs/combos, fit-history = refit from game logs"
         type: choice
-        options: [run, grade, fit-history]
+        options: [run, friend, grade, fit-history]
         default: run
       game:
         description: "Optional matchup code like CHISEA (leave blank for every game in the next 36h)"
@@ -59,6 +59,13 @@ jobs:
           else
             kalshicombos run
           fi
+      - name: Friend mode (one big combo, with reality check)
+        if: steps.cmd.outputs.c == 'friend'
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          if [ -z "${{ inputs.game }}" ]; then echo "friend mode needs a game, e.g. PHIWAS" >&2; exit 1; fi
+          kalshicombos friend --game "${{ inputs.game }}"
       - name: Grade past legs and combos
         if: steps.cmd.outputs.c == 'grade' || steps.cmd.outputs.c == 'weekly'
         run: |

@@ -305,3 +305,35 @@ def test_grading_settles_bets_combos_and_calibration(tmp_path, monkeypatch):
     assert out["brier_model"] < out["brier_kalshi"] + 0.5
     if res.games[0].qualifying:
         assert out["bets"] == len({(l.market.ticker, l.side) for l in res.games[0].qualifying})
+
+
+def test_friend_mode_recipe(monkeypatch):
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)
+    from kalshicombos import friend
+    cfg = dict(CFG, friend_mode=dict(CFG["friend_mode"], min_books=2, sims=200000))
+    kg, og = pipeline.fixture_getters(FIX)
+    fcfg = friend.friend_cfg(cfg)
+    assert fcfg["odds"]["allow_one_sided_props"] and fcfg["filters"]["min_fair_prob"] == 0.55
+    assert any(m.endswith("_alternate") for m in fcfg["odds"]["markets"])
+    assert CFG["odds"]["allow_one_sided_props"] is False            # main config untouched
+    res, combos, skipped = friend.run(cfg, ["CHISEA"], kalshi_getter=kg, odds_getter=og, now=NOW)
+    assert combos or skipped
+    for c in combos:
+        keys = [(l.market.player, l.market.kind) for l in c.legs]
+        assert len(keys) == len(set(keys))                           # one line per player-stat
+        assert all(l.fair_prob > 0.55 and l.edge > 0 for l in c.legs)
+        assert c.his_indep == pytest.approx(float(np.prod([l.fair_prob for l in c.legs])))
+        assert c.accept_x >= 1 / c.strict_corr                       # strict basis by default
+        md = friend.to_markdown(res.run_id, combos, skipped)
+        assert "Accept only if" in md and "Kalshi's own leg prices" in md
+
+
+def test_chunked_combo_probability_matches_single_run():
+    from kalshicombos.friend import combo_probability
+    from kalshicombos.combos import simulate_hits
+    legs = [_leg({"ticker": f"T{i}", "kind": "rec_yds", "team": "SEA", "player": f"P{i}", "threshold": 9.5}, "yes", 0.8)
+            for i in range(6)]
+    cfg = dict(CFG["combos"], sims=400000)
+    one = simulate_hits(legs, cfg).all(axis=1).mean()
+    chunked = combo_probability(legs, [0.8] * 6, cfg, None, 400000, chunk=100000)
+    assert chunked == pytest.approx(one, abs=0.01)

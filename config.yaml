@@ -126,3 +126,24 @@ combos:
 
 output:
   dir: reports
+
+friend_mode:
+  # `kalshicombos friend --game PHIWAS`: one big combo built the friend's way (see friend.py).
+  min_fair_prob: 0.55          # his gate: sportsbook fair chance above 55%
+  min_kalshi_prob: 0.0         # he had no Kalshi-price floor
+  min_edge: 0.0                # any +EV after fees
+  min_books: 5
+  max_edge: 1.0                # he didn't flag big edges
+  allow_one_sided_props: true  # he priced from alternate (Over-only) lines
+  extra_markets:               # +5 credits per game on top of the 6 main markets
+    - player_receptions_alternate
+    - player_reception_yds_alternate
+    - player_rush_yds_alternate
+    - player_pass_yds_alternate
+    - player_rush_reception_yds_alternate
+  max_legs: 0                  # 0 = every qualifying leg (his PHI@WAS combo had 34)
+  sims: 2000000                # combo chances for 30+ legs need many simulated games
+  # accept-if basis: "strict" = our two-sided model + correlations (recommended);
+  # "friend" = his price (legs multiplied). On PHI@WAS: friend 357x vs Kalshi-implied ~1,213x.
+  accept_basis: strict
+

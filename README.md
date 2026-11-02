@@ -33,6 +33,21 @@ Built from nflverse game logs (2023 to now) by `kalshicombos fit-history`, which
 - **Edge buffer:** further from the book's line, a leg needs more edge (`filters.shape_buffer`, up to +3¢), matching the model's measured error at that distance.
 - **Correlations:** measured between player-stat pairs (same player, teammates, opponents, by position). For example, QB passing vs his WR's receiving yards is 0.22, two WRs on the same team about 0, and a WR's receptions vs his yards 0.77. The combo simulator uses these in place of guessed loadings.
 
+## Friend mode (`kalshicombos friend --game PHIWAS`)
+Rebuilds the recipe behind a friend's 34-leg PHI@WAS combo that hit at about 519x, written from scratch here.
+- **His rules:** every player leg with sportsbook fair above 55%, +EV after fees at the ask, 5+ books, alternate (Over-only) lines allowed, one line per player-stat.
+- **One combo:** every qualifying leg goes into a single combo.
+- **Reality check:** the report prices that combo four ways:
+  - his way (legs multiplied)
+  - his leg prices with measured correlations
+  - our strict model
+  - Kalshi's own leg prices
+- **Accept-if:** the number defaults to the strict price (`friend_mode.accept_basis`).
+
+Why the reality check: on his saved PHI@WAS data, his alternate-line prices ran about 5 pts above Kalshi on likely outcomes. His model rated the combo 1-in-287; Kalshi's own legs, with correlations, implied about 1-in-1,200, and he took 556x. Re-run with this recipe, the same data gives an 8-leg combo (about 15x), 7 of whose 8 legs our strict model also rates +EV.
+
+Cost: about 11 credits per game (alternate markets included). Run it from Actions → combos → command `friend` with a game code.
+
 ## Grading (`reports/grades/summary.md`, every Tuesday)
 Settles every logged leg and combo with Kalshi's own results:
 - **Legs the model called +EV:** win rate vs expected, flat-stake P&L, and **closing-line value** (did Kalshi move toward the model before kickoff, the best early sign of a real edge).
