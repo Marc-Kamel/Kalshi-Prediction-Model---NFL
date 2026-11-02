@@ -1,0 +1,338 @@
+game,leg,side,kind,player,team,ticker,kalshi_prob,ask,fee,all_in,fair_prob,edge_pts,ev_pct,books,passes
+CHISEA,Chicago wins,yes,moneyline,,CHI,KXNFLGAME-26NOV02CHISEA-CHI,0.385,0.39,0.0168,0.4068,0.3803,-2.65,-6.51,8,False
+CHISEA,No · Chicago wins,no,moneyline,,CHI,KXNFLGAME-26NOV02CHISEA-CHI,0.615,0.62,0.0169,0.6369,0.6197,-1.72,-2.7,8,False
+CHISEA,Seattle wins,yes,moneyline,,SEA,KXNFLGAME-26NOV02CHISEA-SEA,0.615,0.62,0.0169,0.6369,0.6197,-1.72,-2.7,8,False
+CHISEA,No · Seattle wins,no,moneyline,,SEA,KXNFLGAME-26NOV02CHISEA-SEA,0.385,0.39,0.0168,0.4068,0.3803,-2.65,-6.51,8,False
+CHISEA,Seattle wins by over 16.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA17,0.15,0.16,0.0095,0.1695,0.1653,-0.42,-2.48,8,False
+CHISEA,No · Seattle wins by over 16.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA17,0.85,0.86,0.0091,0.8691,0.8347,-3.44,-3.96,8,False
+CHISEA,Seattle wins by over 6.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA7,0.395,0.4,0.0168,0.4168,0.408,-0.88,-2.12,8,False
+CHISEA,No · Seattle wins by over 6.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA7,0.605,0.61,0.0169,0.6269,0.592,-3.48,-5.56,8,False
+CHISEA,Seattle wins by over 5.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA6,0.425,0.43,0.0174,0.4474,0.4369,-1.05,-2.34,8,False
+CHISEA,No · Seattle wins by over 5.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA6,0.575,0.58,0.0171,0.5971,0.5631,-3.4,-5.69,8,False
+CHISEA,Seattle wins by over 9.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA10,0.29,0.3,0.0148,0.3148,0.3246,0.98,3.1,8,False
+CHISEA,No · Seattle wins by over 9.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA10,0.71,0.72,0.0146,0.7346,0.6754,-5.92,-8.06,8,False
+CHISEA,Chicago wins by over 9.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI10,0.135,0.14,0.0085,0.1485,0.1707,2.23,15.0,8,False
+CHISEA,No · Chicago wins by over 9.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI10,0.865,0.87,0.0082,0.8782,0.8293,-4.89,-5.57,8,False
+CHISEA,Chicago wins by over 1.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI2,0.365,0.37,0.0167,0.3867,0.3597,-2.7,-6.98,8,False
+CHISEA,No · Chicago wins by over 1.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI2,0.635,0.64,0.0167,0.6567,0.6403,-1.64,-2.49,8,False
+CHISEA,Seattle wins by over 10.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA11,0.235,0.24,0.0129,0.2529,0.2985,4.55,18.01,8,False
+CHISEA,No · Seattle wins by over 10.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA11,0.765,0.77,0.0125,0.7825,0.7015,-8.1,-10.35,8,False
+CHISEA,Chicago wins by over 2.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI3,0.335,0.34,0.0159,0.3559,0.3324,-2.35,-6.59,8,False
+CHISEA,No · Chicago wins by over 2.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI3,0.665,0.67,0.0157,0.6857,0.6676,-1.81,-2.64,8,False
+CHISEA,Seattle wins by over 1.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA2,0.585,0.59,0.0175,0.6075,0.5546,-5.29,-8.71,8,False
+CHISEA,No · Seattle wins by over 1.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA2,0.415,0.42,0.0174,0.4374,0.4454,0.8,1.83,8,False
+CHISEA,Chicago wins by over 6.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI7,0.195,0.2,0.0112,0.2112,0.2329,2.17,10.28,8,False
+CHISEA,No · Chicago wins by over 6.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI7,0.805,0.81,0.0108,0.8208,0.7671,-5.37,-6.55,8,False
+CHISEA,Seattle wins by over 13.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA14,0.195,0.2,0.0112,0.2112,0.2264,1.52,7.19,8,False
+CHISEA,No · Seattle wins by over 13.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA14,0.805,0.81,0.0108,0.8208,0.7736,-4.72,-5.75,8,False
+CHISEA,Chicago wins by over 4.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI5,0.245,0.25,0.0133,0.2632,0.2805,1.73,6.56,8,False
+CHISEA,No · Chicago wins by over 4.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI5,0.755,0.76,0.0131,0.7731,0.7195,-5.36,-6.93,8,False
+CHISEA,Chicago wins by over 7.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI8,0.165,0.17,0.01,0.18,0.2109,3.09,17.17,8,False
+CHISEA,No · Chicago wins by over 7.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI8,0.835,0.84,0.01,0.85,0.7891,-6.09,-7.16,8,False
+CHISEA,Seattle wins by over 4.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA5,0.435,0.44,0.0173,0.4573,0.4662,0.89,1.96,8,False
+CHISEA,No · Seattle wins by over 4.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA5,0.565,0.57,0.0176,0.5876,0.5338,-5.39,-9.17,8,False
+CHISEA,Seattle wins by over 2.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA3,0.565,0.57,0.0176,0.5876,0.5252,-6.24,-10.62,8,False
+CHISEA,No · Seattle wins by over 2.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA3,0.435,0.44,0.0173,0.4573,0.4748,1.75,3.83,8,False
+CHISEA,Seattle wins by over 3.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA4,0.475,0.48,0.0175,0.4975,0.4957,-0.18,-0.36,8,False
+CHISEA,No · Seattle wins by over 3.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA4,0.525,0.53,0.0178,0.5478,0.5043,-4.35,-7.94,8,False
+CHISEA,Chicago wins by over 5.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI6,0.225,0.23,0.0126,0.2426,0.2561,1.36,5.6,8,False
+CHISEA,No · Chicago wins by over 5.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI6,0.775,0.78,0.0125,0.7925,0.7439,-4.86,-6.14,8,False
+CHISEA,Seattle wins by over 17.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA18,0.13,0.14,0.0085,0.1485,0.1476,-0.09,-0.59,8,False
+CHISEA,No · Seattle wins by over 17.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA18,0.87,0.88,0.0082,0.8882,0.8524,-3.58,-4.03,8,False
+CHISEA,Seattle wins by over 20.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA21,0.095,0.1,0.0063,0.1063,0.1022,-0.41,-3.82,8,False
+CHISEA,No · Seattle wins by over 20.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA21,0.905,0.91,0.006,0.916,0.8978,-1.82,-1.99,8,False
+CHISEA,Chicago wins by over 3.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI4,0.265,0.27,0.0141,0.2841,0.306,2.19,7.72,8,False
+CHISEA,No · Chicago wins by over 3.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI4,0.735,0.74,0.0138,0.7538,0.694,-5.98,-7.94,8,False
+CHISEA,Chicago wins by over 10.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI11,0.115,0.12,0.0075,0.1275,0.1526,2.51,19.72,8,False
+CHISEA,No · Chicago wins by over 10.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI11,0.885,0.89,0.0073,0.8973,0.8474,-4.99,-5.56,8,False
+CHISEA,Chicago wins by over 13.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI14,0.095,0.1,0.0063,0.1063,0.1061,-0.02,-0.16,8,False
+CHISEA,No · Chicago wins by over 13.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI14,0.905,0.91,0.006,0.916,0.8939,-2.21,-2.42,8,False
+CHISEA,Chicago wins by over 14.5 points,yes,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI15,0.075,0.08,0.0052,0.0852,0.0932,0.8,9.38,8,False
+CHISEA,No · Chicago wins by over 14.5 points,no,spread,,CHI,KXNFLSPREAD-26NOV02CHISEA-CHI15,0.925,0.93,0.005,0.935,0.9068,-2.82,-3.02,8,False
+CHISEA,Seattle wins by over 7.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA8,0.325,0.33,0.0157,0.3457,0.3795,3.38,9.79,8,False
+CHISEA,No · Seattle wins by over 7.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA8,0.675,0.68,0.0157,0.6957,0.6205,-7.52,-10.81,8,False
+CHISEA,Seattle wins by over 14.5 points,yes,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA15,0.17,0.18,0.0104,0.1904,0.2047,1.44,7.55,8,False
+CHISEA,No · Seattle wins by over 14.5 points,no,spread,,SEA,KXNFLSPREAD-26NOV02CHISEA-SEA15,0.83,0.84,0.01,0.85,0.7953,-5.47,-6.44,8,False
+CHISEA,Full Game: over 58.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-59,0.185,0.19,0.011,0.201,0.1151,-8.59,-42.73,8,False
+CHISEA,No · Full Game: over 58.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-59,0.815,0.82,0.0108,0.8308,0.8849,5.41,6.51,8,True
+CHISEA,Full Game: over 49.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-50,0.4,0.41,0.0171,0.4271,0.3821,-4.5,-10.53,8,False
+CHISEA,No · Full Game: over 49.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-50,0.6,0.61,0.0169,0.6269,0.6179,-0.9,-1.43,8,False
+CHISEA,Full Game: over 37.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-38,0.765,0.77,0.0125,0.7825,0.8159,3.34,4.27,8,True
+CHISEA,No · Full Game: over 37.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-38,0.235,0.24,0.0129,0.2529,0.1841,-6.88,-27.22,8,False
+CHISEA,Full Game: over 61.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-62,0.13,0.14,0.0085,0.1485,0.0668,-8.16,-54.99,8,False
+CHISEA,No · Full Game: over 61.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-62,0.87,0.88,0.0082,0.8882,0.9332,4.5,5.07,8,True
+CHISEA,Full Game: over 40.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-41,0.685,0.69,0.015,0.705,0.7257,2.07,2.94,8,True
+CHISEA,No · Full Game: over 40.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-41,0.315,0.32,0.0155,0.3355,0.2743,-6.12,-18.25,8,False
+CHISEA,Full Game: over 48.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-49,0.43,0.44,0.0173,0.4573,0.4207,-3.65,-7.99,8,False
+CHISEA,No · Full Game: over 48.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-49,0.57,0.58,0.0171,0.5971,0.5793,-1.78,-2.98,8,False
+CHISEA,Full Game: over 64.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-65,0.09,0.1,0.0063,0.1063,0.0359,-7.04,-66.19,8,False
+CHISEA,No · Full Game: over 64.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-65,0.91,0.92,0.006,0.926,0.9641,3.81,4.11,8,True
+CHISEA,Full Game: over 46.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-47,0.495,0.5,0.0175,0.5175,0.5,-1.75,-3.38,8,False
+CHISEA,No · Full Game: over 46.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-47,0.505,0.51,0.0179,0.5279,0.5,-2.79,-5.28,8,False
+CHISEA,Full Game: over 31.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-32,0.885,0.89,0.0073,0.8973,0.9332,3.59,4.0,8,True
+CHISEA,No · Full Game: over 31.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-32,0.115,0.12,0.0075,0.1275,0.0668,-6.06,-47.58,8,False
+CHISEA,Full Game: over 34.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-35,0.84,0.85,0.0091,0.8591,0.8849,2.58,3.01,8,True
+CHISEA,No · Full Game: over 34.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-35,0.16,0.17,0.01,0.18,0.1151,-6.49,-36.06,8,False
+CHISEA,Full Game: over 67.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-68,0.065,0.07,0.0046,0.0746,0.0179,-5.67,-76.04,8,False
+CHISEA,No · Full Game: over 67.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-68,0.935,0.94,0.004,0.944,0.9821,3.81,4.04,8,True
+CHISEA,Full Game: over 55.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-56,0.235,0.24,0.0129,0.2529,0.1841,-6.89,-27.22,8,False
+CHISEA,No · Full Game: over 55.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-56,0.765,0.77,0.0125,0.7825,0.8159,3.34,4.27,8,True
+CHISEA,Full Game: over 52.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-53,0.315,0.32,0.0155,0.3355,0.2743,-6.12,-18.25,8,False
+CHISEA,No · Full Game: over 52.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-53,0.685,0.69,0.015,0.705,0.7257,2.07,2.94,8,True
+CHISEA,Full Game: over 43.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-44,0.595,0.6,0.0169,0.6169,0.6179,0.1,0.17,8,False
+CHISEA,No · Full Game: over 43.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-44,0.405,0.41,0.0171,0.4271,0.3821,-4.5,-10.53,8,False
+CHISEA,Full Game: over 25.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-26,0.96,0.97,0.003,0.973,0.9821,0.91,0.94,8,True
+CHISEA,No · Full Game: over 25.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-26,0.04,0.05,0.0034,0.0534,0.0179,-3.55,-66.5,8,False
+CHISEA,Full Game: over 47.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-48,0.455,0.46,0.0176,0.4776,0.4602,-1.74,-3.65,8,False
+CHISEA,No · Full Game: over 47.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-48,0.545,0.55,0.0178,0.5678,0.5398,-2.8,-4.92,8,False
+CHISEA,Full Game: over 44.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-45,0.555,0.56,0.0176,0.5776,0.5793,0.16,0.28,8,False
+CHISEA,No · Full Game: over 44.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-45,0.445,0.45,0.0177,0.4677,0.4207,-4.7,-10.04,8,False
+CHISEA,Full Game: over 28.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-29,0.93,0.94,0.004,0.944,0.9641,2.01,2.12,8,True
+CHISEA,No · Full Game: over 28.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-29,0.07,0.08,0.0052,0.0852,0.0359,-4.93,-57.82,8,False
+CHISEA,Full Game: over 45.5 points scored,yes,total,,,KXNFLTOTAL-26NOV02CHISEA-46,0.525,0.53,0.0178,0.5478,0.5398,-0.8,-1.45,8,False
+CHISEA,No · Full Game: over 45.5 points scored,no,total,,,KXNFLTOTAL-26NOV02CHISEA-46,0.475,0.48,0.0175,0.4975,0.4602,-3.73,-7.5,8,False
+CHISEA,Tory Horton: 3+ receptions,yes,receptions,Tory Horton,SEA,KXNFLREC-26NOV02CHISEA-SEATHORTON15-3,0.355,0.36,0.0163,0.3763,0.3559,-2.04,-5.42,8,False
+CHISEA,No · Tory Horton: 3+ receptions,no,receptions,Tory Horton,SEA,KXNFLREC-26NOV02CHISEA-SEATHORTON15-3,0.645,0.65,0.016,0.666,0.6441,-2.19,-3.29,8,False
+CHISEA,Tory Horton: 2+ receptions,yes,receptions,Tory Horton,SEA,KXNFLREC-26NOV02CHISEA-SEATHORTON15-2,0.615,0.62,0.0169,0.6369,0.608,-2.89,-4.53,8,False
+CHISEA,No · Tory Horton: 2+ receptions,no,receptions,Tory Horton,SEA,KXNFLREC-26NOV02CHISEA-SEATHORTON15-2,0.385,0.39,0.0168,0.4068,0.392,-1.48,-3.64,8,False
+CHISEA,Sam Roush: 3+ receptions,yes,receptions,Sam Roush,CHI,KXNFLREC-26NOV02CHISEA-CHISROUSH87-3,0.235,0.24,0.0129,0.2529,0.1968,-5.61,-22.17,6,False
+CHISEA,No · Sam Roush: 3+ receptions,no,receptions,Sam Roush,CHI,KXNFLREC-26NOV02CHISEA-CHISROUSH87-3,0.765,0.77,0.0125,0.7825,0.8032,2.07,2.64,6,True
+CHISEA,Kalif Raymond: 3+ receptions,yes,receptions,Kalif Raymond,CHI,KXNFLREC-26NOV02CHISEA-CHIKRAYMOND14-3,0.395,0.4,0.0168,0.4168,0.3932,-2.36,-5.65,8,False
+CHISEA,No · Kalif Raymond: 3+ receptions,no,receptions,Kalif Raymond,CHI,KXNFLREC-26NOV02CHISEA-CHIKRAYMOND14-3,0.605,0.61,0.0169,0.6269,0.6068,-2.01,-3.21,8,False
+CHISEA,Kalif Raymond: 2+ receptions,yes,receptions,Kalif Raymond,CHI,KXNFLREC-26NOV02CHISEA-CHIKRAYMOND14-2,0.625,0.63,0.0167,0.6467,0.6434,-0.33,-0.51,8,False
+CHISEA,No · Kalif Raymond: 2+ receptions,no,receptions,Kalif Raymond,CHI,KXNFLREC-26NOV02CHISEA-CHIKRAYMOND14-2,0.375,0.38,0.0165,0.3965,0.3566,-3.99,-10.07,8,False
+CHISEA,Luther Burden III: 6+ receptions,yes,receptions,Luther Burden III,CHI,KXNFLREC-26NOV02CHISEA-CHILBURDEN10-6,0.285,0.29,0.0147,0.3047,0.2755,-2.92,-9.58,8,False
+CHISEA,No · Luther Burden III: 6+ receptions,no,receptions,Luther Burden III,CHI,KXNFLREC-26NOV02CHISEA-CHILBURDEN10-6,0.715,0.72,0.0146,0.7346,0.7245,-1.01,-1.38,8,False
+CHISEA,Cooper Kupp: 3+ receptions,yes,receptions,Cooper Kupp,SEA,KXNFLREC-26NOV02CHISEA-SEACKUPP10-3,0.56,0.57,0.0176,0.5876,0.5627,-2.5,-4.25,8,False
+CHISEA,No · Cooper Kupp: 3+ receptions,no,receptions,Cooper Kupp,SEA,KXNFLREC-26NOV02CHISEA-SEACKUPP10-3,0.44,0.45,0.0177,0.4677,0.4373,-3.04,-6.5,8,False
+CHISEA,Colston Loveland: 6+ receptions,yes,receptions,Colston Loveland,CHI,KXNFLREC-26NOV02CHISEA-CHICLOVELAND84-6,0.295,0.31,0.015,0.325,0.2807,-4.43,-13.63,8,False
+CHISEA,No · Colston Loveland: 6+ receptions,no,receptions,Colston Loveland,CHI,KXNFLREC-26NOV02CHISEA-CHICLOVELAND84-6,0.705,0.72,0.0146,0.7346,0.7193,-1.53,-2.09,8,False
+CHISEA,Sam Roush: 1+ receptions,yes,receptions,Sam Roush,CHI,KXNFLREC-26NOV02CHISEA-CHISROUSH87-1,0.735,0.75,0.0138,0.7638,0.7502,-1.37,-1.79,6,False
+CHISEA,No · Sam Roush: 1+ receptions,no,receptions,Sam Roush,CHI,KXNFLREC-26NOV02CHISEA-CHISROUSH87-1,0.265,0.28,0.0143,0.2943,0.2498,-4.44,-15.1,6,False
+CHISEA,Rome Odunze: 5+ receptions,yes,receptions,Rome Odunze,CHI,KXNFLREC-26NOV02CHISEA-CHIRODUNZE15-5,0.24,0.25,0.0133,0.2632,0.2354,-2.78,-10.57,7,False
+CHISEA,No · Rome Odunze: 5+ receptions,no,receptions,Rome Odunze,CHI,KXNFLREC-26NOV02CHISEA-CHIRODUNZE15-5,0.76,0.77,0.0125,0.7825,0.7646,-1.79,-2.29,7,False
+CHISEA,Colston Loveland: 4+ receptions,yes,receptions,Colston Loveland,CHI,KXNFLREC-26NOV02CHISEA-CHICLOVELAND84-4,0.635,0.64,0.0167,0.6567,0.6172,-3.94,-6.01,8,False
+CHISEA,No · Colston Loveland: 4+ receptions,no,receptions,Colston Loveland,CHI,KXNFLREC-26NOV02CHISEA-CHICLOVELAND84-4,0.365,0.37,0.0167,0.3867,0.3828,-0.39,-1.01,8,False
+CHISEA,Zach Charbonnet: 3+ receptions,yes,receptions,Zach Charbonnet,SEA,KXNFLREC-26NOV02CHISEA-SEAZCHARBONNET26-3,0.195,0.2,0.0112,0.2112,0.171,-4.02,-19.02,7,False
+CHISEA,No · Zach Charbonnet: 3+ receptions,no,receptions,Zach Charbonnet,SEA,KXNFLREC-26NOV02CHISEA-SEAZCHARBONNET26-3,0.805,0.81,0.0108,0.8208,0.829,0.81,0.99,7,True
+CHISEA,D'Andre Swift: 4+ receptions,yes,receptions,D'Andre Swift,CHI,KXNFLREC-26NOV02CHISEA-CHIDSWIFT4-4,0.435,0.44,0.0173,0.4573,0.4055,-5.18,-11.32,8,False
+CHISEA,No · D'Andre Swift: 4+ receptions,no,receptions,D'Andre Swift,CHI,KXNFLREC-26NOV02CHISEA-CHIDSWIFT4-4,0.565,0.57,0.0176,0.5876,0.5945,0.69,1.17,8,False
+CHISEA,Luther Burden III: 4+ receptions,yes,receptions,Luther Burden III,CHI,KXNFLREC-26NOV02CHISEA-CHILBURDEN10-4,0.625,0.63,0.0167,0.6467,0.6115,-3.51,-5.43,8,False
+CHISEA,No · Luther Burden III: 4+ receptions,no,receptions,Luther Burden III,CHI,KXNFLREC-26NOV02CHISEA-CHILBURDEN10-4,0.375,0.38,0.0165,0.3965,0.3885,-0.81,-2.03,8,False
+CHISEA,Rome Odunze: 4+ receptions,yes,receptions,Rome Odunze,CHI,KXNFLREC-26NOV02CHISEA-CHIRODUNZE15-4,0.405,0.41,0.0171,0.4271,0.4014,-2.57,-6.01,8,False
+CHISEA,No · Rome Odunze: 4+ receptions,no,receptions,Rome Odunze,CHI,KXNFLREC-26NOV02CHISEA-CHIRODUNZE15-4,0.595,0.6,0.0169,0.6169,0.5986,-1.83,-2.97,8,False
+CHISEA,AJ Barner: 5+ receptions,yes,receptions,AJ Barner,SEA,KXNFLREC-26NOV02CHISEA-SEAABARNER88-5,0.245,0.26,0.0137,0.2737,0.2467,-2.7,-9.86,8,False
+CHISEA,No · AJ Barner: 5+ receptions,no,receptions,AJ Barner,SEA,KXNFLREC-26NOV02CHISEA-SEAABARNER88-5,0.755,0.77,0.0125,0.7825,0.7533,-2.92,-3.73,8,False
+CHISEA,Colston Loveland: 5+ receptions,yes,receptions,Colston Loveland,CHI,KXNFLREC-26NOV02CHISEA-CHICLOVELAND84-5,0.445,0.45,0.0177,0.4677,0.4366,-3.11,-6.65,8,False
+CHISEA,No · Colston Loveland: 5+ receptions,no,receptions,Colston Loveland,CHI,KXNFLREC-26NOV02CHISEA-CHICLOVELAND84-5,0.555,0.56,0.0176,0.5776,0.5634,-1.43,-2.47,8,False
+CHISEA,AJ Barner: 4+ receptions,yes,receptions,AJ Barner,SEA,KXNFLREC-26NOV02CHISEA-SEAABARNER88-4,0.385,0.39,0.0168,0.4068,0.416,0.92,2.26,8,False
+CHISEA,No · AJ Barner: 4+ receptions,no,receptions,AJ Barner,SEA,KXNFLREC-26NOV02CHISEA-SEAABARNER88-4,0.615,0.62,0.0169,0.6369,0.584,-5.29,-8.3,8,False
+CHISEA,D'Andre Swift: 5+ receptions,yes,receptions,D'Andre Swift,CHI,KXNFLREC-26NOV02CHISEA-CHIDSWIFT4-5,0.25,0.26,0.0137,0.2737,0.2378,-3.59,-13.11,7,False
+CHISEA,No · D'Andre Swift: 5+ receptions,no,receptions,D'Andre Swift,CHI,KXNFLREC-26NOV02CHISEA-CHIDSWIFT4-5,0.75,0.76,0.0131,0.7731,0.7622,-1.09,-1.41,7,False
+CHISEA,Roschon Johnson: 2+ receptions,yes,receptions,Roschon Johnson,CHI,KXNFLREC-26NOV02CHISEA-CHIRJOHNSON23-2,0.36,0.37,0.0167,0.3867,0.3581,-2.85,-7.38,3,False
+CHISEA,No · Roschon Johnson: 2+ receptions,no,receptions,Roschon Johnson,CHI,KXNFLREC-26NOV02CHISEA-CHIRJOHNSON23-2,0.64,0.65,0.016,0.666,0.6419,-2.41,-3.62,3,False
+CHISEA,Zach Charbonnet: 2+ receptions,yes,receptions,Zach Charbonnet,SEA,KXNFLREC-26NOV02CHISEA-SEAZCHARBONNET26-2,0.405,0.41,0.0171,0.4271,0.3914,-3.57,-8.35,7,False
+CHISEA,No · Zach Charbonnet: 2+ receptions,no,receptions,Zach Charbonnet,SEA,KXNFLREC-26NOV02CHISEA-SEAZCHARBONNET26-2,0.595,0.6,0.0169,0.6169,0.6086,-0.83,-1.35,7,False
+CHISEA,Roschon Johnson: 3+ receptions,yes,receptions,Roschon Johnson,CHI,KXNFLREC-26NOV02CHISEA-CHIRJOHNSON23-3,0.145,0.16,0.0095,0.1695,0.1485,-2.1,-12.4,3,False
+CHISEA,No · Roschon Johnson: 3+ receptions,no,receptions,Roschon Johnson,CHI,KXNFLREC-26NOV02CHISEA-CHIRJOHNSON23-3,0.855,0.87,0.0082,0.8782,0.8515,-2.67,-3.04,3,False
+CHISEA,Kalif Raymond: 4+ receptions,yes,receptions,Kalif Raymond,CHI,KXNFLREC-26NOV02CHISEA-CHIKRAYMOND14-4,0.2,0.21,0.0117,0.2217,0.2045,-1.72,-7.78,7,False
+CHISEA,No · Kalif Raymond: 4+ receptions,no,receptions,Kalif Raymond,CHI,KXNFLREC-26NOV02CHISEA-CHIKRAYMOND14-4,0.8,0.81,0.0108,0.8208,0.7955,-2.53,-3.08,7,False
+CHISEA,Sam Roush: 2+ receptions,yes,receptions,Sam Roush,CHI,KXNFLREC-26NOV02CHISEA-CHISROUSH87-2,0.435,0.44,0.0173,0.4573,0.4271,-3.02,-6.6,6,False
+CHISEA,No · Sam Roush: 2+ receptions,no,receptions,Sam Roush,CHI,KXNFLREC-26NOV02CHISEA-CHISROUSH87-2,0.565,0.57,0.0176,0.5876,0.5729,-1.47,-2.51,6,False
+CHISEA,Jaxon Smith-Njigba: 9+ receptions,yes,receptions,Jaxon Smith-Njigba,SEA,KXNFLREC-26NOV02CHISEA-SEAJSMITHNJIGBA11-9,0.325,0.33,0.0157,0.3457,0.3372,-0.84,-2.44,8,False
+CHISEA,No · Jaxon Smith-Njigba: 9+ receptions,no,receptions,Jaxon Smith-Njigba,SEA,KXNFLREC-26NOV02CHISEA-SEAJSMITHNJIGBA11-9,0.675,0.68,0.0157,0.6957,0.6628,-3.29,-4.74,8,False
+CHISEA,Cooper Kupp: 2+ receptions,yes,receptions,Cooper Kupp,SEA,KXNFLREC-26NOV02CHISEA-SEACKUPP10-2,0.77,0.78,0.0125,0.7925,0.7804,-1.21,-1.53,8,False
+CHISEA,No · Cooper Kupp: 2+ receptions,no,receptions,Cooper Kupp,SEA,KXNFLREC-26NOV02CHISEA-SEACKUPP10-2,0.23,0.24,0.0129,0.2529,0.2196,-3.33,-13.18,8,False
+CHISEA,Cooper Kupp: 4+ receptions,yes,receptions,Cooper Kupp,SEA,KXNFLREC-26NOV02CHISEA-SEACKUPP10-4,0.365,0.37,0.0167,0.3867,0.3541,-3.26,-8.43,8,False
+CHISEA,No · Cooper Kupp: 4+ receptions,no,receptions,Cooper Kupp,SEA,KXNFLREC-26NOV02CHISEA-SEACKUPP10-4,0.635,0.64,0.0167,0.6567,0.6459,-1.07,-1.63,8,False
+CHISEA,AJ Barner: 3+ receptions,yes,receptions,AJ Barner,SEA,KXNFLREC-26NOV02CHISEA-SEAABARNER88-3,0.595,0.6,0.0169,0.6169,0.6234,0.65,1.06,8,False
+CHISEA,No · AJ Barner: 3+ receptions,no,receptions,AJ Barner,SEA,KXNFLREC-26NOV02CHISEA-SEAABARNER88-3,0.405,0.41,0.0171,0.4271,0.3766,-5.05,-11.82,8,False
+CHISEA,Jaxon Smith-Njigba: 8+ receptions,yes,receptions,Jaxon Smith-Njigba,SEA,KXNFLREC-26NOV02CHISEA-SEAJSMITHNJIGBA11-8,0.465,0.47,0.0176,0.4876,0.4646,-2.3,-4.72,8,False
+CHISEA,No · Jaxon Smith-Njigba: 8+ receptions,no,receptions,Jaxon Smith-Njigba,SEA,KXNFLREC-26NOV02CHISEA-SEAJSMITHNJIGBA11-8,0.535,0.54,0.0178,0.5578,0.5354,-2.24,-4.01,8,False
+CHISEA,Luther Burden III: 5+ receptions,yes,receptions,Luther Burden III,CHI,KXNFLREC-26NOV02CHISEA-CHILBURDEN10-5,0.435,0.44,0.0173,0.4573,0.4306,-2.67,-5.83,8,False
+CHISEA,No · Luther Burden III: 5+ receptions,no,receptions,Luther Burden III,CHI,KXNFLREC-26NOV02CHISEA-CHILBURDEN10-5,0.565,0.57,0.0176,0.5876,0.5694,-1.82,-3.11,8,False
+CHISEA,Rome Odunze: 3+ receptions,yes,receptions,Rome Odunze,CHI,KXNFLREC-26NOV02CHISEA-CHIRODUNZE15-3,0.605,0.61,0.0169,0.6269,0.6096,-1.73,-2.76,8,False
+CHISEA,No · Rome Odunze: 3+ receptions,no,receptions,Rome Odunze,CHI,KXNFLREC-26NOV02CHISEA-CHIRODUNZE15-3,0.395,0.4,0.0168,0.4168,0.3904,-2.64,-6.33,8,False
+CHISEA,Jaxon Smith-Njigba: 7+ receptions,yes,receptions,Jaxon Smith-Njigba,SEA,KXNFLREC-26NOV02CHISEA-SEAJSMITHNJIGBA11-7,0.615,0.62,0.0169,0.6369,0.6023,-3.46,-5.43,8,False
+CHISEA,No · Jaxon Smith-Njigba: 7+ receptions,no,receptions,Jaxon Smith-Njigba,SEA,KXNFLREC-26NOV02CHISEA-SEAJSMITHNJIGBA11-7,0.385,0.39,0.0168,0.4068,0.3977,-0.91,-2.23,8,False
+CHISEA,D'Andre Swift: 3+ receptions,yes,receptions,D'Andre Swift,CHI,KXNFLREC-26NOV02CHISEA-CHIDSWIFT4-3,0.635,0.64,0.0167,0.6567,0.6134,-4.32,-6.58,8,False
+CHISEA,No · D'Andre Swift: 3+ receptions,no,receptions,D'Andre Swift,CHI,KXNFLREC-26NOV02CHISEA-CHIDSWIFT4-3,0.365,0.37,0.0167,0.3867,0.3866,-0.01,-0.03,8,False
+CHISEA,Luther Burden III: 50+ receiving yards,yes,rec_yds,Luther Burden III,CHI,KXNFLRECYDS-26NOV02CHISEA-CHILBURDEN10-50,0.555,0.56,0.0176,0.5776,0.5312,-4.64,-8.03,8,False
+CHISEA,No · Luther Burden III: 50+ receiving yards,no,rec_yds,Luther Burden III,CHI,KXNFLRECYDS-26NOV02CHISEA-CHILBURDEN10-50,0.445,0.45,0.0177,0.4677,0.4688,0.1,0.22,8,False
+CHISEA,Colston Loveland: 50+ receiving yards,yes,rec_yds,Colston Loveland,CHI,KXNFLRECYDS-26NOV02CHISEA-CHICLOVELAND84-50,0.405,0.41,0.0171,0.4271,0.4285,0.14,0.33,8,False
+CHISEA,No · Colston Loveland: 50+ receiving yards,no,rec_yds,Colston Loveland,CHI,KXNFLRECYDS-26NOV02CHISEA-CHICLOVELAND84-50,0.595,0.6,0.0169,0.6169,0.5715,-4.54,-7.35,8,False
+CHISEA,AJ Barner: 20+ receiving yards,yes,rec_yds,AJ Barner,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAABARNER88-20,0.675,0.69,0.015,0.705,0.6769,-2.81,-3.98,5,False
+CHISEA,No · AJ Barner: 20+ receiving yards,no,rec_yds,AJ Barner,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAABARNER88-20,0.325,0.34,0.0159,0.3559,0.3231,-3.28,-9.21,5,False
+CHISEA,Rome Odunze: 30+ receiving yards,yes,rec_yds,Rome Odunze,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIRODUNZE15-30,0.625,0.63,0.0167,0.6467,0.6194,-2.72,-4.21,7,False
+CHISEA,No · Rome Odunze: 30+ receiving yards,no,rec_yds,Rome Odunze,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIRODUNZE15-30,0.375,0.38,0.0165,0.3965,0.3806,-1.6,-4.03,7,False
+CHISEA,D'Andre Swift: 25+ receiving yards,yes,rec_yds,D'Andre Swift,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIDSWIFT4-25,0.38,0.39,0.0168,0.4068,0.4105,0.37,0.92,3,False
+CHISEA,No · D'Andre Swift: 25+ receiving yards,no,rec_yds,D'Andre Swift,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIDSWIFT4-25,0.62,0.63,0.0167,0.6467,0.5895,-5.72,-8.84,3,False
+CHISEA,Jaxon Smith-Njigba: 100+ receiving yards,yes,rec_yds,Jaxon Smith-Njigba,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAJSMITHNJIGBA11-100,0.515,0.52,0.0179,0.5379,0.504,-3.39,-6.29,8,False
+CHISEA,No · Jaxon Smith-Njigba: 100+ receiving yards,no,rec_yds,Jaxon Smith-Njigba,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAJSMITHNJIGBA11-100,0.485,0.49,0.0175,0.5075,0.496,-1.15,-2.27,8,False
+CHISEA,Rome Odunze: 50+ receiving yards,yes,rec_yds,Rome Odunze,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIRODUNZE15-50,0.375,0.38,0.0165,0.3965,0.3802,-1.63,-4.11,3,False
+CHISEA,No · Rome Odunze: 50+ receiving yards,no,rec_yds,Rome Odunze,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIRODUNZE15-50,0.625,0.63,0.0167,0.6467,0.6198,-2.69,-4.16,3,False
+CHISEA,D'Andre Swift: 15+ receiving yards,yes,rec_yds,D'Andre Swift,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIDSWIFT4-15,0.605,0.62,0.0169,0.6369,0.6406,0.37,0.58,3,True
+CHISEA,No · D'Andre Swift: 15+ receiving yards,no,rec_yds,D'Andre Swift,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIDSWIFT4-15,0.395,0.41,0.0171,0.4271,0.3594,-6.76,-15.84,3,False
+CHISEA,Colston Loveland: 40+ receiving yards,yes,rec_yds,Colston Loveland,CHI,KXNFLRECYDS-26NOV02CHISEA-CHICLOVELAND84-40,0.53,0.54,0.0178,0.5578,0.5351,-2.27,-4.06,8,False
+CHISEA,No · Colston Loveland: 40+ receiving yards,no,rec_yds,Colston Loveland,CHI,KXNFLRECYDS-26NOV02CHISEA-CHICLOVELAND84-40,0.47,0.48,0.0175,0.4975,0.4649,-3.26,-6.56,8,False
+CHISEA,Jaxon Smith-Njigba: 120+ receiving yards,yes,rec_yds,Jaxon Smith-Njigba,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAJSMITHNJIGBA11-120,0.365,0.37,0.0167,0.3867,0.4121,2.54,6.57,8,False
+CHISEA,No · Jaxon Smith-Njigba: 120+ receiving yards,no,rec_yds,Jaxon Smith-Njigba,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAJSMITHNJIGBA11-120,0.635,0.64,0.0167,0.6567,0.5879,-6.87,-10.47,8,False
+CHISEA,Cooper Kupp: 20+ receiving yards,yes,rec_yds,Cooper Kupp,SEA,KXNFLRECYDS-26NOV02CHISEA-SEACKUPP10-20,0.64,0.65,0.016,0.666,0.6639,-0.21,-0.31,7,False
+CHISEA,No · Cooper Kupp: 20+ receiving yards,no,rec_yds,Cooper Kupp,SEA,KXNFLRECYDS-26NOV02CHISEA-SEACKUPP10-20,0.36,0.37,0.0167,0.3867,0.3361,-5.06,-13.09,7,False
+CHISEA,Tory Horton: 30+ receiving yards,yes,rec_yds,Tory Horton,SEA,KXNFLRECYDS-26NOV02CHISEA-SEATHORTON15-30,0.395,0.4,0.0168,0.4168,0.382,-3.48,-8.35,8,False
+CHISEA,No · Tory Horton: 30+ receiving yards,no,rec_yds,Tory Horton,SEA,KXNFLRECYDS-26NOV02CHISEA-SEATHORTON15-30,0.605,0.61,0.0169,0.6269,0.618,-0.89,-1.42,8,False
+CHISEA,AJ Barner: 25+ receiving yards,yes,rec_yds,AJ Barner,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAABARNER88-25,0.58,0.59,0.0175,0.6075,0.5913,-1.62,-2.67,8,False
+CHISEA,No · AJ Barner: 25+ receiving yards,no,rec_yds,AJ Barner,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAABARNER88-25,0.42,0.43,0.0174,0.4474,0.4087,-3.87,-8.65,8,False
+CHISEA,AJ Barner: 30+ receiving yards,yes,rec_yds,AJ Barner,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAABARNER88-30,0.515,0.52,0.0179,0.5379,0.5099,-2.8,-5.21,8,False
+CHISEA,No · AJ Barner: 30+ receiving yards,no,rec_yds,AJ Barner,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAABARNER88-30,0.485,0.49,0.0175,0.5075,0.4901,-1.74,-3.42,8,False
+CHISEA,Cooper Kupp: 25+ receiving yards,yes,rec_yds,Cooper Kupp,SEA,KXNFLRECYDS-26NOV02CHISEA-SEACKUPP10-25,0.565,0.58,0.0171,0.5971,0.5744,-2.27,-3.8,8,False
+CHISEA,No · Cooper Kupp: 25+ receiving yards,no,rec_yds,Cooper Kupp,SEA,KXNFLRECYDS-26NOV02CHISEA-SEACKUPP10-25,0.435,0.45,0.0177,0.4677,0.4256,-4.21,-9.0,8,False
+CHISEA,AJ Barner: 40+ receiving yards,yes,rec_yds,AJ Barner,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAABARNER88-40,0.345,0.35,0.0161,0.3661,0.3798,1.38,3.76,5,False
+CHISEA,No · AJ Barner: 40+ receiving yards,no,rec_yds,AJ Barner,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAABARNER88-40,0.655,0.66,0.016,0.676,0.6202,-5.58,-8.26,5,False
+CHISEA,Cooper Kupp: 30+ receiving yards,yes,rec_yds,Cooper Kupp,SEA,KXNFLRECYDS-26NOV02CHISEA-SEACKUPP10-30,0.495,0.5,0.0175,0.5175,0.4922,-2.53,-4.89,8,False
+CHISEA,No · Cooper Kupp: 30+ receiving yards,no,rec_yds,Cooper Kupp,SEA,KXNFLRECYDS-26NOV02CHISEA-SEACKUPP10-30,0.505,0.51,0.0179,0.5279,0.5078,-2.01,-3.81,8,False
+CHISEA,D'Andre Swift: 30+ receiving yards,yes,rec_yds,D'Andre Swift,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIDSWIFT4-30,0.295,0.3,0.0148,0.3148,0.3233,0.85,2.69,3,False
+CHISEA,No · D'Andre Swift: 30+ receiving yards,no,rec_yds,D'Andre Swift,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIDSWIFT4-30,0.705,0.71,0.015,0.725,0.6767,-4.83,-6.66,3,False
+CHISEA,Jaxon Smith-Njigba: 80+ receiving yards,yes,rec_yds,Jaxon Smith-Njigba,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAJSMITHNJIGBA11-80,0.685,0.69,0.015,0.705,0.6096,-9.54,-13.53,8,False
+CHISEA,No · Jaxon Smith-Njigba: 80+ receiving yards,no,rec_yds,Jaxon Smith-Njigba,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAJSMITHNJIGBA11-80,0.315,0.32,0.0155,0.3355,0.3904,5.49,16.37,8,False
+CHISEA,Tory Horton: 25+ receiving yards,yes,rec_yds,Tory Horton,SEA,KXNFLRECYDS-26NOV02CHISEA-SEATHORTON15-25,0.475,0.48,0.0175,0.4975,0.4693,-2.82,-5.66,8,False
+CHISEA,No · Tory Horton: 25+ receiving yards,no,rec_yds,Tory Horton,SEA,KXNFLRECYDS-26NOV02CHISEA-SEATHORTON15-25,0.525,0.53,0.0178,0.5478,0.5307,-1.71,-3.13,8,False
+CHISEA,Cooper Kupp: 40+ receiving yards,yes,rec_yds,Cooper Kupp,SEA,KXNFLRECYDS-26NOV02CHISEA-SEACKUPP10-40,0.36,0.37,0.0167,0.3867,0.3611,-2.55,-6.61,6,False
+CHISEA,No · Cooper Kupp: 40+ receiving yards,no,rec_yds,Cooper Kupp,SEA,KXNFLRECYDS-26NOV02CHISEA-SEACKUPP10-40,0.64,0.65,0.016,0.666,0.6389,-2.71,-4.07,6,False
+CHISEA,D'Andre Swift: 20+ receiving yards,yes,rec_yds,D'Andre Swift,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIDSWIFT4-20,0.485,0.49,0.0175,0.5075,0.5162,0.87,1.72,3,False
+CHISEA,No · D'Andre Swift: 20+ receiving yards,no,rec_yds,D'Andre Swift,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIDSWIFT4-20,0.515,0.52,0.0179,0.5379,0.4838,-5.41,-10.06,3,False
+CHISEA,Jaxon Smith-Njigba: 90+ receiving yards,yes,rec_yds,Jaxon Smith-Njigba,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAJSMITHNJIGBA11-90,0.595,0.6,0.0169,0.6169,0.5553,-6.16,-9.98,8,False
+CHISEA,No · Jaxon Smith-Njigba: 90+ receiving yards,no,rec_yds,Jaxon Smith-Njigba,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAJSMITHNJIGBA11-90,0.405,0.41,0.0171,0.4271,0.4447,1.76,4.12,8,False
+CHISEA,Rome Odunze: 40+ receiving yards,yes,rec_yds,Rome Odunze,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIRODUNZE15-40,0.495,0.5,0.0175,0.5175,0.4925,-2.5,-4.83,8,False
+CHISEA,No · Rome Odunze: 40+ receiving yards,no,rec_yds,Rome Odunze,CHI,KXNFLRECYDS-26NOV02CHISEA-CHIRODUNZE15-40,0.505,0.51,0.0179,0.5279,0.5075,-2.04,-3.86,8,False
+CHISEA,Luther Burden III: 40+ receiving yards,yes,rec_yds,Luther Burden III,CHI,KXNFLRECYDS-26NOV02CHISEA-CHILBURDEN10-40,0.665,0.67,0.0157,0.6857,0.6291,-5.66,-8.26,7,False
+CHISEA,No · Luther Burden III: 40+ receiving yards,no,rec_yds,Luther Burden III,CHI,KXNFLRECYDS-26NOV02CHISEA-CHILBURDEN10-40,0.335,0.34,0.0159,0.3559,0.3709,1.5,4.23,7,False
+CHISEA,Luther Burden III: 60+ receiving yards,yes,rec_yds,Luther Burden III,CHI,KXNFLRECYDS-26NOV02CHISEA-CHILBURDEN10-60,0.425,0.43,0.0174,0.4474,0.4439,-0.35,-0.78,8,False
+CHISEA,No · Luther Burden III: 60+ receiving yards,no,rec_yds,Luther Burden III,CHI,KXNFLRECYDS-26NOV02CHISEA-CHILBURDEN10-60,0.575,0.58,0.0171,0.5971,0.5561,-4.09,-6.86,8,False
+CHISEA,Tory Horton: 15+ receiving yards,yes,rec_yds,Tory Horton,SEA,KXNFLRECYDS-26NOV02CHISEA-SEATHORTON15-15,0.625,0.63,0.0167,0.6467,0.6871,4.04,6.25,8,True
+CHISEA,No · Tory Horton: 15+ receiving yards,no,rec_yds,Tory Horton,SEA,KXNFLRECYDS-26NOV02CHISEA-SEATHORTON15-15,0.375,0.38,0.0165,0.3965,0.3129,-8.36,-21.08,8,False
+CHISEA,Jaxon Smith-Njigba: 110+ receiving yards,yes,rec_yds,Jaxon Smith-Njigba,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAJSMITHNJIGBA11-110,0.425,0.43,0.0174,0.4474,0.4564,0.9,2.01,8,False
+CHISEA,No · Jaxon Smith-Njigba: 110+ receiving yards,no,rec_yds,Jaxon Smith-Njigba,SEA,KXNFLRECYDS-26NOV02CHISEA-SEAJSMITHNJIGBA11-110,0.575,0.58,0.0171,0.5971,0.5436,-5.34,-8.95,8,False
+CHISEA,Tory Horton: 20+ receiving yards,yes,rec_yds,Tory Horton,SEA,KXNFLRECYDS-26NOV02CHISEA-SEATHORTON15-20,0.565,0.57,0.0176,0.5876,0.5714,-1.63,-2.77,8,False
+CHISEA,No · Tory Horton: 20+ receiving yards,no,rec_yds,Tory Horton,SEA,KXNFLRECYDS-26NOV02CHISEA-SEATHORTON15-20,0.435,0.44,0.0173,0.4573,0.4286,-2.87,-6.27,8,False
+CHISEA,Sam Roush: 10+ receiving yards,yes,rec_yds,Sam Roush,CHI,KXNFLRECYDS-26NOV02CHISEA-CHISROUSH87-10,0.475,0.48,0.0175,0.4975,0.4966,-0.09,-0.19,3,False
+CHISEA,No · Sam Roush: 10+ receiving yards,no,rec_yds,Sam Roush,CHI,KXNFLRECYDS-26NOV02CHISEA-CHISROUSH87-10,0.525,0.53,0.0178,0.5478,0.5034,-4.43,-8.09,3,False
+CHISEA,D'Andre Swift: 60+ rushing yards,yes,rush_yds,D'Andre Swift,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-60,0.485,0.49,0.0175,0.5075,0.5055,-0.2,-0.39,8,False
+CHISEA,No · D'Andre Swift: 60+ rushing yards,no,rush_yds,D'Andre Swift,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-60,0.515,0.52,0.0179,0.5379,0.4945,-4.34,-8.07,8,False
+CHISEA,Caleb Williams: 20+ rushing yards,yes,rush_yds,Caleb Williams,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHICWILLIAMS18-20,0.575,0.58,0.0171,0.5971,0.6065,0.95,1.58,8,False
+CHISEA,No · Caleb Williams: 20+ rushing yards,no,rush_yds,Caleb Williams,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHICWILLIAMS18-20,0.425,0.43,0.0174,0.4474,0.3935,-5.39,-12.05,8,False
+CHISEA,Caleb Williams: 25+ rushing yards,yes,rush_yds,Caleb Williams,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHICWILLIAMS18-25,0.475,0.48,0.0175,0.4975,0.4793,-1.82,-3.65,8,False
+CHISEA,No · Caleb Williams: 25+ rushing yards,no,rush_yds,Caleb Williams,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHICWILLIAMS18-25,0.525,0.53,0.0178,0.5478,0.5207,-2.71,-4.95,8,False
+CHISEA,D'Andre Swift: 65+ rushing yards,yes,rush_yds,D'Andre Swift,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-65,0.425,0.43,0.0174,0.4474,0.4563,0.9,2.0,8,False
+CHISEA,No · D'Andre Swift: 65+ rushing yards,no,rush_yds,D'Andre Swift,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-65,0.575,0.58,0.0171,0.5971,0.5437,-5.34,-8.95,8,False
+CHISEA,Caleb Williams: 30+ rushing yards,yes,rush_yds,Caleb Williams,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHICWILLIAMS18-30,0.385,0.39,0.0168,0.4068,0.37,-3.68,-9.05,8,False
+CHISEA,No · Caleb Williams: 30+ rushing yards,no,rush_yds,Caleb Williams,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHICWILLIAMS18-30,0.615,0.62,0.0169,0.6369,0.63,-0.69,-1.08,8,False
+CHISEA,D'Andre Swift: 70+ rushing yards,yes,rush_yds,D'Andre Swift,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-70,0.375,0.38,0.0165,0.3965,0.4109,1.44,3.63,8,False
+CHISEA,No · D'Andre Swift: 70+ rushing yards,no,rush_yds,D'Andre Swift,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-70,0.625,0.63,0.0167,0.6467,0.5891,-5.76,-8.9,8,False
+CHISEA,D'Andre Swift: 80+ rushing yards,yes,rush_yds,D'Andre Swift,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-80,0.285,0.29,0.0147,0.3047,0.3229,1.82,5.98,2,False
+CHISEA,No · D'Andre Swift: 80+ rushing yards,no,rush_yds,D'Andre Swift,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-80,0.715,0.72,0.0146,0.7346,0.6771,-5.75,-7.83,2,False
+CHISEA,Sam Darnold: 5+ rushing yards,yes,rush_yds,Sam Darnold,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEASDARNOLD14-5,0.515,0.52,0.0179,0.5379,0.4981,-3.98,-7.4,6,False
+CHISEA,No · Sam Darnold: 5+ rushing yards,no,rush_yds,Sam Darnold,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEASDARNOLD14-5,0.485,0.49,0.0175,0.5075,0.5019,-0.56,-1.1,6,False
+CHISEA,Caleb Williams: 15+ rushing yards,yes,rush_yds,Caleb Williams,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHICWILLIAMS18-15,0.705,0.71,0.015,0.725,0.7391,1.41,1.94,7,True
+CHISEA,No · Caleb Williams: 15+ rushing yards,no,rush_yds,Caleb Williams,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHICWILLIAMS18-15,0.295,0.3,0.0148,0.3148,0.2609,-5.39,-17.12,7,False
+CHISEA,Zach Charbonnet: 25+ rushing yards,yes,rush_yds,Zach Charbonnet,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-25,0.575,0.58,0.0171,0.5971,0.5846,-1.25,-2.09,7,False
+CHISEA,No · Zach Charbonnet: 25+ rushing yards,no,rush_yds,Zach Charbonnet,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-25,0.425,0.43,0.0174,0.4474,0.4154,-3.2,-7.15,7,False
+CHISEA,D'Andre Swift: 50+ rushing yards,yes,rush_yds,D'Andre Swift,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-50,0.615,0.62,0.0169,0.6369,0.6114,-2.55,-4.0,8,False
+CHISEA,No · D'Andre Swift: 50+ rushing yards,no,rush_yds,D'Andre Swift,CHI,KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-50,0.385,0.39,0.0168,0.4068,0.3886,-1.82,-4.48,8,False
+CHISEA,Zach Charbonnet: 20+ rushing yards,yes,rush_yds,Zach Charbonnet,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-20,0.665,0.67,0.0157,0.6857,0.6931,0.74,1.08,4,True
+CHISEA,No · Zach Charbonnet: 20+ rushing yards,no,rush_yds,Zach Charbonnet,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-20,0.335,0.34,0.0159,0.3559,0.3069,-4.9,-13.77,4,False
+CHISEA,Zach Charbonnet: 30+ rushing yards,yes,rush_yds,Zach Charbonnet,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-30,0.465,0.47,0.0176,0.4876,0.4797,-0.79,-1.62,7,False
+CHISEA,No · Zach Charbonnet: 30+ rushing yards,no,rush_yds,Zach Charbonnet,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-30,0.535,0.54,0.0178,0.5578,0.5203,-3.75,-6.72,7,False
+CHISEA,Zach Charbonnet: 35+ rushing yards,yes,rush_yds,Zach Charbonnet,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-35,0.395,0.4,0.0168,0.4168,0.3871,-2.97,-7.12,7,False
+CHISEA,No · Zach Charbonnet: 35+ rushing yards,no,rush_yds,Zach Charbonnet,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-35,0.605,0.61,0.0169,0.6269,0.6129,-1.4,-2.23,7,False
+CHISEA,Emanuel Wilson: 20+ rushing yards,yes,rush_yds,Emanuel Wilson,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAEWILSON23-20,0.535,0.54,0.0178,0.5578,0.556,-0.18,-0.33,5,False
+CHISEA,No · Emanuel Wilson: 20+ rushing yards,no,rush_yds,Emanuel Wilson,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAEWILSON23-20,0.465,0.47,0.0176,0.4876,0.444,-4.36,-8.94,5,False
+CHISEA,Zach Charbonnet: 40+ rushing yards,yes,rush_yds,Zach Charbonnet,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-40,0.315,0.32,0.0155,0.3355,0.3145,-2.1,-6.26,5,False
+CHISEA,No · Zach Charbonnet: 40+ rushing yards,no,rush_yds,Zach Charbonnet,SEA,KXNFLRSHYDS-26NOV02CHISEA-SEAZCHARBONNET26-40,0.685,0.69,0.015,0.705,0.6855,-1.95,-2.76,5,False
+CHISEA,Caleb Williams: 225+ passing yards,yes,pass_yds,Caleb Williams,CHI,KXNFLPASSYDS-26NOV02CHISEA-CHICWILLIAMS18-225,0.525,0.53,0.0178,0.5478,0.5223,-2.54,-4.64,8,False
+CHISEA,No · Caleb Williams: 225+ passing yards,no,pass_yds,Caleb Williams,CHI,KXNFLPASSYDS-26NOV02CHISEA-CHICWILLIAMS18-225,0.475,0.48,0.0175,0.4975,0.4777,-1.98,-3.99,8,False
+CHISEA,Caleb Williams: 200+ passing yards,yes,pass_yds,Caleb Williams,CHI,KXNFLPASSYDS-26NOV02CHISEA-CHICWILLIAMS18-200,0.675,0.68,0.0157,0.6957,0.6767,-1.9,-2.73,3,False
+CHISEA,No · Caleb Williams: 200+ passing yards,no,pass_yds,Caleb Williams,CHI,KXNFLPASSYDS-26NOV02CHISEA-CHICWILLIAMS18-200,0.325,0.33,0.0157,0.3457,0.3233,-2.24,-6.47,3,False
+CHISEA,Caleb Williams: 250+ passing yards,yes,pass_yds,Caleb Williams,CHI,KXNFLPASSYDS-26NOV02CHISEA-CHICWILLIAMS18-250,0.385,0.39,0.0168,0.4068,0.3832,-2.36,-5.8,8,False
+CHISEA,No · Caleb Williams: 250+ passing yards,no,pass_yds,Caleb Williams,CHI,KXNFLPASSYDS-26NOV02CHISEA-CHICWILLIAMS18-250,0.615,0.62,0.0169,0.6369,0.6168,-2.01,-3.15,8,False
+CHISEA,Sam Darnold: 225+ passing yards,yes,pass_yds,Sam Darnold,SEA,KXNFLPASSYDS-26NOV02CHISEA-SEASDARNOLD14-225,0.585,0.59,0.0175,0.6075,0.5735,-3.4,-5.59,8,False
+CHISEA,No · Sam Darnold: 225+ passing yards,no,pass_yds,Sam Darnold,SEA,KXNFLPASSYDS-26NOV02CHISEA-SEASDARNOLD14-225,0.415,0.42,0.0174,0.4374,0.4265,-1.09,-2.5,8,False
+CHISEA,Sam Darnold: 250+ passing yards,yes,pass_yds,Sam Darnold,SEA,KXNFLPASSYDS-26NOV02CHISEA-SEASDARNOLD14-250,0.44,0.45,0.0177,0.4677,0.4349,-3.28,-7.01,8,False
+CHISEA,No · Sam Darnold: 250+ passing yards,no,pass_yds,Sam Darnold,SEA,KXNFLPASSYDS-26NOV02CHISEA-SEASDARNOLD14-250,0.56,0.57,0.0176,0.5876,0.5651,-2.26,-3.84,8,False
+CHISEA,Emanuel Wilson: 1+ touchdowns,yes,td,Emanuel Wilson,SEA,KXNFLTD-26NOV02CHISEA-SEAEWILSON23-1,0.205,0.21,0.0117,0.2217,0.2172,-0.45,-2.02,6,False
+CHISEA,No · Emanuel Wilson: 1+ touchdowns,no,td,Emanuel Wilson,SEA,KXNFLTD-26NOV02CHISEA-SEAEWILSON23-1,0.795,0.8,0.0117,0.8117,0.7828,-2.89,-3.56,6,False
+CHISEA,Caleb Williams: 2+ touchdowns,yes,td,Caleb Williams,CHI,KXNFLTD-26NOV02CHISEA-CHICWILLIAMS18-2,0.015,0.02,0.0014,0.0214,0.0138,-0.76,-35.64,7,False
+CHISEA,No · Caleb Williams: 2+ touchdowns,no,td,Caleb Williams,CHI,KXNFLTD-26NOV02CHISEA-CHICWILLIAMS18-2,0.985,0.99,0.001,0.991,0.9862,-0.48,-0.48,7,False
+CHISEA,D'Andre Swift: 3+ touchdowns,yes,td,D'Andre Swift,CHI,KXNFLTD-26NOV02CHISEA-CHIDSWIFT4-3,0.025,0.03,0.002,0.032,0.0345,0.25,7.74,7,False
+CHISEA,No · D'Andre Swift: 3+ touchdowns,no,td,D'Andre Swift,CHI,KXNFLTD-26NOV02CHISEA-CHIDSWIFT4-3,0.975,0.98,0.002,0.982,0.9655,-1.65,-1.68,7,False
+CHISEA,Cooper Kupp: 3+ touchdowns,yes,td,Cooper Kupp,SEA,KXNFLTD-26NOV02CHISEA-SEACKUPP10-3,0.005,0.01,0.0007,0.0107,0.0027,-0.8,-74.41,7,False
+CHISEA,Zach Charbonnet: 1+ touchdowns,yes,td,Zach Charbonnet,SEA,KXNFLTD-26NOV02CHISEA-SEAZCHARBONNET26-1,0.395,0.4,0.0168,0.4168,0.4092,-0.76,-1.83,7,False
+CHISEA,No · Zach Charbonnet: 1+ touchdowns,no,td,Zach Charbonnet,SEA,KXNFLTD-26NOV02CHISEA-SEAZCHARBONNET26-1,0.605,0.61,0.0169,0.6269,0.5908,-3.6,-5.75,7,False
+CHISEA,George Holani: 2+ touchdowns,yes,td,George Holani,SEA,KXNFLTD-26NOV02CHISEA-SEAGHOLANI36-2,0.005,0.01,0.0007,0.0107,0.009,-0.17,-16.03,5,False
+CHISEA,Eric Saubert: 1+ touchdowns,yes,td,Eric Saubert,SEA,KXNFLTD-26NOV02CHISEA-SEAESAUBERT81-1,0.065,0.07,0.0046,0.0746,0.073,-0.15,-2.06,6,False
+CHISEA,No · Eric Saubert: 1+ touchdowns,no,td,Eric Saubert,SEA,KXNFLTD-26NOV02CHISEA-SEAESAUBERT81-1,0.935,0.94,0.004,0.944,0.927,-1.7,-1.81,6,False
+CHISEA,Roschon Johnson: 1+ touchdowns,yes,td,Roschon Johnson,CHI,KXNFLTD-26NOV02CHISEA-CHIRJOHNSON23-1,0.195,0.2,0.0112,0.2112,0.2249,1.37,6.46,6,False
+CHISEA,No · Roschon Johnson: 1+ touchdowns,no,td,Roschon Johnson,CHI,KXNFLTD-26NOV02CHISEA-CHIRJOHNSON23-1,0.805,0.81,0.0108,0.8208,0.7751,-4.57,-5.57,6,False
+CHISEA,Jaxon Smith-Njigba: 2+ touchdowns,yes,td,Jaxon Smith-Njigba,SEA,KXNFLTD-26NOV02CHISEA-SEAJSMITHNJIGBA11-2,0.135,0.14,0.0085,0.1485,0.1502,0.18,1.21,7,False
+CHISEA,No · Jaxon Smith-Njigba: 2+ touchdowns,no,td,Jaxon Smith-Njigba,SEA,KXNFLTD-26NOV02CHISEA-SEAJSMITHNJIGBA11-2,0.865,0.87,0.0082,0.8782,0.8498,-2.84,-3.24,7,False
+CHISEA,Colston Loveland: 1+ touchdowns,yes,td,Colston Loveland,CHI,KXNFLTD-26NOV02CHISEA-CHICLOVELAND84-1,0.285,0.29,0.0147,0.3047,0.2825,-2.23,-7.3,7,False
+CHISEA,No · Colston Loveland: 1+ touchdowns,no,td,Colston Loveland,CHI,KXNFLTD-26NOV02CHISEA-CHICLOVELAND84-1,0.715,0.72,0.0146,0.7346,0.7175,-1.71,-2.32,7,False
+CHISEA,Jaxon Smith-Njigba: 3+ touchdowns,yes,td,Jaxon Smith-Njigba,SEA,KXNFLTD-26NOV02CHISEA-SEAJSMITHNJIGBA11-3,0.025,0.03,0.002,0.032,0.0323,0.02,0.74,7,False
+CHISEA,No · Jaxon Smith-Njigba: 3+ touchdowns,no,td,Jaxon Smith-Njigba,SEA,KXNFLTD-26NOV02CHISEA-SEAJSMITHNJIGBA11-3,0.975,0.98,0.002,0.982,0.9677,-1.43,-1.45,7,False
+CHISEA,Emanuel Wilson: 3+ touchdowns,yes,td,Emanuel Wilson,SEA,KXNFLTD-26NOV02CHISEA-SEAEWILSON23-3,0.005,0.01,0.0007,0.0107,0.0021,-0.86,-80.79,6,False
+CHISEA,Cooper Kupp: 2+ touchdowns,yes,td,Cooper Kupp,SEA,KXNFLTD-26NOV02CHISEA-SEACKUPP10-2,0.025,0.03,0.002,0.032,0.0309,-0.12,-3.67,7,False
+CHISEA,No · Cooper Kupp: 2+ touchdowns,no,td,Cooper Kupp,SEA,KXNFLTD-26NOV02CHISEA-SEACKUPP10-2,0.975,0.98,0.002,0.982,0.9691,-1.29,-1.31,7,False
+CHISEA,Emanuel Wilson: 2+ touchdowns,yes,td,Emanuel Wilson,SEA,KXNFLTD-26NOV02CHISEA-SEAEWILSON23-2,0.025,0.03,0.002,0.032,0.0256,-0.65,-20.17,6,False
+CHISEA,No · Emanuel Wilson: 2+ touchdowns,no,td,Emanuel Wilson,SEA,KXNFLTD-26NOV02CHISEA-SEAEWILSON23-2,0.975,0.98,0.002,0.982,0.9744,-0.76,-0.77,6,False
+CHISEA,Kalif Raymond: 1+ touchdowns,yes,td,Kalif Raymond,CHI,KXNFLTD-26NOV02CHISEA-CHIKRAYMOND14-1,0.145,0.15,0.0089,0.1589,0.1533,-0.56,-3.55,6,False
+CHISEA,No · Kalif Raymond: 1+ touchdowns,no,td,Kalif Raymond,CHI,KXNFLTD-26NOV02CHISEA-CHIKRAYMOND14-1,0.855,0.86,0.0091,0.8691,0.8467,-2.24,-2.58,6,False
+CHISEA,Sam Roush: 1+ touchdowns,yes,td,Sam Roush,CHI,KXNFLTD-26NOV02CHISEA-CHISROUSH87-1,0.105,0.11,0.0069,0.1169,0.1196,0.27,2.31,6,False
+CHISEA,No · Sam Roush: 1+ touchdowns,no,td,Sam Roush,CHI,KXNFLTD-26NOV02CHISEA-CHISROUSH87-1,0.895,0.9,0.0064,0.9064,0.8804,-2.59,-2.86,6,False
+CHISEA,D'Andre Swift: 1+ touchdowns,yes,td,D'Andre Swift,CHI,KXNFLTD-26NOV02CHISEA-CHIDSWIFT4-1,0.495,0.5,0.0175,0.5175,0.5046,-1.29,-2.49,7,False
+CHISEA,No · D'Andre Swift: 1+ touchdowns,no,td,D'Andre Swift,CHI,KXNFLTD-26NOV02CHISEA-CHIDSWIFT4-1,0.505,0.51,0.0179,0.5279,0.4954,-3.25,-6.16,7,False
+CHISEA,Jaxon Smith-Njigba: 1+ touchdowns,yes,td,Jaxon Smith-Njigba,SEA,KXNFLTD-26NOV02CHISEA-SEAJSMITHNJIGBA11-1,0.475,0.48,0.0175,0.4975,0.4951,-0.24,-0.48,7,False
+CHISEA,No · Jaxon Smith-Njigba: 1+ touchdowns,no,td,Jaxon Smith-Njigba,SEA,KXNFLTD-26NOV02CHISEA-SEAJSMITHNJIGBA11-1,0.525,0.53,0.0178,0.5478,0.5049,-4.29,-7.83,7,False
+CHISEA,AJ Barner: 3+ touchdowns,yes,td,AJ Barner,SEA,KXNFLTD-26NOV02CHISEA-SEAABARNER88-3,0.005,0.01,0.0007,0.0107,0.0044,-0.63,-58.88,7,False
+CHISEA,Sam Darnold: 2+ touchdowns,yes,td,Sam Darnold,SEA,KXNFLTD-26NOV02CHISEA-SEASDARNOLD14-2,0.005,0.01,0.0007,0.0107,0.008,-0.27,-25.66,6,False
+CHISEA,AJ Barner: 2+ touchdowns,yes,td,AJ Barner,SEA,KXNFLTD-26NOV02CHISEA-SEAABARNER88-2,0.035,0.04,0.0027,0.0427,0.0418,-0.09,-2.05,7,False
+CHISEA,No · AJ Barner: 2+ touchdowns,no,td,AJ Barner,SEA,KXNFLTD-26NOV02CHISEA-SEAABARNER88-2,0.965,0.97,0.003,0.973,0.9582,-1.48,-1.53,7,False
+CHISEA,D'Andre Swift: 2+ touchdowns,yes,td,D'Andre Swift,CHI,KXNFLTD-26NOV02CHISEA-CHIDSWIFT4-2,0.135,0.14,0.0085,0.1485,0.1568,0.83,5.6,7,False
+CHISEA,No · D'Andre Swift: 2+ touchdowns,no,td,D'Andre Swift,CHI,KXNFLTD-26NOV02CHISEA-CHIDSWIFT4-2,0.865,0.87,0.0082,0.8782,0.8432,-3.49,-3.98,7,False
+CHISEA,Colston Loveland: 2+ touchdowns,yes,td,Colston Loveland,CHI,KXNFLTD-26NOV02CHISEA-CHICLOVELAND84-2,0.045,0.05,0.0034,0.0534,0.0443,-0.9,-16.95,7,False
+CHISEA,No · Colston Loveland: 2+ touchdowns,no,td,Colston Loveland,CHI,KXNFLTD-26NOV02CHISEA-CHICLOVELAND84-2,0.955,0.96,0.003,0.963,0.9557,-0.73,-0.76,7,False
+CHISEA,Cooper Kupp: 1+ touchdowns,yes,td,Cooper Kupp,SEA,KXNFLTD-26NOV02CHISEA-SEACKUPP10-1,0.225,0.23,0.0126,0.2426,0.2377,-0.48,-1.98,7,False
+CHISEA,No · Cooper Kupp: 1+ touchdowns,no,td,Cooper Kupp,SEA,KXNFLTD-26NOV02CHISEA-SEACKUPP10-1,0.775,0.78,0.0125,0.7925,0.7623,-3.02,-3.82,7,False
+CHISEA,Luther Burden III: 3+ touchdowns,yes,td,Luther Burden III,CHI,KXNFLTD-26NOV02CHISEA-CHILBURDEN10-3,0.005,0.01,0.0007,0.0107,0.0049,-0.58,-53.83,7,False
+CHISEA,Colston Loveland: 3+ touchdowns,yes,td,Colston Loveland,CHI,KXNFLTD-26NOV02CHISEA-CHICLOVELAND84-3,0.005,0.01,0.0007,0.0107,0.0048,-0.59,-55.44,7,False
+CHISEA,Zavion Thomas: 1+ touchdowns,yes,td,Zavion Thomas,CHI,KXNFLTD-26NOV02CHISEA-CHIZTHOMAS13-1,0.055,0.06,0.004,0.064,0.072,0.8,12.53,6,False
+CHISEA,No · Zavion Thomas: 1+ touchdowns,no,td,Zavion Thomas,CHI,KXNFLTD-26NOV02CHISEA-CHIZTHOMAS13-1,0.945,0.95,0.004,0.954,0.928,-2.6,-2.72,6,False
+CHISEA,Rome Odunze: 1+ touchdowns,yes,td,Rome Odunze,CHI,KXNFLTD-26NOV02CHISEA-CHIRODUNZE15-1,0.255,0.26,0.0137,0.2737,0.2546,-1.91,-6.97,7,False
+CHISEA,No · Rome Odunze: 1+ touchdowns,no,td,Rome Odunze,CHI,KXNFLTD-26NOV02CHISEA-CHIRODUNZE15-1,0.745,0.75,0.0138,0.7638,0.7454,-1.85,-2.42,7,False
+CHISEA,Kalif Raymond: 2+ touchdowns,yes,td,Kalif Raymond,CHI,KXNFLTD-26NOV02CHISEA-CHIKRAYMOND14-2,0.015,0.02,0.0014,0.0214,0.0125,-0.89,-41.53,6,False
+CHISEA,No · Kalif Raymond: 2+ touchdowns,no,td,Kalif Raymond,CHI,KXNFLTD-26NOV02CHISEA-CHIKRAYMOND14-2,0.985,0.99,0.001,0.991,0.9875,-0.35,-0.35,6,False
+CHISEA,George Holani: 1+ touchdowns,yes,td,George Holani,SEA,KXNFLTD-26NOV02CHISEA-SEAGHOLANI36-1,0.125,0.13,0.008,0.138,0.1307,-0.74,-5.33,5,False
+CHISEA,No · George Holani: 1+ touchdowns,no,td,George Holani,SEA,KXNFLTD-26NOV02CHISEA-SEAGHOLANI36-1,0.875,0.88,0.0082,0.8882,0.8693,-1.89,-2.12,5,False
+CHISEA,Caleb Williams: 1+ touchdowns,yes,td,Caleb Williams,CHI,KXNFLTD-26NOV02CHISEA-CHICWILLIAMS18-1,0.155,0.16,0.0095,0.1695,0.1609,-0.86,-5.06,7,False
+CHISEA,No · Caleb Williams: 1+ touchdowns,no,td,Caleb Williams,CHI,KXNFLTD-26NOV02CHISEA-CHICWILLIAMS18-1,0.845,0.85,0.0091,0.8591,0.8391,-2.0,-2.33,7,False
+CHISEA,Roschon Johnson: 2+ touchdowns,yes,td,Roschon Johnson,CHI,KXNFLTD-26NOV02CHISEA-CHIRJOHNSON23-2,0.025,0.03,0.002,0.032,0.0278,-0.43,-13.33,6,False
+CHISEA,No · Roschon Johnson: 2+ touchdowns,no,td,Roschon Johnson,CHI,KXNFLTD-26NOV02CHISEA-CHIRJOHNSON23-2,0.975,0.98,0.002,0.982,0.9722,-0.98,-1.0,6,False
+CHISEA,Tory Horton: 1+ touchdowns,yes,td,Tory Horton,SEA,KXNFLTD-26NOV02CHISEA-SEATHORTON15-1,0.175,0.18,0.0104,0.1904,0.192,0.17,0.88,6,False
+CHISEA,No · Tory Horton: 1+ touchdowns,no,td,Tory Horton,SEA,KXNFLTD-26NOV02CHISEA-SEATHORTON15-1,0.825,0.83,0.01,0.84,0.808,-3.2,-3.81,6,False
+CHISEA,Sam Roush: 2+ touchdowns,yes,td,Sam Roush,CHI,KXNFLTD-26NOV02CHISEA-CHISROUSH87-2,0.005,0.01,0.0007,0.0107,0.0077,-0.3,-28.28,6,False
+CHISEA,Luther Burden III: 2+ touchdowns,yes,td,Luther Burden III,CHI,KXNFLTD-26NOV02CHISEA-CHILBURDEN10-2,0.035,0.04,0.0027,0.0427,0.0453,0.26,6.11,7,False
+CHISEA,No · Luther Burden III: 2+ touchdowns,no,td,Luther Burden III,CHI,KXNFLTD-26NOV02CHISEA-CHILBURDEN10-2,0.965,0.97,0.003,0.973,0.9547,-1.83,-1.88,7,False
+CHISEA,Zach Charbonnet: 2+ touchdowns,yes,td,Zach Charbonnet,SEA,KXNFLTD-26NOV02CHISEA-SEAZCHARBONNET26-2,0.095,0.1,0.0063,0.1063,0.0985,-0.78,-7.38,7,False
+CHISEA,No · Zach Charbonnet: 2+ touchdowns,no,td,Zach Charbonnet,SEA,KXNFLTD-26NOV02CHISEA-SEAZCHARBONNET26-2,0.905,0.91,0.006,0.916,0.9015,-1.45,-1.58,7,False
+CHISEA,AJ Barner: 1+ touchdowns,yes,td,AJ Barner,SEA,KXNFLTD-26NOV02CHISEA-SEAABARNER88-1,0.265,0.27,0.0141,0.2841,0.2743,-0.98,-3.44,7,False
+CHISEA,No · AJ Barner: 1+ touchdowns,no,td,AJ Barner,SEA,KXNFLTD-26NOV02CHISEA-SEAABARNER88-1,0.735,0.74,0.0138,0.7538,0.7257,-2.81,-3.73,7,False
+CHISEA,Luther Burden III: 1+ touchdowns,yes,td,Luther Burden III,CHI,KXNFLTD-26NOV02CHISEA-CHILBURDEN10-1,0.285,0.29,0.0147,0.3047,0.2855,-1.92,-6.31,7,False
+CHISEA,No · Luther Burden III: 1+ touchdowns,no,td,Luther Burden III,CHI,KXNFLTD-26NOV02CHISEA-CHILBURDEN10-1,0.715,0.72,0.0146,0.7346,0.7145,-2.01,-2.74,7,False
+CHISEA,Rome Odunze: 2+ touchdowns,yes,td,Rome Odunze,CHI,KXNFLTD-26NOV02CHISEA-CHIRODUNZE15-2,0.035,0.04,0.0027,0.0427,0.0357,-0.7,-16.47,7,False
+CHISEA,No · Rome Odunze: 2+ touchdowns,no,td,Rome Odunze,CHI,KXNFLTD-26NOV02CHISEA-CHIRODUNZE15-2,0.965,0.97,0.003,0.973,0.9643,-0.87,-0.89,7,False
+CHISEA,Tory Horton: 2+ touchdowns,yes,td,Tory Horton,SEA,KXNFLTD-26NOV02CHISEA-SEATHORTON15-2,0.015,0.02,0.0014,0.0214,0.0198,-0.16,-7.37,6,False
+CHISEA,No · Tory Horton: 2+ touchdowns,no,td,Tory Horton,SEA,KXNFLTD-26NOV02CHISEA-SEATHORTON15-2,0.985,0.99,0.001,0.991,0.9802,-1.08,-1.09,6,False
+CHISEA,Sam Darnold: 1+ touchdowns,yes,td,Sam Darnold,SEA,KXNFLTD-26NOV02CHISEA-SEASDARNOLD14-1,0.105,0.11,0.0069,0.1169,0.1232,0.63,5.43,6,False
+CHISEA,No · Sam Darnold: 1+ touchdowns,no,td,Sam Darnold,SEA,KXNFLTD-26NOV02CHISEA-SEASDARNOLD14-1,0.895,0.9,0.0064,0.9064,0.8768,-2.96,-3.27,6,False
+CHISEA,Roschon Johnson: 3+ touchdowns,yes,td,Roschon Johnson,CHI,KXNFLTD-26NOV02CHISEA-CHIRJOHNSON23-3,0.005,0.01,0.0007,0.0107,0.0024,-0.83,-77.84,6,False
+CHISEA,Zach Charbonnet: 3+ touchdowns,yes,td,Zach Charbonnet,SEA,KXNFLTD-26NOV02CHISEA-SEAZCHARBONNET26-3,0.015,0.02,0.0014,0.0214,0.0166,-0.48,-22.55,7,False
+CHISEA,No · Zach Charbonnet: 3+ touchdowns,no,td,Zach Charbonnet,SEA,KXNFLTD-26NOV02CHISEA-SEAZCHARBONNET26-3,0.985,0.99,0.001,0.991,0.9834,-0.76,-0.76,7,False
