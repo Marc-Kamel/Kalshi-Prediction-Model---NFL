@@ -116,6 +116,9 @@ def _price_game(gr: GameResult, quotes: list, cfg: dict) -> GameResult:
     gr.note = ""
     if len(gr.qualifying) < cfg["combos"]["min_legs"]:
         gr.note = f"only {len(gr.qualifying)} leg(s) passed the filters, so no combo"
+    elif not gr.combos:
+        gr.note = ("legs passed but none can be combined (they're rungs of the same player stat on the "
+                   "same side, which say the same thing); treat the best one as a single bet")
     return gr
 
 
