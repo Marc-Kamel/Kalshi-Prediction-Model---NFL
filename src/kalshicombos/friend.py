@@ -214,7 +214,9 @@ def run(cfg: dict, games: list[str] | None = None, replay_dir: str | None = None
     fcfg = friend_cfg(cfg)
     res = (pipeline.replay(replay_dir, fcfg) if replay_dir
            else pipeline.run(fcfg, kalshi_getter, odds_getter, now=now, only=games))
-    combos, skipped = [], []
+    combos, skipped = [], list(getattr(res, "notes", []) or [])
+    if not res.games and not skipped:
+        skipped.append("No games in the time window with sportsbook prices yet.")
     for gr in res.games:
         fc = build(gr, cfg, basis)
         if fc is None:

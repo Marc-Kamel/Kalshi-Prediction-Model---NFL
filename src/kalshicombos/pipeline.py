@@ -36,6 +36,7 @@ class RunResult:
     games: list[GameResult]
     credits_remaining: str | None
     config: dict
+    notes: list[str] = field(default_factory=list)   # why requested games were not priced
 
 
 def load_config(path: str | os.PathLike = "config.yaml") -> dict:
@@ -58,19 +59,28 @@ def run(cfg: dict, kalshi_getter: Callable | None = None, odds_getter: Callable 
 
     events = oc.events()
     results: list[GameResult] = []
+    notes: list[str] = []
+    seen: set[str] = set()
     for suffix in kc.open_games(cfg["kalshi"].get("discovery_series", "KXNFLGAME")):
         matchup = suffix[7:]
         if only and matchup not in only:
             continue
+        seen.add(matchup)
         markets = kc.markets(series, suffix)
         if not markets:
+            if only:
+                notes.append(f"{matchup}: Kalshi has no open player markets for this game yet.")
             continue
         away, home = markets[0].away, markets[0].home
         ev = match_event(events, away, home)
         if ev is None:
+            if only:
+                notes.append(f"{matchup}: sportsbooks aren't listing this game (finished, or not posted yet).")
             continue
         kickoff = _parse_time(ev["commence_time"])
         if kickoff <= now:
+            if only:
+                notes.append(f"{matchup}: already kicked off ({ev['commence_time']}); only pre-game prices are used.")
             continue  # started: pre-game prices only
         if not only and kickoff > horizon:
             continue
@@ -83,8 +93,12 @@ def run(cfg: dict, kalshi_getter: Callable | None = None, odds_getter: Callable 
             gr.note = f"skipped: pricing error ({type(e).__name__}: {e}). Raw quotes saved for a replay."
             results.append(gr)
 
+    for g in only:
+        if g not in seen:
+            notes.append(f"{g}: not an open game on Kalshi. It has already been played, isn't listed yet, "
+                         f"or the code is wrong (use away+home, e.g. CHISEA).")
     return RunResult(run_id=now.strftime("%Y%m%dT%H%MZ"), games=results,
-                     credits_remaining=oc.credits_remaining, config=cfg)
+                     credits_remaining=oc.credits_remaining, config=cfg, notes=notes)
 
 
 _SHAPES_CACHE: dict = {}

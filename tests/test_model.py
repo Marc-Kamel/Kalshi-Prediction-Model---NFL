@@ -337,3 +337,18 @@ def test_chunked_combo_probability_matches_single_run():
     one = simulate_hits(legs, cfg).all(axis=1).mean()
     chunked = combo_probability(legs, [0.8] * 6, cfg, None, 400000, chunk=100000)
     assert chunked == pytest.approx(one, abs=0.01)
+
+
+def test_finished_or_unknown_games_are_explained(monkeypatch):
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)
+    from kalshicombos import friend, report
+    kg, og = pipeline.fixture_getters(FIX)
+    res = pipeline.run(CFG, kg, og, now=NOW, only=["PHIWAS"])
+    assert not res.games and any("PHIWAS" in n and "not an open game" in n for n in res.notes)
+    assert "PHIWAS" in report.to_markdown(res)
+    late = datetime(2026, 11, 3, 2, 0, tzinfo=timezone.utc)
+    res2 = pipeline.run(CFG, kg, og, now=late, only=["CHISEA"])
+    assert any("already kicked off" in n for n in res2.notes)
+    _, combos, skipped = friend.run(dict(CFG, friend_mode=dict(CFG["friend_mode"], sims=100000)), ["PHIWAS"],
+                                    kalshi_getter=kg, odds_getter=og, now=NOW)
+    assert not combos and any("PHIWAS" in s for s in skipped)

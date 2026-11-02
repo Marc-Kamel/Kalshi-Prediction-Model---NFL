@@ -22,7 +22,9 @@ def to_markdown(res: RunResult) -> str:
            f"and fair beats Kalshi ask + fee. Suggestions only; nothing is bought.", ""]
     if res.credits_remaining is not None:
         out += [f"Odds API credits left: {res.credits_remaining}", ""]
-    if not res.games:
+    for n in res.notes:
+        out += [f"**{n}**", ""]
+    if not res.games and not res.notes:
         out += ["No games in the window (or no sportsbook prices yet)."]
     for g in res.games:
         kick = datetime.fromisoformat(g.kickoff.replace("Z", "+00:00")).strftime("%a %b %d %H:%M UTC")
