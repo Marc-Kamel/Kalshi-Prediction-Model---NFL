@@ -33,7 +33,10 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -e ".[dev]"
-      - run: pytest -q
+      - name: Tests
+        env:
+          GITHUB_STEP_SUMMARY: ""   # test fixtures must never show up in the run summary
+        run: pytest -q
       - name: Build combos (read-only; never places orders)
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}

@@ -68,4 +68,8 @@ def evaluate(markets: list[KalshiMarket], pricer: FairPricer, stake: float, fee_
 
 def passes(leg: Leg, f: dict) -> bool:
     return (leg.kalshi_prob >= f["min_kalshi_prob"] and leg.fair_prob >= f["min_fair_prob"]
-            and leg.edge > f["min_edge"])
+            and f["min_edge"] < leg.edge <= f.get("max_edge", 1.0))
+
+
+def suspicious(leg: Leg, f: dict) -> bool:
+    return leg.kalshi_prob >= f["min_kalshi_prob"] and leg.edge > f.get("max_edge", 1.0)

@@ -11,7 +11,7 @@ from typing import Callable
 import yaml
 
 from .combos import Combo, build_for_game
-from .edges import Leg, evaluate, passes
+from .edges import Leg, evaluate, passes, suspicious
 from .fair import BookLines, FairPricer
 from .kalshi import KalshiClient
 from .odds import OddsClient, match_event
@@ -24,6 +24,8 @@ class GameResult:
     legs: list[Leg] = field(default_factory=list)       # every priced leg (both sides)
     qualifying: list[Leg] = field(default_factory=list)
     combos: list[Combo] = field(default_factory=list)
+    suspicious: list[Leg] = field(default_factory=list)  # edges too big to trust
+    raw_quotes: list[dict] = field(default_factory=list)  # saved so a run can be audited/replayed
     note: str = ""
 
 
@@ -73,6 +75,7 @@ def run(cfg: dict, kalshi_getter: Callable | None = None, odds_getter: Callable 
             continue
         gr = GameResult(game=matchup, kickoff=ev["commence_time"])
         quotes = oc.event_quotes(ev["id"])
+        gr.raw_quotes = [q.__dict__ for q in quotes]
         if not quotes:
             gr.note = "no sportsbook prices yet"
             results.append(gr)
@@ -80,6 +83,7 @@ def run(cfg: dict, kalshi_getter: Callable | None = None, odds_getter: Callable 
         pricer = FairPricer(BookLines(quotes, cfg["odds"]["one_sided_margin"]), cfg["model"], cfg["odds"])
         gr.legs = evaluate(markets, pricer, cfg["filters"]["stake_usd"], cfg["kalshi"]["taker_fee_rate"])
         gr.qualifying = sorted([l for l in gr.legs if passes(l, cfg["filters"])], key=lambda l: l.ev, reverse=True)
+        gr.suspicious = sorted([l for l in gr.legs if suspicious(l, cfg["filters"])], key=lambda l: l.edge, reverse=True)
         gr.combos = build_for_game(gr.qualifying, cfg["combos"])
         if len(gr.qualifying) < cfg["combos"]["min_legs"]:
             gr.note = f"only {len(gr.qualifying)} leg(s) passed the filters, so no combo"

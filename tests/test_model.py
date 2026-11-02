@@ -87,7 +87,37 @@ def test_simulation_keeps_each_legs_fair_chance_and_correlates():
     assert (hits[:, 0] & hits[:, 2]).mean() < 0.70 * 0.55                 # "No TD" fights the QB over
 
 
-def test_end_to_end_fixture(tmp_path):
+def test_no_far_extrapolation_for_low_volume_players():
+    from kalshicombos.fair import BookLines, FairPricer
+    from kalshicombos.kalshi import KalshiMarket
+    from kalshicombos.odds import Quote
+    qs = []
+    for b in ("pinnacle", "fanduel"):
+        qs += [Quote(b, "player_reception_yds", "Over", "Roschon Johnson", 6.5, -115),
+               Quote(b, "player_reception_yds", "Under", "Roschon Johnson", 6.5, -105),
+               Quote(b, "player_reception_yds", "Over", "Jaxon Smith-Njigba", 89.5, -110),
+               Quote(b, "player_reception_yds", "Under", "Jaxon Smith-Njigba", 89.5, -110)]
+    fp = FairPricer(BookLines(qs, 0.07), CFG["model"], CFG["odds"])
+
+    def km(player, thr):
+        return KalshiMarket(ticker="T", game="CHISEA", date="26NOV02", away="CHI", home="SEA", kind="rec_yds",
+                            title="t", yes_bid=.2, yes_ask=.21, no_bid=.79, no_ask=.8, team="CHI", player=player, threshold=thr)
+    assert fp.price(km("Roschon Johnson", 14.5)) is None        # low-volume: exact line only
+    assert fp.price(km("Roschon Johnson", 6.5)) is not None      # exact line is fine
+    assert fp.price(km("Jaxon Smith-Njigba", 99.5)) is not None   # within 25% of 89.5
+    assert fp.price(km("Jaxon Smith-Njigba", 149.5)) is None      # too far out on the tail
+
+
+def test_huge_edges_are_flagged_not_suggested():
+    from kalshicombos.edges import passes, suspicious
+    leg = _leg({"kind": "rush_yds", "team": "SEA", "player": "Sam Darnold", "threshold": 9.5}, "no", 0.12)
+    leg.kalshi_prob = 0.675
+    assert leg.edge > CFG["filters"]["max_edge"]
+    assert not passes(leg, CFG["filters"]) and suspicious(leg, CFG["filters"])
+
+
+def test_end_to_end_fixture(tmp_path, monkeypatch):
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)  # keep test output out of the Actions summary
     kg, og = pipeline.fixture_getters(FIX)
     res = pipeline.run(CFG, kg, og, now=NOW)
     assert len(res.games) == 1

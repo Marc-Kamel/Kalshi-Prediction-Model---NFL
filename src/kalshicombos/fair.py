@@ -138,6 +138,18 @@ class FairPricer:
         self.weights = odds_cfg.get("book_weights", {}) or {}
         self.min_books = int(odds_cfg.get("min_books", 2))
 
+    def _can_extrapolate(self, kind: str, line: float, target: float) -> bool:
+        """Moving a book's line to a far-away Kalshi rung relies on the distribution's tail,
+        which is unreliable — especially for low-volume players (a backup RB's receiving
+        yards, a QB's rushing) whose games are mostly small with the odd big play."""
+        rule = (self.m.get("extrapolation") or {}).get(kind)
+        if not rule:
+            return True
+        if line < float(rule.get("min_line", 0)):
+            return False
+        band = max(float(rule.get("abs", 0)), float(rule.get("rel", 0)) * line)
+        return abs(target - line) <= band + 1e-9
+
     def _blend(self, by_book: dict[str, float]) -> Fair | None:
         by_book = {b: p for b, p in by_book.items() if p is not None and 0 < p < 1}
         if len(by_book) < self.min_books:
@@ -188,6 +200,8 @@ class FairPricer:
             line, p = min(rows, key=lambda r: abs(r[0] - km.threshold))
             if abs(line - km.threshold) < 1e-9:
                 out[b] = p
+            elif not self._can_extrapolate(km.kind, line, km.threshold):
+                continue  # rung too far from this book's line (or low-volume player): don't guess
             elif km.kind == "receptions":
                 out[b] = _count_sf_from_line(line, p, km.threshold, self.m["receptions_dispersion"])
             else:

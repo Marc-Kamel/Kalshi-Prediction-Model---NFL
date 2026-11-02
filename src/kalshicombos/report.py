@@ -46,7 +46,11 @@ def to_markdown(res: RunResult) -> str:
                 out.append(f"| {l.label} | {_pct(l.kalshi_prob)} | {l.all_in * 100:.1f}¢ | {_pct(l.fair_prob)} | "
                            f"{l.edge * 100:+.1f}¢ | {l.n_books} |")
             out.append("")
-        else:
+        if g.suspicious:
+            out += [f"Skipped as likely data errors (edge > {f.get('max_edge', 1) * 100:.0f}¢; check the line before trusting):", ""]
+            out += [f"- {l.label}: fair {_pct(l.fair_prob)} vs Kalshi {_pct(l.kalshi_prob)}" for l in g.suspicious[:8]]
+            out.append("")
+        if not g.qualifying:
             near = sorted([l for l in g.legs if l.kalshi_prob >= f["min_kalshi_prob"]], key=lambda l: l.edge, reverse=True)[:5]
             if near:
                 out += ["Closest misses (60%+ legs, best edge first):", ""]
@@ -64,6 +68,9 @@ def write(res: RunResult, out_dir: str | os.PathLike | None = None) -> Path:
     all_legs = [l.as_row() | {"passes": l in g.qualifying} for g in res.games for l in g.legs]
     pd.DataFrame(all_legs).to_csv(run_dir / "legs.csv", index=False)
     pd.DataFrame([c.as_row() for g in res.games for c in g.combos]).to_csv(run_dir / "combos.csv", index=False)
+    raw = [q | {"game": g.game} for g in res.games for q in g.raw_quotes]
+    if raw:
+        pd.DataFrame(raw).to_csv(run_dir / "book_quotes.csv.gz", index=False)
     md = to_markdown(res)
     (run_dir / "report.md").write_text(md)
     (base / "latest.md").write_text(md)

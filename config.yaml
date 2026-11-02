@@ -48,6 +48,8 @@ filters:
   min_kalshi_prob: 0.60        # leg's own Kalshi price (mid) must be >= this
   min_fair_prob: 0.60          # and the sportsbook fair probability must be >= this
   min_edge: 0.0                # fair - (ask + fee), in probability points; > 0 means +EV
+  max_edge: 0.08               # an "edge" bigger than this on a liquid exchange is almost always a
+                               # model/data error (stale line, wrong player) — skip it and flag it
   stake_usd: 10                # used only to compute Kalshi's per-order fee rounding
 
 model:
@@ -58,6 +60,13 @@ model:
     rush_yds: 0.65
     pass_yds: 0.30
   receptions_dispersion: 1.15  # variance / mean for receptions (1.0 = Poisson)
+  # Only move a book's line to a Kalshi rung that is close to it: within max(abs, rel × line).
+  # Lines below min_line (low-volume players) are used only when the book posts that exact line.
+  extrapolation:
+    rec_yds:    {abs: 10, rel: 0.25, min_line: 19.5}
+    rush_yds:   {abs: 10, rel: 0.25, min_line: 19.5}
+    pass_yds:   {abs: 25, rel: 0.12, min_line: 150}
+    receptions: {abs: 1,  rel: 0.0,  min_line: 1.5}
   margin_sd: 13.5              # sd of final margin (points) for spreads
   total_sd: 10.0               # sd of total points
 
