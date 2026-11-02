@@ -71,10 +71,9 @@ class ComboRules:
         return 1 if self.one_per_event else self.event_max.get(ev)
 
 LINKED = ("rush_yds", "rec_yds", "rr_yds", "receptions")
-# Stats where Kalshi allows only ONE line per player in a combo (no ranges). Kalshi: "you can only
-# choose one reception line per player"; the user asked for the same on receiving yards. Anytime TD (1+ / 2+ TDs) is the same kind of count market,
-# so it is treated the same way to be safe. Add other stats here if Kalshi says the same about them.
-SINGLE_LINE_KINDS = {"receptions", "td", "rec_yds"}
+# One line per player per stat in a combo (no ranges), for every stat. Kalshi said so for receptions
+# ("you can only choose one reception line per player"); the user chose the same for all stats.
+SINGLE_LINE_KINDS = None   # None = every player stat; or a set like {"receptions"} to limit it
 INF = float("inf")
 
 
@@ -166,7 +165,7 @@ def problems(legs: list[Leg], rules: ComboRules | None = None) -> list[str]:
 
 def _one_line_clash(a: Leg, b: Leg) -> bool:
     ma, mb = a.market, b.market
-    return (ma.kind in SINGLE_LINE_KINDS and ma.kind == mb.kind and ma.player is not None
+    return ((SINGLE_LINE_KINDS is None or ma.kind in SINGLE_LINE_KINDS) and ma.kind == mb.kind and ma.player is not None
             and ma.player == mb.player and ma.game == mb.game)
 
 

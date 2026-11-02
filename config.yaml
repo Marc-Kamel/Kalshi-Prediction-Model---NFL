@@ -115,8 +115,8 @@ combos:
   #   highest_payout = the least likely one that still qualifies (e.g. No 70+ at 61% over No 80+ at 87%)
   #   best_ev        = the one with the biggest edge
   rung_choice: highest_payout
-  allow_ranges: true           # same player-stat twice as Yes on a low rung + No on a high rung
-                               # (e.g. "30+ rushing" and "No 80+ rushing" = 30–79 yards)
+  allow_ranges: false          # Kalshi combos take one line per player per stat, so no ranges
+                               # (a range = "30+ rushing" + "No 80+ rushing")
   sims: 400000
   min_sim_hits: 300            # stop growing a combo once it wins in fewer simulated games than this
   seed: 7

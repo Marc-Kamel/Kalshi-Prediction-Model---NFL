@@ -64,12 +64,12 @@ To run it manually: Actions → combos → Run workflow → command `grade` (or 
 
 ## How combos are built
 - **Pool:** for each game, every qualifying player leg, up to 60.
-- **Ranges:** the same player stat can appear twice, as Yes on a low rung plus No on a higher one. For example, "Swift 30+ rushing" with "No Swift 80+ rushing" means 30 to 79 yards. Two Yes rungs (redundant) or contradictory pairs are never combined.
+- **One line per player per stat:** a combo never has two lines of the same player stat (no ranges like "30+ rushing" + "No 80+ rushing"). Set `allow_ranges: true` in config.yaml to allow ranges again (Kalshi refuses them for receptions).
 - **Buildable on Kalshi:** every combo is checked against the rules Kalshi's combo builder enforces (`buildable.py`):
   - **Kalshi's published rules, fetched live each run** (`/multivariate_event_collections`, saved as `combo_rules.json` next to each report): only events offered for combos; Yes-only events get no No legs; per-event market caps (game lines allow 1); min/max legs per combo. Today's player-prop events have no Yes-only flag and no caps, and combos need at least 2 legs.
   - **No leg already decided by the others**, even across stats. "No Swift 30+ receiving" + "No Swift 80+ rushing" cap him at 108 combined, so "No Swift 115+ rush+rec" would be refused. Rushing, receiving, rush+rec and receptions are linked (rush + receiving = rush+rec; receiving yards need a catch).
   - **Legs must be able to all hit together** (no "Yes 80+" with "No 30+" on one stat).
-  - **One line per player for receptions** (Kalshi's message), **receiving yards**, and anytime TD (treated the same to be safe). Rushing, passing and rush+rec ranges stay allowed.
+  - **One line per player per stat, for every stat** (receptions is Kalshi's own rule; applied to all stats). So no ranges.
   - Applies to regular combos and friend mode. If Kalshi ever refuses a suggested combo, its message names the rule; add it here.
 - **Sizes:** one combo per size in `combos.sizes` (default 3, 5, 8, 12, 20, and "as many as fit"). The builder adds legs one at a time, each time picking the leg that keeps the combo most +EV, so each bigger combo is the smaller one plus more legs.
 - **Simulation:** it simulates the game 200,000 times with shared factors (team offense, team pass volume, each player's own game).
