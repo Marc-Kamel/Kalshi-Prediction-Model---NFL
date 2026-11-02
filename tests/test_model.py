@@ -434,5 +434,28 @@ def test_suggested_combos_are_buildable_on_kalshi(monkeypatch):
     kg, og = pipeline.fixture_getters(FIX)
     res = pipeline.run(CFG, kg, og, now=NOW)
     for g in res.games:
+        rules = pipeline.rules_for(g)
+        assert rules is not None and rules.collection == "KXMVECROSSCATEGORY-TEST"
         for c in g.combos:
-            assert problems(c.legs) == [], problems(c.legs)
+            assert problems(c.legs, rules) == [], problems(c.legs, rules)
+
+
+def test_live_kalshi_combo_rules_are_enforced():
+    from kalshicombos.buildable import ComboRules, can_add, problems
+    a = _leg({"ticker": "KXNFLREC-26NOV02CHISEA-CHIDSWIFT4-3", "kind": "receptions", "player": "A", "threshold": 2.5}, "no", 0.4)
+    b = _leg({"ticker": "KXNFLRSHYDS-26NOV02CHISEA-CHIDSWIFT4-50", "kind": "rush_yds", "player": "A", "threshold": 49.5}, "yes", 0.6)
+    c = _leg({"ticker": "KXNFLTD-26NOV02CHISEA-CHIDSWIFT4-1", "kind": "td", "player": "A", "threshold": 0.5}, "no", 0.4)
+    cols = [{"collection_ticker": "X", "size_min": 2, "size_max": 2, "is_all_yes": False,
+             "associated_events": [{"ticker": "KXNFLREC-26NOV02CHISEA", "is_yes_only": True},
+                                   {"ticker": "KXNFLRSHYDS-26NOV02CHISEA", "is_yes_only": False, "size_max": 1}]}]
+    r = ComboRules.from_collections(cols, {"KXNFLREC-26NOV02CHISEA", "KXNFLRSHYDS-26NOV02CHISEA"})
+    assert not r.leg_ok(a)                      # No side on a Yes-only event
+    assert not r.leg_ok(c)                      # TD event isn't in the collection
+    assert r.leg_ok(b)
+    b2 = _leg({"ticker": "KXNFLRSHYDS-26NOV02CHISEA-SEAKWALKER9-30", "kind": "rush_yds", "player": "B", "threshold": 29.5}, "yes", 0.6)
+    assert not can_add([b], b2, r)              # event allows 1 market
+    assert problems([b, b2], r)
+    # TD: one line per player, like receptions
+    t1 = _leg({"ticker": "TD1", "kind": "td", "player": "A", "threshold": 0.5}, "yes", 0.6)
+    t2 = _leg({"ticker": "TD2", "kind": "td", "player": "A", "threshold": 1.5}, "no", 0.6)
+    assert not can_add([t1], t2)

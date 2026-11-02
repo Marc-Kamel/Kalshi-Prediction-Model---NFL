@@ -200,7 +200,7 @@ def _make(chosen: list[Leg], mask: np.ndarray, cfg: dict) -> Combo:
                  min_accept_payout=(1.0 / p) * (1.0 + float(cfg["accept_margin"])), sim_hits=h)
 
 
-def _greedy_path(pool: list[Leg], hits: np.ndarray, cfg: dict) -> list[tuple[int, np.ndarray]]:
+def _greedy_path(pool: list[Leg], hits: np.ndarray, cfg: dict, rules=None) -> list[tuple[int, np.ndarray]]:
     """Add legs one at a time, each time the leg that keeps the combo most +EV (highest chance
     of still winning relative to Kalshi's price for it). Returns every step, so a k-leg combo is the first
     k steps. Stops at max_legs, when nothing compatible is left, or when the combo would win in
@@ -217,7 +217,7 @@ def _greedy_path(pool: list[Leg], hits: np.ndarray, cfg: dict) -> list[tuple[int
         for j in range(len(pool)):
             if j in chosen or not all(compatible(pool[j], pool[i], allow) for i in chosen):
                 continue
-            if not can_add([pool[i] for i in chosen], pool[j]):   # Kalshi refuses implied/impossible legs
+            if not can_add([pool[i] for i in chosen], pool[j], rules):   # Kalshi refuses implied/impossible legs
                 continue
             m = mask & hits[:, j]
             c = int(m.sum())
@@ -258,13 +258,17 @@ def pick_rungs(legs: list[Leg], rule: str = "highest_payout", per_side: bool = T
     return list(best.values())
 
 
-def build_for_game(candidates: list[Leg], cfg: dict, shapes=None) -> list[Combo]:
+def build_for_game(candidates: list[Leg], cfg: dict, shapes=None, rules=None) -> list[Combo]:
+    """rules: Kalshi's live combo rules for this game (buildable.ComboRules), or None if unavailable;
+    the logical rules (implied / contradicting / one receptions or TD line per player) always apply."""
+    if rules is not None:
+        candidates = [l for l in candidates if rules.leg_ok(l)]
     candidates = pick_rungs(candidates, cfg.get("rung_choice", "highest_payout"), per_side=True)
     pool = sorted(candidates, key=lambda l: l.ev, reverse=True)[: int(cfg["candidates_per_game"])]
     if len(pool) < int(cfg["min_legs"]):
         return []
     hits = simulate_hits(pool, cfg, shapes)
-    path = _greedy_path(pool, hits, cfg)
+    path = _greedy_path(pool, hits, cfg, rules)
     sizes = cfg.get("sizes") or [cfg.get("max_legs", 4)]
     out: list[Combo] = []
     done: set[int] = set()

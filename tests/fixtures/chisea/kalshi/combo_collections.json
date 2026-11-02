@@ -1,0 +1,80 @@
+{
+ "multivariate_contracts": [
+  {
+   "collection_ticker": "KXMVECROSSCATEGORY-TEST",
+   "series_ticker": "KXMVECROSSCATEGORY",
+   "size_min": 2,
+   "size_max": 0,
+   "is_all_yes": false,
+   "is_single_market_per_event": false,
+   "is_ordered": false,
+   "associated_event_tickers": [
+    "KXNFLGAME-26NOV02CHISEA",
+    "KXNFLSPREAD-26NOV02CHISEA",
+    "KXNFLTOTAL-26NOV02CHISEA",
+    "KXNFLTD-26NOV02CHISEA",
+    "KXNFLPASSYDS-26NOV02CHISEA",
+    "KXNFLRSHYDS-26NOV02CHISEA",
+    "KXNFLRECYDS-26NOV02CHISEA",
+    "KXNFLREC-26NOV02CHISEA",
+    "KXNFLRRYDS-26NOV02CHISEA"
+   ],
+   "associated_events": [
+    {
+     "ticker": "KXNFLGAME-26NOV02CHISEA",
+     "is_yes_only": false,
+     "size_max": 1,
+     "active_quoters": []
+    },
+    {
+     "ticker": "KXNFLSPREAD-26NOV02CHISEA",
+     "is_yes_only": false,
+     "size_max": 1,
+     "active_quoters": []
+    },
+    {
+     "ticker": "KXNFLTOTAL-26NOV02CHISEA",
+     "is_yes_only": false,
+     "size_max": 1,
+     "active_quoters": []
+    },
+    {
+     "ticker": "KXNFLTD-26NOV02CHISEA",
+     "is_yes_only": false,
+     "size_max": null,
+     "active_quoters": []
+    },
+    {
+     "ticker": "KXNFLPASSYDS-26NOV02CHISEA",
+     "is_yes_only": false,
+     "size_max": null,
+     "active_quoters": []
+    },
+    {
+     "ticker": "KXNFLRSHYDS-26NOV02CHISEA",
+     "is_yes_only": false,
+     "size_max": null,
+     "active_quoters": []
+    },
+    {
+     "ticker": "KXNFLRECYDS-26NOV02CHISEA",
+     "is_yes_only": false,
+     "size_max": null,
+     "active_quoters": []
+    },
+    {
+     "ticker": "KXNFLREC-26NOV02CHISEA",
+     "is_yes_only": false,
+     "size_max": null,
+     "active_quoters": []
+    },
+    {
+     "ticker": "KXNFLRRYDS-26NOV02CHISEA",
+     "is_yes_only": false,
+     "size_max": null,
+     "active_quoters": []
+    }
+   ]
+  }
+ ]
+}

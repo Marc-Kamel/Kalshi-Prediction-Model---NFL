@@ -105,7 +105,7 @@ def select_legs(gr: pipeline.GameResult, fcfg: dict) -> list[Leg]:
     ok = [l for l in gr.legs if passes(l, fcfg["filters"]) and l.market.player]
     rule = fcfg.get("friend_mode", {}).get("rung_choice", fcfg["combos"].get("rung_choice", "highest_payout"))
     legs = sorted(pick_rungs(ok, rule, per_side=False), key=lambda l: l.ev, reverse=True)
-    legs = prune(legs)   # drop legs Kalshi would refuse (already implied by, or contradicting, better legs)
+    legs = prune(legs, pipeline.rules_for(gr))   # drop legs Kalshi would refuse (already implied by, or contradicting, better legs)
     cap = int(fcfg.get("friend_mode", {}).get("max_legs", 0))
     return legs[:cap] if cap > 0 else legs
 

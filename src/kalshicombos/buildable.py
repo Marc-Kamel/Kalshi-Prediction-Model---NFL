@@ -15,14 +15,66 @@ choice (it can only flag more conflicts, not fewer).
 from __future__ import annotations
 
 import math
+from dataclasses import dataclass, field
 from typing import Iterable
 
 from .edges import Leg
+from .kalshi import event_of
+
+
+@dataclass
+class ComboRules:
+    """Kalshi's published rules for one game's combos (from /multivariate_event_collections).
+    Per event (e.g. KXNFLREC-26NOV02CHISEA = every receptions market in the game): may it be used at
+    all, Yes side only?, max markets from it. Per combo: min/max legs. None = no limit."""
+    collection: str = ""
+    eligible: set[str] | None = None            # None = unknown (don't restrict)
+    yes_only: set[str] = field(default_factory=set)
+    event_max: dict[str, int] = field(default_factory=dict)
+    size_min: int = 2
+    size_max: int | None = None
+    one_per_event: bool = False
+
+    @classmethod
+    def from_collections(cls, cols: list[dict], events: set[str]) -> "ComboRules | None":
+        """Pick the collection that covers the most of this game's events (ties: the loosest)."""
+        best, best_key = None, None
+        for c in cols:
+            assoc = c.get("associated_events") or [{"ticker": t} for t in c.get("associated_event_tickers", [])]
+            tick = {a.get("ticker") for a in assoc}
+            yes_only = tick if c.get("is_all_yes") else {a["ticker"] for a in assoc if a.get("is_yes_only")}
+            key = (len(events & tick), -len(yes_only & events), -(c.get("size_min") or 0))
+            if best_key is None or key > best_key:
+                best_key = key
+                best = cls(collection=c.get("collection_ticker", ""), eligible=tick, yes_only=yes_only,
+                           event_max={a["ticker"]: int(a["size_max"]) for a in assoc if a.get("size_max")},
+                           size_min=int(c.get("size_min") or 2),
+                           size_max=int(c["size_max"]) if c.get("size_max") else None,   # 0 = no limit
+                           one_per_event=bool(c.get("is_single_market_per_event")))
+        return best
+
+    def leg_ok(self, leg: Leg) -> bool:
+        ev = event_of(leg.market.ticker)
+        if self.eligible is not None and ev not in self.eligible:
+            return False
+        return not (leg.side == "no" and ev in self.yes_only)
+
+    def why_not(self, leg: Leg) -> str:
+        ev = event_of(leg.market.ticker)
+        if self.eligible is not None and ev not in self.eligible:
+            return f"{ev} isn't offered for combos"
+        if leg.side == "no" and ev in self.yes_only:
+            return f"{ev} allows Yes legs only"
+        return ""
+
+    def event_cap(self, ev: str) -> int | None:
+        return 1 if self.one_per_event else self.event_max.get(ev)
 
 LINKED = ("rush_yds", "rec_yds", "rr_yds", "receptions")
 # Stats where Kalshi allows only ONE line per player in a combo (no ranges). Kalshi: "you can only
-# choose one reception line per player". Add other stats here if Kalshi says the same about them.
-SINGLE_LINE_KINDS = {"receptions"}
+# choose one reception line per player". Anytime TD (1+ / 2+ TDs) is the same kind of count market,
+# so it is treated the same way to be safe. Add other stats here if Kalshi says the same about them.
+SINGLE_LINE_KINDS = {"receptions", "td"}
 INF = float("inf")
 
 
@@ -71,9 +123,23 @@ def _decided(leg: Leg, b: dict[str, list[float]]) -> bool:
     return lo >= n or hi <= n - 1
 
 
-def problems(legs: list[Leg]) -> list[str]:
+def problems(legs: list[Leg], rules: ComboRules | None = None) -> list[str]:
     """Why Kalshi would refuse these legs as one combo (empty list = buildable)."""
     out: list[str] = []
+    if rules is not None:
+        out += [w for w in (rules.why_not(l) for l in legs) if w]
+        if len(legs) < rules.size_min:
+            out.append(f"needs at least {rules.size_min} legs")
+        if rules.size_max and len(legs) > rules.size_max:
+            out.append(f"at most {rules.size_max} legs allowed")
+        per_ev: dict[str, int] = {}
+        for l in legs:
+            ev = event_of(l.market.ticker)
+            per_ev[ev] = per_ev.get(ev, 0) + 1
+        for ev, n in per_ev.items():
+            cap = rules.event_cap(ev)
+            if cap is not None and n > cap:
+                out.append(f"{ev}: at most {cap} market(s) from this event")
     seen: set[str] = set()
     for l in legs:
         if l.market.ticker in seen:
@@ -104,10 +170,19 @@ def _one_line_clash(a: Leg, b: Leg) -> bool:
             and ma.player == mb.player and ma.game == mb.game)
 
 
-def can_add(chosen: list[Leg], cand: Leg) -> bool:
+def can_add(chosen: list[Leg], cand: Leg, rules: ComboRules | None = None) -> bool:
     """True if adding cand keeps the combo buildable on Kalshi (chosen is assumed buildable)."""
     if any(c.market.ticker == cand.market.ticker or _one_line_clash(c, cand) for c in chosen):
         return False
+    if rules is not None:
+        if not rules.leg_ok(cand):
+            return False
+        if rules.size_max and len(chosen) + 1 > rules.size_max:
+            return False
+        ev = event_of(cand.market.ticker)
+        cap = rules.event_cap(ev)
+        if cap is not None and sum(event_of(c.market.ticker) == ev for c in chosen) + 1 > cap:
+            return False
     m = cand.market
     if not m.player or m.kind not in LINKED:
         return True
@@ -124,10 +199,10 @@ def can_add(chosen: list[Leg], cand: Leg) -> bool:
     return True
 
 
-def prune(legs: list[Leg]) -> list[Leg]:
+def prune(legs: list[Leg], rules: ComboRules | None = None) -> list[Leg]:
     """Keep legs in the given order (best first), dropping any that would break buildability."""
     kept: list[Leg] = []
     for l in legs:
-        if can_add(kept, l):
+        if can_add(kept, l, rules):
             kept.append(l)
     return kept

@@ -29,6 +29,7 @@ class GameResult:
     raw_quotes: list[dict] = field(default_factory=list)  # saved so a run can be audited/replayed
     markets: list = field(default_factory=list)            # Kalshi markets seen (saved for replay)
     note: str = ""
+    combo_rules: dict | None = None                        # Kalshi's combo collections for this game (raw, saved)
 
 
 @dataclass
@@ -86,6 +87,10 @@ def run(cfg: dict, kalshi_getter: Callable | None = None, odds_getter: Callable 
         if not only and kickoff > horizon:
             continue
         gr = GameResult(game=matchup, kickoff=ev["commence_time"], markets=markets)
+        try:   # Kalshi's live combo rules (eligible events, Yes-only, per-event caps, size limits)
+            gr.combo_rules = {"collections": kc.combo_collections(f"{cfg['kalshi'].get('discovery_series', 'KXNFLGAME')}-{suffix}")}
+        except Exception as e:  # rules unavailable: the logical checks still apply
+            gr.combo_rules = {"collections": [], "error": f"{type(e).__name__}: {e}"}
         quotes = oc.event_quotes(ev["id"])
         gr.raw_quotes = [q.__dict__ for q in quotes]
         try:
@@ -129,7 +134,7 @@ def _price_game(gr: GameResult, quotes: list, cfg: dict) -> GameResult:
     gr.suspicious = sorted([l for l in gr.legs if suspicious(l, cfg["filters"])], key=lambda l: l.edge, reverse=True)
     gr.combo_legs = sorted([l for l in gr.legs if passes_combo(l, cfg["filters"])],
                            key=lambda l: l.edge_mid, reverse=True)
-    gr.combos = build_for_game(gr.combo_legs, cfg["combos"], _shapes(cfg))
+    gr.combos = build_for_game(gr.combo_legs, cfg["combos"], _shapes(cfg), rules_for(gr))
     gr.note = ""
     if len(gr.combo_legs) < cfg["combos"]["min_legs"]:
         gr.note = f"only {len(gr.combo_legs)} leg(s) passed the combo filters, so no combo"
@@ -137,6 +142,16 @@ def _price_game(gr: GameResult, quotes: list, cfg: dict) -> GameResult:
         gr.note = ("legs passed but none can be combined (they're rungs of the same player stat on the "
                    "same side, which say the same thing); treat the best one as a single bet")
     return gr
+
+
+def rules_for(gr: GameResult):
+    """Kalshi's combo rules for this game, or None when they weren't fetched."""
+    from .buildable import ComboRules
+    from .kalshi import event_of
+    cols = (gr.combo_rules or {}).get("collections") or []
+    if not cols:
+        return None
+    return ComboRules.from_collections(cols, {event_of(m.ticker) for m in gr.markets})
 
 
 def replay(run_dir: str | Path, cfg: dict) -> RunResult:
@@ -160,6 +175,9 @@ def replay(run_dir: str | Path, cfg: dict) -> RunResult:
                     point=None if r["point"] == "" else float(r["point"]), price=float(r["price"]))
               for r in bq[bq.game == game].to_dict("records")]
         gr = GameResult(game=game, kickoff=kickoff, markets=markets, raw_quotes=[q.__dict__ for q in qs])
+        rf = run_dir / "combo_rules.json"
+        if rf.exists():
+            gr.combo_rules = json.loads(rf.read_text()).get(game)
         games.append(_price_game(gr, qs, cfg))
     return RunResult(run_id=run_dir.name + "-replay", games=games, credits_remaining=None, config=cfg)
 
@@ -172,6 +190,9 @@ def fixture_getters(folder: str | Path) -> tuple[Callable, Callable]:
     def kalshi_get(path: str, params: dict) -> dict:
         if path == "/events":
             return json.loads((folder / "kalshi" / f"events_{params['series_ticker']}.json").read_text())
+        if path == "/multivariate_event_collections":
+            f = folder / "kalshi" / "combo_collections.json"
+            return json.loads(f.read_text()) if f.exists() else {"multivariate_contracts": []}
         f = folder / "kalshi" / f"{params['event_ticker']}.json"
         return json.loads(f.read_text()) if f.exists() else {"markets": []}
 

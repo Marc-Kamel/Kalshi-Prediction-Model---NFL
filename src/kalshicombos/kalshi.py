@@ -135,3 +135,14 @@ class KalshiClient:
                 if km:
                     out.append(km)
         return out
+
+    def combo_collections(self, event_ticker: str) -> list[dict]:
+        """Kalshi's combo collections that include this event (public; carries the combo rules)."""
+        data = self._get("/multivariate_event_collections",
+                         {"status": "open", "limit": 200, "associated_event_ticker": event_ticker})
+        return data.get("multivariate_contracts") or []
+
+
+def event_of(ticker: str) -> str:
+    """'KXNFLREC-26NOV02CHISEA-CHIDSWIFT4-3' -> 'KXNFLREC-26NOV02CHISEA'."""
+    return "-".join(ticker.split("-")[:2])

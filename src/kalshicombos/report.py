@@ -32,6 +32,9 @@ def to_markdown(res: RunResult) -> str:
         out += [f"## {g.game} — {kick}", ""]
         if g.note:
             out += [f"_{g.note}_", ""]
+        rl = _rules_line(g)
+        if rl and g.combos:
+            out += [rl, ""]
         if g.combos:
             out += ["### Suggested combos", "",
                     "| Legs | Picks | Fair chance | Fair payout | **Accept if Kalshi pays ≥** | Kalshi's legs imply |",
@@ -82,6 +85,24 @@ def to_markdown(res: RunResult) -> str:
     return "\n".join(out)
 
 
+def _write_rules(res: RunResult, run_dir: Path) -> None:
+    import json
+    rules = {g.game: g.combo_rules for g in res.games if g.combo_rules is not None}
+    if rules:
+        (run_dir / "combo_rules.json").write_text(json.dumps(rules, indent=1, default=str))
+
+
+def _rules_line(g) -> str:
+    from .pipeline import rules_for
+    r = rules_for(g)
+    if r is None:
+        err = (g.combo_rules or {}).get("error")
+        return ("_Kalshi's combo rules couldn't be fetched" + (f" ({err})" if err else "") +
+                "; only the logic checks were applied._") if g.combo_rules is not None else ""
+    lim = f"max {r.size_max} legs" if r.size_max else "no leg limit"
+    return f"_Checked against Kalshi's combo rules ({r.collection}: {lim}, {len(r.yes_only)} Yes-only events)._"
+
+
 def write_raw(res: RunResult, out_dir: str | os.PathLike | None = None) -> Path:
     """Only the raw prices (Kalshi markets + book quotes) so a run can be replayed. Used by friend
     mode, which must not overwrite the strict report or add its looser picks to grading."""
@@ -95,6 +116,7 @@ def write_raw(res: RunResult, out_dir: str | os.PathLike | None = None) -> Path:
     raw = [q | {"game": g.game} for g in res.games for q in g.raw_quotes]
     if raw:
         pd.DataFrame(raw).to_csv(run_dir / "book_quotes.csv.gz", index=False)
+    _write_rules(res, run_dir)
     return run_dir
 
 
@@ -113,6 +135,7 @@ def write(res: RunResult, out_dir: str | os.PathLike | None = None) -> Path:
     raw = [q | {"game": g.game} for g in res.games for q in g.raw_quotes]
     if raw:
         pd.DataFrame(raw).to_csv(run_dir / "book_quotes.csv.gz", index=False)
+    _write_rules(res, run_dir)
     md = to_markdown(res)
     (run_dir / "report.md").write_text(md)
     (base / "latest.md").write_text(md)
