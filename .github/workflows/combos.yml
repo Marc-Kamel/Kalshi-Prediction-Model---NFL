@@ -3,6 +3,11 @@ name: combos
 on:
   workflow_dispatch:
     inputs:
+      command:
+        description: "run = build combos, grade = settle past legs/combos, fit-history = refit from game logs"
+        type: choice
+        options: [run, grade, fit-history]
+        default: run
       game:
         description: "Optional matchup code like CHISEA (leave blank for every game in the next 36h)"
         required: false
@@ -15,6 +20,7 @@ on:
     - cron: "45 20 * * 0"   # Sun 3:45pm ET  — late games + SNF
     - cron: "45 0 * * 1"    # Sun 7:45pm ET  — Sunday night game
     - cron: "30 0 * * 2"    # Mon 7:30pm ET  — Monday night game
+    - cron: "0 14 * * 2"    # Tue 9:00am ET  — grade last week + refit history
 
 permissions:
   contents: write   # to commit the reports folder
@@ -37,7 +43,14 @@ jobs:
         env:
           GITHUB_STEP_SUMMARY: ""   # test fixtures must never show up in the run summary
         run: pytest -q
+      - name: Pick command
+        id: cmd
+        run: |
+          if [ "${{ github.event.schedule }}" = "0 14 * * 2" ]; then echo "c=weekly" >> $GITHUB_OUTPUT
+          elif [ -n "${{ inputs.command }}" ]; then echo "c=${{ inputs.command }}" >> $GITHUB_OUTPUT
+          else echo "c=run" >> $GITHUB_OUTPUT; fi
       - name: Build combos (read-only; never places orders)
+        if: steps.cmd.outputs.c == 'run'
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: |
@@ -46,10 +59,19 @@ jobs:
           else
             kalshicombos run
           fi
-      - name: Commit reports
+      - name: Grade past legs and combos
+        if: steps.cmd.outputs.c == 'grade' || steps.cmd.outputs.c == 'weekly'
+        run: |
+          kalshicombos grade
+          cat reports/grades/summary.md >> $GITHUB_STEP_SUMMARY
+      - name: Refit shapes and correlations from game logs
+        if: steps.cmd.outputs.c == 'fit-history' || steps.cmd.outputs.c == 'weekly'
+        run: kalshicombos fit-history
+      - name: Commit reports and model data
         run: |
           git config user.name "combos-bot"
           git config user.email "combos-bot@users.noreply.github.com"
-          git add reports
-          git diff --cached --quiet || git commit -m "reports: $(date -u +%Y%m%dT%H%MZ)"
+          git add reports data
+          git diff --cached --quiet || git commit -m "${{ steps.cmd.outputs.c }}: $(date -u +%Y%m%dT%H%MZ)"
+          git pull --rebase -q origin main || true
           git push

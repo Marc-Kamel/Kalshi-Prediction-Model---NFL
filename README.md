@@ -25,6 +25,22 @@ You can change all three in `config.yaml` under `filters`.
   - Spreads and totals use a normal distribution.
 - **Averaging:** books are averaged with sharp books weighted higher (Pinnacle ×3). A price needs at least 2 books.
 
+## History: shapes and correlations (`data/history_model.json`)
+Built from nflverse game logs (2023 to now) by `kalshicombos fit-history`, which runs automatically every Tuesday.
+- **Shapes:** for each stat, position and usage level, the spread of real outcomes around a player's recent average. This includes zero games (low-volume WRs have 0 yards in about half their games) and big games. It's used to price Kalshi rungs away from the book's line.
+  - Two shrink settings per stat (`model.shape_alpha`, `shape_zero_scale`) correct for recent averages being noisier than book lines.
+  - On CHI@SEA they matched Kalshi's whole ladder to within ±0.6 pts in every distance zone.
+- **Edge buffer:** further from the book's line, a leg needs more edge (`filters.shape_buffer`, up to +3¢), matching the model's measured error at that distance.
+- **Correlations:** measured between player-stat pairs (same player, teammates, opponents, by position). For example, QB passing vs his WR's receiving yards is 0.22, two WRs on the same team about 0, and a WR's receptions vs his yards 0.77. The combo simulator uses these in place of guessed loadings.
+
+## Grading (`reports/grades/summary.md`, every Tuesday)
+Settles every logged leg and combo with Kalshi's own results:
+- **Legs the model called +EV:** win rate vs expected, flat-stake P&L, and **closing-line value** (did Kalshi move toward the model before kickoff, the best early sign of a real edge).
+- **Calibration:** of all priced legs, did "80%" things happen about 80% of the time? Also the Brier score of the model vs Kalshi's own prices.
+- **Combos:** hits vs the number expected from their fair chances.
+
+To run it manually: Actions → combos → Run workflow → command `grade` (or `fit-history`).
+
 ## How combos are built
 - **Pool:** for each game, every qualifying player leg, up to 60.
 - **Ranges:** the same player stat can appear twice, as Yes on a low rung plus No on a higher one. For example, "Swift 30+ rushing" with "No Swift 80+ rushing" means 30 to 79 yards. Two Yes rungs (redundant) or contradictory pairs are never combined.

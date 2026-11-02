@@ -55,12 +55,32 @@ filters:
   min_fair_prob: 0.60          # and the sportsbook fair probability must be >= this
   min_edge: 0.005              # fair - (ask + fee) must beat this (half a cent) to count as +EV
   one_sided_buffer: 0.03       # legs priced from Yes-only quotes (most anytime-TD) need this much MORE edge
+  # Extra edge needed by distance of the rung from the books' lines, |log((rung+1)/(line+1))|.
+  # Matches the model's typical error vs Kalshi's ladder at that distance (CHI@SEA validation:
+  # 1.2 pts at the line, 1.7 / 2.4 / 3.0 / 3.7 pts further out).
+  shape_buffer: [[0.05, 0.0], [0.15, 0.01], [0.30, 0.015], [0.50, 0.02], [9.0, 0.03]]
   max_edge: 0.08               # an "edge" bigger than this on a liquid exchange is almost always a
                                # model/data error (stale line, wrong player) — skip it and flag it
   stake_usd: 10                # used only to compute Kalshi's per-order fee rounding
 
 model:
-  # Distribution shape used to price Kalshi rungs ("60+") from a book's line (e.g. O 64.5).
+  # Historical shapes (data/history_model.json, built by `kalshicombos fit-history` from nflverse
+  # game logs). Used to move a book's line to Kalshi's other rungs. If the file is missing, the
+  # gamma / negative-binomial settings below are used instead.
+  history_file: data/history_model.json
+  # Shrink settings for the historical shapes. Fitted on CHI@SEA (Nov 2, 279 Kalshi rungs):
+  # with them the model matched Kalshi's ladder to ±0.6 pts in every distance zone (gamma: 3.3 pts
+  # typical error). Re-check as graded results accumulate.
+  shape_alpha:      {rec_yds: 0.85, rush_yds: 0.85, rr_yds: 0.75, receptions: 1.0, pass_yds: 1.0}
+  shape_zero_scale: {rec_yds: 0.8, rush_yds: 0.4, rr_yds: 0.8, receptions: 0.8, pass_yds: 0.4}
+  # How far from a book line a rung may be priced with the historical shape (wider than gamma's).
+  history_extrapolation:
+    rec_yds:    {abs: 15, rel: 1.5, min_line: 9.5}
+    rush_yds:   {abs: 15, rel: 1.5, min_line: 9.5}
+    rr_yds:     {abs: 15, rel: 1.5, min_line: 14.5}
+    pass_yds:   {abs: 60, rel: 0.35, min_line: 150}
+    receptions: {abs: 2,  rel: 0.6, min_line: 2.5}   # 1.5-catch players: shape too narrow (CHI@SEA check)
+  # Fallback distribution shape (only if history_file is missing).
   # Coefficient of variation (sd / mean) per stat, from typical NFL game-to-game spread.
   cv:
     rec_yds: 0.80

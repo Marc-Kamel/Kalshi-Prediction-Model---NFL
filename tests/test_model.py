@@ -259,3 +259,49 @@ def test_yes_only_longshot_td_is_not_crushed():
     bl = BookLines([Quote("dk", "player_anytime_td", "Yes", "Eric Saubert", None, 1100)], 0.07)
     p = dict(bl.props[("td", "eric saubert")]["dk"])[0.5]
     assert p == pytest.approx((100 / 1200) / 1.07, abs=1e-6)   # ~7.8%, not ~2%
+
+
+def test_history_correlations_drive_the_copula():
+    from kalshicombos.history import ShapeModel
+    from kalshicombos.combos import historical_corr
+    sm = ShapeModel({"correlations": {
+        "teammate|pass_yds@QB|rec_yds@WR": {"rho": 0.22, "n": 9000},
+        "same_player|rec_yds@WR|receptions@WR": {"rho": 0.77, "n": 9000}},
+        "positions": {"sam darnold": "QB", "jaxon smith njigba": "WR"}})
+    keys = [("pass_yds", "Sam Darnold", "SEA"), ("rec_yds", "Jaxon Smith-Njigba", "SEA"),
+            ("receptions", "Jaxon Smith-Njigba", "SEA"), ("rec_yds", "Rome Odunze", "CHI")]
+    C = historical_corr(keys, sm)
+    assert C[0, 1] == pytest.approx(0.22, abs=0.02) and C[1, 2] == pytest.approx(0.77, abs=0.02)
+    assert abs(C[1, 3]) < 1e-6                        # unmeasured opponent pair -> 0
+    assert np.all(np.linalg.eigvalsh(C) > 0)          # valid correlation matrix
+    cfg = dict(CFG["combos"], sims=200000)
+    qb = _leg({"ticker": "A", "kind": "pass_yds", "team": "SEA", "player": "Sam Darnold", "threshold": 224.5}, "yes", 0.6)
+    wr = _leg({"ticker": "B", "kind": "rec_yds", "team": "SEA", "player": "Jaxon Smith-Njigba", "threshold": 79.5}, "yes", 0.6)
+    from kalshicombos.combos import simulate_hits
+    h = simulate_hits([qb, wr], cfg, sm)
+    assert h[:, 0].mean() == pytest.approx(0.6, abs=0.005)
+    assert 0.36 + 0.02 < (h[:, 0] & h[:, 1]).mean() < 0.36 + 0.08   # modest positive link
+
+
+def test_grading_settles_bets_combos_and_calibration(tmp_path, monkeypatch):
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)
+    import json
+    from kalshicombos import report
+    from kalshicombos.grade import grade
+    kg, og = pipeline.fixture_getters(FIX)
+    res = pipeline.run(CFG, kg, og, now=NOW)
+    report.write(res, tmp_path)
+    # Settle: every YES market resolves "yes" if fair_prob >= 0.5 (deterministic fake results)
+    fair = {l.market.ticker: l.p_yes for l in res.games[0].legs}
+
+    def settled_get(path, params):
+        data = kg(path, params)
+        for m in data.get("markets", []):
+            m["result"] = "yes" if fair.get(m["ticker"], 0) >= 0.5 else "no"
+        return data
+    out = grade(tmp_path, CFG["kalshi"]["base_url"], settled_get)
+    s = (tmp_path / "grades" / "summary.md").read_text()
+    assert out["legs_calibrated"] > 0 and "Brier score" in s
+    assert out["brier_model"] < out["brier_kalshi"] + 0.5
+    if res.games[0].qualifying:
+        assert out["bets"] == len({(l.market.ticker, l.side) for l in res.games[0].qualifying})

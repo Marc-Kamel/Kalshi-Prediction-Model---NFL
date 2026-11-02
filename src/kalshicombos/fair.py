@@ -40,6 +40,7 @@ class Fair:
     n_books: int
     by_book: dict[str, float] = field(default_factory=dict)
     one_sided: bool = False   # True if any book's price had only one side posted (vig guessed)
+    dist: float = 0.0         # how far the rung is from the books' lines: |log((rung+1)/(line+1))|
 
 
 class BookLines:
@@ -163,9 +164,10 @@ def _td_from_anytime(p1: float, target: float) -> float:
 # ---------- public ----------
 
 class FairPricer:
-    def __init__(self, lines: BookLines, model_cfg: dict, odds_cfg: dict):
+    def __init__(self, lines: BookLines, model_cfg: dict, odds_cfg: dict, shapes=None):
         self.lines = lines
         self.m = model_cfg
+        self.shapes = shapes  # history.ShapeModel or None
         self.weights = odds_cfg.get("book_weights", {}) or {}
         self.min_books = int(odds_cfg.get("min_books", 2))
 
@@ -173,7 +175,9 @@ class FairPricer:
         """Moving a book's line to a far-away Kalshi rung relies on the distribution's tail,
         which is unreliable — especially for low-volume players (a backup RB's receiving
         yards, a QB's rushing) whose games are mostly small with the odd big play."""
-        rule = (self.m.get("extrapolation") or {}).get(kind) or GAME_LINE_EXTRAPOLATION.get(kind)
+        table = self.m.get("history_extrapolation") if self.shapes is not None else None
+        rule = ((table or self.m.get("extrapolation") or {}).get(kind)
+                or GAME_LINE_EXTRAPOLATION.get(kind))
         if not rule:
             return True
         min_line = float(rule.get("min_line", 0))
@@ -182,13 +186,13 @@ class FairPricer:
         band = max(float(rule.get("abs", 0)), float(rule.get("rel", 0)) * line)
         return abs(target - line) <= band + 1e-9
 
-    def _blend(self, by_book: dict[str, float], one_sided: bool = False) -> Fair | None:
+    def _blend(self, by_book: dict[str, float], one_sided: bool = False, dist: float = 0.0) -> Fair | None:
         by_book = {b: p for b, p in by_book.items() if p is not None and 0 < p < 1}
         if len(by_book) < self.min_books:
             return None
         w = {b: float(self.weights.get(b, 1.0)) for b in by_book}
         p = sum(by_book[b] * w[b] for b in by_book) / sum(w.values())
-        return Fair(p=p, n_books=len(by_book), by_book=by_book, one_sided=one_sided)
+        return Fair(p=p, n_books=len(by_book), by_book=by_book, one_sided=one_sided, dist=dist)
 
     def price(self, km: KalshiMarket) -> Fair | None:
         try:
@@ -229,21 +233,27 @@ class FairPricer:
             return None
         out = {}
         used_one_sided = False
+        dists: list[float] = []
         player = norm(km.player or "")
         for b, rows in books.items():
             if km.kind == "td":
                 p1 = next((p for pt, p in rows if pt == 0.5), None)
                 out[b] = None if p1 is None else _td_from_anytime(p1, km.threshold)
                 used_one_sided |= p1 is not None and ("td", player, b, 0.5) in L.one_sided_rows
+                dists.append(0.0 if km.threshold < 1 else 0.3)   # 2+ TDs is model-derived
                 continue
             line, p = min(rows, key=lambda r: abs(r[0] - km.threshold))
+            dists.append(abs(math.log((km.threshold + 1.0) / (max(line, 0.0) + 1.0))))
             used_one_sided |= (km.kind, player, b, line) in L.one_sided_rows
             if abs(line - km.threshold) < 1e-9:
                 out[b] = p
             elif not self._can_extrapolate(km.kind, line, km.threshold):
                 continue  # rung too far from this book's line (or low-volume player): don't guess
+            elif self.shapes is not None and (v := self.shapes.sf_from_line(km.kind, km.player, line, p, km.threshold)) is not None:
+                out[b] = v
             elif km.kind == "receptions":
                 out[b] = _count_sf_from_line(line, p, km.threshold, self.m["receptions_dispersion"])
             else:
                 out[b] = _gamma_sf_from_line(line, p, km.threshold, self.m["cv"][km.kind])
-        return self._blend(out, used_one_sided)
+        dist = sorted(dists)[len(dists) // 2] if dists else 0.0
+        return self._blend(out, used_one_sided, dist)

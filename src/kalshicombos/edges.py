@@ -18,6 +18,7 @@ class Leg:
     fair_prob: float     # sportsbook no-vig probability for this side
     n_books: int
     one_sided: bool = False  # fair price relied on a guessed vig (Yes-only quotes)
+    dist: float = 0.0        # distance of the rung from the books' lines (log scale)
 
     @property
     def all_in(self) -> float:
@@ -47,7 +48,7 @@ class Leg:
             "kalshi_prob": round(self.kalshi_prob, 4), "ask": round(self.ask, 4), "fee": round(self.fee, 4),
             "all_in": round(self.all_in, 4), "fair_prob": round(self.fair_prob, 4),
             "edge_pts": round(self.edge * 100, 2), "ev_pct": round(self.ev * 100, 2), "books": self.n_books,
-            "one_sided": self.one_sided,
+            "one_sided": self.one_sided, "dist_from_line": round(self.dist, 3),
         }
 
 
@@ -65,12 +66,25 @@ def evaluate(markets: list[KalshiMarket], pricer: FairPricer, stake: float, fee_
             if not (0.0 < ask < 1.0):
                 continue
             legs.append(Leg(km, side, ask, kalshi_fee_per_contract(ask, stake, fee_rate), mid, fp, fair.n_books,
-                            fair.one_sided))
+                            fair.one_sided, fair.dist))
     return legs
 
 
+def shape_buffer(dist: float, table: list | None) -> float:
+    """Extra edge required for rungs far from the books' lines, where the shape is less certain."""
+    for upto, extra in table or []:
+        if dist <= upto + 1e-12:
+            return float(extra)
+    return float(table[-1][1]) if table else 0.0
+
+
+def required_edge(leg: Leg, f: dict) -> float:
+    return (f["min_edge"] + (f.get("one_sided_buffer", 0.0) if leg.one_sided else 0.0)
+            + shape_buffer(leg.dist, f.get("shape_buffer")))
+
+
 def passes(leg: Leg, f: dict) -> bool:
-    need = f["min_edge"] + (f.get("one_sided_buffer", 0.0) if leg.one_sided else 0.0)
+    need = required_edge(leg, f)
     return (leg.kalshi_prob >= f["min_kalshi_prob"] and leg.fair_prob >= f["min_fair_prob"]
             and need < leg.edge <= f.get("max_edge", 1.0))
 

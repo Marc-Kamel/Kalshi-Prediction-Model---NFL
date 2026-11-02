@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 from . import pipeline, report
 
@@ -19,9 +20,29 @@ def main(argv: list[str] | None = None) -> int:
     rp.add_argument("run_dir")
     rp.add_argument("--config", default="config.yaml")
     rp.add_argument("--out", help="output folder (default from config)")
+    g = sub.add_parser("grade", help="settle logged legs/combos with Kalshi results; write reports/grades")
+    g.add_argument("--config", default="config.yaml")
+    g.add_argument("--reports", help="reports folder (default from config)")
+    fh = sub.add_parser("fit-history", help="refit shapes/correlations from nflverse game logs")
+    fh.add_argument("--config", default="config.yaml")
+    fh.add_argument("--years", default="", help="comma list, default: last 3 seasons + current")
+    fh.add_argument("--local", help="folder with already-downloaded nflverse CSVs")
     a = ap.parse_args(argv)
 
     cfg = pipeline.load_config(a.config)
+    if a.cmd == "grade":
+        from . import grade as grading
+        out = grading.grade(a.reports or cfg["output"]["dir"], cfg["kalshi"]["base_url"])
+        print(out)
+        return 0
+    if a.cmd == "fit-history":
+        from datetime import date
+        from . import history
+        years = [int(y) for y in a.years.split(",") if y] or list(range(date.today().year - 3, date.today().year + 1))
+        path = Path(cfg["model"].get("history_file", "data/history_model.json"))
+        m = history.fit_all(years, path.parent, a.local)
+        print(f"fitted {len(m['shapes'])} shapes, {len(m['correlations'])} correlations from {years} -> {path}")
+        return 0
     if a.cmd == "replay":
         res = pipeline.replay(a.run_dir, cfg)
     else:

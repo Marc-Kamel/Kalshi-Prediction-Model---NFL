@@ -87,17 +87,32 @@ def run(cfg: dict, kalshi_getter: Callable | None = None, odds_getter: Callable 
                      credits_remaining=oc.credits_remaining, config=cfg)
 
 
+_SHAPES_CACHE: dict = {}
+
+
+def _shapes(cfg: dict):
+    from .history import ShapeModel
+    m = cfg["model"]
+    path = m.get("history_file")
+    if not path:
+        return None
+    key = (path, str(m.get("shape_alpha")), str(m.get("shape_zero_scale")))
+    if key not in _SHAPES_CACHE:
+        _SHAPES_CACHE[key] = ShapeModel.load(path, m.get("shape_alpha"), m.get("shape_zero_scale"))
+    return _SHAPES_CACHE[key]
+
+
 def _price_game(gr: GameResult, quotes: list, cfg: dict) -> GameResult:
     if not quotes:
         gr.note = "no sportsbook prices yet"
         return gr
     lines = BookLines(quotes, cfg["odds"]["one_sided_margin"], cfg["odds"].get("one_sided_margin_props"),
                       bool(cfg["odds"].get("allow_one_sided_props", False)))
-    pricer = FairPricer(lines, cfg["model"], cfg["odds"])
+    pricer = FairPricer(lines, cfg["model"], cfg["odds"], _shapes(cfg))
     gr.legs = evaluate(gr.markets, pricer, cfg["filters"]["stake_usd"], cfg["kalshi"]["taker_fee_rate"])
     gr.qualifying = sorted([l for l in gr.legs if passes(l, cfg["filters"])], key=lambda l: l.ev, reverse=True)
     gr.suspicious = sorted([l for l in gr.legs if suspicious(l, cfg["filters"])], key=lambda l: l.edge, reverse=True)
-    gr.combos = build_for_game(gr.qualifying, cfg["combos"])
+    gr.combos = build_for_game(gr.qualifying, cfg["combos"], _shapes(cfg))
     gr.note = ""
     if len(gr.qualifying) < cfg["combos"]["min_legs"]:
         gr.note = f"only {len(gr.qualifying)} leg(s) passed the filters, so no combo"

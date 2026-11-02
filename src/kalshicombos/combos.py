@@ -100,8 +100,70 @@ def _loadings(m, idx: dict[str, int], cfg: dict) -> np.ndarray:
     return w
 
 
-def simulate_hits(legs: list[Leg], cfg: dict) -> np.ndarray:
-    """Boolean matrix (sims x legs): did each leg win in each simulated game."""
+DEFAULT_RHO = {"same_player": 0.5, "teammate": 0.0, "opponent": 0.0}
+FALLBACK_POS = {"pass_yds": "QB", "rush_yds": "RB", "rr_yds": "RB"}
+
+
+def _pos_for(shapes, player: str, kind: str) -> str:
+    from .history import STAT_POS
+    pos = shapes.position(player) if shapes is not None else ""
+    allowed = STAT_POS.get(kind, ())
+    if pos in allowed:
+        return pos
+    if pos == "FB" and "RB" in allowed:
+        return "RB"
+    return FALLBACK_POS.get(kind, "WR")
+
+
+def _nearest_corr(C: np.ndarray) -> np.ndarray:
+    w, V = np.linalg.eigh((C + C.T) / 2)
+    C2 = V @ np.diag(np.clip(w, 1e-6, None)) @ V.T
+    d = np.sqrt(np.diag(C2))
+    return C2 / np.outer(d, d)
+
+
+def historical_corr(keys: list[tuple], shapes) -> np.ndarray:
+    """Correlation matrix between player-stat latents, measured from past games."""
+    k = len(keys)
+    C = np.eye(k)
+    for i in range(k):
+        for j in range(i + 1, k):
+            (ka, pa, ta), (kb, pb, tb) = keys[i], keys[j]
+            rel = "same_player" if pa == pb else ("teammate" if ta and ta == tb else "opponent")
+            r = shapes.rho(ka, _pos_for(shapes, pa, ka), kb, _pos_for(shapes, pb, kb), rel)
+            C[i, j] = C[j, i] = DEFAULT_RHO[rel] if r is None else r
+    return _nearest_corr(C)
+
+
+def simulate_hits(legs: list[Leg], cfg: dict, shapes=None) -> np.ndarray:
+    """Boolean matrix (sims x legs): did each leg win in each simulated game.
+    Uses correlations measured from history when available (Gaussian copula), else the
+    factor model with the loadings in config.yaml."""
+    if shapes is not None and getattr(shapes, "corr", None) and all(l.market.player for l in legs):
+        return _simulate_copula(legs, cfg, shapes)
+    return _simulate_factor(legs, cfg)
+
+
+def _simulate_copula(legs: list[Leg], cfg: dict, shapes) -> np.ndarray:
+    keys, index = [], {}
+    for l in legs:
+        k = (l.market.kind, l.market.player, l.market.team)
+        if k not in index:
+            index[k] = len(keys)
+            keys.append(k)
+    L = np.linalg.cholesky(historical_corr(keys, shapes))
+    rng = np.random.default_rng(cfg.get("seed", 7))
+    n = int(cfg["sims"])
+    Z = rng.standard_normal((n, len(keys))) @ L.T
+    hits = np.empty((n, len(legs)), dtype=bool)
+    for j, leg in enumerate(legs):
+        x = Z[:, index[(leg.market.kind, leg.market.player, leg.market.team)]]
+        cut = stats.norm.ppf(1.0 - leg.p_yes)
+        hits[:, j] = (x > cut) if leg.side == "yes" else (x <= cut)
+    return hits
+
+
+def _simulate_factor(legs: list[Leg], cfg: dict) -> np.ndarray:
     m0 = legs[0].market
     names = [f"OFF_{m0.away}", f"OFF_{m0.home}", f"PASS_{m0.away}", f"PASS_{m0.home}"]
     names += sorted({f"PL_{l.market.player}" for l in legs if l.market.player})
@@ -167,11 +229,11 @@ def _greedy_path(pool: list[Leg], hits: np.ndarray, cfg: dict) -> list[tuple[int
     return path
 
 
-def build_for_game(candidates: list[Leg], cfg: dict) -> list[Combo]:
+def build_for_game(candidates: list[Leg], cfg: dict, shapes=None) -> list[Combo]:
     pool = sorted(candidates, key=lambda l: l.ev, reverse=True)[: int(cfg["candidates_per_game"])]
     if len(pool) < int(cfg["min_legs"]):
         return []
-    hits = simulate_hits(pool, cfg)
+    hits = simulate_hits(pool, cfg, shapes)
     path = _greedy_path(pool, hits, cfg)
     sizes = cfg.get("sizes") or [cfg.get("max_legs", 4)]
     out: list[Combo] = []
