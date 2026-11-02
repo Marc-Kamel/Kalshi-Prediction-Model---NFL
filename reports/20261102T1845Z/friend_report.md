@@ -11,7 +11,7 @@ His recipe: every player leg with fair > 55%, +EV after fees, 5+ books, one line
 | Our strict model, measured correlations | 31.4% | 3.18x |
 | Kalshi's own leg prices, measured correlations | 25.7% | 3.89x |
 
-**Accept only if Kalshi's quote pays ≥ 3.28x** (our strict model + 3%). His model would accept ≥ 3.36x.
+**Accept only if Kalshi's quote pays ≥ 3.28x** (our strict model + 3%). His model would accept ≥ 3.35x.
 
 - 5 of 5 legs are priced from Over/Yes-only lines (vig guessed); those ran ~4–5 pts too high vs Kalshi on CHI@SEA and PHI@WAS.
 
