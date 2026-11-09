@@ -1,0 +1,464 @@
+game,leg,side,kind,player,team,ticker,kalshi_prob,ask,fee,all_in,fair_prob,edge_pts,ev_pct,books,one_sided,dist_from_line,edge_vs_mid_pts,passes,combo_leg
+BUFMIN,Khalil Shakir: 2+ receptions,yes,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-2,0.895,0.9,0.0064,0.9064,0.8494,-5.7,-6.29,5,False,0.588,-4.56,False,False
+BUFMIN,No · Khalil Shakir: 2+ receptions,no,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-2,0.105,0.11,0.0069,0.1169,0.1506,3.37,28.85,5,False,0.588,4.56,False,False
+BUFMIN,Ty Johnson: 3+ receptions,yes,receptions,Ty Johnson,BUF,KXNFLREC-26NOV09BUFMIN-BUFTJOHNSON26-3,0.37,0.38,0.0165,0.3965,0.3752,-2.13,-5.37,7,False,0.0,0.52,False,False
+BUFMIN,No · Ty Johnson: 3+ receptions,no,receptions,Ty Johnson,BUF,KXNFLREC-26NOV09BUFMIN-BUFTJOHNSON26-3,0.63,0.64,0.0167,0.6567,0.6248,-3.19,-4.86,7,False,0.0,-0.52,False,False
+BUFMIN,Justin Jefferson: 7+ receptions,yes,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-7,0.465,0.47,0.0176,0.4876,0.4904,0.27,0.56,7,False,0.0,2.54,False,False
+BUFMIN,No · Justin Jefferson: 7+ receptions,no,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-7,0.535,0.54,0.0178,0.5578,0.5096,-4.81,-8.63,7,False,0.0,-2.54,False,False
+BUFMIN,James Cook III: 2+ receptions,yes,receptions,James Cook III,BUF,KXNFLREC-26NOV09BUFMIN-BUFJCOOK4-2,0.545,0.55,0.0178,0.5678,0.5525,-1.53,-2.7,7,False,0.0,0.75,False,False
+BUFMIN,No · James Cook III: 2+ receptions,no,receptions,James Cook III,BUF,KXNFLREC-26NOV09BUFMIN-BUFJCOOK4-2,0.455,0.46,0.0176,0.4776,0.4475,-3.01,-6.3,7,False,0.0,-0.75,False,False
+BUFMIN,Jordan Addison: 2+ receptions,yes,receptions,Jordan Addison,MIN,KXNFLREC-26NOV09BUFMIN-MINJADDISON3-2,0.85,0.86,0.0091,0.8691,0.8469,-2.22,-2.55,7,False,0.588,-0.31,False,False
+BUFMIN,No · Jordan Addison: 2+ receptions,no,receptions,Jordan Addison,MIN,KXNFLREC-26NOV09BUFMIN-MINJADDISON3-2,0.15,0.16,0.0095,0.1695,0.1531,-1.64,-9.7,7,False,0.588,0.31,False,False
+BUFMIN,Jordan Addison: 3+ receptions,yes,receptions,Jordan Addison,MIN,KXNFLREC-26NOV09BUFMIN-MINJADDISON3-3,0.69,0.7,0.015,0.715,0.6762,-3.88,-5.42,7,False,0.251,-1.38,False,False
+BUFMIN,No · Jordan Addison: 3+ receptions,no,receptions,Jordan Addison,MIN,KXNFLREC-26NOV09BUFMIN-MINJADDISON3-3,0.31,0.32,0.0155,0.3355,0.3238,-1.17,-3.5,7,False,0.251,1.38,False,False
+BUFMIN,Khalil Shakir: 3+ receptions,yes,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-3,0.75,0.76,0.0131,0.7731,0.7531,-2.0,-2.59,7,False,0.251,0.31,False,True
+BUFMIN,No · Khalil Shakir: 3+ receptions,no,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-3,0.25,0.26,0.0137,0.2737,0.2469,-2.67,-9.77,7,False,0.251,-0.31,False,False
+BUFMIN,Khalil Shakir: 6+ receptions,yes,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-6,0.235,0.25,0.0133,0.2632,0.2792,1.6,6.07,7,False,0.368,4.42,False,False
+BUFMIN,No · Khalil Shakir: 6+ receptions,no,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-6,0.765,0.78,0.0125,0.7925,0.7208,-7.17,-9.05,7,False,0.368,-4.42,False,False
+BUFMIN,Dalton Kincaid: 2+ receptions,yes,receptions,Dalton Kincaid,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKINCAID86-2,0.83,0.84,0.01,0.85,0.8502,0.02,0.02,7,False,0.588,2.02,False,True
+BUFMIN,No · Dalton Kincaid: 2+ receptions,no,receptions,Dalton Kincaid,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKINCAID86-2,0.17,0.18,0.0104,0.1904,0.1498,-4.06,-21.31,7,False,0.588,-2.02,False,False
+BUFMIN,T.J. Hockenson: 5+ receptions,yes,receptions,T.J. Hockenson,MIN,KXNFLREC-26NOV09BUFMIN-MINTHOCKENSON87-5,0.475,0.48,0.0175,0.4975,0.4787,-1.88,-3.79,7,False,0.0,0.37,False,False
+BUFMIN,No · T.J. Hockenson: 5+ receptions,no,receptions,T.J. Hockenson,MIN,KXNFLREC-26NOV09BUFMIN-MINTHOCKENSON87-5,0.525,0.53,0.0178,0.5478,0.5213,-2.64,-4.83,7,False,0.0,-0.37,False,False
+BUFMIN,Jordan Addison: 6+ receptions,yes,receptions,Jordan Addison,MIN,KXNFLREC-26NOV09BUFMIN-MINJADDISON3-6,0.185,0.2,0.0112,0.2112,0.1982,-1.3,-6.17,7,False,0.368,1.32,False,False
+BUFMIN,No · Jordan Addison: 6+ receptions,no,receptions,Jordan Addison,MIN,KXNFLREC-26NOV09BUFMIN-MINJADDISON3-6,0.815,0.83,0.01,0.84,0.8018,-3.82,-4.54,7,False,0.368,-1.32,False,False
+BUFMIN,T.J. Hockenson: 4+ receptions,yes,receptions,T.J. Hockenson,MIN,KXNFLREC-26NOV09BUFMIN-MINTHOCKENSON87-4,0.655,0.67,0.0157,0.6857,0.6491,-3.66,-5.34,7,False,0.201,-0.59,False,False
+BUFMIN,No · T.J. Hockenson: 4+ receptions,no,receptions,T.J. Hockenson,MIN,KXNFLREC-26NOV09BUFMIN-MINTHOCKENSON87-4,0.345,0.36,0.0163,0.3763,0.3509,-2.54,-6.75,7,False,0.201,0.59,False,False
+BUFMIN,T.J. Hockenson: 6+ receptions,yes,receptions,T.J. Hockenson,MIN,KXNFLREC-26NOV09BUFMIN-MINTHOCKENSON87-6,0.31,0.32,0.0155,0.3355,0.3466,1.12,3.33,7,False,0.167,3.66,False,False
+BUFMIN,No · T.J. Hockenson: 6+ receptions,no,receptions,T.J. Hockenson,MIN,KXNFLREC-26NOV09BUFMIN-MINTHOCKENSON87-6,0.69,0.7,0.015,0.715,0.6534,-6.16,-8.62,7,False,0.167,-3.66,False,False
+BUFMIN,Justin Jefferson: 6+ receptions,yes,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-6,0.615,0.62,0.0169,0.6369,0.6234,-1.35,-2.12,7,False,0.143,0.84,False,True
+BUFMIN,No · Justin Jefferson: 6+ receptions,no,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-6,0.385,0.39,0.0168,0.4068,0.3766,-3.02,-7.42,7,False,0.143,-0.84,False,False
+BUFMIN,Justin Jefferson: 9+ receptions,yes,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-9,0.215,0.22,0.0122,0.2322,0.2516,1.94,8.35,7,False,0.236,3.66,False,False
+BUFMIN,No · Justin Jefferson: 9+ receptions,no,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-9,0.785,0.79,0.0117,0.8017,0.7484,-5.33,-6.65,7,False,0.236,-3.66,False,False
+BUFMIN,Justin Jefferson: 10+ receptions,yes,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-10,0.14,0.15,0.0089,0.1589,0.1663,0.74,4.65,7,False,0.336,2.63,False,False
+BUFMIN,No · Justin Jefferson: 10+ receptions,no,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-10,0.86,0.87,0.0082,0.8782,0.8337,-4.45,-5.07,7,False,0.336,-2.63,False,False
+BUFMIN,Skyler Bell: 1+ receptions,yes,receptions,Skyler Bell,BUF,KXNFLREC-26NOV09BUFMIN-BUFSBELL13-1,0.535,0.54,0.0178,0.5578,0.5385,-1.92,-3.45,4,False,0.0,0.35,False,False
+BUFMIN,No · Skyler Bell: 1+ receptions,no,receptions,Skyler Bell,BUF,KXNFLREC-26NOV09BUFMIN-BUFSBELL13-1,0.465,0.47,0.0176,0.4876,0.4615,-2.62,-5.37,4,False,0.0,-0.35,False,False
+BUFMIN,Ty Johnson: 5+ receptions,yes,receptions,Ty Johnson,BUF,KXNFLREC-26NOV09BUFMIN-BUFTJOHNSON26-5,0.09,0.1,0.0063,0.1063,0.103,-0.33,-3.13,7,False,0.452,1.3,False,False
+BUFMIN,No · Ty Johnson: 5+ receptions,no,receptions,Ty Johnson,BUF,KXNFLREC-26NOV09BUFMIN-BUFTJOHNSON26-5,0.91,0.92,0.006,0.926,0.897,-2.9,-3.13,7,False,0.452,-1.3,False,False
+BUFMIN,Dawson Knox: 2+ receptions,yes,receptions,Dawson Knox,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKNOX88-2,0.36,0.37,0.0167,0.3867,0.338,-4.87,-12.6,7,False,0.0,-2.2,False,False
+BUFMIN,No · Dawson Knox: 2+ receptions,no,receptions,Dawson Knox,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKNOX88-2,0.64,0.65,0.016,0.666,0.662,-0.4,-0.59,7,False,0.0,2.2,False,True
+BUFMIN,Khalil Shakir: 7+ receptions,yes,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-7,0.13,0.14,0.0085,0.1485,0.148,-0.04,-0.28,2,False,0.511,1.8,False,False
+BUFMIN,No · Khalil Shakir: 7+ receptions,no,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-7,0.87,0.88,0.0082,0.8882,0.852,-3.62,-4.08,2,False,0.511,-1.8,False,False
+BUFMIN,Keon Coleman: 4+ receptions,yes,receptions,Keon Coleman,BUF,KXNFLREC-26NOV09BUFMIN-BUFKCOLEMAN0-4,0.225,0.24,0.0129,0.2529,0.2492,-0.37,-1.46,7,False,0.251,2.42,False,False
+BUFMIN,No · Keon Coleman: 4+ receptions,no,receptions,Keon Coleman,BUF,KXNFLREC-26NOV09BUFMIN-BUFKCOLEMAN0-4,0.775,0.79,0.0117,0.8017,0.7508,-5.09,-6.35,7,False,0.251,-2.42,False,False
+BUFMIN,DJ Moore: 2+ receptions,yes,receptions,DJ Moore,BUF,KXNFLREC-26NOV09BUFMIN-BUFDMOORE2-2,0.865,0.87,0.0082,0.8782,0.8474,-3.08,-3.51,7,False,0.588,-1.76,False,False
+BUFMIN,No · DJ Moore: 2+ receptions,no,receptions,DJ Moore,BUF,KXNFLREC-26NOV09BUFMIN-BUFDMOORE2-2,0.135,0.14,0.0085,0.1485,0.1526,0.42,2.8,7,False,0.588,1.76,False,False
+BUFMIN,Aaron Jones Sr.: 2+ receptions,yes,receptions,Aaron Jones Sr.,MIN,KXNFLREC-26NOV09BUFMIN-MINAJONES33-2,0.55,0.56,0.0176,0.5776,0.5458,-3.19,-5.52,6,False,0.0,-0.42,False,False
+BUFMIN,No · Aaron Jones Sr.: 2+ receptions,no,receptions,Aaron Jones Sr.,MIN,KXNFLREC-26NOV09BUFMIN-MINAJONES33-2,0.45,0.46,0.0176,0.4776,0.4542,-2.34,-4.9,6,False,0.0,0.42,False,False
+BUFMIN,Jordan Addison: 4+ receptions,yes,receptions,Jordan Addison,MIN,KXNFLREC-26NOV09BUFMIN-MINJADDISON3-4,0.485,0.49,0.0175,0.5075,0.4963,-1.12,-2.22,7,False,0.0,1.13,False,False
+BUFMIN,No · Jordan Addison: 4+ receptions,no,receptions,Jordan Addison,MIN,KXNFLREC-26NOV09BUFMIN-MINJADDISON3-4,0.515,0.52,0.0179,0.5379,0.5037,-3.41,-6.35,7,False,0.0,-1.13,False,False
+BUFMIN,Khalil Shakir: 4+ receptions,yes,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-4,0.575,0.58,0.0171,0.5971,0.5896,-0.74,-1.24,7,False,0.0,1.46,False,False
+BUFMIN,No · Khalil Shakir: 4+ receptions,no,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-4,0.425,0.43,0.0174,0.4474,0.4104,-3.7,-8.27,7,False,0.0,-1.46,False,False
+BUFMIN,T.J. Hockenson: 3+ receptions,yes,receptions,T.J. Hockenson,MIN,KXNFLREC-26NOV09BUFMIN-MINTHOCKENSON87-3,0.805,0.82,0.0108,0.8308,0.8003,-3.05,-3.67,7,False,0.452,-0.47,False,False
+BUFMIN,No · T.J. Hockenson: 3+ receptions,no,receptions,T.J. Hockenson,MIN,KXNFLREC-26NOV09BUFMIN-MINTHOCKENSON87-3,0.195,0.21,0.0117,0.2217,0.1997,-2.2,-9.93,7,False,0.452,0.47,False,False
+BUFMIN,DJ Moore: 3+ receptions,yes,receptions,DJ Moore,BUF,KXNFLREC-26NOV09BUFMIN-BUFDMOORE2-3,0.695,0.7,0.015,0.715,0.6883,-2.67,-3.73,7,False,0.251,-0.67,False,False
+BUFMIN,No · DJ Moore: 3+ receptions,no,receptions,DJ Moore,BUF,KXNFLREC-26NOV09BUFMIN-BUFDMOORE2-3,0.305,0.31,0.015,0.325,0.3117,-1.33,-4.1,7,False,0.251,0.67,False,False
+BUFMIN,T.J. Hockenson: 7+ receptions,yes,receptions,T.J. Hockenson,MIN,KXNFLREC-26NOV09BUFMIN-MINTHOCKENSON87-7,0.175,0.18,0.0104,0.1904,0.2165,2.62,13.75,7,False,0.31,4.15,False,False
+BUFMIN,No · T.J. Hockenson: 7+ receptions,no,receptions,T.J. Hockenson,MIN,KXNFLREC-26NOV09BUFMIN-MINTHOCKENSON87-7,0.825,0.83,0.01,0.84,0.7835,-5.65,-6.73,7,False,0.31,-4.15,False,False
+BUFMIN,Keon Coleman: 2+ receptions,yes,receptions,Keon Coleman,BUF,KXNFLREC-26NOV09BUFMIN-BUFKCOLEMAN0-2,0.665,0.67,0.0157,0.6857,0.6273,-5.84,-8.52,7,False,0.336,-3.77,False,False
+BUFMIN,No · Keon Coleman: 2+ receptions,no,receptions,Keon Coleman,BUF,KXNFLREC-26NOV09BUFMIN-BUFKCOLEMAN0-2,0.335,0.34,0.0159,0.3559,0.3727,1.68,4.73,7,False,0.336,3.77,False,False
+BUFMIN,Dalton Kincaid: 3+ receptions,yes,receptions,Dalton Kincaid,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKINCAID86-3,0.645,0.66,0.016,0.676,0.6475,-2.85,-4.22,7,False,0.251,0.25,False,True
+BUFMIN,No · Dalton Kincaid: 3+ receptions,no,receptions,Dalton Kincaid,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKINCAID86-3,0.355,0.37,0.0167,0.3867,0.3525,-3.41,-8.83,7,False,0.251,-0.25,False,False
+BUFMIN,Ty Johnson: 2+ receptions,yes,receptions,Ty Johnson,BUF,KXNFLREC-26NOV09BUFMIN-BUFTJOHNSON26-2,0.61,0.62,0.0169,0.6369,0.596,-4.08,-6.41,7,False,0.336,-1.4,False,False
+BUFMIN,No · Ty Johnson: 2+ receptions,no,receptions,Ty Johnson,BUF,KXNFLREC-26NOV09BUFMIN-BUFTJOHNSON26-2,0.39,0.4,0.0168,0.4168,0.404,-1.28,-3.08,7,False,0.336,1.4,False,False
+BUFMIN,Ben Yurosek: 1+ receptions,yes,receptions,Ben Yurosek,MIN,KXNFLREC-26NOV09BUFMIN-MINBYUROSEK85-1,0.53,0.54,0.0178,0.5578,0.5392,-1.86,-3.34,7,False,0.0,0.92,False,False
+BUFMIN,No · Ben Yurosek: 1+ receptions,no,receptions,Ben Yurosek,MIN,KXNFLREC-26NOV09BUFMIN-MINBYUROSEK85-1,0.47,0.48,0.0175,0.4975,0.4608,-3.67,-7.37,7,False,0.0,-0.92,False,False
+BUFMIN,DJ Moore: 4+ receptions,yes,receptions,DJ Moore,BUF,KXNFLREC-26NOV09BUFMIN-BUFDMOORE2-4,0.515,0.52,0.0179,0.5379,0.5262,-1.17,-2.18,7,False,0.0,1.12,False,False
+BUFMIN,No · DJ Moore: 4+ receptions,no,receptions,DJ Moore,BUF,KXNFLREC-26NOV09BUFMIN-BUFDMOORE2-4,0.485,0.49,0.0175,0.5075,0.4738,-3.37,-6.63,7,False,0.0,-1.12,False,False
+BUFMIN,Keon Coleman: 3+ receptions,yes,receptions,Keon Coleman,BUF,KXNFLREC-26NOV09BUFMIN-BUFKCOLEMAN0-3,0.425,0.43,0.0174,0.4474,0.4308,-1.66,-3.7,7,False,0.0,0.58,False,False
+BUFMIN,No · Keon Coleman: 3+ receptions,no,receptions,Keon Coleman,BUF,KXNFLREC-26NOV09BUFMIN-BUFKCOLEMAN0-3,0.575,0.58,0.0171,0.5971,0.5692,-2.79,-4.67,7,False,0.0,-0.58,False,False
+BUFMIN,Justin Jefferson: 5+ receptions,yes,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-5,0.745,0.75,0.0138,0.7638,0.7598,-0.41,-0.53,7,False,0.31,1.48,False,True
+BUFMIN,No · Justin Jefferson: 5+ receptions,no,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-5,0.255,0.26,0.0137,0.2737,0.2402,-3.35,-12.22,7,False,0.31,-1.48,False,False
+BUFMIN,Justin Jefferson: 4+ receptions,yes,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-4,0.855,0.86,0.0091,0.8691,0.848,-2.11,-2.43,7,False,0.511,-0.7,False,False
+BUFMIN,No · Justin Jefferson: 4+ receptions,no,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-4,0.145,0.15,0.0089,0.1589,0.152,-0.69,-4.37,7,False,0.511,0.7,False,False
+BUFMIN,DJ Moore: 5+ receptions,yes,receptions,DJ Moore,BUF,KXNFLREC-26NOV09BUFMIN-BUFDMOORE2-5,0.33,0.34,0.0159,0.3559,0.3435,-1.23,-3.47,7,False,0.201,1.35,False,False
+BUFMIN,No · DJ Moore: 5+ receptions,no,receptions,DJ Moore,BUF,KXNFLREC-26NOV09BUFMIN-BUFDMOORE2-5,0.67,0.68,0.0157,0.6957,0.6565,-3.92,-5.64,7,False,0.201,-1.35,False,False
+BUFMIN,Dalton Kincaid: 4+ receptions,yes,receptions,Dalton Kincaid,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKINCAID86-4,0.445,0.45,0.0177,0.4677,0.4418,-2.59,-5.54,7,False,0.0,-0.32,False,False
+BUFMIN,No · Dalton Kincaid: 4+ receptions,no,receptions,Dalton Kincaid,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKINCAID86-4,0.555,0.56,0.0176,0.5776,0.5582,-1.94,-3.37,7,False,0.0,0.32,False,False
+BUFMIN,Jordan Addison: 5+ receptions,yes,receptions,Jordan Addison,MIN,KXNFLREC-26NOV09BUFMIN-MINJADDISON3-5,0.31,0.32,0.0155,0.3355,0.3233,-1.22,-3.62,7,False,0.201,1.33,False,False
+BUFMIN,No · Jordan Addison: 5+ receptions,no,receptions,Jordan Addison,MIN,KXNFLREC-26NOV09BUFMIN-MINJADDISON3-5,0.69,0.7,0.015,0.715,0.6767,-3.83,-5.36,7,False,0.201,-1.33,False,False
+BUFMIN,Ty Johnson: 4+ receptions,yes,receptions,Ty Johnson,BUF,KXNFLREC-26NOV09BUFMIN-BUFTJOHNSON26-4,0.195,0.21,0.0117,0.2217,0.2039,-1.78,-8.03,7,False,0.251,0.89,False,False
+BUFMIN,No · Ty Johnson: 4+ receptions,no,receptions,Ty Johnson,BUF,KXNFLREC-26NOV09BUFMIN-BUFTJOHNSON26-4,0.805,0.82,0.0108,0.8308,0.7961,-3.47,-4.18,7,False,0.251,-0.89,False,False
+BUFMIN,Justin Jefferson: 8+ receptions,yes,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-8,0.355,0.36,0.0163,0.3763,0.3512,-2.51,-6.66,7,False,0.125,-0.38,False,False
+BUFMIN,No · Justin Jefferson: 8+ receptions,no,receptions,Justin Jefferson,MIN,KXNFLREC-26NOV09BUFMIN-MINJJEFFERSON18-8,0.645,0.65,0.016,0.666,0.6488,-1.72,-2.59,7,False,0.125,0.38,False,True
+BUFMIN,Dalton Kincaid: 6+ receptions,yes,receptions,Dalton Kincaid,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKINCAID86-6,0.145,0.16,0.0095,0.1695,0.1692,-0.03,-0.16,7,False,0.368,2.42,False,False
+BUFMIN,No · Dalton Kincaid: 6+ receptions,no,receptions,Dalton Kincaid,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKINCAID86-6,0.855,0.87,0.0082,0.8782,0.8308,-4.74,-5.4,7,False,0.368,-2.42,False,False
+BUFMIN,Dalton Kincaid: 5+ receptions,yes,receptions,Dalton Kincaid,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKINCAID86-5,0.245,0.25,0.0133,0.2632,0.2726,0.94,3.57,7,False,0.201,2.76,False,False
+BUFMIN,No · Dalton Kincaid: 5+ receptions,no,receptions,Dalton Kincaid,BUF,KXNFLREC-26NOV09BUFMIN-BUFDKINCAID86-5,0.755,0.76,0.0131,0.7731,0.7274,-4.57,-5.91,7,False,0.201,-2.76,False,False
+BUFMIN,Khalil Shakir: 5+ receptions,yes,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-5,0.395,0.4,0.0168,0.4168,0.4076,-0.92,-2.2,7,False,0.201,1.26,False,False
+BUFMIN,No · Khalil Shakir: 5+ receptions,no,receptions,Khalil Shakir,BUF,KXNFLREC-26NOV09BUFMIN-BUFKSHAKIR10-5,0.605,0.61,0.0169,0.6269,0.5924,-3.45,-5.51,7,False,0.201,-1.26,False,False
+BUFMIN,Keon Coleman: 5+ receptions,yes,receptions,Keon Coleman,BUF,KXNFLREC-26NOV09BUFMIN-BUFKCOLEMAN0-5,0.115,0.13,0.008,0.138,0.1359,-0.21,-1.51,7,False,0.452,2.09,False,False
+BUFMIN,No · Keon Coleman: 5+ receptions,no,receptions,Keon Coleman,BUF,KXNFLREC-26NOV09BUFMIN-BUFKCOLEMAN0-5,0.885,0.9,0.0064,0.9064,0.8641,-4.23,-4.67,7,False,0.452,-2.09,False,False
+BUFMIN,DJ Moore: 6+ receptions,yes,receptions,DJ Moore,BUF,KXNFLREC-26NOV09BUFMIN-BUFDMOORE2-6,0.195,0.21,0.0117,0.2217,0.214,-0.77,-3.49,7,False,0.368,1.9,False,False
+BUFMIN,No · DJ Moore: 6+ receptions,no,receptions,DJ Moore,BUF,KXNFLREC-26NOV09BUFMIN-BUFDMOORE2-6,0.805,0.82,0.0108,0.8308,0.786,-4.48,-5.39,7,False,0.368,-1.9,False,False
+BUFMIN,DJ Moore: 70+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-70,0.265,0.28,0.0143,0.2943,0.2635,-3.07,-10.45,8,False,0.374,-0.15,False,False
+BUFMIN,No · DJ Moore: 70+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-70,0.735,0.75,0.0138,0.7638,0.7365,-2.74,-3.59,8,False,0.374,0.15,False,True
+BUFMIN,DJ Moore: 30+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-30,0.715,0.72,0.0146,0.7346,0.7413,0.67,0.91,8,False,0.464,2.63,False,True
+BUFMIN,No · DJ Moore: 30+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-30,0.285,0.29,0.0147,0.3047,0.2587,-4.6,-15.1,8,False,0.464,-2.63,False,False
+BUFMIN,Justin Jefferson: 40+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-40,0.845,0.85,0.0091,0.8591,0.8367,-2.24,-2.61,8,False,0.662,-0.83,False,False
+BUFMIN,No · Justin Jefferson: 40+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-40,0.155,0.16,0.0095,0.1695,0.1633,-0.62,-3.67,8,False,0.662,0.83,False,False
+BUFMIN,T.J. Hockenson: 20+ receiving yards,yes,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-20,0.805,0.82,0.0108,0.8308,0.8012,-2.96,-3.57,8,False,0.729,-0.38,False,False
+BUFMIN,No · T.J. Hockenson: 20+ receiving yards,no,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-20,0.195,0.21,0.0117,0.2217,0.1988,-2.29,-10.33,8,False,0.729,0.38,False,False
+BUFMIN,Keon Coleman: 60+ receiving yards,yes,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-60,0.165,0.17,0.01,0.18,0.2065,2.65,14.7,8,False,0.718,4.15,False,False
+BUFMIN,No · Keon Coleman: 60+ receiving yards,no,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-60,0.835,0.84,0.01,0.85,0.7935,-5.65,-6.64,8,False,0.718,-4.15,False,False
+BUFMIN,T.J. Hockenson: 60+ receiving yards,yes,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-60,0.265,0.28,0.0143,0.2943,0.2702,-2.41,-8.19,8,False,0.353,0.52,False,False
+BUFMIN,No · T.J. Hockenson: 60+ receiving yards,no,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-60,0.735,0.75,0.0138,0.7638,0.7298,-3.4,-4.45,8,False,0.353,-0.52,False,False
+BUFMIN,Justin Jefferson: 30+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-30,0.885,0.89,0.0073,0.8973,0.8915,-0.58,-0.65,8,False,0.945,0.65,False,True
+BUFMIN,No · Justin Jefferson: 30+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-30,0.115,0.12,0.0075,0.1275,0.1085,-1.9,-14.87,8,False,0.945,-0.65,False,False
+BUFMIN,Justin Jefferson: 100+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100,0.335,0.34,0.0159,0.3559,0.342,-1.39,-3.9,8,False,0.247,0.7,False,False
+BUFMIN,No · Justin Jefferson: 100+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100,0.665,0.67,0.0157,0.6857,0.658,-2.77,-4.04,8,False,0.247,-0.7,False,False
+BUFMIN,Ty Johnson: 15+ receiving yards,yes,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-15,0.505,0.51,0.0179,0.5279,0.5349,0.7,1.32,8,False,0.063,2.99,False,False
+BUFMIN,No · Ty Johnson: 15+ receiving yards,no,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-15,0.495,0.5,0.0175,0.5175,0.4651,-5.24,-10.12,8,False,0.063,-2.99,False,False
+BUFMIN,Jordan Addison: 15+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-15,0.815,0.82,0.0108,0.8308,0.8239,-0.69,-0.83,8,False,0.96,0.89,False,True
+BUFMIN,No · Jordan Addison: 15+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-15,0.185,0.19,0.011,0.201,0.1761,-2.49,-12.37,8,False,0.96,-0.89,False,False
+BUFMIN,Jordan Addison: 25+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-25,0.7,0.71,0.015,0.725,0.6969,-2.81,-3.88,8,False,0.463,-0.31,False,False
+BUFMIN,No · Jordan Addison: 25+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-25,0.3,0.31,0.015,0.325,0.3031,-2.19,-6.73,8,False,0.463,0.31,False,False
+BUFMIN,Jordan Addison: 70+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-70,0.2,0.21,0.0117,0.2217,0.1892,-3.25,-14.68,8,False,0.554,-1.08,False,False
+BUFMIN,No · Jordan Addison: 70+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-70,0.8,0.81,0.0108,0.8208,0.8108,-1.0,-1.22,8,False,0.554,1.08,False,True
+BUFMIN,Jordan Addison: 80+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-80,0.14,0.15,0.0089,0.1589,0.1323,-2.66,-16.75,8,False,0.687,-0.77,False,False
+BUFMIN,No · Jordan Addison: 80+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-80,0.86,0.87,0.0082,0.8782,0.8677,-1.05,-1.2,8,False,0.687,0.77,False,True
+BUFMIN,T.J. Hockenson: 25+ receiving yards,yes,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-25,0.735,0.74,0.0138,0.7538,0.7376,-1.62,-2.15,8,False,0.511,0.26,False,True
+BUFMIN,No · T.J. Hockenson: 25+ receiving yards,no,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-25,0.265,0.27,0.0141,0.2841,0.2624,-2.17,-7.64,8,False,0.511,-0.26,False,False
+BUFMIN,T.J. Hockenson: 70+ receiving yards,yes,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-70,0.18,0.19,0.011,0.201,0.1901,-1.09,-5.41,8,False,0.506,1.01,False,False
+BUFMIN,No · T.J. Hockenson: 70+ receiving yards,no,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-70,0.82,0.83,0.01,0.84,0.8099,-3.01,-3.58,8,False,0.506,-1.01,False,False
+BUFMIN,T.J. Hockenson: 90+ receiving yards,yes,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-90,0.075,0.09,0.0058,0.0958,0.0778,-1.8,-18.76,8,False,0.756,0.28,False,False
+BUFMIN,No · T.J. Hockenson: 90+ receiving yards,no,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-90,0.925,0.94,0.004,0.944,0.9222,-2.18,-2.31,8,False,0.756,-0.28,False,False
+BUFMIN,T.J. Hockenson: 100+ receiving yards,yes,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-100,0.05,0.06,0.004,0.064,0.0503,-1.37,-21.38,8,False,0.861,0.03,False,False
+BUFMIN,No · T.J. Hockenson: 100+ receiving yards,no,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-100,0.95,0.96,0.003,0.963,0.9497,-1.33,-1.38,8,False,0.861,-0.03,False,False
+BUFMIN,Justin Jefferson: 70+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-70,0.595,0.6,0.0169,0.6169,0.598,-1.89,-3.06,8,False,0.107,0.3,False,False
+BUFMIN,No · Justin Jefferson: 70+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-70,0.405,0.41,0.0171,0.4271,0.402,-2.51,-5.88,8,False,0.107,-0.3,False,False
+BUFMIN,Justin Jefferson: 80+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-80,0.505,0.51,0.0179,0.5279,0.5017,-2.62,-4.97,8,False,0.025,-0.33,False,False
+BUFMIN,No · Justin Jefferson: 80+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-80,0.495,0.5,0.0175,0.5175,0.4983,-1.92,-3.7,8,False,0.025,0.33,False,False
+BUFMIN,Justin Jefferson: 90+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-90,0.385,0.39,0.0168,0.4068,0.4155,0.87,2.15,8,False,0.142,3.05,False,False
+BUFMIN,No · Justin Jefferson: 90+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-90,0.615,0.62,0.0169,0.6369,0.5845,-5.24,-8.23,8,False,0.142,-3.05,False,False
+BUFMIN,Justin Jefferson: 140+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-140,0.08,0.09,0.0058,0.0958,0.1229,2.71,28.32,8,False,0.582,4.29,False,False
+BUFMIN,No · Justin Jefferson: 140+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-140,0.92,0.93,0.005,0.935,0.8771,-5.79,-6.19,8,False,0.582,-4.29,False,False
+BUFMIN,Keon Coleman: 20+ receiving yards,yes,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-20,0.64,0.65,0.016,0.666,0.6117,-5.43,-8.15,8,False,0.364,-2.83,False,False
+BUFMIN,No · Keon Coleman: 20+ receiving yards,no,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-20,0.36,0.37,0.0167,0.3867,0.3883,0.16,0.42,8,False,0.364,2.83,False,False
+BUFMIN,Keon Coleman: 70+ receiving yards,yes,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-70,0.105,0.11,0.0069,0.1169,0.1481,3.12,26.72,6,False,0.871,4.31,False,False
+BUFMIN,No · Keon Coleman: 70+ receiving yards,no,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-70,0.895,0.9,0.0064,0.9064,0.8519,-5.45,-6.01,6,False,0.871,-4.31,False,False
+BUFMIN,Khalil Shakir: 30+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-30,0.645,0.65,0.016,0.666,0.6208,-4.52,-6.79,8,False,0.259,-2.42,False,False
+BUFMIN,No · Khalil Shakir: 30+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-30,0.355,0.36,0.0163,0.3763,0.3792,0.29,0.78,8,False,0.259,2.42,False,False
+BUFMIN,Khalil Shakir: 40+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-40,0.49,0.5,0.0175,0.5175,0.4908,-2.67,-5.16,8,False,0.025,0.08,False,False
+BUFMIN,No · Khalil Shakir: 40+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-40,0.51,0.52,0.0179,0.5379,0.5092,-2.87,-5.33,8,False,0.025,-0.08,False,False
+BUFMIN,Ty Johnson: 10+ receiving yards,yes,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-10,0.635,0.65,0.016,0.666,0.6637,-0.23,-0.35,8,False,0.452,2.87,False,True
+BUFMIN,No · Ty Johnson: 10+ receiving yards,no,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-10,0.365,0.38,0.0165,0.3965,0.3363,-6.02,-15.19,8,False,0.452,-2.87,False,False
+BUFMIN,Ty Johnson: 20+ receiving yards,yes,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-20,0.41,0.42,0.0174,0.4374,0.4165,-2.09,-4.77,8,False,0.217,0.65,False,False
+BUFMIN,No · Ty Johnson: 20+ receiving yards,no,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-20,0.59,0.6,0.0169,0.6169,0.5835,-3.34,-5.42,8,False,0.217,-0.65,False,False
+BUFMIN,Ty Johnson: 40+ receiving yards,yes,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-40,0.145,0.15,0.0089,0.1589,0.1162,-4.27,-26.86,2,False,0.898,-2.88,False,False
+BUFMIN,No · Ty Johnson: 40+ receiving yards,no,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-40,0.855,0.86,0.0091,0.8691,0.8838,1.47,1.69,2,False,0.898,2.88,False,True
+BUFMIN,Dalton Kincaid: 25+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-25,0.675,0.69,0.015,0.705,0.6881,-1.69,-2.4,8,False,0.386,1.31,False,True
+BUFMIN,No · Dalton Kincaid: 25+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-25,0.325,0.34,0.0159,0.3559,0.3119,-4.4,-12.36,8,False,0.386,-1.31,False,False
+BUFMIN,Dalton Kincaid: 45+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-45,0.4,0.41,0.0171,0.4271,0.3824,-4.47,-10.46,8,False,0.193,-1.76,False,False
+BUFMIN,No · Dalton Kincaid: 45+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-45,0.6,0.61,0.0169,0.6269,0.6176,-0.93,-1.48,8,False,0.193,1.76,False,True
+BUFMIN,Dalton Kincaid: 90+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-90,0.07,0.08,0.0052,0.0852,0.0519,-3.33,-39.11,8,False,0.881,-1.81,False,False
+BUFMIN,No · Dalton Kincaid: 90+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-90,0.93,0.94,0.004,0.944,0.9481,0.41,0.44,8,False,0.881,1.81,False,True
+BUFMIN,DJ Moore: 20+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-20,0.835,0.84,0.01,0.85,0.8591,0.91,1.07,8,False,0.861,2.41,False,True
+BUFMIN,No · DJ Moore: 20+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-20,0.165,0.17,0.01,0.18,0.1409,-3.91,-21.74,8,False,0.861,-2.41,False,False
+BUFMIN,DJ Moore: 50+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-50,0.48,0.49,0.0175,0.5075,0.4805,-2.7,-5.33,8,False,0.04,0.05,False,False
+BUFMIN,No · DJ Moore: 50+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-50,0.52,0.53,0.0178,0.5478,0.5195,-2.82,-5.16,8,False,0.04,-0.05,False,False
+BUFMIN,DJ Moore: 90+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-90,0.125,0.13,0.008,0.138,0.1369,-0.11,-0.79,8,False,0.624,1.19,False,False
+BUFMIN,No · DJ Moore: 90+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-90,0.875,0.88,0.0082,0.8882,0.8631,-2.51,-2.83,8,False,0.624,-1.19,False,False
+BUFMIN,DJ Moore: 100+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-100,0.09,0.1,0.0063,0.1063,0.083,-2.33,-21.96,8,False,0.729,-0.7,False,False
+BUFMIN,No · DJ Moore: 100+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-100,0.91,0.92,0.006,0.926,0.917,-0.9,-0.97,8,False,0.729,0.7,False,True
+BUFMIN,DJ Moore: 120+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-120,0.05,0.06,0.004,0.064,0.027,-3.7,-57.79,4,False,0.91,-2.3,False,False
+BUFMIN,No · DJ Moore: 120+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-120,0.95,0.96,0.003,0.963,0.973,1.0,1.04,4,False,0.91,2.3,False,True
+BUFMIN,Jordan Addison: 40+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-40,0.505,0.51,0.0179,0.5279,0.4988,-2.91,-5.5,8,False,0.0,-0.62,False,False
+BUFMIN,No · Jordan Addison: 40+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-40,0.495,0.5,0.0175,0.5175,0.5012,-1.63,-3.16,8,False,0.0,0.62,False,False
+BUFMIN,Justin Jefferson: 110+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-110,0.255,0.26,0.0137,0.2737,0.2803,0.66,2.4,8,False,0.342,2.53,False,False
+BUFMIN,No · Justin Jefferson: 110+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-110,0.745,0.75,0.0138,0.7638,0.7197,-4.41,-5.77,8,False,0.342,-2.53,False,False
+BUFMIN,DJ Moore: 60+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-60,0.365,0.37,0.0167,0.3867,0.3674,-1.93,-4.98,8,False,0.221,0.24,False,False
+BUFMIN,No · DJ Moore: 60+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-60,0.635,0.64,0.0167,0.6567,0.6326,-2.41,-3.66,8,False,0.221,-0.24,False,False
+BUFMIN,Khalil Shakir: 70+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-70,0.17,0.18,0.0104,0.1904,0.1824,-0.8,-4.2,8,False,0.579,1.24,False,False
+BUFMIN,No · Khalil Shakir: 70+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-70,0.83,0.84,0.01,0.85,0.8176,-3.24,-3.81,8,False,0.579,-1.24,False,False
+BUFMIN,Keon Coleman: 30+ receiving yards,yes,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-30,0.475,0.48,0.0175,0.4975,0.4789,-1.86,-3.75,8,False,0.033,0.39,False,False
+BUFMIN,No · Keon Coleman: 30+ receiving yards,no,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-30,0.525,0.53,0.0178,0.5478,0.5211,-2.66,-4.86,8,False,0.033,-0.39,False,False
+BUFMIN,Dalton Kincaid: 30+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-30,0.6,0.61,0.0169,0.6269,0.6181,-0.87,-1.39,8,False,0.207,1.81,False,True
+BUFMIN,No · Dalton Kincaid: 30+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-30,0.4,0.41,0.0171,0.4271,0.3819,-4.52,-10.59,8,False,0.207,-1.81,False,False
+BUFMIN,Khalil Shakir: 15+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-15,0.835,0.84,0.01,0.85,0.8199,-3.01,-3.54,8,False,0.935,-1.51,False,False
+BUFMIN,No · Khalil Shakir: 15+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-15,0.165,0.17,0.01,0.18,0.1801,0.01,0.04,8,False,0.935,1.51,False,False
+BUFMIN,Keon Coleman: 15+ receiving yards,yes,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-15,0.715,0.73,0.0138,0.7438,0.6896,-5.42,-7.29,8,False,0.644,-2.54,False,False
+BUFMIN,No · Keon Coleman: 15+ receiving yards,no,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-15,0.285,0.3,0.0148,0.3148,0.3104,-0.45,-1.42,8,False,0.644,2.54,False,False
+BUFMIN,Keon Coleman: 40+ receiving yards,yes,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-40,0.35,0.36,0.0163,0.3763,0.3712,-0.51,-1.35,8,False,0.317,2.12,False,False
+BUFMIN,No · Keon Coleman: 40+ receiving yards,no,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-40,0.65,0.66,0.016,0.676,0.6288,-4.72,-6.98,8,False,0.317,-2.12,False,False
+BUFMIN,T.J. Hockenson: 80+ receiving yards,yes,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-80,0.125,0.13,0.008,0.138,0.1233,-1.48,-10.7,8,False,0.639,-0.17,False,False
+BUFMIN,No · T.J. Hockenson: 80+ receiving yards,no,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-80,0.875,0.88,0.0082,0.8882,0.8767,-1.14,-1.29,8,False,0.639,0.17,False,True
+BUFMIN,DJ Moore: 25+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-25,0.78,0.79,0.0117,0.8017,0.8047,0.3,0.37,8,False,0.643,2.47,False,True
+BUFMIN,No · DJ Moore: 25+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-25,0.22,0.23,0.0126,0.2426,0.1953,-4.72,-19.46,8,False,0.643,-2.47,False,False
+BUFMIN,Justin Jefferson: 160+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-160,0.05,0.06,0.004,0.064,0.0718,0.78,12.19,8,False,0.715,2.18,False,False
+BUFMIN,No · Justin Jefferson: 160+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-160,0.95,0.96,0.003,0.963,0.9282,-3.48,-3.61,8,False,0.715,-2.18,False,False
+BUFMIN,Justin Jefferson: 60+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-60,0.675,0.68,0.0157,0.6957,0.6889,-0.68,-0.98,8,False,0.26,1.39,False,True
+BUFMIN,No · Justin Jefferson: 60+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-60,0.325,0.33,0.0157,0.3457,0.3111,-3.46,-10.01,8,False,0.26,-1.39,False,False
+BUFMIN,Justin Jefferson: 120+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-120,0.165,0.17,0.01,0.18,0.2147,3.47,19.28,8,False,0.429,4.97,False,False
+BUFMIN,No · Justin Jefferson: 120+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-120,0.835,0.84,0.01,0.85,0.7853,-6.47,-7.61,8,False,0.429,-4.97,False,False
+BUFMIN,Dalton Kincaid: 50+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-50,0.345,0.35,0.0161,0.3661,0.3148,-5.13,-14.02,8,False,0.298,-3.02,False,False
+BUFMIN,No · Dalton Kincaid: 50+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-50,0.655,0.66,0.016,0.676,0.6852,0.92,1.37,8,False,0.298,3.02,False,True
+BUFMIN,Ty Johnson: 25+ receiving yards,yes,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-25,0.32,0.33,0.0157,0.3457,0.3175,-2.81,-8.14,8,False,0.435,-0.25,False,False
+BUFMIN,No · Ty Johnson: 25+ receiving yards,no,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-25,0.68,0.69,0.015,0.705,0.6825,-2.25,-3.2,8,False,0.435,0.25,False,True
+BUFMIN,Keon Coleman: 50+ receiving yards,yes,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-50,0.25,0.26,0.0137,0.2737,0.2744,0.07,0.27,8,False,0.538,2.44,False,False
+BUFMIN,No · Keon Coleman: 50+ receiving yards,no,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-50,0.75,0.76,0.0131,0.7731,0.7256,-4.75,-6.14,8,False,0.538,-2.44,False,False
+BUFMIN,James Cook III: 10+ receiving yards,yes,rec_yds,James Cook III,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFJCOOK4-10,0.475,0.48,0.0175,0.4975,0.4877,-0.98,-1.96,7,False,0.0,1.27,False,False
+BUFMIN,No · James Cook III: 10+ receiving yards,no,rec_yds,James Cook III,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFJCOOK4-10,0.525,0.53,0.0178,0.5478,0.5123,-3.55,-6.48,7,False,0.0,-1.27,False,False
+BUFMIN,Justin Jefferson: 130+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-130,0.13,0.14,0.0085,0.1485,0.1655,1.71,11.51,8,False,0.508,3.55,False,False
+BUFMIN,No · Justin Jefferson: 130+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-130,0.87,0.88,0.0082,0.8882,0.8345,-5.37,-6.05,8,False,0.508,-3.55,False,False
+BUFMIN,T.J. Hockenson: 50+ receiving yards,yes,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-50,0.38,0.39,0.0168,0.4068,0.3812,-2.56,-6.29,8,False,0.172,0.12,False,False
+BUFMIN,No · T.J. Hockenson: 50+ receiving yards,no,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-50,0.62,0.63,0.0167,0.6467,0.6188,-2.79,-4.31,8,False,0.172,-0.12,False,False
+BUFMIN,Justin Jefferson: 50+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-50,0.765,0.77,0.0125,0.7825,0.7599,-2.26,-2.89,8,False,0.441,-0.51,False,False
+BUFMIN,No · Justin Jefferson: 50+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-50,0.235,0.24,0.0129,0.2529,0.2401,-1.28,-5.08,8,False,0.441,0.51,False,False
+BUFMIN,Keon Coleman: 10+ receiving yards,yes,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-10,0.785,0.79,0.0117,0.8017,0.7711,-3.05,-3.81,8,False,1.033,-1.39,False,False
+BUFMIN,No · Keon Coleman: 10+ receiving yards,no,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-10,0.215,0.22,0.0122,0.2322,0.2289,-0.34,-1.45,8,False,1.033,1.39,False,False
+BUFMIN,Khalil Shakir: 20+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-20,0.77,0.78,0.0125,0.7925,0.7616,-3.09,-3.9,8,False,0.656,-0.84,False,False
+BUFMIN,No · Khalil Shakir: 20+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-20,0.23,0.24,0.0129,0.2529,0.2384,-1.45,-5.74,8,False,0.656,0.84,False,False
+BUFMIN,Jordan Addison: 20+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-20,0.765,0.77,0.0125,0.7825,0.7665,-1.6,-2.04,8,False,0.681,0.15,False,True
+BUFMIN,No · Jordan Addison: 20+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-20,0.235,0.24,0.0129,0.2529,0.2335,-1.94,-7.68,8,False,0.681,-0.15,False,False
+BUFMIN,Jordan Addison: 30+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-30,0.64,0.65,0.016,0.666,0.6283,-3.77,-5.67,8,False,0.284,-1.17,False,False
+BUFMIN,No · Jordan Addison: 30+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-30,0.36,0.37,0.0167,0.3867,0.3717,-1.49,-3.86,8,False,0.284,1.17,False,False
+BUFMIN,Khalil Shakir: 90+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-90,0.08,0.09,0.0058,0.0958,0.078,-1.77,-18.51,8,False,0.829,-0.2,False,False
+BUFMIN,No · Khalil Shakir: 90+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-90,0.92,0.93,0.005,0.935,0.922,-1.3,-1.39,8,False,0.829,0.2,False,True
+BUFMIN,Khalil Shakir: 100+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-100,0.045,0.06,0.004,0.064,0.0523,-1.17,-18.26,3,False,0.934,0.73,False,False
+BUFMIN,No · Khalil Shakir: 100+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-100,0.955,0.97,0.003,0.973,0.9477,-2.53,-2.6,3,False,0.934,-0.73,False,False
+BUFMIN,Justin Jefferson: 150+ receiving yards,yes,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-150,0.085,0.09,0.0058,0.0958,0.0938,-0.2,-2.06,8,False,0.651,0.88,False,False
+BUFMIN,No · Justin Jefferson: 150+ receiving yards,no,rec_yds,Justin Jefferson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-150,0.915,0.92,0.006,0.926,0.9062,-1.98,-2.14,8,False,0.651,-0.88,False,False
+BUFMIN,DJ Moore: 110+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-110,0.065,0.08,0.0052,0.0852,0.0417,-4.35,-51.0,8,False,0.823,-2.33,False,False
+BUFMIN,No · DJ Moore: 110+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-110,0.935,0.95,0.004,0.954,0.9583,0.43,0.45,8,False,0.823,2.33,False,True
+BUFMIN,Dalton Kincaid: 20+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-20,0.745,0.75,0.0138,0.7638,0.7661,0.23,0.3,8,False,0.604,2.11,False,True
+BUFMIN,No · Dalton Kincaid: 20+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-20,0.255,0.26,0.0137,0.2737,0.2339,-3.98,-14.55,8,False,0.604,-2.11,False,False
+BUFMIN,Dalton Kincaid: 60+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-60,0.235,0.25,0.0133,0.2632,0.2164,-4.68,-17.79,8,False,0.478,-1.86,False,False
+BUFMIN,No · Dalton Kincaid: 60+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-60,0.765,0.78,0.0125,0.7925,0.7836,-0.89,-1.13,8,False,0.478,1.86,False,True
+BUFMIN,Dalton Kincaid: 80+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-80,0.1,0.11,0.0069,0.1169,0.0828,-3.41,-29.14,8,False,0.764,-1.72,False,False
+BUFMIN,No · Dalton Kincaid: 80+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-80,0.9,0.91,0.006,0.916,0.9172,0.12,0.13,8,False,0.764,1.72,False,True
+BUFMIN,Jordan Addison: 60+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-60,0.28,0.29,0.0147,0.3047,0.2675,-3.72,-12.22,8,False,0.401,-1.25,False,False
+BUFMIN,No · Jordan Addison: 60+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-60,0.72,0.73,0.0138,0.7438,0.7325,-1.13,-1.52,8,False,0.401,1.25,False,True
+BUFMIN,Dalton Kincaid: 70+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-70,0.16,0.17,0.01,0.18,0.1344,-4.56,-25.33,8,False,0.631,-2.56,False,False
+BUFMIN,No · Dalton Kincaid: 70+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-70,0.84,0.85,0.0091,0.8591,0.8656,0.65,0.76,8,False,0.631,2.56,False,True
+BUFMIN,Khalil Shakir: 80+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-80,0.11,0.12,0.0075,0.1275,0.1247,-0.28,-2.19,8,False,0.712,1.47,False,False
+BUFMIN,No · Khalil Shakir: 80+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-80,0.89,0.9,0.0064,0.9064,0.8753,-3.1,-3.42,8,False,0.712,-1.47,False,False
+BUFMIN,T.J. Hockenson: 40+ receiving yards,yes,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-40,0.515,0.52,0.0179,0.5379,0.5227,-1.52,-2.83,8,False,0.048,0.77,False,False
+BUFMIN,No · T.J. Hockenson: 40+ receiving yards,no,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-40,0.485,0.49,0.0175,0.5075,0.4773,-3.02,-5.95,8,False,0.048,-0.77,False,False
+BUFMIN,Dalton Kincaid: 15+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-15,0.805,0.81,0.0108,0.8208,0.8467,2.59,3.15,8,False,0.884,4.17,False,True
+BUFMIN,No · Dalton Kincaid: 15+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-15,0.195,0.2,0.0112,0.2112,0.1533,-5.79,-27.42,8,False,0.884,-4.17,False,False
+BUFMIN,James Cook III: 25+ receiving yards,yes,rec_yds,James Cook III,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFJCOOK4-25,0.17,0.18,0.0104,0.1904,0.2503,5.99,31.49,7,False,0.887,8.03,False,False
+BUFMIN,No · James Cook III: 25+ receiving yards,no,rec_yds,James Cook III,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFJCOOK4-25,0.83,0.84,0.01,0.85,0.7497,-10.03,-11.8,7,False,0.887,-8.03,False,False
+BUFMIN,James Cook III: 20+ receiving yards,yes,rec_yds,James Cook III,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFJCOOK4-20,0.24,0.25,0.0133,0.2632,0.3207,5.74,21.82,7,False,0.669,8.07,False,False
+BUFMIN,No · James Cook III: 20+ receiving yards,no,rec_yds,James Cook III,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFJCOOK4-20,0.76,0.77,0.0125,0.7825,0.6793,-10.32,-13.19,7,False,0.669,-8.07,False,False
+BUFMIN,Jordan Addison: 90+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-90,0.09,0.1,0.0063,0.1063,0.0822,-2.41,-22.67,8,False,0.804,-0.78,False,False
+BUFMIN,No · Jordan Addison: 90+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-90,0.91,0.92,0.006,0.926,0.9178,-0.82,-0.89,8,False,0.804,0.78,False,True
+BUFMIN,Dalton Kincaid: 40+ receiving yards,yes,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-40,0.45,0.46,0.0176,0.4776,0.4607,-1.69,-3.55,8,False,0.077,1.07,False,False
+BUFMIN,No · Dalton Kincaid: 40+ receiving yards,no,rec_yds,Dalton Kincaid,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDKINCAID86-40,0.55,0.56,0.0176,0.5776,0.5393,-3.83,-6.63,8,False,0.077,-1.07,False,False
+BUFMIN,Ty Johnson: 30+ receiving yards,yes,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-30,0.25,0.26,0.0137,0.2737,0.2334,-4.02,-14.71,8,False,0.614,-1.66,False,False
+BUFMIN,No · Ty Johnson: 30+ receiving yards,no,rec_yds,Ty Johnson,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFTJOHNSON26-30,0.75,0.76,0.0131,0.7731,0.7666,-0.65,-0.84,8,False,0.614,1.66,False,True
+BUFMIN,Jordan Addison: 50+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-50,0.38,0.39,0.0168,0.4068,0.3679,-3.89,-9.56,8,False,0.221,-1.21,False,False
+BUFMIN,No · Jordan Addison: 50+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-50,0.62,0.63,0.0167,0.6467,0.6321,-1.46,-2.26,8,False,0.221,1.21,False,True
+BUFMIN,James Cook III: 15+ receiving yards,yes,rec_yds,James Cook III,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFJCOOK4-15,0.345,0.35,0.0161,0.3661,0.4014,3.53,9.65,7,False,0.389,5.64,False,False
+BUFMIN,No · James Cook III: 15+ receiving yards,no,rec_yds,James Cook III,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFJCOOK4-15,0.655,0.66,0.016,0.676,0.5986,-7.74,-11.45,7,False,0.389,-5.64,False,False
+BUFMIN,T.J. Hockenson: 30+ receiving yards,yes,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-30,0.67,0.68,0.0157,0.6957,0.663,-3.27,-4.7,8,False,0.332,-0.7,False,False
+BUFMIN,No · T.J. Hockenson: 30+ receiving yards,no,rec_yds,T.J. Hockenson,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINTHOCKENSON87-30,0.33,0.34,0.0159,0.3559,0.337,-1.89,-5.3,8,False,0.332,0.7,False,False
+BUFMIN,Khalil Shakir: 50+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-50,0.355,0.36,0.0163,0.3763,0.36,-1.63,-4.32,8,False,0.246,0.5,False,False
+BUFMIN,No · Khalil Shakir: 50+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-50,0.645,0.65,0.016,0.666,0.64,-2.6,-3.91,8,False,0.246,-0.5,False,False
+BUFMIN,Khalil Shakir: 25+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-25,0.7,0.71,0.015,0.725,0.6927,-3.23,-4.46,8,False,0.438,-0.73,False,False
+BUFMIN,No · Khalil Shakir: 25+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-25,0.3,0.31,0.015,0.325,0.3073,-1.77,-5.43,8,False,0.438,0.73,False,False
+BUFMIN,DJ Moore: 80+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-80,0.2,0.21,0.0117,0.2217,0.1919,-2.98,-13.43,8,False,0.507,-0.81,False,False
+BUFMIN,No · DJ Moore: 80+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-80,0.8,0.81,0.0108,0.8208,0.8081,-1.28,-1.56,8,False,0.507,0.81,False,True
+BUFMIN,Keon Coleman: 25+ receiving yards,yes,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-25,0.555,0.57,0.0176,0.5876,0.5483,-3.94,-6.7,8,False,0.146,-0.67,False,False
+BUFMIN,No · Keon Coleman: 25+ receiving yards,no,rec_yds,Keon Coleman,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKCOLEMAN0-25,0.445,0.46,0.0176,0.4776,0.4517,-2.59,-5.42,8,False,0.146,0.67,False,False
+BUFMIN,DJ Moore: 40+ receiving yards,yes,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-40,0.59,0.6,0.0169,0.6169,0.6161,-0.08,-0.13,8,False,0.18,2.61,False,False
+BUFMIN,No · DJ Moore: 40+ receiving yards,no,rec_yds,DJ Moore,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFDMOORE2-40,0.41,0.42,0.0174,0.4374,0.3839,-5.34,-12.22,8,False,0.18,-2.61,False,False
+BUFMIN,Jordan Addison: 100+ receiving yards,yes,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-100,0.065,0.08,0.0052,0.0852,0.0501,-3.51,-41.15,2,False,0.909,-1.49,False,False
+BUFMIN,No · Jordan Addison: 100+ receiving yards,no,rec_yds,Jordan Addison,MIN,KXNFLRECYDS-26NOV09BUFMIN-MINJADDISON3-100,0.935,0.95,0.004,0.954,0.9499,-0.41,-0.43,2,False,0.909,1.49,False,True
+BUFMIN,Khalil Shakir: 60+ receiving yards,yes,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-60,0.265,0.27,0.0141,0.2841,0.2608,-2.32,-8.18,8,False,0.426,-0.42,False,False
+BUFMIN,No · Khalil Shakir: 60+ receiving yards,no,rec_yds,Khalil Shakir,BUF,KXNFLRECYDS-26NOV09BUFMIN-BUFKSHAKIR10-60,0.735,0.74,0.0138,0.7538,0.7392,-1.47,-1.94,8,False,0.426,0.42,False,True
+BUFMIN,Jordan Mason: 110+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-110,0.045,0.06,0.004,0.064,0.0273,-3.67,-57.4,8,False,0.823,-1.77,False,False
+BUFMIN,No · Jordan Mason: 110+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-110,0.955,0.97,0.003,0.973,0.9727,-0.03,-0.03,8,False,0.823,1.77,False,True
+BUFMIN,Jordan Mason: 30+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-30,0.75,0.76,0.0131,0.7731,0.7483,-2.48,-3.21,8,False,0.464,-0.17,False,False
+BUFMIN,No · Jordan Mason: 30+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-30,0.25,0.26,0.0137,0.2737,0.2517,-2.2,-8.03,8,False,0.464,0.17,False,False
+BUFMIN,Josh Allen: 15+ rushing yards,yes,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-15,0.795,0.8,0.0117,0.8117,0.7947,-1.69,-2.09,8,False,0.709,-0.03,False,False
+BUFMIN,No · Josh Allen: 15+ rushing yards,no,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-15,0.205,0.21,0.0117,0.2217,0.2053,-1.64,-7.41,8,False,0.709,0.03,False,False
+BUFMIN,James Cook III: 120+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-120,0.185,0.2,0.0112,0.2112,0.1899,-2.13,-10.1,8,False,0.367,0.49,False,False
+BUFMIN,No · James Cook III: 120+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-120,0.815,0.83,0.01,0.84,0.8101,-2.99,-3.56,8,False,0.367,-0.49,False,False
+BUFMIN,Jordan Mason: 50+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-50,0.455,0.46,0.0176,0.4776,0.4643,-1.33,-2.79,8,False,0.04,0.93,False,False
+BUFMIN,No · Jordan Mason: 50+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-50,0.545,0.55,0.0178,0.5678,0.5357,-3.21,-5.65,8,False,0.04,-0.93,False,False
+BUFMIN,Aaron Jones Sr.: 20+ rushing yards,yes,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-20,0.73,0.74,0.0138,0.7538,0.7163,-3.75,-4.98,8,False,0.461,-1.37,False,False
+BUFMIN,No · Aaron Jones Sr.: 20+ rushing yards,no,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-20,0.27,0.28,0.0143,0.2943,0.2837,-1.06,-3.6,8,False,0.461,1.37,False,False
+BUFMIN,Aaron Jones Sr.: 30+ rushing yards,yes,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-30,0.525,0.53,0.0178,0.5478,0.5366,-1.12,-2.05,8,False,0.064,1.16,False,False
+BUFMIN,No · Aaron Jones Sr.: 30+ rushing yards,no,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-30,0.475,0.48,0.0175,0.4975,0.4634,-3.41,-6.85,8,False,0.064,-1.16,False,False
+BUFMIN,Aaron Jones Sr.: 50+ rushing yards,yes,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-50,0.245,0.26,0.0137,0.2737,0.2581,-1.56,-5.69,8,False,0.441,1.31,False,False
+BUFMIN,No · Aaron Jones Sr.: 50+ rushing yards,no,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-50,0.755,0.77,0.0125,0.7825,0.7419,-4.06,-5.19,8,False,0.441,-1.31,False,False
+BUFMIN,Aaron Jones Sr.: 70+ rushing yards,yes,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-70,0.09,0.1,0.0063,0.1063,0.1019,-0.44,-4.18,8,False,0.774,1.19,False,False
+BUFMIN,No · Aaron Jones Sr.: 70+ rushing yards,no,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-70,0.91,0.92,0.006,0.926,0.8981,-2.79,-3.01,8,False,0.774,-1.19,False,False
+BUFMIN,Aaron Jones Sr.: 80+ rushing yards,yes,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-80,0.06,0.07,0.0046,0.0746,0.0634,-1.12,-15.03,3,False,0.907,0.34,False,False
+BUFMIN,No · Aaron Jones Sr.: 80+ rushing yards,no,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-80,0.94,0.95,0.004,0.954,0.9366,-1.74,-1.82,3,False,0.907,-0.34,False,False
+BUFMIN,Jordan Mason: 40+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-40,0.61,0.62,0.0169,0.6369,0.6082,-2.87,-4.51,8,False,0.18,-0.18,False,False
+BUFMIN,No · Jordan Mason: 40+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-40,0.39,0.4,0.0168,0.4168,0.3918,-2.5,-5.99,8,False,0.18,0.18,False,False
+BUFMIN,Jordan Mason: 60+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-60,0.335,0.34,0.0159,0.3559,0.3272,-2.87,-8.05,8,False,0.221,-0.78,False,False
+BUFMIN,No · Jordan Mason: 60+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-60,0.665,0.67,0.0157,0.6857,0.6728,-1.29,-1.88,8,False,0.221,0.78,False,True
+BUFMIN,Jordan Mason: 70+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-70,0.245,0.25,0.0133,0.2632,0.2056,-5.77,-21.9,8,False,0.374,-3.94,False,False
+BUFMIN,No · Jordan Mason: 70+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-70,0.755,0.76,0.0131,0.7731,0.7944,2.13,2.76,8,False,0.374,3.94,False,True
+BUFMIN,Jordan Mason: 80+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-80,0.165,0.17,0.01,0.18,0.1332,-4.68,-26.0,8,False,0.507,-3.18,False,False
+BUFMIN,No · Jordan Mason: 80+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-80,0.835,0.84,0.01,0.85,0.8668,1.68,1.98,8,False,0.507,3.18,False,True
+BUFMIN,James Cook III: 60+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-60,0.74,0.75,0.0138,0.7638,0.7502,-1.36,-1.78,8,False,0.322,1.02,False,True
+BUFMIN,No · James Cook III: 60+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-60,0.26,0.27,0.0141,0.2841,0.2498,-3.43,-12.07,8,False,0.322,-1.02,False,False
+BUFMIN,James Cook III: 70+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-70,0.645,0.66,0.016,0.676,0.6447,-3.13,-4.63,8,False,0.169,-0.03,False,False
+BUFMIN,No · James Cook III: 70+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-70,0.355,0.37,0.0167,0.3867,0.3553,-3.14,-8.11,8,False,0.169,0.03,False,False
+BUFMIN,James Cook III: 80+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-80,0.525,0.53,0.0178,0.5478,0.5384,-0.94,-1.72,8,False,0.06,1.34,False,False
+BUFMIN,No · James Cook III: 80+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-80,0.475,0.48,0.0175,0.4975,0.4616,-3.59,-7.21,8,False,0.06,-1.34,False,False
+BUFMIN,James Cook III: 90+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-90,0.42,0.43,0.0174,0.4474,0.4301,-1.73,-3.86,8,False,0.081,1.01,False,False
+BUFMIN,No · James Cook III: 90+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-90,0.58,0.59,0.0175,0.6075,0.5699,-3.76,-6.2,8,False,0.081,-1.01,False,False
+BUFMIN,Josh Allen: 25+ rushing yards,yes,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-25,0.62,0.63,0.0167,0.6467,0.6307,-1.6,-2.48,8,False,0.211,1.07,False,True
+BUFMIN,No · Josh Allen: 25+ rushing yards,no,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-25,0.38,0.39,0.0168,0.4068,0.3693,-3.75,-9.21,8,False,0.211,-1.07,False,False
+BUFMIN,Josh Allen: 30+ rushing yards,yes,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-30,0.545,0.55,0.0178,0.5678,0.5234,-4.44,-7.81,8,False,0.033,-2.16,False,False
+BUFMIN,No · Josh Allen: 30+ rushing yards,no,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-30,0.455,0.46,0.0176,0.4776,0.4766,-0.1,-0.22,8,False,0.033,2.16,False,False
+BUFMIN,Josh Allen: 40+ rushing yards,yes,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-40,0.35,0.36,0.0163,0.3763,0.3563,-2.0,-5.31,8,False,0.251,0.63,False,False
+BUFMIN,No · Josh Allen: 40+ rushing yards,no,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-40,0.65,0.66,0.016,0.676,0.6437,-3.23,-4.78,8,False,0.251,-0.63,False,False
+BUFMIN,James Cook III: 110+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-110,0.255,0.26,0.0137,0.2737,0.2703,-0.33,-1.22,8,False,0.28,1.53,False,False
+BUFMIN,No · James Cook III: 110+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-110,0.745,0.75,0.0138,0.7638,0.7297,-3.42,-4.48,8,False,0.28,-1.53,False,False
+BUFMIN,James Cook III: 140+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-140,0.09,0.1,0.0063,0.1063,0.0962,-1.01,-9.5,8,False,0.52,0.62,False,False
+BUFMIN,No · James Cook III: 140+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-140,0.91,0.92,0.006,0.926,0.9038,-2.22,-2.4,8,False,0.52,-0.62,False,False
+BUFMIN,James Cook III: 50+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-50,0.835,0.85,0.0091,0.8591,0.8453,-1.38,-1.61,8,False,0.503,1.03,False,True
+BUFMIN,No · James Cook III: 50+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-50,0.165,0.18,0.0104,0.1904,0.1547,-3.56,-18.71,8,False,0.503,-1.03,False,False
+BUFMIN,Aaron Jones Sr.: 25+ rushing yards,yes,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-25,0.635,0.65,0.016,0.666,0.6236,-4.24,-6.36,8,False,0.243,-1.14,False,False
+BUFMIN,No · Aaron Jones Sr.: 25+ rushing yards,no,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-25,0.365,0.38,0.0165,0.3965,0.3764,-2.02,-5.08,8,False,0.243,1.14,False,False
+BUFMIN,James Cook III: 160+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-160,0.05,0.06,0.004,0.064,0.0465,-1.74,-27.26,8,False,0.653,-0.35,False,False
+BUFMIN,No · James Cook III: 160+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-160,0.95,0.96,0.003,0.963,0.9535,-0.95,-0.99,8,False,0.653,0.35,False,True
+BUFMIN,Aaron Jones Sr.: 60+ rushing yards,yes,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-60,0.155,0.17,0.01,0.18,0.1567,-2.33,-12.93,8,False,0.621,0.17,False,False
+BUFMIN,No · Aaron Jones Sr.: 60+ rushing yards,no,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-60,0.845,0.86,0.0091,0.8691,0.8433,-2.58,-2.97,8,False,0.621,-0.17,False,False
+BUFMIN,James Cook III: 100+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-100,0.33,0.34,0.0159,0.3559,0.3551,-0.08,-0.23,8,False,0.185,2.51,False,False
+BUFMIN,No · James Cook III: 100+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-100,0.67,0.68,0.0157,0.6957,0.6449,-5.08,-7.3,8,False,0.185,-2.51,False,False
+BUFMIN,James Cook III: 130+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-130,0.13,0.14,0.0085,0.1485,0.1355,-1.3,-8.73,8,False,0.447,0.55,False,False
+BUFMIN,No · James Cook III: 130+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-130,0.87,0.88,0.0082,0.8882,0.8645,-2.37,-2.67,8,False,0.447,-0.55,False,False
+BUFMIN,James Cook III: 150+ rushing yards,yes,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-150,0.065,0.07,0.0046,0.0746,0.0635,-1.11,-14.9,8,False,0.589,-0.15,False,False
+BUFMIN,No · James Cook III: 150+ rushing yards,no,rush_yds,James Cook III,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJCOOK4-150,0.935,0.94,0.004,0.944,0.9365,-0.75,-0.79,8,False,0.589,0.15,False,True
+BUFMIN,Jordan Mason: 25+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-25,0.815,0.83,0.01,0.84,0.8219,-1.81,-2.16,8,False,0.643,0.69,False,True
+BUFMIN,No · Jordan Mason: 25+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-25,0.185,0.2,0.0112,0.2112,0.1781,-3.31,-15.65,8,False,0.643,-0.69,False,False
+BUFMIN,Aaron Jones Sr.: 15+ rushing yards,yes,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-15,0.82,0.83,0.01,0.84,0.7974,-4.26,-5.07,8,False,0.74,-2.26,False,False
+BUFMIN,No · Aaron Jones Sr.: 15+ rushing yards,no,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-15,0.18,0.19,0.011,0.201,0.2026,0.16,0.81,8,False,0.74,2.26,False,False
+BUFMIN,Jordan Mason: 90+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-90,0.105,0.11,0.0069,0.1169,0.0822,-3.47,-29.71,8,False,0.624,-2.28,False,False
+BUFMIN,No · Jordan Mason: 90+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-90,0.895,0.9,0.0064,0.9064,0.9178,1.15,1.27,8,False,0.624,2.28,False,True
+BUFMIN,Josh Allen: 10+ rushing yards,yes,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-10,0.88,0.89,0.0073,0.8973,0.8599,-3.73,-4.16,8,False,1.099,-2.01,False,False
+BUFMIN,No · Josh Allen: 10+ rushing yards,no,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-10,0.12,0.13,0.008,0.138,0.1401,0.21,1.49,8,False,1.099,2.01,False,False
+BUFMIN,Jordan Mason: 100+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-100,0.07,0.08,0.0052,0.0852,0.0419,-4.33,-50.84,8,False,0.729,-2.81,False,False
+BUFMIN,No · Jordan Mason: 100+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-100,0.93,0.94,0.004,0.944,0.9581,1.41,1.5,8,False,0.729,2.81,False,True
+BUFMIN,Josh Allen: 70+ rushing yards,yes,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-70,0.08,0.09,0.0058,0.0958,0.0606,-3.51,-36.68,8,False,0.806,-1.94,False,False
+BUFMIN,No · Josh Allen: 70+ rushing yards,no,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-70,0.92,0.93,0.005,0.935,0.9394,0.44,0.47,8,False,0.806,1.94,False,True
+BUFMIN,Josh Allen: 20+ rushing yards,yes,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-20,0.71,0.72,0.0146,0.7346,0.7349,0.03,0.04,8,False,0.43,2.49,False,True
+BUFMIN,No · Josh Allen: 20+ rushing yards,no,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-20,0.29,0.3,0.0148,0.3148,0.2651,-4.98,-15.81,8,False,0.43,-2.49,False,False
+BUFMIN,Josh Allen: 60+ rushing yards,yes,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-60,0.135,0.14,0.0085,0.1485,0.1282,-2.02,-13.64,8,False,0.653,-0.68,False,False
+BUFMIN,No · Josh Allen: 60+ rushing yards,no,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-60,0.865,0.87,0.0082,0.8782,0.8718,-0.64,-0.73,8,False,0.653,0.68,False,True
+BUFMIN,Jordan Mason: 120+ rushing yards,yes,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-120,0.04,0.05,0.0034,0.0534,0.0135,-3.98,-74.67,2,False,0.91,-2.65,False,False
+BUFMIN,No · Jordan Mason: 120+ rushing yards,no,rush_yds,Jordan Mason,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINJMASON27-120,0.96,0.97,0.003,0.973,0.9865,1.35,1.39,2,False,0.91,2.65,False,True
+BUFMIN,Aaron Jones Sr.: 40+ rushing yards,yes,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-40,0.36,0.37,0.0167,0.3867,0.3752,-1.15,-2.97,8,False,0.22,1.52,False,False
+BUFMIN,No · Aaron Jones Sr.: 40+ rushing yards,no,rush_yds,Aaron Jones Sr.,MIN,KXNFLRSHYDS-26NOV09BUFMIN-MINAJONES33-40,0.64,0.65,0.016,0.666,0.6248,-4.12,-6.18,8,False,0.22,-1.52,False,False
+BUFMIN,Josh Allen: 50+ rushing yards,yes,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-50,0.23,0.24,0.0129,0.2529,0.2252,-2.77,-10.95,8,False,0.472,-0.48,False,False
+BUFMIN,No · Josh Allen: 50+ rushing yards,no,rush_yds,Josh Allen,BUF,KXNFLRSHYDS-26NOV09BUFMIN-BUFJALLEN17-50,0.77,0.78,0.0125,0.7925,0.7748,-1.77,-2.24,8,False,0.472,0.48,False,True
+BUFMIN,Carson Wentz: 275+ passing yards,yes,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-275,0.17,0.18,0.0104,0.1904,0.1591,-3.12,-16.41,7,False,0.269,-1.09,False,False
+BUFMIN,No · Carson Wentz: 275+ passing yards,no,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-275,0.83,0.84,0.01,0.85,0.8409,-0.91,-1.07,7,False,0.269,1.09,False,True
+BUFMIN,Josh Allen: 250+ passing yards,yes,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-250,0.425,0.43,0.0174,0.4474,0.4086,-3.88,-8.68,8,False,0.049,-1.64,False,False
+BUFMIN,No · Josh Allen: 250+ passing yards,no,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-250,0.575,0.58,0.0171,0.5971,0.5914,-0.56,-0.94,8,False,0.049,1.64,False,False
+BUFMIN,Josh Allen: 200+ passing yards,yes,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-200,0.725,0.73,0.0138,0.7438,0.6775,-6.64,-8.92,8,False,0.174,-4.75,False,False
+BUFMIN,No · Josh Allen: 200+ passing yards,no,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-200,0.275,0.28,0.0143,0.2943,0.3225,2.82,9.6,8,False,0.174,4.75,False,False
+BUFMIN,Josh Allen: 225+ passing yards,yes,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-225,0.58,0.59,0.0175,0.6075,0.5618,-4.57,-7.52,8,False,0.056,-1.82,False,False
+BUFMIN,No · Josh Allen: 225+ passing yards,no,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-225,0.42,0.43,0.0174,0.4474,0.4382,-0.92,-2.06,8,False,0.056,1.82,False,False
+BUFMIN,Josh Allen: 275+ passing yards,yes,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-275,0.285,0.29,0.0147,0.3047,0.2671,-3.76,-12.33,8,False,0.144,-1.79,False,False
+BUFMIN,No · Josh Allen: 275+ passing yards,no,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-275,0.715,0.72,0.0146,0.7346,0.7329,-0.17,-0.24,8,False,0.144,1.79,False,True
+BUFMIN,Carson Wentz: 200+ passing yards,yes,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-200,0.56,0.57,0.0176,0.5876,0.5478,-3.99,-6.79,8,False,0.049,-1.22,False,False
+BUFMIN,No · Carson Wentz: 200+ passing yards,no,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-200,0.44,0.45,0.0177,0.4677,0.4522,-1.55,-3.31,8,False,0.049,1.22,False,False
+BUFMIN,Carson Wentz: 250+ passing yards,yes,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-250,0.28,0.29,0.0147,0.3047,0.2746,-3.01,-9.87,8,False,0.174,-0.54,False,False
+BUFMIN,No · Carson Wentz: 250+ passing yards,no,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-250,0.72,0.73,0.0138,0.7438,0.7254,-1.85,-2.48,8,False,0.174,0.54,False,True
+BUFMIN,Carson Wentz: 225+ passing yards,yes,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-225,0.415,0.42,0.0174,0.4374,0.4123,-2.5,-5.73,8,False,0.069,-0.27,False,False
+BUFMIN,No · Carson Wentz: 225+ passing yards,no,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-225,0.585,0.59,0.0175,0.6075,0.5877,-1.98,-3.27,8,False,0.069,0.27,False,False
+BUFMIN,Josh Allen: 175+ passing yards,yes,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-175,0.825,0.83,0.01,0.84,0.7794,-6.06,-7.21,8,False,0.307,-4.56,False,False
+BUFMIN,No · Josh Allen: 175+ passing yards,no,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-175,0.175,0.18,0.0104,0.1904,0.2206,3.02,15.87,8,False,0.307,4.56,False,False
+BUFMIN,Carson Wentz: 150+ passing yards,yes,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-150,0.815,0.82,0.0108,0.8308,0.7809,-4.99,-6.01,8,False,0.336,-3.41,False,False
+BUFMIN,No · Carson Wentz: 150+ passing yards,no,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-150,0.185,0.19,0.011,0.201,0.2191,1.81,9.01,8,False,0.336,3.41,False,False
+BUFMIN,Josh Allen: 300+ passing yards,yes,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-300,0.175,0.18,0.0104,0.1904,0.1667,-2.37,-12.44,8,False,0.231,-0.83,False,False
+BUFMIN,No · Josh Allen: 300+ passing yards,no,pass_yds,Josh Allen,BUF,KXNFLPASSYDS-26NOV09BUFMIN-BUFJALLEN17-300,0.825,0.83,0.01,0.84,0.8333,-0.67,-0.8,8,False,0.231,0.83,False,True
+BUFMIN,Carson Wentz: 175+ passing yards,yes,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-175,0.705,0.72,0.0146,0.7346,0.6752,-5.94,-8.09,8,False,0.182,-2.98,False,False
+BUFMIN,No · Carson Wentz: 175+ passing yards,no,pass_yds,Carson Wentz,MIN,KXNFLPASSYDS-26NOV09BUFMIN-MINCWENTZ11-175,0.295,0.31,0.015,0.325,0.3248,-0.02,-0.05,8,False,0.182,2.98,False,False
+BUFMIN,Aaron Jones Sr.: 65+ rushing and receiving yards combined,yes,rr_yds,Aaron Jones Sr.,MIN,KXNFLRRYDS-26NOV09BUFMIN-MINAJONES33-65,0.235,0.25,0.0133,0.2632,0.2744,1.11,4.23,4,False,0.387,3.94,False,False
+BUFMIN,No · Aaron Jones Sr.: 65+ rushing and receiving yards combined,no,rr_yds,Aaron Jones Sr.,MIN,KXNFLRRYDS-26NOV09BUFMIN-MINAJONES33-65,0.765,0.78,0.0125,0.7925,0.7256,-6.69,-8.44,4,False,0.387,-3.94,False,False
+BUFMIN,James Cook III: 100+ rushing and receiving yards combined,yes,rr_yds,James Cook III,BUF,KXNFLRRYDS-26NOV09BUFMIN-BUFJCOOK4-100,0.47,0.48,0.0175,0.4975,0.4677,-2.98,-5.98,5,False,0.03,-0.23,False,False
+BUFMIN,No · James Cook III: 100+ rushing and receiving yards combined,no,rr_yds,James Cook III,BUF,KXNFLRRYDS-26NOV09BUFMIN-BUFJCOOK4-100,0.53,0.54,0.0178,0.5578,0.5323,-2.55,-4.57,5,False,0.03,0.23,False,False
+BUFMIN,Aaron Jones Sr.: 40+ rushing and receiving yards combined,yes,rr_yds,Aaron Jones Sr.,MIN,KXNFLRRYDS-26NOV09BUFMIN-MINAJONES33-40,0.555,0.57,0.0176,0.5876,0.5433,-4.43,-7.54,4,False,0.094,-1.17,False,False
+BUFMIN,No · Aaron Jones Sr.: 40+ rushing and receiving yards combined,no,rr_yds,Aaron Jones Sr.,MIN,KXNFLRRYDS-26NOV09BUFMIN-MINAJONES33-40,0.445,0.46,0.0176,0.4776,0.4567,-2.09,-4.38,4,False,0.094,1.17,False,False
+BUFMIN,James Cook III: 125+ rushing and receiving yards combined,yes,rr_yds,James Cook III,BUF,KXNFLRRYDS-26NOV09BUFMIN-BUFJCOOK4-125,0.26,0.28,0.0143,0.2943,0.2344,-5.99,-20.36,5,False,0.252,-2.56,False,False
+BUFMIN,No · James Cook III: 125+ rushing and receiving yards combined,no,rr_yds,James Cook III,BUF,KXNFLRRYDS-26NOV09BUFMIN-BUFJCOOK4-125,0.74,0.76,0.0131,0.7731,0.7656,-0.74,-0.96,5,False,0.252,2.56,False,True
+BUFMIN,James Cook III: 150+ rushing and receiving yards combined,yes,rr_yds,James Cook III,BUF,KXNFLRRYDS-26NOV09BUFMIN-BUFJCOOK4-150,0.12,0.14,0.0085,0.1485,0.0616,-8.68,-58.47,5,False,0.434,-5.84,False,False
+BUFMIN,No · James Cook III: 150+ rushing and receiving yards combined,no,rr_yds,James Cook III,BUF,KXNFLRRYDS-26NOV09BUFMIN-BUFJCOOK4-150,0.88,0.9,0.0064,0.9064,0.9384,3.2,3.53,5,False,0.434,5.84,True,True
+BUFMIN,Aaron Jones Sr.: 90+ rushing and receiving yards combined,yes,rr_yds,Aaron Jones Sr.,MIN,KXNFLRRYDS-26NOV09BUFMIN-MINAJONES33-90,0.08,0.1,0.0063,0.1063,0.1145,0.82,7.7,4,False,0.71,3.45,False,False
+BUFMIN,No · Aaron Jones Sr.: 90+ rushing and receiving yards combined,no,rr_yds,Aaron Jones Sr.,MIN,KXNFLRRYDS-26NOV09BUFMIN-MINAJONES33-90,0.92,0.94,0.004,0.944,0.8855,-5.85,-6.2,4,False,0.71,-3.45,False,False
+BUFMIN,Josh Allen: 1+ touchdowns,yes,td,Josh Allen,BUF,KXNFLTD-26NOV09BUFMIN-BUFJALLEN17-1,0.525,0.53,0.0178,0.5478,0.5105,-3.73,-6.81,7,True,0.0,-1.45,False,False
+BUFMIN,No · Josh Allen: 1+ touchdowns,no,td,Josh Allen,BUF,KXNFLTD-26NOV09BUFMIN-BUFJALLEN17-1,0.475,0.48,0.0175,0.4975,0.4895,-0.8,-1.6,7,True,0.0,1.45,False,False
+BUFMIN,James Cook III: 2+ touchdowns,yes,td,James Cook III,BUF,KXNFLTD-26NOV09BUFMIN-BUFJCOOK4-2,0.135,0.14,0.0085,0.1485,0.1496,0.11,0.77,7,True,0.3,1.46,False,False
+BUFMIN,No · James Cook III: 2+ touchdowns,no,td,James Cook III,BUF,KXNFLTD-26NOV09BUFMIN-BUFJCOOK4-2,0.865,0.87,0.0082,0.8782,0.8504,-2.78,-3.16,7,True,0.3,-1.46,False,False
+BUFMIN,Gavin Bartholomew: 2+ touchdowns,yes,td,Gavin Bartholomew,MIN,KXNFLTD-26NOV09BUFMIN-MINGBARTHOLOMEW86-2,0.01,0.02,0.0014,0.0214,0.0021,-1.93,-90.11,6,True,0.3,-0.79,False,False
+BUFMIN,DJ Moore: 1+ touchdowns,yes,td,DJ Moore,BUF,KXNFLTD-26NOV09BUFMIN-BUFDMOORE2-1,0.245,0.25,0.0133,0.2632,0.256,-0.73,-2.77,6,True,0.0,1.1,False,False
+BUFMIN,No · DJ Moore: 1+ touchdowns,no,td,DJ Moore,BUF,KXNFLTD-26NOV09BUFMIN-BUFDMOORE2-1,0.755,0.76,0.0131,0.7731,0.744,-2.9,-3.76,6,True,0.0,-1.1,False,False
+BUFMIN,Josh Allen: 3+ touchdowns,yes,td,Josh Allen,BUF,KXNFLTD-26NOV09BUFMIN-BUFJALLEN17-3,0.025,0.03,0.002,0.032,0.036,0.39,12.31,7,True,0.3,1.1,False,False
+BUFMIN,No · Josh Allen: 3+ touchdowns,no,td,Josh Allen,BUF,KXNFLTD-26NOV09BUFMIN-BUFJALLEN17-3,0.975,0.98,0.002,0.982,0.964,-1.8,-1.83,7,True,0.3,-1.1,False,False
+BUFMIN,T.J. Hockenson: 3+ touchdowns,yes,td,T.J. Hockenson,MIN,KXNFLTD-26NOV09BUFMIN-MINTHOCKENSON87-3,0.005,0.01,0.0007,0.0107,0.0053,-0.54,-50.71,7,True,0.3,0.03,False,False
+BUFMIN,Ben Yurosek: 1+ touchdowns,yes,td,Ben Yurosek,MIN,KXNFLTD-26NOV09BUFMIN-MINBYUROSEK85-1,0.075,0.08,0.0052,0.0852,0.0918,0.66,7.71,6,True,0.0,1.68,False,False
+BUFMIN,No · Ben Yurosek: 1+ touchdowns,no,td,Ben Yurosek,MIN,KXNFLTD-26NOV09BUFMIN-MINBYUROSEK85-1,0.925,0.93,0.005,0.935,0.9082,-2.68,-2.86,6,True,0.0,-1.68,False,False
+BUFMIN,James Cook III: 1+ touchdowns,yes,td,James Cook III,BUF,KXNFLTD-26NOV09BUFMIN-BUFJCOOK4-1,0.485,0.49,0.0175,0.5075,0.4943,-1.32,-2.6,7,True,0.0,0.93,False,False
+BUFMIN,No · James Cook III: 1+ touchdowns,no,td,James Cook III,BUF,KXNFLTD-26NOV09BUFMIN-BUFJCOOK4-1,0.515,0.52,0.0179,0.5379,0.5057,-3.22,-5.99,7,True,0.0,-0.93,False,False
+BUFMIN,Dalton Kincaid: 2+ touchdowns,yes,td,Dalton Kincaid,BUF,KXNFLTD-26NOV09BUFMIN-BUFDKINCAID86-2,0.025,0.03,0.002,0.032,0.0333,0.13,4.01,6,True,0.3,0.83,False,False
+BUFMIN,No · Dalton Kincaid: 2+ touchdowns,no,td,Dalton Kincaid,BUF,KXNFLTD-26NOV09BUFMIN-BUFDKINCAID86-2,0.975,0.98,0.002,0.982,0.9667,-1.53,-1.56,6,True,0.3,-0.83,False,False
+BUFMIN,T.J. Hockenson: 1+ touchdowns,yes,td,T.J. Hockenson,MIN,KXNFLTD-26NOV09BUFMIN-MINTHOCKENSON87-1,0.295,0.3,0.0148,0.3148,0.2906,-2.42,-7.69,7,True,0.0,-0.44,False,False
+BUFMIN,No · T.J. Hockenson: 1+ touchdowns,no,td,T.J. Hockenson,MIN,KXNFLTD-26NOV09BUFMIN-MINTHOCKENSON87-1,0.705,0.71,0.015,0.725,0.7094,-1.56,-2.16,7,True,0.0,0.44,False,False
+BUFMIN,Tai Felton: 1+ touchdowns,yes,td,Tai Felton,MIN,KXNFLTD-26NOV09BUFMIN-MINTFELTON13-1,0.105,0.11,0.0069,0.1169,0.1446,2.77,23.7,5,True,0.0,3.96,False,False
+BUFMIN,No · Tai Felton: 1+ touchdowns,no,td,Tai Felton,MIN,KXNFLTD-26NOV09BUFMIN-MINTFELTON13-1,0.895,0.9,0.0064,0.9064,0.8554,-5.1,-5.62,5,True,0.0,-3.96,False,False
+BUFMIN,Jordan Addison: 1+ touchdowns,yes,td,Jordan Addison,MIN,KXNFLTD-26NOV09BUFMIN-MINJADDISON3-1,0.255,0.26,0.0137,0.2737,0.25,-2.36,-8.64,7,True,0.0,-0.5,False,False
+BUFMIN,No · Jordan Addison: 1+ touchdowns,no,td,Jordan Addison,MIN,KXNFLTD-26NOV09BUFMIN-MINJADDISON3-1,0.745,0.75,0.0138,0.7638,0.75,-1.39,-1.82,7,True,0.0,0.5,False,False
+BUFMIN,Dalton Kincaid: 1+ touchdowns,yes,td,Dalton Kincaid,BUF,KXNFLTD-26NOV09BUFMIN-BUFDKINCAID86-1,0.235,0.24,0.0129,0.2529,0.2466,-0.63,-2.49,6,True,0.0,1.16,False,False
+BUFMIN,No · Dalton Kincaid: 1+ touchdowns,no,td,Dalton Kincaid,BUF,KXNFLTD-26NOV09BUFMIN-BUFDKINCAID86-1,0.765,0.77,0.0125,0.7825,0.7534,-2.91,-3.72,6,True,0.0,-1.16,False,False
+BUFMIN,Myles Price: 1+ touchdowns,yes,td,Myles Price,MIN,KXNFLTD-26NOV09BUFMIN-MINMPRICE4-1,0.085,0.09,0.0058,0.0958,0.0958,0.0,0.03,6,True,0.0,1.08,False,False
+BUFMIN,No · Myles Price: 1+ touchdowns,no,td,Myles Price,MIN,KXNFLTD-26NOV09BUFMIN-MINMPRICE4-1,0.915,0.92,0.006,0.926,0.9042,-2.18,-2.35,6,True,0.0,-1.08,False,False
+BUFMIN,Ty Johnson: 1+ touchdowns,yes,td,Ty Johnson,BUF,KXNFLTD-26NOV09BUFMIN-BUFTJOHNSON26-1,0.105,0.11,0.0069,0.1169,0.1102,-0.67,-5.72,6,True,0.0,0.52,False,False
+BUFMIN,No · Ty Johnson: 1+ touchdowns,no,td,Ty Johnson,BUF,KXNFLTD-26NOV09BUFMIN-BUFTJOHNSON26-1,0.895,0.9,0.0064,0.9064,0.8898,-1.66,-1.83,6,True,0.0,-0.52,False,False
+BUFMIN,Carson Wentz: 1+ touchdowns,yes,td,Carson Wentz,MIN,KXNFLTD-26NOV09BUFMIN-MINCWENTZ11-1,0.075,0.08,0.0052,0.0852,0.0844,-0.08,-0.96,6,True,0.0,0.94,False,False
+BUFMIN,No · Carson Wentz: 1+ touchdowns,no,td,Carson Wentz,MIN,KXNFLTD-26NOV09BUFMIN-MINCWENTZ11-1,0.925,0.93,0.005,0.935,0.9156,-1.94,-2.07,6,True,0.0,-0.94,False,False
+BUFMIN,Aaron Jones Sr.: 2+ touchdowns,yes,td,Aaron Jones Sr.,MIN,KXNFLTD-26NOV09BUFMIN-MINAJONES33-2,0.03,0.04,0.0027,0.0427,0.0372,-0.55,-12.87,6,True,0.3,0.72,False,False
+BUFMIN,No · Aaron Jones Sr.: 2+ touchdowns,no,td,Aaron Jones Sr.,MIN,KXNFLTD-26NOV09BUFMIN-MINAJONES33-2,0.97,0.98,0.002,0.982,0.9628,-1.92,-1.96,6,True,0.3,-0.72,False,False
+BUFMIN,Aaron Jones Sr.: 1+ touchdowns,yes,td,Aaron Jones Sr.,MIN,KXNFLTD-26NOV09BUFMIN-MINAJONES33-1,0.255,0.26,0.0137,0.2737,0.2593,-1.44,-5.25,6,True,0.0,0.43,False,False
+BUFMIN,No · Aaron Jones Sr.: 1+ touchdowns,no,td,Aaron Jones Sr.,MIN,KXNFLTD-26NOV09BUFMIN-MINAJONES33-1,0.745,0.75,0.0138,0.7638,0.7407,-2.32,-3.03,6,True,0.0,-0.43,False,False
+BUFMIN,Dawson Knox: 1+ touchdowns,yes,td,Dawson Knox,BUF,KXNFLTD-26NOV09BUFMIN-BUFDKNOX88-1,0.105,0.11,0.0069,0.1169,0.1083,-0.86,-7.36,6,True,0.0,0.33,False,False
+BUFMIN,No · Dawson Knox: 1+ touchdowns,no,td,Dawson Knox,BUF,KXNFLTD-26NOV09BUFMIN-BUFDKNOX88-1,0.895,0.9,0.0064,0.9064,0.8917,-1.46,-1.62,6,True,0.0,-0.33,False,False
+BUFMIN,Skyler Bell: 1+ touchdowns,yes,td,Skyler Bell,BUF,KXNFLTD-26NOV09BUFMIN-BUFSBELL13-1,0.075,0.08,0.0052,0.0852,0.0814,-0.38,-4.41,6,True,0.0,0.64,False,False
+BUFMIN,No · Skyler Bell: 1+ touchdowns,no,td,Skyler Bell,BUF,KXNFLTD-26NOV09BUFMIN-BUFSBELL13-1,0.925,0.93,0.005,0.935,0.9186,-1.64,-1.76,6,True,0.0,-0.64,False,False
+BUFMIN,Khalil Shakir: 2+ touchdowns,yes,td,Khalil Shakir,BUF,KXNFLTD-26NOV09BUFMIN-BUFKSHAKIR10-2,0.025,0.03,0.002,0.032,0.0293,-0.28,-8.66,6,True,0.3,0.43,False,False
+BUFMIN,No · Khalil Shakir: 2+ touchdowns,no,td,Khalil Shakir,BUF,KXNFLTD-26NOV09BUFMIN-BUFKSHAKIR10-2,0.975,0.98,0.002,0.982,0.9707,-1.13,-1.15,6,True,0.3,-0.43,False,False
+BUFMIN,Keon Coleman: 2+ touchdowns,yes,td,Keon Coleman,BUF,KXNFLTD-26NOV09BUFMIN-BUFKCOLEMAN0-2,0.015,0.02,0.0014,0.0214,0.0185,-0.28,-13.32,6,True,0.3,0.35,False,False
+BUFMIN,No · Keon Coleman: 2+ touchdowns,no,td,Keon Coleman,BUF,KXNFLTD-26NOV09BUFMIN-BUFKCOLEMAN0-2,0.985,0.99,0.001,0.991,0.9815,-0.95,-0.96,6,True,0.3,-0.35,False,False
+BUFMIN,Justin Jefferson: 1+ touchdowns,yes,td,Justin Jefferson,MIN,KXNFLTD-26NOV09BUFMIN-MINJJEFFERSON18-1,0.375,0.38,0.0165,0.3965,0.3695,-2.7,-6.82,7,True,0.0,-0.55,False,False
+BUFMIN,No · Justin Jefferson: 1+ touchdowns,no,td,Justin Jefferson,MIN,KXNFLTD-26NOV09BUFMIN-MINJJEFFERSON18-1,0.625,0.63,0.0167,0.6467,0.6305,-1.62,-2.5,7,True,0.0,0.55,False,False
+BUFMIN,Jordan Mason: 1+ touchdowns,yes,td,Jordan Mason,MIN,KXNFLTD-26NOV09BUFMIN-MINJMASON27-1,0.305,0.31,0.015,0.325,0.3152,-0.98,-3.01,6,True,0.0,1.02,False,False
+BUFMIN,No · Jordan Mason: 1+ touchdowns,no,td,Jordan Mason,MIN,KXNFLTD-26NOV09BUFMIN-MINJMASON27-1,0.695,0.7,0.015,0.715,0.6848,-3.02,-4.23,6,True,0.0,-1.02,False,False
+BUFMIN,Ray Davis: 1+ touchdowns,yes,td,Ray Davis,BUF,KXNFLTD-26NOV09BUFMIN-BUFRDAVIS7-1,0.065,0.07,0.0046,0.0746,0.079,0.45,5.99,6,True,0.0,1.4,False,False
+BUFMIN,No · Ray Davis: 1+ touchdowns,no,td,Ray Davis,BUF,KXNFLTD-26NOV09BUFMIN-BUFRDAVIS7-1,0.935,0.94,0.004,0.944,0.921,-2.3,-2.44,6,True,0.0,-1.4,False,False
+BUFMIN,Keon Coleman: 1+ touchdowns,yes,td,Keon Coleman,BUF,KXNFLTD-26NOV09BUFMIN-BUFKCOLEMAN0-1,0.185,0.19,0.011,0.201,0.1859,-1.5,-7.48,6,True,0.0,0.09,False,False
+BUFMIN,No · Keon Coleman: 1+ touchdowns,no,td,Keon Coleman,BUF,KXNFLTD-26NOV09BUFMIN-BUFKCOLEMAN0-1,0.815,0.82,0.0108,0.8308,0.8141,-1.68,-2.02,6,True,0.0,-0.09,False,False
+BUFMIN,Justin Jefferson: 2+ touchdowns,yes,td,Justin Jefferson,MIN,KXNFLTD-26NOV09BUFMIN-MINJJEFFERSON18-2,0.065,0.07,0.0046,0.0746,0.0788,0.42,5.62,7,True,0.3,1.38,False,False
+BUFMIN,No · Justin Jefferson: 2+ touchdowns,no,td,Justin Jefferson,MIN,KXNFLTD-26NOV09BUFMIN-MINJJEFFERSON18-2,0.935,0.94,0.004,0.944,0.9212,-2.28,-2.41,7,True,0.3,-1.38,False,False
+BUFMIN,Josh Allen: 2+ touchdowns,yes,td,Josh Allen,BUF,KXNFLTD-26NOV09BUFMIN-BUFJALLEN17-2,0.145,0.15,0.0089,0.1589,0.1609,0.2,1.24,7,True,0.3,1.59,False,False
+BUFMIN,No · Josh Allen: 2+ touchdowns,no,td,Josh Allen,BUF,KXNFLTD-26NOV09BUFMIN-BUFJALLEN17-2,0.855,0.86,0.0091,0.8691,0.8391,-3.0,-3.45,7,True,0.3,-1.59,False,False
+BUFMIN,T.J. Hockenson: 2+ touchdowns,yes,td,T.J. Hockenson,MIN,KXNFLTD-26NOV09BUFMIN-MINTHOCKENSON87-2,0.035,0.04,0.0027,0.0427,0.0472,0.45,10.45,7,True,0.3,1.22,False,False
+BUFMIN,No · T.J. Hockenson: 2+ touchdowns,no,td,T.J. Hockenson,MIN,KXNFLTD-26NOV09BUFMIN-MINTHOCKENSON87-2,0.965,0.97,0.003,0.973,0.9528,-2.02,-2.07,7,True,0.3,-1.22,False,False
+BUFMIN,Jordan Addison: 2+ touchdowns,yes,td,Jordan Addison,MIN,KXNFLTD-26NOV09BUFMIN-MINJADDISON3-2,0.03,0.04,0.0027,0.0427,0.0344,-0.83,-19.45,7,True,0.3,0.44,False,False
+BUFMIN,No · Jordan Addison: 2+ touchdowns,no,td,Jordan Addison,MIN,KXNFLTD-26NOV09BUFMIN-MINJADDISON3-2,0.97,0.98,0.002,0.982,0.9656,-1.64,-1.67,7,True,0.3,-0.44,False,False
+BUFMIN,Justin Jefferson: 3+ touchdowns,yes,td,Justin Jefferson,MIN,KXNFLTD-26NOV09BUFMIN-MINJJEFFERSON18-3,0.005,0.01,0.0007,0.0107,0.0117,0.1,8.94,7,True,0.3,0.67,False,False
+BUFMIN,Tai Felton: 2+ touchdowns,yes,td,Tai Felton,MIN,KXNFLTD-26NOV09BUFMIN-MINTFELTON13-2,0.005,0.01,0.0007,0.0107,0.0111,0.04,4.19,5,True,0.3,0.61,False,False
+BUFMIN,Ben Yurosek: 2+ touchdowns,yes,td,Ben Yurosek,MIN,KXNFLTD-26NOV09BUFMIN-MINBYUROSEK85-2,0.005,0.01,0.0007,0.0107,0.0044,-0.63,-58.83,6,True,0.3,-0.06,False,False
+BUFMIN,Jordan Mason: 2+ touchdowns,yes,td,Jordan Mason,MIN,KXNFLTD-26NOV09BUFMIN-MINJMASON27-2,0.035,0.04,0.0027,0.0427,0.0563,1.36,31.79,6,True,0.3,2.13,False,False
+BUFMIN,No · Jordan Mason: 2+ touchdowns,no,td,Jordan Mason,MIN,KXNFLTD-26NOV09BUFMIN-MINJMASON27-2,0.965,0.97,0.003,0.973,0.9437,-2.93,-3.01,6,True,0.3,-2.13,False,False
+BUFMIN,James Cook III: 3+ touchdowns,yes,td,James Cook III,BUF,KXNFLTD-26NOV09BUFMIN-BUFJCOOK4-3,0.025,0.03,0.002,0.032,0.032,-0.0,-0.07,7,True,0.3,0.7,False,False
+BUFMIN,No · James Cook III: 3+ touchdowns,no,td,James Cook III,BUF,KXNFLTD-26NOV09BUFMIN-BUFJCOOK4-3,0.975,0.98,0.002,0.982,0.968,-1.4,-1.43,7,True,0.3,-0.7,False,False
+BUFMIN,Dawson Knox: 2+ touchdowns,yes,td,Dawson Knox,BUF,KXNFLTD-26NOV09BUFMIN-BUFDKNOX88-2,0.005,0.01,0.0007,0.0107,0.0061,-0.46,-43.04,6,True,0.3,0.11,False,False
+BUFMIN,Jordan Mason: 3+ touchdowns,yes,td,Jordan Mason,MIN,KXNFLTD-26NOV09BUFMIN-MINJMASON27-3,0.005,0.01,0.0007,0.0107,0.007,-0.37,-34.77,6,True,0.3,0.2,False,False
+BUFMIN,DJ Moore: 2+ touchdowns,yes,td,DJ Moore,BUF,KXNFLTD-26NOV09BUFMIN-BUFDMOORE2-2,0.03,0.04,0.0027,0.0427,0.0361,-0.66,-15.43,6,True,0.3,0.61,False,False
+BUFMIN,No · DJ Moore: 2+ touchdowns,no,td,DJ Moore,BUF,KXNFLTD-26NOV09BUFMIN-BUFDMOORE2-2,0.97,0.98,0.002,0.982,0.9639,-1.81,-1.85,6,True,0.3,-0.61,False,False
+BUFMIN,Aaron Jones Sr.: 3+ touchdowns,yes,td,Aaron Jones Sr.,MIN,KXNFLTD-26NOV09BUFMIN-MINAJONES33-3,0.01,0.02,0.0014,0.0214,0.0037,-1.77,-82.78,6,True,0.3,-0.63,False,False
+BUFMIN,Ty Johnson: 2+ touchdowns,yes,td,Ty Johnson,BUF,KXNFLTD-26NOV09BUFMIN-BUFTJOHNSON26-2,0.005,0.01,0.0007,0.0107,0.0065,-0.42,-39.54,6,True,0.3,0.15,False,False
+BUFMIN,Khalil Shakir: 1+ touchdowns,yes,td,Khalil Shakir,BUF,KXNFLTD-26NOV09BUFMIN-BUFKSHAKIR10-1,0.215,0.22,0.0122,0.2322,0.2318,-0.04,-0.17,6,True,0.0,1.68,False,False
+BUFMIN,No · Khalil Shakir: 1+ touchdowns,no,td,Khalil Shakir,BUF,KXNFLTD-26NOV09BUFMIN-BUFKSHAKIR10-1,0.785,0.79,0.0117,0.8017,0.7682,-3.35,-4.18,6,True,0.0,-1.68,False,False
+BUFMIN,Jackson Hawes: 1+ touchdowns,yes,td,Jackson Hawes,BUF,KXNFLTD-26NOV09BUFMIN-BUFJHAWES85-1,0.065,0.07,0.0046,0.0746,0.0772,0.27,3.57,6,True,0.0,1.22,False,False
+BUFMIN,No · Jackson Hawes: 1+ touchdowns,no,td,Jackson Hawes,BUF,KXNFLTD-26NOV09BUFMIN-BUFJHAWES85-1,0.935,0.94,0.004,0.944,0.9228,-2.12,-2.25,6,True,0.0,-1.22,False,False
+BUFMIN,Gavin Bartholomew: 1+ touchdowns,yes,td,Gavin Bartholomew,MIN,KXNFLTD-26NOV09BUFMIN-MINGBARTHOLOMEW86-1,0.045,0.05,0.0034,0.0534,0.0635,1.02,19.04,6,True,0.0,1.85,False,False
+BUFMIN,No · Gavin Bartholomew: 1+ touchdowns,no,td,Gavin Bartholomew,MIN,KXNFLTD-26NOV09BUFMIN-MINGBARTHOLOMEW86-1,0.955,0.96,0.003,0.963,0.9365,-2.65,-2.75,6,True,0.0,-1.85,False,False
