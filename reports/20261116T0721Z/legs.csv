@@ -1,0 +1,434 @@
+game,leg,side,kind,player,team,ticker,kalshi_prob,ask,fee,all_in,fair_prob,edge_pts,ev_pct,books,one_sided,dist_from_line,edge_vs_mid_pts,passes,combo_leg
+LACBAL,Ja'Kobi Lane: 3+ receptions,yes,receptions,Ja'Kobi Lane,BAL,KXNFLREC-26NOV16LACBAL-BALJLANE6-3,0.375,0.38,0.0165,0.3965,0.3849,-1.16,-2.94,7,False,0.0,0.99,False,False
+LACBAL,No · Ja'Kobi Lane: 3+ receptions,no,receptions,Ja'Kobi Lane,BAL,KXNFLREC-26NOV16LACBAL-BALJLANE6-3,0.625,0.63,0.0167,0.6467,0.6151,-3.16,-4.88,7,False,0.0,-0.99,False,False
+LACBAL,Quentin Johnston: 3+ receptions,yes,receptions,Quentin Johnston,LAC,KXNFLREC-26NOV16LACBAL-LACQJOHNSTON1-3,0.495,0.5,0.0175,0.5175,0.5104,-0.71,-1.37,3,False,0.0,1.54,False,False
+LACBAL,No · Quentin Johnston: 3+ receptions,no,receptions,Quentin Johnston,LAC,KXNFLREC-26NOV16LACBAL-LACQJOHNSTON1-3,0.505,0.51,0.0179,0.5279,0.4896,-3.83,-7.25,3,False,0.0,-1.54,False,False
+LACBAL,Rashod Bateman: 3+ receptions,yes,receptions,Rashod Bateman,BAL,KXNFLREC-26NOV16LACBAL-BALRBATEMAN7-3,0.375,0.38,0.0165,0.3965,0.3779,-1.87,-4.71,7,False,0.0,0.29,False,False
+LACBAL,No · Rashod Bateman: 3+ receptions,no,receptions,Rashod Bateman,BAL,KXNFLREC-26NOV16LACBAL-BALRBATEMAN7-3,0.625,0.63,0.0167,0.6467,0.6221,-2.45,-3.8,7,False,0.0,-0.29,False,False
+LACBAL,Josh Cuevas: 2+ receptions,yes,receptions,Josh Cuevas,BAL,KXNFLREC-26NOV16LACBAL-BALJCUEVAS85-2,0.315,0.33,0.0157,0.3457,0.3319,-1.38,-3.99,3,False,0.511,1.69,False,False
+LACBAL,No · Josh Cuevas: 2+ receptions,no,receptions,Josh Cuevas,BAL,KXNFLREC-26NOV16LACBAL-BALJCUEVAS85-2,0.685,0.7,0.015,0.715,0.6681,-4.69,-6.56,3,False,0.511,-1.69,False,False
+LACBAL,Zay Flowers: 5+ receptions,yes,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-5,0.68,0.69,0.015,0.705,0.668,-3.7,-5.25,7,False,0.167,-1.2,False,False
+LACBAL,No · Zay Flowers: 5+ receptions,no,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-5,0.32,0.33,0.0157,0.3457,0.332,-1.37,-3.96,7,False,0.167,1.2,False,False
+LACBAL,Rashod Bateman: 2+ receptions,yes,receptions,Rashod Bateman,BAL,KXNFLREC-26NOV16LACBAL-BALRBATEMAN7-2,0.615,0.62,0.0169,0.6369,0.5969,-4.0,-6.28,7,False,0.336,-1.81,False,False
+LACBAL,No · Rashod Bateman: 2+ receptions,no,receptions,Rashod Bateman,BAL,KXNFLREC-26NOV16LACBAL-BALRBATEMAN7-2,0.385,0.39,0.0168,0.4068,0.4031,-0.37,-0.9,7,False,0.336,1.81,False,False
+LACBAL,Ja'Kobi Lane: 5+ receptions,yes,receptions,Ja'Kobi Lane,BAL,KXNFLREC-26NOV16LACBAL-BALJLANE6-5,0.09,0.1,0.0063,0.1063,0.1069,0.06,0.61,7,False,0.452,1.69,False,False
+LACBAL,No · Ja'Kobi Lane: 5+ receptions,no,receptions,Ja'Kobi Lane,BAL,KXNFLREC-26NOV16LACBAL-BALJLANE6-5,0.91,0.92,0.006,0.926,0.8931,-3.29,-3.56,7,False,0.452,-1.69,False,False
+LACBAL,Ja'Kobi Lane: 4+ receptions,yes,receptions,Ja'Kobi Lane,BAL,KXNFLREC-26NOV16LACBAL-BALJLANE6-4,0.185,0.2,0.0112,0.2112,0.2181,0.69,3.26,7,False,0.251,3.31,False,False
+LACBAL,No · Ja'Kobi Lane: 4+ receptions,no,receptions,Ja'Kobi Lane,BAL,KXNFLREC-26NOV16LACBAL-BALJLANE6-4,0.815,0.83,0.01,0.84,0.7819,-5.81,-6.91,7,False,0.251,-3.31,False,False
+LACBAL,Zay Flowers: 8+ receptions,yes,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-8,0.255,0.27,0.0141,0.2841,0.2858,0.17,0.6,7,False,0.268,3.08,False,False
+LACBAL,No · Zay Flowers: 8+ receptions,no,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-8,0.745,0.76,0.0131,0.7731,0.7142,-5.88,-7.61,7,False,0.268,-3.08,False,False
+LACBAL,Mark Andrews: 4+ receptions,yes,receptions,Mark Andrews,BAL,KXNFLREC-26NOV16LACBAL-BALMANDREWS89-4,0.345,0.35,0.0161,0.3661,0.4633,9.72,26.55,7,False,0.251,11.83,False,False
+LACBAL,No · Mark Andrews: 4+ receptions,no,receptions,Mark Andrews,BAL,KXNFLREC-26NOV16LACBAL-BALMANDREWS89-4,0.655,0.66,0.016,0.676,0.5367,-13.93,-20.6,7,False,0.251,-11.83,False,False
+LACBAL,Zay Flowers: 7+ receptions,yes,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-7,0.38,0.39,0.0168,0.4068,0.3967,-1.01,-2.48,7,False,0.143,1.67,False,False
+LACBAL,No · Zay Flowers: 7+ receptions,no,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-7,0.62,0.63,0.0167,0.6467,0.6033,-4.34,-6.71,7,False,0.143,-1.67,False,False
+LACBAL,Derrick Henry: 2+ receptions,yes,receptions,Derrick Henry,BAL,KXNFLREC-26NOV16LACBAL-BALDHENRY22-2,0.37,0.38,0.0165,0.3965,0.3516,-4.5,-11.34,7,False,0.0,-1.84,False,False
+LACBAL,No · Derrick Henry: 2+ receptions,no,receptions,Derrick Henry,BAL,KXNFLREC-26NOV16LACBAL-BALDHENRY22-2,0.63,0.64,0.0167,0.6567,0.6484,-0.82,-1.25,7,False,0.0,1.84,False,True
+LACBAL,Mark Andrews: 5+ receptions,yes,receptions,Mark Andrews,BAL,KXNFLREC-26NOV16LACBAL-BALMANDREWS89-5,0.195,0.21,0.0117,0.2217,0.3111,8.94,40.32,7,False,0.452,11.61,False,False
+LACBAL,No · Mark Andrews: 5+ receptions,no,receptions,Mark Andrews,BAL,KXNFLREC-26NOV16LACBAL-BALMANDREWS89-5,0.805,0.82,0.0108,0.8308,0.6889,-14.19,-17.08,7,False,0.452,-11.61,False,False
+LACBAL,Zay Flowers: 6+ receptions,yes,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-6,0.545,0.55,0.0178,0.5678,0.528,-3.98,-7.01,7,False,0.0,-1.7,False,False
+LACBAL,No · Zay Flowers: 6+ receptions,no,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-6,0.455,0.46,0.0176,0.4776,0.472,-0.56,-1.17,7,False,0.0,1.7,False,False
+LACBAL,Rashod Bateman: 4+ receptions,yes,receptions,Rashod Bateman,BAL,KXNFLREC-26NOV16LACBAL-BALRBATEMAN7-4,0.195,0.21,0.0117,0.2217,0.2127,-0.9,-4.07,7,False,0.251,1.77,False,False
+LACBAL,No · Rashod Bateman: 4+ receptions,no,receptions,Rashod Bateman,BAL,KXNFLREC-26NOV16LACBAL-BALRBATEMAN7-4,0.805,0.82,0.0108,0.8308,0.7873,-4.35,-5.24,7,False,0.251,-1.77,False,False
+LACBAL,Keaton Mitchell: 2+ receptions,yes,receptions,Keaton Mitchell,LAC,KXNFLREC-26NOV16LACBAL-LACKMITCHELL34-2,0.635,0.64,0.0167,0.6567,0.6164,-4.02,-6.13,7,False,0.336,-1.86,False,False
+LACBAL,No · Keaton Mitchell: 2+ receptions,no,receptions,Keaton Mitchell,LAC,KXNFLREC-26NOV16LACBAL-LACKMITCHELL34-2,0.365,0.37,0.0167,0.3867,0.3836,-0.31,-0.8,7,False,0.336,1.86,False,False
+LACBAL,Justice Hill: 2+ receptions,yes,receptions,Justice Hill,BAL,KXNFLREC-26NOV16LACBAL-BALJHILL43-2,0.63,0.64,0.0167,0.6567,0.6104,-4.63,-7.04,7,False,0.336,-1.96,False,False
+LACBAL,No · Justice Hill: 2+ receptions,no,receptions,Justice Hill,BAL,KXNFLREC-26NOV16LACBAL-BALJHILL43-2,0.37,0.38,0.0165,0.3965,0.3896,-0.7,-1.75,7,False,0.336,1.96,False,False
+LACBAL,Ja'Kobi Lane: 2+ receptions,yes,receptions,Ja'Kobi Lane,BAL,KXNFLREC-26NOV16LACBAL-BALJLANE6-2,0.605,0.61,0.0169,0.6269,0.6012,-2.57,-4.1,7,False,0.336,-0.38,False,False
+LACBAL,No · Ja'Kobi Lane: 2+ receptions,no,receptions,Ja'Kobi Lane,BAL,KXNFLREC-26NOV16LACBAL-BALJLANE6-2,0.395,0.4,0.0168,0.4168,0.3988,-1.8,-4.32,7,False,0.336,0.38,False,False
+LACBAL,Justice Hill: 3+ receptions,yes,receptions,Justice Hill,BAL,KXNFLREC-26NOV16LACBAL-BALJHILL43-3,0.41,0.42,0.0174,0.4374,0.4001,-3.73,-8.52,7,False,0.0,-0.99,False,False
+LACBAL,No · Justice Hill: 3+ receptions,no,receptions,Justice Hill,BAL,KXNFLREC-26NOV16LACBAL-BALJHILL43-3,0.59,0.6,0.0169,0.6169,0.5999,-1.7,-2.76,7,False,0.0,0.99,False,False
+LACBAL,Keaton Mitchell: 5+ receptions,yes,receptions,Keaton Mitchell,LAC,KXNFLREC-26NOV16LACBAL-LACKMITCHELL34-5,0.105,0.12,0.0075,0.1275,0.1115,-1.6,-12.56,6,False,0.452,0.65,False,False
+LACBAL,No · Keaton Mitchell: 5+ receptions,no,receptions,Keaton Mitchell,LAC,KXNFLREC-26NOV16LACBAL-LACKMITCHELL34-5,0.895,0.91,0.006,0.916,0.8885,-2.75,-3.0,6,False,0.452,-0.65,False,False
+LACBAL,Quentin Johnston: 4+ receptions,yes,receptions,Quentin Johnston,LAC,KXNFLREC-26NOV16LACBAL-LACQJOHNSTON1-4,0.295,0.31,0.015,0.325,0.3501,2.51,7.71,3,False,0.251,5.51,False,False
+LACBAL,No · Quentin Johnston: 4+ receptions,no,receptions,Quentin Johnston,LAC,KXNFLREC-26NOV16LACBAL-LACQJOHNSTON1-4,0.705,0.72,0.0146,0.7346,0.6499,-8.47,-11.53,3,False,0.251,-5.51,False,False
+LACBAL,Rashod Bateman: 5+ receptions,yes,receptions,Rashod Bateman,BAL,KXNFLREC-26NOV16LACBAL-BALRBATEMAN7-5,0.09,0.11,0.0069,0.1169,0.1025,-1.44,-12.34,7,False,0.452,1.25,False,False
+LACBAL,No · Rashod Bateman: 5+ receptions,no,receptions,Rashod Bateman,BAL,KXNFLREC-26NOV16LACBAL-BALRBATEMAN7-5,0.91,0.93,0.005,0.935,0.8975,-3.75,-4.01,7,False,0.452,-1.25,False,False
+LACBAL,Mark Andrews: 3+ receptions,yes,receptions,Mark Andrews,BAL,KXNFLREC-26NOV16LACBAL-BALMANDREWS89-3,0.555,0.56,0.0176,0.5776,0.5661,-1.15,-1.99,7,False,0.0,1.11,False,False
+LACBAL,No · Mark Andrews: 3+ receptions,no,receptions,Mark Andrews,BAL,KXNFLREC-26NOV16LACBAL-BALMANDREWS89-3,0.445,0.45,0.0177,0.4677,0.4339,-3.39,-7.24,7,False,0.0,-1.11,False,False
+LACBAL,Quentin Johnston: 2+ receptions,yes,receptions,Quentin Johnston,LAC,KXNFLREC-26NOV16LACBAL-LACQJOHNSTON1-2,0.735,0.74,0.0138,0.7538,0.7137,-4.02,-5.33,3,False,0.336,-2.13,False,False
+LACBAL,No · Quentin Johnston: 2+ receptions,no,receptions,Quentin Johnston,LAC,KXNFLREC-26NOV16LACBAL-LACQJOHNSTON1-2,0.265,0.27,0.0141,0.2841,0.2863,0.23,0.8,3,False,0.336,2.13,False,False
+LACBAL,Tre' Harris: 4+ receptions,yes,receptions,Tre' Harris,LAC,KXNFLREC-26NOV16LACBAL-LACTHARRIS9-4,0.455,0.47,0.0176,0.4876,0.4651,-2.25,-4.62,3,False,0.0,1.01,False,False
+LACBAL,No · Tre' Harris: 4+ receptions,no,receptions,Tre' Harris,LAC,KXNFLREC-26NOV16LACBAL-LACTHARRIS9-4,0.545,0.56,0.0176,0.5776,0.5349,-4.27,-7.4,3,False,0.0,-1.01,False,False
+LACBAL,Tre' Harris: 3+ receptions,yes,receptions,Tre' Harris,LAC,KXNFLREC-26NOV16LACBAL-LACTHARRIS9-3,0.65,0.66,0.016,0.676,0.6609,-1.51,-2.24,3,False,0.251,1.09,False,True
+LACBAL,No · Tre' Harris: 3+ receptions,no,receptions,Tre' Harris,LAC,KXNFLREC-26NOV16LACBAL-LACTHARRIS9-3,0.35,0.36,0.0163,0.3763,0.3391,-3.72,-9.88,3,False,0.251,-1.09,False,False
+LACBAL,Zay Flowers: 9+ receptions,yes,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-9,0.155,0.17,0.01,0.18,0.1874,0.74,4.12,7,False,0.379,3.24,False,False
+LACBAL,No · Zay Flowers: 9+ receptions,no,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-9,0.845,0.86,0.0091,0.8691,0.8126,-5.65,-6.5,7,False,0.379,-3.24,False,False
+LACBAL,Zay Flowers: 3+ receptions,yes,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-3,0.92,0.93,0.005,0.935,0.8865,-4.85,-5.19,6,False,0.619,-3.35,False,False
+LACBAL,No · Zay Flowers: 3+ receptions,no,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-3,0.08,0.09,0.0058,0.0958,0.1135,1.78,18.54,6,False,0.619,3.35,False,False
+LACBAL,Keaton Mitchell: 3+ receptions,yes,receptions,Keaton Mitchell,LAC,KXNFLREC-26NOV16LACBAL-LACKMITCHELL34-3,0.395,0.4,0.0168,0.4168,0.4,-1.68,-4.02,6,False,0.0,0.5,False,False
+LACBAL,No · Keaton Mitchell: 3+ receptions,no,receptions,Keaton Mitchell,LAC,KXNFLREC-26NOV16LACBAL-LACKMITCHELL34-3,0.605,0.61,0.0169,0.6269,0.6,-2.69,-4.29,6,False,0.0,-0.5,False,False
+LACBAL,Tre' Harris: 5+ receptions,yes,receptions,Tre' Harris,LAC,KXNFLREC-26NOV16LACBAL-LACTHARRIS9-5,0.28,0.3,0.0148,0.3148,0.3044,-1.04,-3.31,3,False,0.201,2.44,False,False
+LACBAL,No · Tre' Harris: 5+ receptions,no,receptions,Tre' Harris,LAC,KXNFLREC-26NOV16LACBAL-LACTHARRIS9-5,0.72,0.74,0.0138,0.7538,0.6956,-5.83,-7.73,3,False,0.201,-2.44,False,False
+LACBAL,Quentin Johnston: 5+ receptions,yes,receptions,Quentin Johnston,LAC,KXNFLREC-26NOV16LACBAL-LACQJOHNSTON1-5,0.15,0.17,0.01,0.18,0.2251,4.51,25.05,3,False,0.452,7.51,False,False
+LACBAL,No · Quentin Johnston: 5+ receptions,no,receptions,Quentin Johnston,LAC,KXNFLREC-26NOV16LACBAL-LACQJOHNSTON1-5,0.85,0.87,0.0082,0.8782,0.7749,-10.33,-11.76,3,False,0.452,-7.51,False,False
+LACBAL,Justice Hill: 4+ receptions,yes,receptions,Justice Hill,BAL,KXNFLREC-26NOV16LACBAL-BALJHILL43-4,0.21,0.23,0.0126,0.2426,0.2172,-2.54,-10.47,7,False,0.251,0.72,False,False
+LACBAL,No · Justice Hill: 4+ receptions,no,receptions,Justice Hill,BAL,KXNFLREC-26NOV16LACBAL-BALJHILL43-4,0.79,0.81,0.0108,0.8208,0.7828,-3.8,-4.63,7,False,0.251,-0.72,False,False
+LACBAL,Justice Hill: 5+ receptions,yes,receptions,Justice Hill,BAL,KXNFLREC-26NOV16LACBAL-BALJHILL43-5,0.105,0.12,0.0075,0.1275,0.1115,-1.6,-12.52,7,False,0.452,0.65,False,False
+LACBAL,No · Justice Hill: 5+ receptions,no,receptions,Justice Hill,BAL,KXNFLREC-26NOV16LACBAL-BALJHILL43-5,0.895,0.91,0.006,0.916,0.8885,-2.75,-3.0,7,False,0.452,-0.65,False,False
+LACBAL,Tre' Harris: 6+ receptions,yes,receptions,Tre' Harris,LAC,KXNFLREC-26NOV16LACBAL-LACTHARRIS9-6,0.155,0.18,0.0104,0.1904,0.1869,-0.35,-1.82,3,False,0.368,3.19,False,False
+LACBAL,No · Tre' Harris: 6+ receptions,no,receptions,Tre' Harris,LAC,KXNFLREC-26NOV16LACBAL-LACTHARRIS9-6,0.845,0.87,0.0082,0.8782,0.8131,-6.51,-7.41,3,False,0.368,-3.19,False,False
+LACBAL,Tre' Harris: 2+ receptions,yes,receptions,Tre' Harris,LAC,KXNFLREC-26NOV16LACBAL-LACTHARRIS9-2,0.845,0.86,0.0091,0.8691,0.8465,-2.26,-2.6,3,False,0.588,0.15,False,True
+LACBAL,No · Tre' Harris: 2+ receptions,no,receptions,Tre' Harris,LAC,KXNFLREC-26NOV16LACBAL-LACTHARRIS9-2,0.155,0.17,0.01,0.18,0.1535,-2.65,-14.74,3,False,0.588,-0.15,False,False
+LACBAL,Mark Andrews: 2+ receptions,yes,receptions,Mark Andrews,BAL,KXNFLREC-26NOV16LACBAL-BALMANDREWS89-2,0.775,0.79,0.0117,0.8017,0.8152,1.36,1.69,7,False,0.336,4.02,False,True
+LACBAL,No · Mark Andrews: 2+ receptions,no,receptions,Mark Andrews,BAL,KXNFLREC-26NOV16LACBAL-BALMANDREWS89-2,0.225,0.24,0.0129,0.2529,0.1848,-6.82,-26.95,7,False,0.336,-4.02,False,False
+LACBAL,Kimani Vidal: 2+ receptions,yes,receptions,Kimani Vidal,LAC,KXNFLREC-26NOV16LACBAL-LACKVIDAL28-2,0.495,0.5,0.0175,0.5175,0.5142,-0.33,-0.63,6,False,0.0,1.92,False,False
+LACBAL,No · Kimani Vidal: 2+ receptions,no,receptions,Kimani Vidal,LAC,KXNFLREC-26NOV16LACBAL-LACKVIDAL28-2,0.505,0.51,0.0179,0.5279,0.4858,-4.21,-7.98,6,False,0.0,-1.92,False,False
+LACBAL,Zay Flowers: 4+ receptions,yes,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-4,0.815,0.83,0.01,0.84,0.8013,-3.87,-4.6,7,False,0.368,-1.37,False,False
+LACBAL,No · Zay Flowers: 4+ receptions,no,receptions,Zay Flowers,BAL,KXNFLREC-26NOV16LACBAL-BALZFLOWERS4-4,0.185,0.2,0.0112,0.2112,0.1987,-1.25,-5.93,7,False,0.368,1.37,False,False
+LACBAL,Keaton Mitchell: 4+ receptions,yes,receptions,Keaton Mitchell,LAC,KXNFLREC-26NOV16LACBAL-LACKMITCHELL34-4,0.215,0.23,0.0126,0.2426,0.2171,-2.55,-10.5,6,False,0.251,0.21,False,False
+LACBAL,No · Keaton Mitchell: 4+ receptions,no,receptions,Keaton Mitchell,LAC,KXNFLREC-26NOV16LACBAL-LACKMITCHELL34-4,0.785,0.8,0.0117,0.8117,0.7829,-2.88,-3.54,6,False,0.251,-0.21,False,False
+LACBAL,Omarion Hampton: 2+ receptions,yes,receptions,Omarion Hampton,LAC,KXNFLREC-26NOV16LACBAL-LACOHAMPTON8-2,0.375,0.38,0.0165,0.3965,0.3748,-2.17,-5.48,6,False,0.0,-0.02,False,False
+LACBAL,No · Omarion Hampton: 2+ receptions,no,receptions,Omarion Hampton,LAC,KXNFLREC-26NOV16LACBAL-LACOHAMPTON8-2,0.625,0.63,0.0167,0.6467,0.6252,-2.15,-3.32,6,False,0.0,0.02,False,True
+LACBAL,Mark Andrews: 20+ receiving yards,yes,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-20,0.555,0.56,0.0176,0.5776,0.5526,-2.51,-4.34,8,False,0.137,-0.24,False,False
+LACBAL,No · Mark Andrews: 20+ receiving yards,no,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-20,0.445,0.45,0.0177,0.4677,0.4474,-2.03,-4.34,8,False,0.137,0.24,False,False
+LACBAL,Zay Flowers: 30+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-30,0.865,0.87,0.0082,0.8782,0.875,-0.32,-0.36,8,False,0.838,1.0,False,True
+LACBAL,No · Zay Flowers: 30+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-30,0.135,0.14,0.0085,0.1485,0.125,-2.34,-15.79,8,False,0.838,-1.0,False,False
+LACBAL,Zay Flowers: 100+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-100,0.265,0.27,0.0141,0.2841,0.269,-1.5,-5.29,8,False,0.355,0.4,False,False
+LACBAL,No · Zay Flowers: 100+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-100,0.735,0.74,0.0138,0.7538,0.731,-2.29,-3.04,8,False,0.355,-0.4,False,False
+LACBAL,Ja'Kobi Lane: 25+ receiving yards,yes,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-25,0.42,0.43,0.0174,0.4474,0.4376,-0.98,-2.18,8,False,0.125,1.76,False,False
+LACBAL,No · Ja'Kobi Lane: 25+ receiving yards,no,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-25,0.58,0.59,0.0175,0.6075,0.5624,-4.51,-7.43,8,False,0.125,-1.76,False,False
+LACBAL,Zay Flowers: 50+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-50,0.685,0.69,0.015,0.705,0.717,1.2,1.71,8,False,0.334,3.2,False,True
+LACBAL,No · Zay Flowers: 50+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-50,0.315,0.32,0.0155,0.3355,0.283,-5.25,-15.66,8,False,0.334,-3.2,False,False
+LACBAL,Tre' Harris: 100+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-100,0.045,0.06,0.004,0.064,0.0326,-3.14,-49.08,2,False,0.861,-1.24,False,False
+LACBAL,No · Tre' Harris: 100+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-100,0.955,0.97,0.003,0.973,0.9674,-0.56,-0.57,2,False,0.861,1.24,False,True
+LACBAL,Rashod Bateman: 25+ receiving yards,yes,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-25,0.47,0.48,0.0175,0.4975,0.484,-1.35,-2.72,8,False,0.04,1.4,False,False
+LACBAL,No · Rashod Bateman: 25+ receiving yards,no,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-25,0.53,0.54,0.0178,0.5578,0.516,-4.18,-7.49,8,False,0.04,-1.4,False,False
+LACBAL,Rashod Bateman: 20+ receiving yards,yes,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-20,0.555,0.56,0.0176,0.5776,0.5655,-1.22,-2.11,8,False,0.178,1.05,False,False
+LACBAL,No · Rashod Bateman: 20+ receiving yards,no,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-20,0.445,0.45,0.0177,0.4677,0.4345,-3.32,-7.09,8,False,0.178,-1.05,False,False
+LACBAL,Rashod Bateman: 15+ receiving yards,yes,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-15,0.65,0.66,0.016,0.676,0.6433,-3.27,-4.83,8,False,0.458,-0.67,False,False
+LACBAL,No · Rashod Bateman: 15+ receiving yards,no,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-15,0.35,0.36,0.0163,0.3763,0.3567,-1.96,-5.21,8,False,0.458,0.67,False,False
+LACBAL,Justice Hill: 20+ receiving yards,yes,rec_yds,Justice Hill,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJHILL43-20,0.315,0.32,0.0155,0.3355,0.4025,6.7,19.97,8,False,0.495,8.75,False,False
+LACBAL,No · Justice Hill: 20+ receiving yards,no,rec_yds,Justice Hill,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJHILL43-20,0.685,0.69,0.015,0.705,0.5975,-10.75,-15.25,8,False,0.495,-8.75,False,False
+LACBAL,Rashod Bateman: 30+ receiving yards,yes,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-30,0.4,0.41,0.0171,0.4271,0.4206,-0.65,-1.53,8,False,0.219,2.06,False,False
+LACBAL,No · Rashod Bateman: 30+ receiving yards,no,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-30,0.6,0.61,0.0169,0.6269,0.5794,-4.74,-7.57,8,False,0.219,-2.06,False,False
+LACBAL,Ja'Kobi Lane: 30+ receiving yards,yes,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-30,0.34,0.35,0.0161,0.3661,0.367,0.09,0.24,8,False,0.304,2.7,False,False
+LACBAL,No · Ja'Kobi Lane: 30+ receiving yards,no,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-30,0.66,0.67,0.0157,0.6857,0.633,-5.27,-7.68,8,False,0.304,-2.7,False,False
+LACBAL,Zay Flowers: 150+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-150,0.05,0.06,0.004,0.064,0.0586,-0.53,-8.34,8,False,0.758,0.86,False,False
+LACBAL,No · Zay Flowers: 150+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-150,0.95,0.96,0.003,0.963,0.9414,-2.16,-2.25,8,False,0.758,-0.86,False,False
+LACBAL,Zay Flowers: 140+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-140,0.065,0.08,0.0052,0.0852,0.0806,-0.46,-5.43,8,False,0.69,1.56,False,False
+LACBAL,No · Zay Flowers: 140+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-140,0.935,0.95,0.004,0.954,0.9194,-3.46,-3.62,8,False,0.69,-1.56,False,False
+LACBAL,Zay Flowers: 40+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-40,0.8,0.81,0.0108,0.8208,0.8086,-1.23,-1.49,8,False,0.554,0.86,False,True
+LACBAL,No · Zay Flowers: 40+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-40,0.2,0.21,0.0117,0.2217,0.1914,-3.03,-13.66,8,False,0.554,-0.86,False,False
+LACBAL,Mark Andrews: 25+ receiving yards,yes,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-25,0.445,0.45,0.0177,0.4677,0.4542,-1.35,-2.88,8,False,0.125,0.92,False,False
+LACBAL,No · Mark Andrews: 25+ receiving yards,no,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-25,0.555,0.56,0.0176,0.5776,0.5458,-3.19,-5.52,8,False,0.125,-0.92,False,False
+LACBAL,Tre' Harris: 15+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-15,0.82,0.83,0.01,0.84,0.8025,-3.75,-4.47,3,False,0.884,-1.75,False,False
+LACBAL,No · Tre' Harris: 15+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-15,0.18,0.19,0.011,0.201,0.1975,-0.34,-1.7,3,False,0.884,1.75,False,False
+LACBAL,Zay Flowers: 70+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-70,0.515,0.52,0.0179,0.5379,0.5188,-1.91,-3.56,8,False,0.014,0.38,False,False
+LACBAL,No · Zay Flowers: 70+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-70,0.485,0.49,0.0175,0.5075,0.4812,-2.63,-5.18,8,False,0.014,-0.38,False,False
+LACBAL,Tre' Harris: 40+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-40,0.46,0.47,0.0176,0.4876,0.4682,-1.94,-3.98,3,False,0.048,0.82,False,False
+LACBAL,No · Tre' Harris: 40+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-40,0.54,0.55,0.0178,0.5678,0.5318,-3.6,-6.34,3,False,0.048,-0.82,False,False
+LACBAL,Zay Flowers: 80+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-80,0.41,0.42,0.0174,0.4374,0.4196,-1.78,-4.07,8,False,0.133,0.96,False,False
+LACBAL,No · Zay Flowers: 80+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-80,0.59,0.6,0.0169,0.6169,0.5804,-3.65,-5.91,8,False,0.133,-0.96,False,False
+LACBAL,Rashod Bateman: 40+ receiving yards,yes,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-40,0.28,0.29,0.0147,0.3047,0.2996,-0.51,-1.68,8,False,0.503,1.96,False,False
+LACBAL,No · Rashod Bateman: 40+ receiving yards,no,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-40,0.72,0.73,0.0138,0.7438,0.7004,-4.34,-5.84,8,False,0.503,-1.96,False,False
+LACBAL,Mark Andrews: 40+ receiving yards,yes,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-40,0.215,0.22,0.0122,0.2322,0.244,1.18,5.08,8,False,0.588,2.9,False,False
+LACBAL,No · Mark Andrews: 40+ receiving yards,no,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-40,0.785,0.79,0.0117,0.8017,0.756,-4.57,-5.7,8,False,0.588,-2.9,False,False
+LACBAL,Ja'Kobi Lane: 10+ receiving yards,yes,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-10,0.695,0.7,0.015,0.715,0.7166,0.16,0.22,8,False,0.762,2.16,False,True
+LACBAL,No · Ja'Kobi Lane: 10+ receiving yards,no,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-10,0.305,0.31,0.015,0.325,0.2834,-4.16,-12.79,8,False,0.762,-2.16,False,False
+LACBAL,Zay Flowers: 110+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-110,0.185,0.2,0.0112,0.2112,0.2004,-1.08,-5.11,8,False,0.449,1.54,False,False
+LACBAL,No · Zay Flowers: 110+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-110,0.815,0.83,0.01,0.84,0.7996,-4.04,-4.81,8,False,0.449,-1.54,False,False
+LACBAL,Ja'Kobi Lane: 40+ receiving yards,yes,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-40,0.225,0.23,0.0126,0.2426,0.2432,0.07,0.28,8,False,0.588,1.82,False,False
+LACBAL,No · Ja'Kobi Lane: 40+ receiving yards,no,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-40,0.775,0.78,0.0125,0.7925,0.7568,-3.57,-4.51,8,False,0.588,-1.82,False,False
+LACBAL,Tre' Harris: 60+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-60,0.245,0.25,0.0133,0.2632,0.2333,-2.99,-11.37,3,False,0.353,-1.17,False,False
+LACBAL,No · Tre' Harris: 60+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-60,0.755,0.76,0.0131,0.7731,0.7667,-0.64,-0.83,3,False,0.353,1.17,False,True
+LACBAL,Rashod Bateman: 10+ receiving yards,yes,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-10,0.74,0.75,0.0138,0.7638,0.7423,-2.15,-2.82,8,False,0.847,0.23,False,True
+LACBAL,No · Rashod Bateman: 10+ receiving yards,no,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-10,0.26,0.27,0.0141,0.2841,0.2577,-2.64,-9.29,8,False,0.847,-0.23,False,False
+LACBAL,Zay Flowers: 160+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-160,0.04,0.05,0.0034,0.0534,0.0405,-1.29,-24.17,8,False,0.823,0.05,False,False
+LACBAL,No · Zay Flowers: 160+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-160,0.96,0.97,0.003,0.973,0.9595,-1.35,-1.38,8,False,0.823,-0.05,False,False
+LACBAL,Quentin Johnston: 25+ receiving yards,yes,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-25,0.61,0.63,0.0167,0.6467,0.6357,-1.1,-1.7,3,False,0.273,2.57,False,True
+LACBAL,No · Quentin Johnston: 25+ receiving yards,no,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-25,0.39,0.41,0.0171,0.4271,0.3643,-6.28,-14.7,3,False,0.273,-2.57,False,False
+LACBAL,Quentin Johnston: 15+ receiving yards,yes,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-15,0.74,0.75,0.0138,0.7638,0.7853,2.14,2.81,3,False,0.771,4.53,False,True
+LACBAL,No · Quentin Johnston: 15+ receiving yards,no,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-15,0.26,0.27,0.0141,0.2841,0.2147,-6.93,-24.41,3,False,0.771,-4.53,False,False
+LACBAL,Quentin Johnston: 10+ receiving yards,yes,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-10,0.82,0.83,0.01,0.84,0.8413,0.13,0.15,3,False,1.16,2.13,False,True
+LACBAL,No · Quentin Johnston: 10+ receiving yards,no,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-10,0.18,0.19,0.011,0.201,0.1587,-4.23,-21.03,3,False,1.16,-2.13,False,False
+LACBAL,Zay Flowers: 60+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-60,0.605,0.61,0.0169,0.6269,0.6311,0.42,0.67,8,False,0.153,2.61,False,True
+LACBAL,No · Zay Flowers: 60+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-60,0.395,0.4,0.0168,0.4168,0.3689,-4.79,-11.49,8,False,0.153,-2.61,False,False
+LACBAL,Mark Andrews: 30+ receiving yards,yes,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-30,0.345,0.35,0.0161,0.3661,0.3772,1.11,3.04,8,False,0.304,3.22,False,False
+LACBAL,No · Mark Andrews: 30+ receiving yards,no,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-30,0.655,0.66,0.016,0.676,0.6228,-5.32,-7.87,8,False,0.304,-3.22,False,False
+LACBAL,Keaton Mitchell: 20+ receiving yards,yes,rec_yds,Keaton Mitchell,LAC,KXNFLRECYDS-26NOV16LACBAL-LACKMITCHELL34-20,0.295,0.3,0.0148,0.3148,0.3899,7.51,23.84,8,False,0.578,9.49,False,False
+LACBAL,No · Keaton Mitchell: 20+ receiving yards,no,rec_yds,Keaton Mitchell,LAC,KXNFLRECYDS-26NOV16LACBAL-LACKMITCHELL34-20,0.705,0.71,0.015,0.725,0.6101,-11.49,-15.85,8,False,0.578,-9.49,False,False
+LACBAL,Ja'Kobi Lane: 20+ receiving yards,yes,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-20,0.5,0.51,0.0179,0.5279,0.5204,-0.75,-1.41,8,False,0.093,2.04,False,False
+LACBAL,No · Ja'Kobi Lane: 20+ receiving yards,no,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-20,0.5,0.51,0.0179,0.5279,0.4796,-4.83,-9.16,8,False,0.093,-2.04,False,False
+LACBAL,Keaton Mitchell: 25+ receiving yards,yes,rec_yds,Keaton Mitchell,LAC,KXNFLRECYDS-26NOV16LACBAL-LACKMITCHELL34-25,0.205,0.21,0.0117,0.2217,0.3285,10.68,48.16,8,False,0.796,12.35,False,False
+LACBAL,No · Keaton Mitchell: 25+ receiving yards,no,rec_yds,Keaton Mitchell,LAC,KXNFLRECYDS-26NOV16LACBAL-LACKMITCHELL34-25,0.795,0.8,0.0117,0.8117,0.6715,-14.01,-17.26,8,False,0.796,-12.35,False,False
+LACBAL,Rashod Bateman: 50+ receiving yards,yes,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-50,0.195,0.2,0.0112,0.2112,0.2104,-0.08,-0.36,8,False,0.723,1.54,False,False
+LACBAL,No · Rashod Bateman: 50+ receiving yards,no,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-50,0.805,0.81,0.0108,0.8208,0.7896,-3.13,-3.81,8,False,0.723,-1.54,False,False
+LACBAL,Zay Flowers: 120+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-120,0.15,0.16,0.0095,0.1695,0.1496,-1.99,-11.73,8,False,0.536,-0.04,False,False
+LACBAL,No · Zay Flowers: 120+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-120,0.85,0.86,0.0091,0.8691,0.8504,-1.87,-2.15,8,False,0.536,0.04,False,True
+LACBAL,Rashod Bateman: 60+ receiving yards,yes,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-60,0.13,0.14,0.0085,0.1485,0.1484,-0.01,-0.06,3,False,0.904,1.84,False,False
+LACBAL,No · Rashod Bateman: 60+ receiving yards,no,rec_yds,Rashod Bateman,BAL,KXNFLRECYDS-26NOV16LACBAL-BALRBATEMAN7-60,0.87,0.88,0.0082,0.8882,0.8516,-3.65,-4.11,3,False,0.904,-1.84,False,False
+LACBAL,Tre' Harris: 90+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-90,0.07,0.08,0.0052,0.0852,0.0588,-2.64,-30.98,3,False,0.756,-1.12,False,False
+LACBAL,No · Tre' Harris: 90+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-90,0.93,0.94,0.004,0.944,0.9412,-0.28,-0.3,3,False,0.756,1.12,False,True
+LACBAL,Tre' Harris: 30+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-30,0.61,0.62,0.0169,0.6369,0.6051,-3.17,-4.98,3,False,0.207,-0.49,False,False
+LACBAL,No · Tre' Harris: 30+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-30,0.39,0.4,0.0168,0.4168,0.3949,-2.19,-5.26,3,False,0.207,0.49,False,False
+LACBAL,Tre' Harris: 80+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-80,0.11,0.12,0.0075,0.1275,0.0976,-2.99,-23.44,3,False,0.639,-1.24,False,False
+LACBAL,No · Tre' Harris: 80+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-80,0.89,0.9,0.0064,0.9064,0.9024,-0.4,-0.44,3,False,0.639,1.24,False,True
+LACBAL,Tre' Harris: 70+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-70,0.175,0.18,0.0104,0.1904,0.1568,-3.35,-17.61,3,False,0.506,-1.82,False,False
+LACBAL,No · Tre' Harris: 70+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-70,0.825,0.83,0.01,0.84,0.8432,0.32,0.38,3,False,0.506,1.82,False,True
+LACBAL,Quentin Johnston: 40+ receiving yards,yes,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-40,0.445,0.45,0.0177,0.4677,0.3903,-7.74,-16.55,3,False,0.16,-5.47,False,False
+LACBAL,No · Quentin Johnston: 40+ receiving yards,no,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-40,0.555,0.56,0.0176,0.5776,0.6097,3.21,5.55,3,False,0.16,5.47,False,False
+LACBAL,Tre' Harris: 50+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-50,0.35,0.36,0.0163,0.3763,0.3359,-4.04,-10.74,3,False,0.172,-1.41,False,False
+LACBAL,No · Tre' Harris: 50+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-50,0.65,0.66,0.016,0.676,0.6641,-1.19,-1.76,3,False,0.172,1.41,False,True
+LACBAL,Quentin Johnston: 20+ receiving yards,yes,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-20,0.675,0.68,0.0157,0.6957,0.7111,1.54,2.22,3,False,0.491,3.61,False,True
+LACBAL,No · Quentin Johnston: 20+ receiving yards,no,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-20,0.325,0.33,0.0157,0.3457,0.2889,-5.68,-16.43,3,False,0.491,-3.61,False,False
+LACBAL,Zay Flowers: 130+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-130,0.095,0.11,0.0069,0.1169,0.1072,-0.97,-8.27,8,False,0.616,1.22,False,False
+LACBAL,No · Zay Flowers: 130+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-130,0.905,0.92,0.006,0.926,0.8928,-3.32,-3.59,8,False,0.616,-1.22,False,False
+LACBAL,Zay Flowers: 25+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-25,0.9,0.91,0.006,0.916,0.9058,-1.02,-1.12,8,False,1.017,0.58,False,True
+LACBAL,No · Zay Flowers: 25+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-25,0.1,0.11,0.0069,0.1169,0.0942,-2.27,-19.39,8,False,1.017,-0.58,False,False
+LACBAL,Quentin Johnston: 30+ receiving yards,yes,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-30,0.55,0.56,0.0176,0.5776,0.5454,-3.22,-5.58,3,False,0.094,-0.46,False,False
+LACBAL,No · Quentin Johnston: 30+ receiving yards,no,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-30,0.45,0.46,0.0176,0.4776,0.4546,-2.3,-4.82,3,False,0.094,0.46,False,False
+LACBAL,Keaton Mitchell: 15+ receiving yards,yes,rec_yds,Keaton Mitchell,LAC,KXNFLRECYDS-26NOV16LACBAL-LACKMITCHELL34-15,0.405,0.41,0.0171,0.4271,0.4579,3.08,7.21,8,False,0.298,5.29,False,False
+LACBAL,No · Keaton Mitchell: 15+ receiving yards,no,rec_yds,Keaton Mitchell,LAC,KXNFLRECYDS-26NOV16LACBAL-LACKMITCHELL34-15,0.595,0.6,0.0169,0.6169,0.5421,-7.48,-12.12,8,False,0.298,-5.29,False,False
+LACBAL,Mark Andrews: 15+ receiving yards,yes,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-15,0.64,0.65,0.016,0.666,0.6626,-0.34,-0.51,8,False,0.416,2.26,False,True
+LACBAL,No · Mark Andrews: 15+ receiving yards,no,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-15,0.36,0.37,0.0167,0.3867,0.3374,-4.93,-12.74,8,False,0.416,-2.26,False,False
+LACBAL,Quentin Johnston: 60+ receiving yards,yes,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-60,0.23,0.24,0.0129,0.2529,0.1783,-7.47,-29.51,3,False,0.562,-5.17,False,False
+LACBAL,No · Quentin Johnston: 60+ receiving yards,no,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-60,0.77,0.78,0.0125,0.7925,0.8217,2.92,3.69,3,False,0.562,5.17,False,True
+LACBAL,Quentin Johnston: 70+ receiving yards,yes,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-70,0.16,0.17,0.01,0.18,0.1111,-6.89,-38.25,3,False,0.715,-4.89,False,False
+LACBAL,No · Quentin Johnston: 70+ receiving yards,no,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-70,0.84,0.85,0.0091,0.8591,0.8889,2.98,3.46,3,False,0.715,4.89,False,True
+LACBAL,Mark Andrews: 60+ receiving yards,yes,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-60,0.08,0.09,0.0058,0.0958,0.0865,-0.93,-9.72,2,False,0.989,0.65,False,False
+LACBAL,No · Mark Andrews: 60+ receiving yards,no,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-60,0.92,0.93,0.005,0.935,0.9135,-2.15,-2.29,2,False,0.989,-0.65,False,False
+LACBAL,Mark Andrews: 50+ receiving yards,yes,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-50,0.135,0.14,0.0085,0.1485,0.1526,0.41,2.8,8,False,0.808,1.76,False,False
+LACBAL,No · Mark Andrews: 50+ receiving yards,no,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-50,0.865,0.87,0.0082,0.8782,0.8474,-3.08,-3.51,8,False,0.808,-1.76,False,False
+LACBAL,Ja'Kobi Lane: 15+ receiving yards,yes,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-15,0.595,0.6,0.0169,0.6169,0.6074,-0.94,-1.53,8,False,0.373,1.24,False,False
+LACBAL,No · Ja'Kobi Lane: 15+ receiving yards,no,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-15,0.405,0.41,0.0171,0.4271,0.3926,-3.45,-8.08,8,False,0.373,-1.24,False,False
+LACBAL,Justice Hill: 15+ receiving yards,yes,rec_yds,Justice Hill,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJHILL43-15,0.425,0.43,0.0174,0.4474,0.4663,1.9,4.24,8,False,0.215,4.13,False,False
+LACBAL,No · Justice Hill: 15+ receiving yards,no,rec_yds,Justice Hill,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJHILL43-15,0.575,0.58,0.0171,0.5971,0.5337,-6.34,-10.62,8,False,0.215,-4.13,False,False
+LACBAL,Quentin Johnston: 50+ receiving yards,yes,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-50,0.325,0.33,0.0157,0.3457,0.2715,-7.42,-21.46,3,False,0.381,-5.35,False,False
+LACBAL,No · Quentin Johnston: 50+ receiving yards,no,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-50,0.675,0.68,0.0157,0.6957,0.7285,3.28,4.71,3,False,0.381,5.35,True,True
+LACBAL,Justice Hill: 10+ receiving yards,yes,rec_yds,Justice Hill,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJHILL43-10,0.55,0.56,0.0176,0.5776,0.5286,-4.9,-8.49,8,False,0.174,-2.14,False,False
+LACBAL,No · Justice Hill: 10+ receiving yards,no,rec_yds,Justice Hill,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJHILL43-10,0.45,0.46,0.0176,0.4776,0.4714,-0.62,-1.3,8,False,0.174,2.14,False,False
+LACBAL,Mark Andrews: 10+ receiving yards,yes,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-10,0.745,0.75,0.0138,0.7638,0.7626,-0.12,-0.16,8,False,0.806,1.76,False,True
+LACBAL,No · Mark Andrews: 10+ receiving yards,no,rec_yds,Mark Andrews,BAL,KXNFLRECYDS-26NOV16LACBAL-BALMANDREWS89-10,0.255,0.26,0.0137,0.2737,0.2374,-3.63,-13.27,8,False,0.806,-1.76,False,False
+LACBAL,Justice Hill: 25+ receiving yards,yes,rec_yds,Justice Hill,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJHILL43-25,0.225,0.23,0.0126,0.2426,0.3446,10.21,42.09,8,False,0.713,11.96,False,False
+LACBAL,No · Justice Hill: 25+ receiving yards,no,rec_yds,Justice Hill,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJHILL43-25,0.775,0.78,0.0125,0.7925,0.6554,-13.71,-17.31,8,False,0.713,-11.96,False,False
+LACBAL,Ja'Kobi Lane: 50+ receiving yards,yes,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-50,0.145,0.16,0.0095,0.1695,0.1728,0.33,1.93,5,False,0.808,2.78,False,False
+LACBAL,No · Ja'Kobi Lane: 50+ receiving yards,no,rec_yds,Ja'Kobi Lane,BAL,KXNFLRECYDS-26NOV16LACBAL-BALJLANE6-50,0.855,0.87,0.0082,0.8782,0.8272,-5.1,-5.8,5,False,0.808,-2.78,False,False
+LACBAL,Tre' Harris: 25+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-25,0.675,0.69,0.015,0.705,0.6811,-2.39,-3.39,3,False,0.386,0.61,False,True
+LACBAL,No · Tre' Harris: 25+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-25,0.325,0.34,0.0159,0.3559,0.3189,-3.7,-10.39,3,False,0.386,-0.61,False,False
+LACBAL,Tre' Harris: 20+ receiving yards,yes,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-20,0.745,0.76,0.0131,0.7731,0.7455,-2.76,-3.56,3,False,0.604,0.05,False,True
+LACBAL,No · Tre' Harris: 20+ receiving yards,no,rec_yds,Tre' Harris,LAC,KXNFLRECYDS-26NOV16LACBAL-LACTHARRIS9-20,0.255,0.27,0.0141,0.2841,0.2545,-2.96,-10.41,3,False,0.604,-0.05,False,False
+LACBAL,Keaton Mitchell: 10+ receiving yards,yes,rec_yds,Keaton Mitchell,LAC,KXNFLRECYDS-26NOV16LACBAL-LACKMITCHELL34-10,0.54,0.55,0.0178,0.5678,0.5228,-4.5,-7.92,8,False,0.174,-1.72,False,False
+LACBAL,No · Keaton Mitchell: 10+ receiving yards,no,rec_yds,Keaton Mitchell,LAC,KXNFLRECYDS-26NOV16LACBAL-LACKMITCHELL34-10,0.46,0.47,0.0176,0.4876,0.4772,-1.04,-2.14,8,False,0.174,1.72,False,False
+LACBAL,Quentin Johnston: 80+ receiving yards,yes,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-80,0.115,0.12,0.0075,0.1275,0.0686,-5.88,-46.16,3,False,0.847,-4.64,False,False
+LACBAL,No · Quentin Johnston: 80+ receiving yards,no,rec_yds,Quentin Johnston,LAC,KXNFLRECYDS-26NOV16LACBAL-LACQJOHNSTON1-80,0.885,0.89,0.0073,0.8973,0.9314,3.41,3.8,3,False,0.847,4.64,False,True
+LACBAL,Zay Flowers: 90+ receiving yards,yes,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-90,0.325,0.33,0.0157,0.3457,0.3363,-0.94,-2.71,8,False,0.25,1.13,False,False
+LACBAL,No · Zay Flowers: 90+ receiving yards,no,rec_yds,Zay Flowers,BAL,KXNFLRECYDS-26NOV16LACBAL-BALZFLOWERS4-90,0.675,0.68,0.0157,0.6957,0.6637,-3.2,-4.6,8,False,0.25,-1.13,False,False
+LACBAL,Derrick Henry: 110+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-110,0.245,0.25,0.0133,0.2632,0.2274,-3.58,-13.61,8,False,0.304,-1.76,False,False
+LACBAL,No · Derrick Henry: 110+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-110,0.755,0.76,0.0131,0.7731,0.7726,-0.05,-0.07,8,False,0.304,1.76,False,True
+LACBAL,Justice Hill: 15+ rushing yards,yes,rush_yds,Justice Hill,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALJHILL43-15,0.455,0.46,0.0176,0.4776,0.4547,-2.29,-4.8,8,False,0.138,-0.03,False,False
+LACBAL,No · Justice Hill: 15+ rushing yards,no,rush_yds,Justice Hill,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALJHILL43-15,0.545,0.55,0.0178,0.5678,0.5453,-2.25,-3.96,8,False,0.138,0.03,False,False
+LACBAL,Justin Herbert: 40+ rushing yards,yes,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-40,0.16,0.17,0.01,0.18,0.2101,3.01,16.72,8,False,0.633,5.01,False,False
+LACBAL,No · Justin Herbert: 40+ rushing yards,no,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-40,0.84,0.85,0.0091,0.8591,0.7899,-6.92,-8.05,8,False,0.633,-5.01,False,False
+LACBAL,Derrick Henry: 50+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-50,0.815,0.82,0.0108,0.8308,0.8274,-0.34,-0.41,8,False,0.479,1.24,False,True
+LACBAL,No · Derrick Henry: 50+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-50,0.185,0.19,0.011,0.201,0.1726,-2.84,-14.11,8,False,0.479,-1.24,False,False
+LACBAL,Derrick Henry: 70+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-70,0.625,0.63,0.0167,0.6467,0.6182,-2.85,-4.4,8,False,0.145,-0.68,False,False
+LACBAL,No · Derrick Henry: 70+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-70,0.375,0.38,0.0165,0.3965,0.3818,-1.47,-3.72,8,False,0.145,0.68,False,False
+LACBAL,Derrick Henry: 90+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-90,0.41,0.42,0.0174,0.4374,0.4006,-3.68,-8.4,8,False,0.105,-0.94,False,False
+LACBAL,No · Derrick Henry: 90+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-90,0.59,0.6,0.0169,0.6169,0.5994,-1.75,-2.84,8,False,0.105,0.94,False,False
+LACBAL,Derrick Henry: 120+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-120,0.17,0.18,0.0104,0.1904,0.1622,-2.82,-14.82,8,False,0.391,-0.78,False,False
+LACBAL,No · Derrick Henry: 120+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-120,0.83,0.84,0.01,0.85,0.8378,-1.22,-1.43,8,False,0.391,0.78,False,True
+LACBAL,Derrick Henry: 130+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-130,0.145,0.15,0.0089,0.1589,0.1128,-4.61,-29.02,8,False,0.471,-3.22,False,False
+LACBAL,No · Derrick Henry: 130+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-130,0.855,0.86,0.0091,0.8691,0.8872,1.81,2.08,8,False,0.471,3.22,False,True
+LACBAL,Derrick Henry: 140+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-140,0.095,0.11,0.0069,0.1169,0.0744,-4.25,-36.33,8,False,0.545,-2.06,False,False
+LACBAL,No · Derrick Henry: 140+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-140,0.905,0.92,0.006,0.926,0.9256,-0.04,-0.05,8,False,0.545,2.06,False,True
+LACBAL,Derrick Henry: 160+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-160,0.04,0.06,0.004,0.064,0.037,-2.7,-42.23,8,False,0.678,-0.3,False,False
+LACBAL,No · Derrick Henry: 160+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-160,0.96,0.98,0.002,0.982,0.963,-1.9,-1.93,8,False,0.678,0.3,False,True
+LACBAL,Keaton Mitchell: 10+ rushing yards,yes,rush_yds,Keaton Mitchell,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKMITCHELL34-10,0.525,0.53,0.0178,0.5478,0.5542,0.65,1.18,7,False,0.174,2.92,False,False
+LACBAL,No · Keaton Mitchell: 10+ rushing yards,no,rush_yds,Keaton Mitchell,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKMITCHELL34-10,0.475,0.48,0.0175,0.4975,0.4458,-5.17,-10.4,7,False,0.174,-2.92,False,False
+LACBAL,Kimani Vidal: 25+ rushing yards,yes,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-25,0.41,0.42,0.0174,0.4374,0.4472,0.98,2.25,8,False,0.125,3.72,False,False
+LACBAL,No · Kimani Vidal: 25+ rushing yards,no,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-25,0.59,0.6,0.0169,0.6169,0.5528,-6.41,-10.39,8,False,0.125,-3.72,False,False
+LACBAL,Kimani Vidal: 30+ rushing yards,yes,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-30,0.335,0.34,0.0159,0.3559,0.3786,2.28,6.4,8,False,0.304,4.36,False,False
+LACBAL,No · Kimani Vidal: 30+ rushing yards,no,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-30,0.665,0.67,0.0157,0.6857,0.6214,-6.43,-9.38,8,False,0.304,-4.36,False,False
+LACBAL,Justin Herbert: 10+ rushing yards,yes,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-10,0.76,0.78,0.0125,0.7925,0.7619,-3.06,-3.86,8,False,0.717,0.19,False,True
+LACBAL,No · Justin Herbert: 10+ rushing yards,no,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-10,0.24,0.26,0.0137,0.2737,0.2381,-3.56,-13.0,8,False,0.717,-0.19,False,False
+LACBAL,Justin Herbert: 15+ rushing yards,yes,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-15,0.625,0.63,0.0167,0.6467,0.6336,-1.3,-2.02,8,False,0.327,0.86,False,True
+LACBAL,No · Justin Herbert: 15+ rushing yards,no,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-15,0.375,0.38,0.0165,0.3965,0.3664,-3.02,-7.61,8,False,0.327,-0.86,False,False
+LACBAL,Justin Herbert: 20+ rushing yards,yes,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-20,0.505,0.51,0.0179,0.5279,0.5234,-0.45,-0.85,8,False,0.048,1.84,False,False
+LACBAL,No · Justin Herbert: 20+ rushing yards,no,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-20,0.495,0.5,0.0175,0.5175,0.4766,-4.09,-7.9,8,False,0.048,-1.84,False,False
+LACBAL,Justin Herbert: 25+ rushing yards,yes,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-25,0.395,0.4,0.0168,0.4168,0.4296,1.28,3.07,8,False,0.171,3.46,False,False
+LACBAL,No · Justin Herbert: 25+ rushing yards,no,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-25,0.605,0.61,0.0169,0.6269,0.5704,-5.65,-9.01,8,False,0.171,-3.46,False,False
+LACBAL,Justin Herbert: 50+ rushing yards,yes,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-50,0.09,0.1,0.0063,0.1063,0.1246,1.83,17.2,6,False,0.854,3.46,False,False
+LACBAL,No · Justin Herbert: 50+ rushing yards,no,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-50,0.91,0.92,0.006,0.926,0.8754,-5.06,-5.46,6,False,0.854,-3.46,False,False
+LACBAL,Keaton Mitchell: 15+ rushing yards,yes,rush_yds,Keaton Mitchell,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKMITCHELL34-15,0.365,0.37,0.0167,0.3867,0.4104,2.37,6.13,7,False,0.215,4.54,False,False
+LACBAL,No · Keaton Mitchell: 15+ rushing yards,no,rush_yds,Keaton Mitchell,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKMITCHELL34-15,0.635,0.64,0.0167,0.6567,0.5896,-6.7,-10.21,7,False,0.215,-4.54,False,False
+LACBAL,Justin Herbert: 30+ rushing yards,yes,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-30,0.315,0.32,0.0155,0.3355,0.3382,0.27,0.81,8,False,0.35,2.32,False,False
+LACBAL,No · Justin Herbert: 30+ rushing yards,no,rush_yds,Justin Herbert,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACJHERBERT10-30,0.685,0.69,0.015,0.705,0.6618,-4.32,-6.13,8,False,0.35,-2.32,False,False
+LACBAL,Justice Hill: 25+ rushing yards,yes,rush_yds,Justice Hill,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALJHILL43-25,0.235,0.24,0.0129,0.2529,0.2545,0.16,0.63,8,False,0.636,1.95,False,False
+LACBAL,No · Justice Hill: 25+ rushing yards,no,rush_yds,Justice Hill,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALJHILL43-25,0.765,0.77,0.0125,0.7825,0.7455,-3.7,-4.73,8,False,0.636,-1.95,False,False
+LACBAL,Derrick Henry: 40+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-40,0.87,0.88,0.0082,0.8882,0.905,1.68,1.89,8,False,0.699,3.5,False,True
+LACBAL,No · Derrick Henry: 40+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-40,0.13,0.14,0.0085,0.1485,0.095,-5.35,-36.01,8,False,0.699,-3.5,False,False
+LACBAL,Justice Hill: 20+ rushing yards,yes,rush_yds,Justice Hill,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALJHILL43-20,0.335,0.34,0.0159,0.3559,0.3431,-1.28,-3.59,8,False,0.418,0.81,False,False
+LACBAL,No · Justice Hill: 20+ rushing yards,no,rush_yds,Justice Hill,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALJHILL43-20,0.665,0.67,0.0157,0.6857,0.6569,-2.88,-4.2,8,False,0.418,-0.81,False,False
+LACBAL,Derrick Henry: 150+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-150,0.06,0.08,0.0052,0.0852,0.0513,-3.39,-39.83,8,False,0.613,-0.87,False,False
+LACBAL,No · Derrick Henry: 150+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-150,0.94,0.96,0.003,0.963,0.9487,-1.43,-1.48,8,False,0.613,0.87,False,True
+LACBAL,Omarion Hampton: 25+ rushing yards,yes,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-25,0.655,0.67,0.0157,0.6857,0.6375,-4.82,-7.03,8,False,0.302,-1.75,False,False
+LACBAL,No · Omarion Hampton: 25+ rushing yards,no,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-25,0.345,0.36,0.0163,0.3763,0.3625,-1.38,-3.67,8,False,0.302,1.75,False,False
+LACBAL,Omarion Hampton: 30+ rushing yards,yes,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-30,0.575,0.58,0.0171,0.5971,0.5502,-4.68,-7.84,8,False,0.123,-2.48,False,False
+LACBAL,No · Omarion Hampton: 30+ rushing yards,no,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-30,0.425,0.43,0.0174,0.4474,0.4498,0.24,0.53,8,False,0.123,2.48,False,False
+LACBAL,Kimani Vidal: 20+ rushing yards,yes,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-20,0.53,0.54,0.0178,0.5578,0.53,-2.78,-4.98,8,False,0.093,0.0,False,False
+LACBAL,No · Kimani Vidal: 20+ rushing yards,no,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-20,0.47,0.48,0.0175,0.4975,0.47,-2.75,-5.53,8,False,0.093,-0.0,False,False
+LACBAL,Omarion Hampton: 20+ rushing yards,yes,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-20,0.755,0.77,0.0125,0.7825,0.7264,-5.61,-7.17,8,False,0.521,-2.86,False,False
+LACBAL,No · Omarion Hampton: 20+ rushing yards,no,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-20,0.245,0.26,0.0137,0.2737,0.2736,-0.01,-0.03,8,False,0.521,2.86,False,False
+LACBAL,Kimani Vidal: 50+ rushing yards,yes,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-50,0.11,0.12,0.0075,0.1275,0.1893,6.18,48.49,6,False,0.808,7.93,False,False
+LACBAL,No · Kimani Vidal: 50+ rushing yards,no,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-50,0.89,0.9,0.0064,0.9064,0.8107,-9.56,-10.55,6,False,0.808,-7.93,False,False
+LACBAL,Omarion Hampton: 70+ rushing yards,yes,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-70,0.095,0.11,0.0069,0.1169,0.1105,-0.64,-5.44,8,False,0.715,1.55,False,False
+LACBAL,No · Omarion Hampton: 70+ rushing yards,no,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-70,0.905,0.92,0.006,0.926,0.8895,-3.65,-3.95,8,False,0.715,-1.55,False,False
+LACBAL,Omarion Hampton: 40+ rushing yards,yes,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-40,0.415,0.42,0.0174,0.4374,0.3946,-4.28,-9.78,8,False,0.16,-2.04,False,False
+LACBAL,No · Omarion Hampton: 40+ rushing yards,no,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-40,0.585,0.59,0.0175,0.6075,0.6054,-0.21,-0.35,8,False,0.16,2.04,False,False
+LACBAL,Derrick Henry: 100+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-100,0.33,0.34,0.0159,0.3559,0.3258,-3.01,-8.45,8,False,0.21,-0.42,False,False
+LACBAL,No · Derrick Henry: 100+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-100,0.67,0.68,0.0157,0.6957,0.6742,-2.15,-3.09,8,False,0.21,0.42,False,True
+LACBAL,Omarion Hampton: 60+ rushing yards,yes,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-60,0.16,0.17,0.01,0.18,0.1682,-1.18,-6.56,8,False,0.562,0.82,False,False
+LACBAL,No · Omarion Hampton: 60+ rushing yards,no,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-60,0.84,0.85,0.0091,0.8591,0.8318,-2.73,-3.18,8,False,0.562,-0.82,False,False
+LACBAL,Derrick Henry: 60+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-60,0.695,0.7,0.015,0.715,0.7252,1.02,1.43,8,False,0.298,3.02,False,True
+LACBAL,No · Derrick Henry: 60+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-60,0.305,0.31,0.015,0.325,0.2748,-5.02,-15.46,8,False,0.298,-3.02,False,False
+LACBAL,Kimani Vidal: 40+ rushing yards,yes,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-40,0.205,0.21,0.0117,0.2217,0.2628,4.11,18.54,8,False,0.588,5.78,False,False
+LACBAL,No · Kimani Vidal: 40+ rushing yards,no,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-40,0.795,0.8,0.0117,0.8117,0.7372,-7.45,-9.17,8,False,0.588,-5.78,False,False
+LACBAL,Kimani Vidal: 15+ rushing yards,yes,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-15,0.65,0.66,0.016,0.676,0.6206,-5.54,-8.2,8,False,0.373,-2.94,False,False
+LACBAL,No · Kimani Vidal: 15+ rushing yards,no,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-15,0.35,0.36,0.0163,0.3763,0.3794,0.32,0.84,8,False,0.373,2.94,False,False
+LACBAL,Justice Hill: 10+ rushing yards,yes,rush_yds,Justice Hill,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALJHILL43-10,0.59,0.6,0.0169,0.6169,0.5996,-1.73,-2.81,8,False,0.323,0.96,False,False
+LACBAL,No · Justice Hill: 10+ rushing yards,no,rush_yds,Justice Hill,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALJHILL43-10,0.41,0.42,0.0174,0.4374,0.4004,-3.69,-8.45,8,False,0.323,-0.96,False,False
+LACBAL,Keaton Mitchell: 25+ rushing yards,yes,rush_yds,Keaton Mitchell,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKMITCHELL34-25,0.195,0.2,0.0112,0.2112,0.2082,-0.3,-1.43,7,False,0.713,1.32,False,False
+LACBAL,No · Keaton Mitchell: 25+ rushing yards,no,rush_yds,Keaton Mitchell,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKMITCHELL34-25,0.805,0.81,0.0108,0.8208,0.7918,-2.9,-3.53,7,False,0.713,-1.32,False,False
+LACBAL,Derrick Henry: 80+ rushing yards,yes,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-80,0.525,0.53,0.0178,0.5478,0.5049,-4.29,-7.82,8,False,0.012,-2.01,False,False
+LACBAL,No · Derrick Henry: 80+ rushing yards,no,rush_yds,Derrick Henry,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALDHENRY22-80,0.475,0.48,0.0175,0.4975,0.4951,-0.24,-0.49,8,False,0.012,2.01,False,False
+LACBAL,Justice Hill: 30+ rushing yards,yes,rush_yds,Justice Hill,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALJHILL43-30,0.175,0.18,0.0104,0.1904,0.1855,-0.49,-2.57,8,False,0.815,1.05,False,False
+LACBAL,No · Justice Hill: 30+ rushing yards,no,rush_yds,Justice Hill,BAL,KXNFLRSHYDS-26NOV16LACBAL-BALJHILL43-30,0.825,0.83,0.01,0.84,0.8145,-2.55,-3.03,8,False,0.815,-1.05,False,False
+LACBAL,Keaton Mitchell: 20+ rushing yards,yes,rush_yds,Keaton Mitchell,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKMITCHELL34-20,0.275,0.28,0.0143,0.2943,0.2917,-0.26,-0.88,7,False,0.495,1.67,False,False
+LACBAL,No · Keaton Mitchell: 20+ rushing yards,no,rush_yds,Keaton Mitchell,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKMITCHELL34-20,0.725,0.73,0.0138,0.7438,0.7083,-3.55,-4.78,7,False,0.495,-1.67,False,False
+LACBAL,Kimani Vidal: 10+ rushing yards,yes,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-10,0.77,0.78,0.0125,0.7925,0.738,-5.45,-6.87,8,False,0.762,-3.2,False,False
+LACBAL,No · Kimani Vidal: 10+ rushing yards,no,rush_yds,Kimani Vidal,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACKVIDAL28-10,0.23,0.24,0.0129,0.2529,0.262,0.9,3.57,8,False,0.762,3.2,False,False
+LACBAL,Omarion Hampton: 15+ rushing yards,yes,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-15,0.815,0.82,0.0108,0.8308,0.8055,-2.53,-3.05,8,False,0.8,-0.95,False,False
+LACBAL,No · Omarion Hampton: 15+ rushing yards,no,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-15,0.185,0.19,0.011,0.201,0.1945,-0.65,-3.22,8,False,0.8,0.95,False,False
+LACBAL,Omarion Hampton: 50+ rushing yards,yes,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-50,0.26,0.27,0.0141,0.2841,0.2742,-0.98,-3.46,8,False,0.381,1.42,False,False
+LACBAL,No · Omarion Hampton: 50+ rushing yards,no,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-50,0.74,0.75,0.0138,0.7638,0.7258,-3.81,-4.98,8,False,0.381,-1.42,False,False
+LACBAL,Omarion Hampton: 80+ rushing yards,yes,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-80,0.06,0.08,0.0052,0.0852,0.0748,-1.04,-12.26,6,False,0.847,1.48,False,False
+LACBAL,No · Omarion Hampton: 80+ rushing yards,no,rush_yds,Omarion Hampton,LAC,KXNFLRSHYDS-26NOV16LACBAL-LACOHAMPTON8-80,0.94,0.96,0.003,0.963,0.9252,-3.78,-3.92,6,False,0.847,-1.48,False,False
+LACBAL,Jacoby Brissett: 150+ passing yards,yes,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-150,0.815,0.83,0.01,0.84,0.8015,-3.85,-4.59,7,False,0.359,-1.35,False,False
+LACBAL,No · Jacoby Brissett: 150+ passing yards,no,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-150,0.185,0.2,0.0112,0.2112,0.1985,-1.27,-6.0,7,False,0.359,1.35,False,False
+LACBAL,Jacoby Brissett: 175+ passing yards,yes,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-175,0.705,0.72,0.0146,0.7346,0.6908,-4.38,-5.97,7,False,0.205,-1.42,False,False
+LACBAL,No · Jacoby Brissett: 175+ passing yards,no,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-175,0.295,0.31,0.015,0.325,0.3092,-1.58,-4.86,7,False,0.205,1.42,False,False
+LACBAL,Jacoby Brissett: 250+ passing yards,yes,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-250,0.305,0.31,0.015,0.325,0.3029,-2.21,-6.79,7,False,0.15,-0.21,False,False
+LACBAL,No · Jacoby Brissett: 250+ passing yards,no,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-250,0.695,0.7,0.015,0.715,0.6971,-1.79,-2.51,7,False,0.15,0.21,False,True
+LACBAL,Justin Herbert: 175+ passing yards,yes,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-175,0.635,0.64,0.0167,0.6567,0.6501,-0.65,-1.0,8,False,0.138,1.51,False,True
+LACBAL,No · Justin Herbert: 175+ passing yards,no,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-175,0.365,0.37,0.0167,0.3867,0.3499,-3.68,-9.51,8,False,0.138,-1.51,False,False
+LACBAL,Jacoby Brissett: 200+ passing yards,yes,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-200,0.57,0.58,0.0171,0.5971,0.5677,-2.93,-4.91,7,False,0.072,-0.23,False,False
+LACBAL,No · Jacoby Brissett: 200+ passing yards,no,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-200,0.43,0.44,0.0173,0.4573,0.4323,-2.5,-5.47,7,False,0.072,0.23,False,False
+LACBAL,Justin Herbert: 150+ passing yards,yes,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-150,0.755,0.76,0.0131,0.7731,0.7629,-1.02,-1.32,8,False,0.292,0.79,False,True
+LACBAL,No · Justin Herbert: 150+ passing yards,no,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-150,0.245,0.25,0.0133,0.2632,0.2371,-2.61,-9.93,8,False,0.292,-0.79,False,False
+LACBAL,Justin Herbert: 200+ passing yards,yes,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-200,0.485,0.49,0.0175,0.5075,0.5096,0.21,0.4,8,False,0.015,2.46,False,False
+LACBAL,No · Justin Herbert: 200+ passing yards,no,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-200,0.515,0.52,0.0179,0.5379,0.4904,-4.74,-8.82,8,False,0.015,-2.46,False,False
+LACBAL,Jacoby Brissett: 275+ passing yards,yes,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-275,0.2,0.21,0.0117,0.2217,0.182,-3.97,-17.9,7,False,0.246,-1.8,False,False
+LACBAL,No · Jacoby Brissett: 275+ passing yards,no,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-275,0.8,0.81,0.0108,0.8208,0.818,-0.29,-0.35,7,False,0.246,1.8,False,True
+LACBAL,Justin Herbert: 250+ passing yards,yes,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-250,0.235,0.24,0.0129,0.2529,0.2178,-3.51,-13.88,8,False,0.218,-1.72,False,False
+LACBAL,No · Justin Herbert: 250+ passing yards,no,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-250,0.765,0.77,0.0125,0.7825,0.7822,-0.03,-0.04,8,False,0.218,1.72,False,True
+LACBAL,Jacoby Brissett: 225+ passing yards,yes,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-225,0.425,0.43,0.0174,0.4474,0.4415,-0.59,-1.31,7,False,0.045,1.65,False,False
+LACBAL,No · Jacoby Brissett: 225+ passing yards,no,pass_yds,Jacoby Brissett,BAL,KXNFLPASSYDS-26NOV16LACBAL-BALJBRISSETT7-225,0.575,0.58,0.0171,0.5971,0.5585,-3.86,-6.46,7,False,0.045,-1.65,False,False
+LACBAL,Justin Herbert: 275+ passing yards,yes,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-275,0.145,0.15,0.0089,0.1589,0.1283,-3.07,-19.31,2,False,0.313,-1.67,False,False
+LACBAL,No · Justin Herbert: 275+ passing yards,no,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-275,0.855,0.86,0.0091,0.8691,0.8717,0.27,0.31,2,False,0.313,1.67,False,True
+LACBAL,Justin Herbert: 225+ passing yards,yes,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-225,0.345,0.35,0.0161,0.3661,0.3652,-0.09,-0.24,8,False,0.113,2.02,False,False
+LACBAL,No · Justin Herbert: 225+ passing yards,no,pass_yds,Justin Herbert,LAC,KXNFLPASSYDS-26NOV16LACBAL-LACJHERBERT10-225,0.655,0.66,0.016,0.676,0.6348,-4.12,-6.09,8,False,0.113,-2.02,False,False
+LACBAL,Zay Flowers: 80+ rushing and receiving yards combined,yes,rr_yds,Zay Flowers,BAL,KXNFLRRYDS-26NOV16LACBAL-BALZFLOWERS4-80,0.475,0.49,0.0175,0.5075,0.4759,-3.16,-6.23,3,False,0.025,0.09,False,False
+LACBAL,No · Zay Flowers: 80+ rushing and receiving yards combined,no,rr_yds,Zay Flowers,BAL,KXNFLRRYDS-26NOV16LACBAL-BALZFLOWERS4-80,0.525,0.54,0.0178,0.5578,0.5241,-3.36,-6.03,3,False,0.025,-0.09,False,False
+LACBAL,Keaton Mitchell: 20+ rushing and receiving yards combined,yes,rr_yds,Keaton Mitchell,LAC,KXNFLRRYDS-26NOV16LACBAL-LACKMITCHELL34-20,0.62,0.64,0.0167,0.6567,0.605,-5.17,-7.87,4,False,0.257,-1.5,False,False
+LACBAL,No · Keaton Mitchell: 20+ rushing and receiving yards combined,no,rr_yds,Keaton Mitchell,LAC,KXNFLRRYDS-26NOV16LACBAL-LACKMITCHELL34-20,0.38,0.4,0.0168,0.4168,0.395,-2.18,-5.23,4,False,0.257,1.5,False,False
+LACBAL,Zay Flowers: 105+ rushing and receiving yards combined,yes,rr_yds,Zay Flowers,BAL,KXNFLRRYDS-26NOV16LACBAL-BALZFLOWERS4-105,0.27,0.29,0.0147,0.3047,0.2507,-5.4,-17.73,3,False,0.296,-1.93,False,False
+LACBAL,No · Zay Flowers: 105+ rushing and receiving yards combined,no,rr_yds,Zay Flowers,BAL,KXNFLRRYDS-26NOV16LACBAL-BALZFLOWERS4-105,0.73,0.75,0.0138,0.7638,0.7493,-1.45,-1.9,3,False,0.296,1.93,False,True
+LACBAL,Justice Hill: 55+ rushing and receiving yards combined,yes,rr_yds,Justice Hill,BAL,KXNFLRRYDS-26NOV16LACBAL-BALJHILL43-55,0.165,0.17,0.01,0.18,0.1431,-3.69,-20.48,4,False,0.666,-2.19,False,False
+LACBAL,No · Justice Hill: 55+ rushing and receiving yards combined,no,rr_yds,Justice Hill,BAL,KXNFLRRYDS-26NOV16LACBAL-BALJHILL43-55,0.835,0.84,0.01,0.85,0.8569,0.69,0.81,4,False,0.666,2.19,False,True
+LACBAL,Zay Flowers: 130+ rushing and receiving yards combined,yes,rr_yds,Zay Flowers,BAL,KXNFLRRYDS-26NOV16LACBAL-BALZFLOWERS4-130,0.135,0.15,0.0089,0.1589,0.1079,-5.1,-32.09,3,False,0.508,-2.71,False,False
+LACBAL,No · Zay Flowers: 130+ rushing and receiving yards combined,no,rr_yds,Zay Flowers,BAL,KXNFLRRYDS-26NOV16LACBAL-BALZFLOWERS4-130,0.865,0.88,0.0082,0.8882,0.8921,0.39,0.44,3,False,0.508,2.71,False,True
+LACBAL,Omarion Hampton: 65+ rushing and receiving yards combined,yes,rr_yds,Omarion Hampton,LAC,KXNFLRRYDS-26NOV16LACBAL-LACOHAMPTON8-65,0.22,0.24,0.0129,0.2529,0.2492,-0.37,-1.47,5,False,0.433,2.92,False,False
+LACBAL,No · Omarion Hampton: 65+ rushing and receiving yards combined,no,rr_yds,Omarion Hampton,LAC,KXNFLRRYDS-26NOV16LACBAL-LACOHAMPTON8-65,0.78,0.8,0.0117,0.8117,0.7508,-6.09,-7.5,5,False,0.433,-2.92,False,False
+LACBAL,Keaton Mitchell: 45+ rushing and receiving yards combined,yes,rr_yds,Keaton Mitchell,LAC,KXNFLRRYDS-26NOV16LACBAL-LACKMITCHELL34-45,0.22,0.24,0.0129,0.2529,0.2143,-3.86,-15.26,4,False,0.541,-0.57,False,False
+LACBAL,No · Keaton Mitchell: 45+ rushing and receiving yards combined,no,rr_yds,Keaton Mitchell,LAC,KXNFLRRYDS-26NOV16LACBAL-LACKMITCHELL34-45,0.78,0.8,0.0117,0.8117,0.7857,-2.6,-3.2,4,False,0.541,0.57,False,True
+LACBAL,Kimani Vidal: 30+ rushing and receiving yards combined,yes,rr_yds,Kimani Vidal,LAC,KXNFLRRYDS-26NOV16LACBAL-LACKVIDAL28-30,0.57,0.58,0.0171,0.5971,0.5582,-3.89,-6.51,5,False,0.123,-1.18,False,False
+LACBAL,No · Kimani Vidal: 30+ rushing and receiving yards combined,no,rr_yds,Kimani Vidal,LAC,KXNFLRRYDS-26NOV16LACBAL-LACKVIDAL28-30,0.43,0.44,0.0173,0.4573,0.4418,-1.55,-3.39,5,False,0.123,1.18,False,False
+LACBAL,Derrick Henry: 90+ rushing and receiving yards combined,yes,rr_yds,Derrick Henry,BAL,KXNFLRRYDS-26NOV16LACBAL-BALDHENRY22-90,0.505,0.52,0.0179,0.5379,0.5009,-3.7,-6.87,5,False,0.0,-0.41,False,False
+LACBAL,No · Derrick Henry: 90+ rushing and receiving yards combined,no,rr_yds,Derrick Henry,BAL,KXNFLRRYDS-26NOV16LACBAL-BALDHENRY22-90,0.495,0.51,0.0179,0.5279,0.4991,-2.88,-5.46,5,False,0.0,0.41,False,False
+LACBAL,Justice Hill: 30+ rushing and receiving yards combined,yes,rr_yds,Justice Hill,BAL,KXNFLRRYDS-26NOV16LACBAL-BALJHILL43-30,0.495,0.5,0.0175,0.5175,0.4799,-3.76,-7.26,4,False,0.068,-1.51,False,False
+LACBAL,No · Justice Hill: 30+ rushing and receiving yards combined,no,rr_yds,Justice Hill,BAL,KXNFLRRYDS-26NOV16LACBAL-BALJHILL43-30,0.505,0.51,0.0179,0.5279,0.5201,-0.78,-1.48,4,False,0.068,1.51,False,False
+LACBAL,Derrick Henry: 115+ rushing and receiving yards combined,yes,rr_yds,Derrick Henry,BAL,KXNFLRRYDS-26NOV16LACBAL-BALDHENRY22-115,0.285,0.3,0.0148,0.3148,0.2386,-7.63,-24.22,5,False,0.244,-4.64,False,False
+LACBAL,No · Derrick Henry: 115+ rushing and receiving yards combined,no,rr_yds,Derrick Henry,BAL,KXNFLRRYDS-26NOV16LACBAL-BALDHENRY22-115,0.715,0.73,0.0138,0.7438,0.7614,1.76,2.36,5,False,0.244,4.64,False,True
+LACBAL,Omarion Hampton: 40+ rushing and receiving yards combined,yes,rr_yds,Omarion Hampton,LAC,KXNFLRRYDS-26NOV16LACBAL-LACOHAMPTON8-40,0.53,0.54,0.0178,0.5578,0.5286,-2.92,-5.23,5,False,0.048,-0.14,False,False
+LACBAL,No · Omarion Hampton: 40+ rushing and receiving yards combined,no,rr_yds,Omarion Hampton,LAC,KXNFLRRYDS-26NOV16LACBAL-LACOHAMPTON8-40,0.47,0.48,0.0175,0.4975,0.4714,-2.61,-5.24,5,False,0.048,0.14,False,False
+LACBAL,Omarion Hampton: 90+ rushing and receiving yards combined,yes,rr_yds,Omarion Hampton,LAC,KXNFLRRYDS-26NOV16LACBAL-LACOHAMPTON8-90,0.075,0.09,0.0058,0.0958,0.0993,0.36,3.72,5,False,0.756,2.43,False,False
+LACBAL,No · Omarion Hampton: 90+ rushing and receiving yards combined,no,rr_yds,Omarion Hampton,LAC,KXNFLRRYDS-26NOV16LACBAL-LACOHAMPTON8-90,0.925,0.94,0.004,0.944,0.9007,-4.33,-4.59,5,False,0.756,-2.43,False,False
+LACBAL,Derrick Henry: 140+ rushing and receiving yards combined,yes,rr_yds,Derrick Henry,BAL,KXNFLRRYDS-26NOV16LACBAL-BALDHENRY22-140,0.135,0.15,0.0089,0.1589,0.0731,-8.59,-54.03,5,False,0.44,-6.19,False,False
+LACBAL,No · Derrick Henry: 140+ rushing and receiving yards combined,no,rr_yds,Derrick Henry,BAL,KXNFLRRYDS-26NOV16LACBAL-BALDHENRY22-140,0.865,0.88,0.0082,0.8882,0.9269,3.88,4.36,5,False,0.44,6.19,True,True
+LACBAL,Kimani Vidal: 80+ rushing and receiving yards combined,yes,rr_yds,Kimani Vidal,LAC,KXNFLRRYDS-26NOV16LACBAL-LACKVIDAL28-80,0.065,0.09,0.0058,0.0958,0.0729,-2.29,-23.86,4,False,0.847,0.79,False,False
+LACBAL,No · Kimani Vidal: 80+ rushing and receiving yards combined,no,rr_yds,Kimani Vidal,LAC,KXNFLRRYDS-26NOV16LACBAL-LACKVIDAL28-80,0.935,0.96,0.003,0.963,0.9271,-3.59,-3.73,4,False,0.847,-0.79,False,False
+LACBAL,Kimani Vidal: 55+ rushing and receiving yards combined,yes,rr_yds,Kimani Vidal,LAC,KXNFLRRYDS-26NOV16LACBAL-LACKVIDAL28-55,0.21,0.22,0.0122,0.2322,0.2206,-1.16,-5.01,5,False,0.475,1.06,False,False
+LACBAL,No · Kimani Vidal: 55+ rushing and receiving yards combined,no,rr_yds,Kimani Vidal,LAC,KXNFLRRYDS-26NOV16LACBAL-LACKVIDAL28-55,0.79,0.8,0.0117,0.8117,0.7794,-3.22,-3.97,5,False,0.475,-1.06,False,False
+LACBAL,Ja'Kobi Lane: 2+ touchdowns,yes,td,Ja'Kobi Lane,BAL,KXNFLTD-26NOV16LACBAL-BALJLANE6-2,0.015,0.02,0.0014,0.0214,0.0199,-0.15,-6.99,6,True,0.3,0.49,False,False
+LACBAL,No · Ja'Kobi Lane: 2+ touchdowns,no,td,Ja'Kobi Lane,BAL,KXNFLTD-26NOV16LACBAL-BALJLANE6-2,0.985,0.99,0.001,0.991,0.9801,-1.09,-1.1,6,True,0.3,-0.49,False,False
+LACBAL,Kimani Vidal: 1+ touchdowns,yes,td,Kimani Vidal,LAC,KXNFLTD-26NOV16LACBAL-LACKVIDAL28-1,0.125,0.13,0.008,0.138,0.1675,2.94,21.32,6,True,0.0,4.25,False,False
+LACBAL,No · Kimani Vidal: 1+ touchdowns,no,td,Kimani Vidal,LAC,KXNFLTD-26NOV16LACBAL-LACKVIDAL28-1,0.875,0.88,0.0082,0.8882,0.8325,-5.56,-6.26,6,True,0.0,-4.25,False,False
+LACBAL,Tre' Harris: 2+ touchdowns,yes,td,Tre' Harris,LAC,KXNFLTD-26NOV16LACBAL-LACTHARRIS9-2,0.025,0.03,0.002,0.032,0.0255,-0.65,-20.26,6,True,0.3,0.05,False,False
+LACBAL,No · Tre' Harris: 2+ touchdowns,no,td,Tre' Harris,LAC,KXNFLTD-26NOV16LACBAL-LACTHARRIS9-2,0.975,0.98,0.002,0.982,0.9745,-0.75,-0.77,6,True,0.3,-0.05,False,False
+LACBAL,Keaton Mitchell: 1+ touchdowns,yes,td,Keaton Mitchell,LAC,KXNFLTD-26NOV16LACBAL-LACKMITCHELL34-1,0.125,0.13,0.008,0.138,0.1543,1.63,11.81,6,True,0.0,2.93,False,False
+LACBAL,No · Keaton Mitchell: 1+ touchdowns,no,td,Keaton Mitchell,LAC,KXNFLTD-26NOV16LACBAL-LACKMITCHELL34-1,0.875,0.88,0.0082,0.8882,0.8457,-4.25,-4.79,6,True,0.0,-2.93,False,False
+LACBAL,Justice Hill: 2+ touchdowns,yes,td,Justice Hill,BAL,KXNFLTD-26NOV16LACBAL-BALJHILL43-2,0.02,0.03,0.002,0.032,0.0189,-1.31,-41.01,6,True,0.3,-0.11,False,False
+LACBAL,No · Justice Hill: 2+ touchdowns,no,td,Justice Hill,BAL,KXNFLTD-26NOV16LACBAL-BALJHILL43-2,0.98,0.99,0.001,0.991,0.9811,-0.99,-1.0,6,True,0.3,0.11,False,False
+LACBAL,Kimani Vidal: 2+ touchdowns,yes,td,Kimani Vidal,LAC,KXNFLTD-26NOV16LACBAL-LACKVIDAL28-2,0.015,0.02,0.0014,0.0214,0.015,-0.64,-29.94,6,True,0.3,-0.0,False,False
+LACBAL,No · Kimani Vidal: 2+ touchdowns,no,td,Kimani Vidal,LAC,KXNFLTD-26NOV16LACBAL-LACKVIDAL28-2,0.985,0.99,0.001,0.991,0.985,-0.6,-0.6,6,True,0.3,0.0,False,False
+LACBAL,Tre' Harris: 1+ touchdowns,yes,td,Tre' Harris,LAC,KXNFLTD-26NOV16LACBAL-LACTHARRIS9-1,0.205,0.21,0.0117,0.2217,0.2171,-0.46,-2.08,6,True,0.0,1.21,False,False
+LACBAL,No · Tre' Harris: 1+ touchdowns,no,td,Tre' Harris,LAC,KXNFLTD-26NOV16LACBAL-LACTHARRIS9-1,0.795,0.8,0.0117,0.8117,0.7829,-2.88,-3.54,6,True,0.0,-1.21,False,False
+LACBAL,Derrick Henry: 2+ touchdowns,yes,td,Derrick Henry,BAL,KXNFLTD-26NOV16LACBAL-BALDHENRY22-2,0.185,0.19,0.011,0.201,0.1956,-0.54,-2.68,7,True,0.3,1.06,False,False
+LACBAL,No · Derrick Henry: 2+ touchdowns,no,td,Derrick Henry,BAL,KXNFLTD-26NOV16LACBAL-BALDHENRY22-2,0.815,0.82,0.0108,0.8308,0.8044,-2.64,-3.18,7,True,0.3,-1.06,False,False
+LACBAL,Derrick Henry: 3+ touchdowns,yes,td,Derrick Henry,BAL,KXNFLTD-26NOV16LACBAL-BALDHENRY22-3,0.045,0.05,0.0034,0.0534,0.0493,-0.41,-7.59,7,True,0.3,0.43,False,False
+LACBAL,No · Derrick Henry: 3+ touchdowns,no,td,Derrick Henry,BAL,KXNFLTD-26NOV16LACBAL-BALDHENRY22-3,0.955,0.96,0.003,0.963,0.9507,-1.23,-1.28,7,True,0.3,-0.43,False,False
+LACBAL,Zay Flowers: 2+ touchdowns,yes,td,Zay Flowers,BAL,KXNFLTD-26NOV16LACBAL-BALZFLOWERS4-2,0.065,0.07,0.0046,0.0746,0.0756,0.1,1.41,7,True,0.3,1.06,False,False
+LACBAL,No · Zay Flowers: 2+ touchdowns,no,td,Zay Flowers,BAL,KXNFLTD-26NOV16LACBAL-BALZFLOWERS4-2,0.935,0.94,0.004,0.944,0.9244,-1.96,-2.08,7,True,0.3,-1.06,False,False
+LACBAL,Omarion Hampton: 2+ touchdowns,yes,td,Omarion Hampton,LAC,KXNFLTD-26NOV16LACBAL-LACOHAMPTON8-2,0.035,0.04,0.0027,0.0427,0.0361,-0.66,-15.44,6,True,0.3,0.11,False,False
+LACBAL,No · Omarion Hampton: 2+ touchdowns,no,td,Omarion Hampton,LAC,KXNFLTD-26NOV16LACBAL-LACOHAMPTON8-2,0.965,0.97,0.003,0.973,0.9639,-0.91,-0.94,6,True,0.3,-0.11,False,False
+LACBAL,Rashod Bateman: 1+ touchdowns,yes,td,Rashod Bateman,BAL,KXNFLTD-26NOV16LACBAL-BALRBATEMAN7-1,0.145,0.15,0.0089,0.1589,0.1605,0.16,1.0,6,True,0.0,1.55,False,False
+LACBAL,No · Rashod Bateman: 1+ touchdowns,no,td,Rashod Bateman,BAL,KXNFLTD-26NOV16LACBAL-BALRBATEMAN7-1,0.855,0.86,0.0091,0.8691,0.8395,-2.96,-3.41,6,True,0.0,-1.55,False,False
+LACBAL,Zay Flowers: 1+ touchdowns,yes,td,Zay Flowers,BAL,KXNFLTD-26NOV16LACBAL-BALZFLOWERS4-1,0.365,0.37,0.0167,0.3867,0.3626,-2.41,-6.23,7,True,0.0,-0.24,False,False
+LACBAL,No · Zay Flowers: 1+ touchdowns,no,td,Zay Flowers,BAL,KXNFLTD-26NOV16LACBAL-BALZFLOWERS4-1,0.635,0.64,0.0167,0.6567,0.6374,-1.92,-2.93,7,True,0.0,0.24,False,False
+LACBAL,Jacoby Brissett: 1+ touchdowns,yes,td,Jacoby Brissett,BAL,KXNFLTD-26NOV16LACBAL-BALJBRISSETT7-1,0.115,0.12,0.0075,0.1275,0.1307,0.33,2.56,5,True,0.0,1.57,False,False
+LACBAL,No · Jacoby Brissett: 1+ touchdowns,no,td,Jacoby Brissett,BAL,KXNFLTD-26NOV16LACBAL-BALJBRISSETT7-1,0.885,0.89,0.0073,0.8973,0.8693,-2.8,-3.12,5,True,0.0,-1.57,False,False
+LACBAL,Oronde Gadsden: 1+ touchdowns,yes,td,Oronde Gadsden,LAC,KXNFLTD-26NOV16LACBAL-LACOGADSDEN86-1,0.145,0.15,0.0089,0.1589,0.1649,0.6,3.77,6,True,0.0,1.99,False,False
+LACBAL,No · Oronde Gadsden: 1+ touchdowns,no,td,Oronde Gadsden,LAC,KXNFLTD-26NOV16LACBAL-LACOGADSDEN86-1,0.855,0.86,0.0091,0.8691,0.8351,-3.4,-3.92,6,True,0.0,-1.99,False,False
+LACBAL,Justice Hill: 1+ touchdowns,yes,td,Justice Hill,BAL,KXNFLTD-26NOV16LACBAL-BALJHILL43-1,0.175,0.18,0.0104,0.1904,0.1875,-0.28,-1.48,6,True,0.0,1.25,False,False
+LACBAL,No · Justice Hill: 1+ touchdowns,no,td,Justice Hill,BAL,KXNFLTD-26NOV16LACBAL-BALJHILL43-1,0.825,0.83,0.01,0.84,0.8125,-2.75,-3.28,6,True,0.0,-1.25,False,False
+LACBAL,Justin Herbert: 1+ touchdowns,yes,td,Justin Herbert,LAC,KXNFLTD-26NOV16LACBAL-LACJHERBERT10-1,0.145,0.15,0.0089,0.1589,0.1502,-0.88,-5.52,6,True,0.0,0.52,False,False
+LACBAL,No · Justin Herbert: 1+ touchdowns,no,td,Justin Herbert,LAC,KXNFLTD-26NOV16LACBAL-LACJHERBERT10-1,0.855,0.86,0.0091,0.8691,0.8498,-1.93,-2.22,6,True,0.0,-0.52,False,False
+LACBAL,KeAndre Lambert-Smith: 1+ touchdowns,yes,td,KeAndre Lambert-Smith,LAC,KXNFLTD-26NOV16LACBAL-LACKLAMBERTSMITH84-1,0.105,0.11,0.0069,0.1169,0.1251,0.82,7.03,6,True,0.0,2.01,False,False
+LACBAL,No · KeAndre Lambert-Smith: 1+ touchdowns,no,td,KeAndre Lambert-Smith,LAC,KXNFLTD-26NOV16LACBAL-LACKLAMBERTSMITH84-1,0.895,0.9,0.0064,0.9064,0.8749,-3.15,-3.47,6,True,0.0,-2.01,False,False
+LACBAL,Omarion Hampton: 1+ touchdowns,yes,td,Omarion Hampton,LAC,KXNFLTD-26NOV16LACBAL-LACOHAMPTON8-1,0.225,0.23,0.0126,0.2426,0.2553,1.27,5.24,6,True,0.0,3.03,False,False
+LACBAL,No · Omarion Hampton: 1+ touchdowns,no,td,Omarion Hampton,LAC,KXNFLTD-26NOV16LACBAL-LACOHAMPTON8-1,0.775,0.78,0.0125,0.7925,0.7447,-4.78,-6.03,6,True,0.0,-3.03,False,False
+LACBAL,Charlie Kolar: 1+ touchdowns,yes,td,Charlie Kolar,LAC,KXNFLTD-26NOV16LACBAL-LACCKOLAR88-1,0.125,0.13,0.008,0.138,0.1508,1.28,9.27,6,True,0.0,2.58,False,False
+LACBAL,No · Charlie Kolar: 1+ touchdowns,no,td,Charlie Kolar,LAC,KXNFLTD-26NOV16LACBAL-LACCKOLAR88-1,0.875,0.88,0.0082,0.8882,0.8492,-3.9,-4.39,6,True,0.0,-2.58,False,False
+LACBAL,Quentin Johnston: 1+ touchdowns,yes,td,Quentin Johnston,LAC,KXNFLTD-26NOV16LACBAL-LACQJOHNSTON1-1,0.165,0.17,0.01,0.18,0.1772,-0.28,-1.55,6,True,0.0,1.22,False,False
+LACBAL,No · Quentin Johnston: 1+ touchdowns,no,td,Quentin Johnston,LAC,KXNFLTD-26NOV16LACBAL-LACQJOHNSTON1-1,0.835,0.84,0.01,0.85,0.8228,-2.72,-3.2,6,True,0.0,-1.22,False,False
+LACBAL,Theo Wease Jr.: 1+ touchdowns,yes,td,Theo Wease Jr.,LAC,KXNFLTD-26NOV16LACBAL-LACTWEASE82-1,0.035,0.04,0.0027,0.0427,0.0422,-0.05,-1.26,5,True,0.0,0.72,False,False
+LACBAL,No · Theo Wease Jr.: 1+ touchdowns,no,td,Theo Wease Jr.,LAC,KXNFLTD-26NOV16LACBAL-LACTWEASE82-1,0.965,0.97,0.003,0.973,0.9578,-1.52,-1.56,5,True,0.0,-0.72,False,False
+LACBAL,Derrick Henry: 1+ touchdowns,yes,td,Derrick Henry,BAL,KXNFLTD-26NOV16LACBAL-BALDHENRY22-1,0.555,0.56,0.0176,0.5776,0.5558,-2.19,-3.79,7,True,0.0,0.08,False,False
+LACBAL,No · Derrick Henry: 1+ touchdowns,no,td,Derrick Henry,BAL,KXNFLTD-26NOV16LACBAL-BALDHENRY22-1,0.445,0.45,0.0177,0.4677,0.4442,-2.35,-5.02,7,True,0.0,-0.08,False,False
+LACBAL,Mark Andrews: 1+ touchdowns,yes,td,Mark Andrews,BAL,KXNFLTD-26NOV16LACBAL-BALMANDREWS89-1,0.205,0.21,0.0117,0.2217,0.2038,-1.79,-8.08,7,True,0.0,-0.12,False,False
+LACBAL,No · Mark Andrews: 1+ touchdowns,no,td,Mark Andrews,BAL,KXNFLTD-26NOV16LACBAL-BALMANDREWS89-1,0.795,0.8,0.0117,0.8117,0.7962,-1.55,-1.9,7,True,0.0,0.12,False,False
+LACBAL,Rashod Bateman: 2+ touchdowns,yes,td,Rashod Bateman,BAL,KXNFLTD-26NOV16LACBAL-BALRBATEMAN7-2,0.015,0.02,0.0014,0.0214,0.0137,-0.77,-35.83,6,True,0.3,-0.13,False,False
+LACBAL,No · Rashod Bateman: 2+ touchdowns,no,td,Rashod Bateman,BAL,KXNFLTD-26NOV16LACBAL-BALRBATEMAN7-2,0.985,0.99,0.001,0.991,0.9863,-0.47,-0.48,6,True,0.3,0.13,False,False
+LACBAL,KeAndre Lambert-Smith: 2+ touchdowns,yes,td,KeAndre Lambert-Smith,LAC,KXNFLTD-26NOV16LACBAL-LACKLAMBERTSMITH84-2,0.005,0.01,0.0007,0.0107,0.0082,-0.25,-23.48,6,True,0.3,0.32,False,False
+LACBAL,Ja'Kobi Lane: 1+ touchdowns,yes,td,Ja'Kobi Lane,BAL,KXNFLTD-26NOV16LACBAL-BALJLANE6-1,0.185,0.19,0.011,0.201,0.1923,-0.87,-4.31,6,True,0.0,0.73,False,False
+LACBAL,No · Ja'Kobi Lane: 1+ touchdowns,no,td,Ja'Kobi Lane,BAL,KXNFLTD-26NOV16LACBAL-BALJLANE6-1,0.815,0.82,0.0108,0.8308,0.8077,-2.31,-2.78,6,True,0.0,-0.73,False,False
+LACBAL,Mark Andrews: 2+ touchdowns,yes,td,Mark Andrews,BAL,KXNFLTD-26NOV16LACBAL-BALMANDREWS89-2,0.025,0.03,0.002,0.032,0.0225,-0.96,-29.82,7,True,0.3,-0.25,False,False
+LACBAL,No · Mark Andrews: 2+ touchdowns,no,td,Mark Andrews,BAL,KXNFLTD-26NOV16LACBAL-BALMANDREWS89-2,0.975,0.98,0.002,0.982,0.9775,-0.45,-0.46,7,True,0.3,0.25,False,False
+LACBAL,Oronde Gadsden: 2+ touchdowns,yes,td,Oronde Gadsden,LAC,KXNFLTD-26NOV16LACBAL-LACOGADSDEN86-2,0.015,0.02,0.0014,0.0214,0.0145,-0.69,-32.32,6,True,0.3,-0.05,False,False
+LACBAL,No · Oronde Gadsden: 2+ touchdowns,no,td,Oronde Gadsden,LAC,KXNFLTD-26NOV16LACBAL-LACOGADSDEN86-2,0.985,0.99,0.001,0.991,0.9855,-0.55,-0.55,6,True,0.3,0.05,False,False
+LACBAL,Josh Cuevas: 1+ touchdowns,yes,td,Josh Cuevas,BAL,KXNFLTD-26NOV16LACBAL-BALJCUEVAS85-1,0.075,0.08,0.0052,0.0852,0.087,0.18,2.14,6,True,0.0,1.2,False,False
+LACBAL,No · Josh Cuevas: 1+ touchdowns,no,td,Josh Cuevas,BAL,KXNFLTD-26NOV16LACBAL-BALJCUEVAS85-1,0.925,0.93,0.005,0.935,0.913,-2.2,-2.36,6,True,0.0,-1.2,False,False
+LACBAL,Jacoby Brissett: 2+ touchdowns,yes,td,Jacoby Brissett,BAL,KXNFLTD-26NOV16LACBAL-BALJBRISSETT7-2,0.015,0.02,0.0014,0.0214,0.009,-1.24,-58.06,5,True,0.3,-0.6,False,False
+LACBAL,No · Jacoby Brissett: 2+ touchdowns,no,td,Jacoby Brissett,BAL,KXNFLTD-26NOV16LACBAL-BALJBRISSETT7-2,0.985,0.99,0.001,0.991,0.991,0.0,0.0,5,True,0.3,0.6,False,False
+LACBAL,Charlie Kolar: 2+ touchdowns,yes,td,Charlie Kolar,LAC,KXNFLTD-26NOV16LACBAL-LACCKOLAR88-2,0.015,0.02,0.0014,0.0214,0.012,-0.94,-43.74,6,True,0.3,-0.3,False,False
+LACBAL,No · Charlie Kolar: 2+ touchdowns,no,td,Charlie Kolar,LAC,KXNFLTD-26NOV16LACBAL-LACCKOLAR88-2,0.985,0.99,0.001,0.991,0.988,-0.3,-0.31,6,True,0.3,0.3,False,False
+LACBAL,Derius Davis: 1+ touchdowns,yes,td,Derius Davis,LAC,KXNFLTD-26NOV16LACBAL-LACDDAVIS12-1,0.055,0.06,0.004,0.064,0.065,0.1,1.59,6,True,0.0,1.0,False,False
+LACBAL,No · Derius Davis: 1+ touchdowns,no,td,Derius Davis,LAC,KXNFLTD-26NOV16LACBAL-LACDDAVIS12-1,0.945,0.95,0.004,0.954,0.935,-1.9,-1.99,6,True,0.0,-1.0,False,False
+LACBAL,Zay Flowers: 3+ touchdowns,yes,td,Zay Flowers,BAL,KXNFLTD-26NOV16LACBAL-BALZFLOWERS4-3,0.015,0.02,0.0014,0.0214,0.0109,-1.04,-48.81,7,True,0.3,-0.41,False,False
+LACBAL,No · Zay Flowers: 3+ touchdowns,no,td,Zay Flowers,BAL,KXNFLTD-26NOV16LACBAL-BALZFLOWERS4-3,0.985,0.99,0.001,0.991,0.9891,-0.19,-0.2,7,True,0.3,0.41,False,False
+LACBAL,Justin Herbert: 2+ touchdowns,yes,td,Justin Herbert,LAC,KXNFLTD-26NOV16LACBAL-LACJHERBERT10-2,0.015,0.02,0.0014,0.0214,0.0119,-0.95,-44.28,6,True,0.3,-0.31,False,False
+LACBAL,No · Justin Herbert: 2+ touchdowns,no,td,Justin Herbert,LAC,KXNFLTD-26NOV16LACBAL-LACJHERBERT10-2,0.985,0.99,0.001,0.991,0.9881,-0.29,-0.29,6,True,0.3,0.31,False,False
+LACBAL,Keaton Mitchell: 2+ touchdowns,yes,td,Keaton Mitchell,LAC,KXNFLTD-26NOV16LACBAL-LACKMITCHELL34-2,0.015,0.02,0.0014,0.0214,0.0127,-0.87,-40.81,6,True,0.3,-0.23,False,False
+LACBAL,No · Keaton Mitchell: 2+ touchdowns,no,td,Keaton Mitchell,LAC,KXNFLTD-26NOV16LACBAL-LACKMITCHELL34-2,0.985,0.99,0.001,0.991,0.9873,-0.37,-0.37,6,True,0.3,0.23,False,False
+LACBAL,Quentin Johnston: 2+ touchdowns,yes,td,Quentin Johnston,LAC,KXNFLTD-26NOV16LACBAL-LACQJOHNSTON1-2,0.015,0.02,0.0014,0.0214,0.0172,-0.42,-19.54,6,True,0.3,0.22,False,False
+LACBAL,No · Quentin Johnston: 2+ touchdowns,no,td,Quentin Johnston,LAC,KXNFLTD-26NOV16LACBAL-LACQJOHNSTON1-2,0.985,0.99,0.001,0.991,0.9828,-0.82,-0.83,6,True,0.3,-0.22,False,False
