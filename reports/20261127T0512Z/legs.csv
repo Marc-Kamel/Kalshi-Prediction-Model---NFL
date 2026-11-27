@@ -1,0 +1,465 @@
+game,leg,side,kind,player,team,ticker,kalshi_prob,ask,fee,all_in,fair_prob,edge_pts,ev_pct,books,one_sided,dist_from_line,edge_vs_mid_pts,passes,combo_leg
+DENPIT,Courtland Sutton: 3+ receptions,yes,receptions,Courtland Sutton,DEN,KXNFLREC-26NOV27DENPIT-DENCSUTTON14-3,0.545,0.55,0.0178,0.5678,0.5556,-1.21,-2.14,7,False,0.0,1.06,False,False
+DENPIT,No · Courtland Sutton: 3+ receptions,no,receptions,Courtland Sutton,DEN,KXNFLREC-26NOV27DENPIT-DENCSUTTON14-3,0.455,0.46,0.0176,0.4776,0.4444,-3.33,-6.96,7,False,0.0,-1.06,False,False
+DENPIT,Courtland Sutton: 4+ receptions,yes,receptions,Courtland Sutton,DEN,KXNFLREC-26NOV27DENPIT-DENCSUTTON14-4,0.33,0.34,0.0159,0.3559,0.42,6.42,18.03,7,False,0.251,9.0,False,False
+DENPIT,No · Courtland Sutton: 4+ receptions,no,receptions,Courtland Sutton,DEN,KXNFLREC-26NOV27DENPIT-DENCSUTTON14-4,0.67,0.68,0.0157,0.6957,0.58,-11.57,-16.64,7,False,0.251,-9.0,False,False
+DENPIT,Evan Engram: 2+ receptions,yes,receptions,Evan Engram,DEN,KXNFLREC-26NOV27DENPIT-DENEENGRAM1-2,0.71,0.72,0.0146,0.7346,0.6635,-7.11,-9.68,7,False,0.336,-4.65,False,False
+DENPIT,No · Evan Engram: 2+ receptions,no,receptions,Evan Engram,DEN,KXNFLREC-26NOV27DENPIT-DENEENGRAM1-2,0.29,0.3,0.0148,0.3148,0.3365,2.16,6.87,7,False,0.336,4.65,False,False
+DENPIT,Roman Wilson: 2+ receptions,yes,receptions,Roman Wilson,PIT,KXNFLREC-26NOV27DENPIT-PITRWILSON14-2,0.465,0.47,0.0176,0.4876,0.4654,-2.22,-4.56,6,False,0.0,0.04,False,False
+DENPIT,No · Roman Wilson: 2+ receptions,no,receptions,Roman Wilson,PIT,KXNFLREC-26NOV27DENPIT-PITRWILSON14-2,0.535,0.54,0.0178,0.5578,0.5346,-2.32,-4.15,6,False,0.0,-0.04,False,False
+DENPIT,DK Metcalf: 2+ receptions,yes,receptions,DK Metcalf,PIT,KXNFLREC-26NOV27DENPIT-PITDMETCALF4-2,0.745,0.76,0.0131,0.7731,0.7271,-4.59,-5.94,7,False,0.336,-1.79,False,False
+DENPIT,No · DK Metcalf: 2+ receptions,no,receptions,DK Metcalf,PIT,KXNFLREC-26NOV27DENPIT-PITDMETCALF4-2,0.255,0.27,0.0141,0.2841,0.2729,-1.12,-3.94,7,False,0.336,1.79,False,False
+DENPIT,Germie Bernard: 3+ receptions,yes,receptions,Germie Bernard,PIT,KXNFLREC-26NOV27DENPIT-PITGBERNARD17-3,0.57,0.58,0.0171,0.5971,0.5776,-1.94,-3.25,7,False,0.0,0.76,False,False
+DENPIT,No · Germie Bernard: 3+ receptions,no,receptions,Germie Bernard,PIT,KXNFLREC-26NOV27DENPIT-PITGBERNARD17-3,0.43,0.44,0.0173,0.4573,0.4224,-3.49,-7.63,7,False,0.0,-0.76,False,False
+DENPIT,Evan Engram: 3+ receptions,yes,receptions,Evan Engram,DEN,KXNFLREC-26NOV27DENPIT-DENEENGRAM1-3,0.475,0.48,0.0175,0.4975,0.4709,-2.66,-5.34,7,False,0.0,-0.41,False,False
+DENPIT,No · Evan Engram: 3+ receptions,no,receptions,Evan Engram,DEN,KXNFLREC-26NOV27DENPIT-DENEENGRAM1-3,0.525,0.53,0.0178,0.5478,0.5291,-1.87,-3.42,7,False,0.0,0.41,False,False
+DENPIT,DK Metcalf: 3+ receptions,yes,receptions,DK Metcalf,PIT,KXNFLREC-26NOV27DENPIT-PITDMETCALF4-3,0.525,0.53,0.0178,0.5478,0.5246,-2.32,-4.23,7,False,0.0,-0.04,False,False
+DENPIT,No · DK Metcalf: 3+ receptions,no,receptions,DK Metcalf,PIT,KXNFLREC-26NOV27DENPIT-PITDMETCALF4-3,0.475,0.48,0.0175,0.4975,0.4754,-2.21,-4.44,7,False,0.0,0.04,False,False
+DENPIT,Germie Bernard: 4+ receptions,yes,receptions,Germie Bernard,PIT,KXNFLREC-26NOV27DENPIT-PITGBERNARD17-4,0.365,0.38,0.0165,0.3965,0.4542,5.77,14.55,7,False,0.251,8.92,False,False
+DENPIT,No · Germie Bernard: 4+ receptions,no,receptions,Germie Bernard,PIT,KXNFLREC-26NOV27DENPIT-PITGBERNARD17-4,0.635,0.65,0.016,0.666,0.5458,-12.02,-18.05,7,False,0.251,-8.92,False,False
+DENPIT,Evan Engram: 4+ receptions,yes,receptions,Evan Engram,DEN,KXNFLREC-26NOV27DENPIT-DENEENGRAM1-4,0.28,0.29,0.0147,0.3047,0.2773,-2.74,-9.0,7,False,0.251,-0.27,False,False
+DENPIT,No · Evan Engram: 4+ receptions,no,receptions,Evan Engram,DEN,KXNFLREC-26NOV27DENPIT-DENEENGRAM1-4,0.72,0.73,0.0138,0.7438,0.7227,-2.11,-2.84,7,False,0.251,0.27,False,True
+DENPIT,DK Metcalf: 4+ receptions,yes,receptions,DK Metcalf,PIT,KXNFLREC-26NOV27DENPIT-PITDMETCALF4-4,0.295,0.3,0.0148,0.3148,0.3683,5.34,16.96,7,False,0.251,7.33,False,False
+DENPIT,No · DK Metcalf: 4+ receptions,no,receptions,DK Metcalf,PIT,KXNFLREC-26NOV27DENPIT-PITDMETCALF4-4,0.705,0.71,0.015,0.725,0.6317,-9.33,-12.86,7,False,0.251,-7.33,False,False
+DENPIT,Adam Trautman: 1+ receptions,yes,receptions,Adam Trautman,DEN,KXNFLREC-26NOV27DENPIT-DENATRAUTMAN82-1,0.605,0.61,0.0169,0.6269,0.6066,-2.02,-3.23,7,False,0.0,0.16,False,True
+DENPIT,No · Adam Trautman: 1+ receptions,no,receptions,Adam Trautman,DEN,KXNFLREC-26NOV27DENPIT-DENATRAUTMAN82-1,0.395,0.4,0.0168,0.4168,0.3934,-2.34,-5.62,7,False,0.0,-0.16,False,False
+DENPIT,Evan Engram: 5+ receptions,yes,receptions,Evan Engram,DEN,KXNFLREC-26NOV27DENPIT-DENEENGRAM1-5,0.145,0.16,0.0095,0.1695,0.1642,-0.53,-3.14,7,False,0.452,1.92,False,False
+DENPIT,No · Evan Engram: 5+ receptions,no,receptions,Evan Engram,DEN,KXNFLREC-26NOV27DENPIT-DENEENGRAM1-5,0.855,0.87,0.0082,0.8782,0.8358,-4.24,-4.83,7,False,0.452,-1.92,False,False
+DENPIT,DK Metcalf: 5+ receptions,yes,receptions,DK Metcalf,PIT,KXNFLREC-26NOV27DENPIT-PITDMETCALF4-5,0.165,0.18,0.0104,0.1904,0.2428,5.24,27.55,7,False,0.452,7.78,False,False
+DENPIT,No · DK Metcalf: 5+ receptions,no,receptions,DK Metcalf,PIT,KXNFLREC-26NOV27DENPIT-PITDMETCALF4-5,0.835,0.85,0.0091,0.8591,0.7572,-10.19,-11.86,7,False,0.452,-7.78,False,False
+DENPIT,Pat Bryant: 2+ receptions,yes,receptions,Pat Bryant,DEN,KXNFLREC-26NOV27DENPIT-DENPBRYANT13-2,0.7,0.72,0.0146,0.7346,0.6592,-7.55,-10.27,7,False,0.336,-4.08,False,False
+DENPIT,No · Pat Bryant: 2+ receptions,no,receptions,Pat Bryant,DEN,KXNFLREC-26NOV27DENPIT-DENPBRYANT13-2,0.3,0.32,0.0155,0.3355,0.3408,0.54,1.6,7,False,0.336,4.08,False,False
+DENPIT,Rico Dowdle: 2+ receptions,yes,receptions,Rico Dowdle,PIT,KXNFLREC-26NOV27DENPIT-PITRDOWDLE13-2,0.575,0.58,0.0171,0.5971,0.5721,-2.49,-4.18,7,False,0.0,-0.29,False,False
+DENPIT,No · Rico Dowdle: 2+ receptions,no,receptions,Rico Dowdle,PIT,KXNFLREC-26NOV27DENPIT-PITRDOWDLE13-2,0.425,0.43,0.0174,0.4474,0.4279,-1.95,-4.36,7,False,0.0,0.29,False,False
+DENPIT,Pat Bryant: 4+ receptions,yes,receptions,Pat Bryant,DEN,KXNFLREC-26NOV27DENPIT-DENPBRYANT13-4,0.255,0.26,0.0137,0.2737,0.2826,0.89,3.26,7,False,0.251,2.76,False,False
+DENPIT,No · Pat Bryant: 4+ receptions,no,receptions,Pat Bryant,DEN,KXNFLREC-26NOV27DENPIT-DENPBRYANT13-4,0.745,0.75,0.0138,0.7638,0.7174,-4.65,-6.08,7,False,0.251,-2.76,False,False
+DENPIT,Pat Bryant: 5+ receptions,yes,receptions,Pat Bryant,DEN,KXNFLREC-26NOV27DENPIT-DENPBRYANT13-5,0.13,0.14,0.0085,0.1485,0.1724,2.39,16.11,7,False,0.452,4.24,False,False
+DENPIT,No · Pat Bryant: 5+ receptions,no,receptions,Pat Bryant,DEN,KXNFLREC-26NOV27DENPIT-DENPBRYANT13-5,0.87,0.88,0.0082,0.8882,0.8276,-6.06,-6.82,7,False,0.452,-4.24,False,False
+DENPIT,Troy Franklin: 1+ receptions,yes,receptions,Troy Franklin,DEN,KXNFLREC-26NOV27DENPIT-DENTFRANKLIN11-1,0.575,0.58,0.0171,0.5971,0.5719,-2.52,-4.22,7,False,0.0,-0.31,False,False
+DENPIT,No · Troy Franklin: 1+ receptions,no,receptions,Troy Franklin,DEN,KXNFLREC-26NOV27DENPIT-DENTFRANKLIN11-1,0.425,0.43,0.0174,0.4474,0.4281,-1.93,-4.3,7,False,0.0,0.31,False,False
+DENPIT,Jaylen Warren: 3+ receptions,yes,receptions,Jaylen Warren,PIT,KXNFLREC-26NOV27DENPIT-PITJWARREN30-3,0.505,0.51,0.0179,0.5279,0.4913,-3.66,-6.93,7,False,0.0,-1.37,False,False
+DENPIT,No · Jaylen Warren: 3+ receptions,no,receptions,Jaylen Warren,PIT,KXNFLREC-26NOV27DENPIT-PITJWARREN30-3,0.495,0.5,0.0175,0.5175,0.5087,-0.88,-1.7,7,False,0.0,1.37,False,False
+DENPIT,Jaylen Waddle: 2+ receptions,yes,receptions,Jaylen Waddle,DEN,KXNFLREC-26NOV27DENPIT-DENJWADDLE17-2,0.885,0.89,0.0073,0.8973,0.8483,-4.9,-5.46,7,False,0.588,-3.67,False,False
+DENPIT,No · Jaylen Waddle: 2+ receptions,no,receptions,Jaylen Waddle,DEN,KXNFLREC-26NOV27DENPIT-DENJWADDLE17-2,0.115,0.12,0.0075,0.1275,0.1517,2.42,19.0,7,False,0.588,3.67,False,False
+DENPIT,Jaylen Waddle: 3+ receptions,yes,receptions,Jaylen Waddle,DEN,KXNFLREC-26NOV27DENPIT-DENJWADDLE17-3,0.73,0.74,0.0138,0.7538,0.7093,-4.45,-5.9,7,False,0.251,-2.07,False,False
+DENPIT,No · Jaylen Waddle: 3+ receptions,no,receptions,Jaylen Waddle,DEN,KXNFLREC-26NOV27DENPIT-DENJWADDLE17-3,0.27,0.28,0.0143,0.2943,0.2907,-0.36,-1.23,7,False,0.251,2.07,False,False
+DENPIT,Jaylen Warren: 4+ receptions,yes,receptions,Jaylen Warren,PIT,KXNFLREC-26NOV27DENPIT-PITJWARREN30-4,0.295,0.31,0.015,0.325,0.3174,-0.76,-2.35,7,False,0.251,2.24,False,False
+DENPIT,No · Jaylen Warren: 4+ receptions,no,receptions,Jaylen Warren,PIT,KXNFLREC-26NOV27DENPIT-PITJWARREN30-4,0.705,0.72,0.0146,0.7346,0.6826,-5.2,-7.08,7,False,0.251,-2.24,False,False
+DENPIT,Jaylen Waddle: 5+ receptions,yes,receptions,Jaylen Waddle,DEN,KXNFLREC-26NOV27DENPIT-DENJWADDLE17-5,0.345,0.35,0.0161,0.3661,0.3729,0.69,1.88,7,False,0.201,2.79,False,False
+DENPIT,No · Jaylen Waddle: 5+ receptions,no,receptions,Jaylen Waddle,DEN,KXNFLREC-26NOV27DENPIT-DENJWADDLE17-5,0.655,0.66,0.016,0.676,0.6271,-4.89,-7.24,7,False,0.201,-2.79,False,False
+DENPIT,Jonah Coleman: 2+ receptions,yes,receptions,Jonah Coleman,DEN,KXNFLREC-26NOV27DENPIT-DENJCOLEMAN20-2,0.855,0.86,0.0091,0.8691,0.801,-6.81,-7.83,7,False,0.588,-5.4,False,False
+DENPIT,No · Jonah Coleman: 2+ receptions,no,receptions,Jonah Coleman,DEN,KXNFLREC-26NOV27DENPIT-DENJCOLEMAN20-2,0.145,0.15,0.0089,0.1589,0.199,4.0,25.18,7,False,0.588,5.4,False,False
+DENPIT,Jaylen Warren: 5+ receptions,yes,receptions,Jaylen Warren,PIT,KXNFLREC-26NOV27DENPIT-PITJWARREN30-5,0.155,0.17,0.01,0.18,0.1909,1.09,6.04,7,False,0.452,3.59,False,False
+DENPIT,No · Jaylen Warren: 5+ receptions,no,receptions,Jaylen Warren,PIT,KXNFLREC-26NOV27DENPIT-PITJWARREN30-5,0.845,0.86,0.0091,0.8691,0.8091,-6.0,-6.9,7,False,0.452,-3.59,False,False
+DENPIT,Jonah Coleman: 3+ receptions,yes,receptions,Jonah Coleman,DEN,KXNFLREC-26NOV27DENPIT-DENJCOLEMAN20-3,0.665,0.67,0.0157,0.6857,0.6428,-4.29,-6.25,7,False,0.251,-2.22,False,False
+DENPIT,No · Jonah Coleman: 3+ receptions,no,receptions,Jonah Coleman,DEN,KXNFLREC-26NOV27DENPIT-DENJCOLEMAN20-3,0.335,0.34,0.0159,0.3559,0.3572,0.13,0.36,7,False,0.251,2.22,False,False
+DENPIT,Jonah Coleman: 4+ receptions,yes,receptions,Jonah Coleman,DEN,KXNFLREC-26NOV27DENPIT-DENJCOLEMAN20-4,0.475,0.48,0.0175,0.4975,0.4639,-3.36,-6.76,7,False,0.0,-1.11,False,False
+DENPIT,No · Jonah Coleman: 4+ receptions,no,receptions,Jonah Coleman,DEN,KXNFLREC-26NOV27DENPIT-DENJCOLEMAN20-4,0.525,0.53,0.0178,0.5478,0.5361,-1.16,-2.13,7,False,0.0,1.11,False,False
+DENPIT,Jonah Coleman: 5+ receptions,yes,receptions,Jonah Coleman,DEN,KXNFLREC-26NOV27DENPIT-DENJCOLEMAN20-5,0.315,0.32,0.0155,0.3355,0.3236,-1.19,-3.55,7,False,0.201,0.86,False,False
+DENPIT,No · Jonah Coleman: 5+ receptions,no,receptions,Jonah Coleman,DEN,KXNFLREC-26NOV27DENPIT-DENJCOLEMAN20-5,0.685,0.69,0.015,0.705,0.6764,-2.86,-4.06,7,False,0.201,-0.86,False,False
+DENPIT,Darnell Washington: 2+ receptions,yes,receptions,Darnell Washington,PIT,KXNFLREC-26NOV27DENPIT-PITDWASHINGTON80-2,0.565,0.57,0.0176,0.5876,0.558,-2.97,-5.05,7,False,0.0,-0.7,False,False
+DENPIT,No · Darnell Washington: 2+ receptions,no,receptions,Darnell Washington,PIT,KXNFLREC-26NOV27DENPIT-PITDWASHINGTON80-2,0.435,0.44,0.0173,0.4573,0.442,-1.52,-3.33,7,False,0.0,0.7,False,False
+DENPIT,Germie Bernard: 2+ receptions,yes,receptions,Germie Bernard,PIT,KXNFLREC-26NOV27DENPIT-PITGBERNARD17-2,0.785,0.81,0.0108,0.8208,0.7891,-3.18,-3.87,7,False,0.336,0.41,False,True
+DENPIT,No · Germie Bernard: 2+ receptions,no,receptions,Germie Bernard,PIT,KXNFLREC-26NOV27DENPIT-PITGBERNARD17-2,0.215,0.24,0.0129,0.2529,0.2109,-4.2,-16.61,7,False,0.336,-0.41,False,False
+DENPIT,Germie Bernard: 5+ receptions,yes,receptions,Germie Bernard,PIT,KXNFLREC-26NOV27DENPIT-PITGBERNARD17-5,0.215,0.22,0.0122,0.2322,0.3052,7.3,31.42,7,False,0.452,9.02,False,False
+DENPIT,No · Germie Bernard: 5+ receptions,no,receptions,Germie Bernard,PIT,KXNFLREC-26NOV27DENPIT-PITGBERNARD17-5,0.785,0.79,0.0117,0.8017,0.6948,-10.69,-13.33,7,False,0.452,-9.02,False,False
+DENPIT,Jaylen Warren: 2+ receptions,yes,receptions,Jaylen Warren,PIT,KXNFLREC-26NOV27DENPIT-PITJWARREN30-2,0.73,0.74,0.0138,0.7538,0.6762,-7.76,-10.3,7,False,0.336,-5.38,False,False
+DENPIT,No · Jaylen Warren: 2+ receptions,no,receptions,Jaylen Warren,PIT,KXNFLREC-26NOV27DENPIT-PITJWARREN30-2,0.27,0.28,0.0143,0.2943,0.3238,2.95,10.03,7,False,0.336,5.38,False,False
+DENPIT,Pat Bryant: 3+ receptions,yes,receptions,Pat Bryant,DEN,KXNFLREC-26NOV27DENPIT-DENPBRYANT13-3,0.46,0.47,0.0176,0.4876,0.4673,-2.03,-4.16,7,False,0.0,0.73,False,False
+DENPIT,No · Pat Bryant: 3+ receptions,no,receptions,Pat Bryant,DEN,KXNFLREC-26NOV27DENPIT-DENPBRYANT13-3,0.54,0.55,0.0178,0.5678,0.5327,-3.51,-6.19,7,False,0.0,-0.73,False,False
+DENPIT,Jonah Coleman: 6+ receptions,yes,receptions,Jonah Coleman,DEN,KXNFLREC-26NOV27DENPIT-DENJCOLEMAN20-6,0.16,0.18,0.0104,0.1904,0.213,2.27,11.91,7,False,0.368,5.3,False,False
+DENPIT,No · Jonah Coleman: 6+ receptions,no,receptions,Jonah Coleman,DEN,KXNFLREC-26NOV27DENPIT-DENJCOLEMAN20-6,0.84,0.86,0.0091,0.8691,0.787,-8.21,-9.45,7,False,0.368,-5.3,False,False
+DENPIT,Jaylen Waddle: 4+ receptions,yes,receptions,Jaylen Waddle,DEN,KXNFLREC-26NOV27DENPIT-DENJWADDLE17-4,0.535,0.54,0.0178,0.5578,0.5556,-0.22,-0.39,7,False,0.0,2.06,False,False
+DENPIT,No · Jaylen Waddle: 4+ receptions,no,receptions,Jaylen Waddle,DEN,KXNFLREC-26NOV27DENPIT-DENJWADDLE17-4,0.465,0.47,0.0176,0.4876,0.4444,-4.32,-8.86,7,False,0.0,-2.06,False,False
+DENPIT,Jaylen Waddle: 6+ receptions,yes,receptions,Jaylen Waddle,DEN,KXNFLREC-26NOV27DENPIT-DENJWADDLE17-6,0.205,0.22,0.0122,0.2322,0.2436,1.14,4.89,7,False,0.368,3.86,False,False
+DENPIT,No · Jaylen Waddle: 6+ receptions,no,receptions,Jaylen Waddle,DEN,KXNFLREC-26NOV27DENPIT-DENJWADDLE17-6,0.795,0.81,0.0108,0.8208,0.7564,-6.44,-7.85,7,False,0.368,-3.86,False,False
+DENPIT,Pat Freiermuth: 3+ receptions,yes,receptions,Pat Freiermuth,PIT,KXNFLREC-26NOV27DENPIT-PITPFREIERMUTH88-3,0.445,0.45,0.0177,0.4677,0.436,-3.18,-6.79,7,False,0.0,-0.9,False,False
+DENPIT,No · Pat Freiermuth: 3+ receptions,no,receptions,Pat Freiermuth,PIT,KXNFLREC-26NOV27DENPIT-PITPFREIERMUTH88-3,0.555,0.56,0.0176,0.5776,0.564,-1.36,-2.35,7,False,0.0,0.9,False,False
+DENPIT,Pat Freiermuth: 2+ receptions,yes,receptions,Pat Freiermuth,PIT,KXNFLREC-26NOV27DENPIT-PITPFREIERMUTH88-2,0.68,0.69,0.015,0.705,0.6273,-7.77,-11.02,7,False,0.336,-5.27,False,False
+DENPIT,No · Pat Freiermuth: 2+ receptions,no,receptions,Pat Freiermuth,PIT,KXNFLREC-26NOV27DENPIT-PITPFREIERMUTH88-2,0.32,0.33,0.0157,0.3457,0.3727,2.7,7.82,7,False,0.336,5.27,False,False
+DENPIT,Pat Freiermuth: 4+ receptions,yes,receptions,Pat Freiermuth,PIT,KXNFLREC-26NOV27DENPIT-PITPFREIERMUTH88-4,0.255,0.26,0.0137,0.2737,0.2484,-2.52,-9.22,7,False,0.251,-0.66,False,False
+DENPIT,No · Pat Freiermuth: 4+ receptions,no,receptions,Pat Freiermuth,PIT,KXNFLREC-26NOV27DENPIT-PITPFREIERMUTH88-4,0.745,0.75,0.0138,0.7638,0.7516,-1.23,-1.61,7,False,0.251,0.66,False,True
+DENPIT,Courtland Sutton: 2+ receptions,yes,receptions,Courtland Sutton,DEN,KXNFLREC-26NOV27DENPIT-DENCSUTTON14-2,0.76,0.77,0.0125,0.7825,0.7646,-1.79,-2.29,7,False,0.336,0.46,False,True
+DENPIT,No · Courtland Sutton: 2+ receptions,no,receptions,Courtland Sutton,DEN,KXNFLREC-26NOV27DENPIT-DENCSUTTON14-2,0.24,0.25,0.0133,0.2632,0.2354,-2.78,-10.57,7,False,0.336,-0.46,False,False
+DENPIT,Courtland Sutton: 5+ receptions,yes,receptions,Courtland Sutton,DEN,KXNFLREC-26NOV27DENPIT-DENCSUTTON14-5,0.18,0.19,0.011,0.201,0.28,7.91,39.34,7,False,0.452,10.0,False,False
+DENPIT,No · Courtland Sutton: 5+ receptions,no,receptions,Courtland Sutton,DEN,KXNFLREC-26NOV27DENPIT-DENCSUTTON14-5,0.82,0.83,0.01,0.84,0.72,-12.0,-14.29,7,False,0.452,-10.0,False,False
+DENPIT,Pat Freiermuth: 5+ receptions,yes,receptions,Pat Freiermuth,PIT,KXNFLREC-26NOV27DENPIT-PITPFREIERMUTH88-5,0.11,0.13,0.008,0.138,0.1285,-0.96,-6.93,7,False,0.452,1.85,False,False
+DENPIT,No · Pat Freiermuth: 5+ receptions,no,receptions,Pat Freiermuth,PIT,KXNFLREC-26NOV27DENPIT-PITPFREIERMUTH88-5,0.89,0.91,0.006,0.916,0.8715,-4.45,-4.85,7,False,0.452,-1.85,False,False
+DENPIT,Marvin Mims Jr.: 2+ receptions,yes,receptions,Marvin Mims Jr.,DEN,KXNFLREC-26NOV27DENPIT-DENMMIMS19-2,0.365,0.37,0.0167,0.3867,0.3578,-2.89,-7.47,7,False,0.0,-0.72,False,False
+DENPIT,No · Marvin Mims Jr.: 2+ receptions,no,receptions,Marvin Mims Jr.,DEN,KXNFLREC-26NOV27DENPIT-DENMMIMS19-2,0.635,0.64,0.0167,0.6567,0.6422,-1.44,-2.2,7,False,0.0,0.72,False,True
+DENPIT,Michael Pittman Jr.: 2+ receptions,yes,receptions,Michael Pittman Jr.,PIT,KXNFLREC-26NOV27DENPIT-PITMPITTMAN11-2,0.435,0.44,0.0173,0.4573,0.4255,-3.17,-6.94,6,False,0.0,-0.95,False,False
+DENPIT,No · Michael Pittman Jr.: 2+ receptions,no,receptions,Michael Pittman Jr.,PIT,KXNFLREC-26NOV27DENPIT-PITMPITTMAN11-2,0.565,0.57,0.0176,0.5876,0.5745,-1.32,-2.25,6,False,0.0,0.95,False,False
+DENPIT,Marvin Mims Jr.: 10+ receiving yards,yes,rec_yds,Marvin Mims Jr.,DEN,KXNFLRECYDS-26NOV27DENPIT-DENMMIMS19-10,0.475,0.48,0.0175,0.4975,0.4987,0.12,0.25,4,False,0.1,2.37,False,False
+DENPIT,No · Marvin Mims Jr.: 10+ receiving yards,no,rec_yds,Marvin Mims Jr.,DEN,KXNFLRECYDS-26NOV27DENPIT-DENMMIMS19-10,0.525,0.53,0.0178,0.5478,0.5013,-4.65,-8.49,4,False,0.1,-2.37,False,False
+DENPIT,Pat Bryant: 30+ receiving yards,yes,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-30,0.455,0.47,0.0176,0.4876,0.4696,-1.8,-3.69,8,False,0.068,1.46,False,False
+DENPIT,No · Pat Bryant: 30+ receiving yards,no,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-30,0.545,0.56,0.0176,0.5776,0.5304,-4.73,-8.18,8,False,0.068,-1.46,False,False
+DENPIT,Courtland Sutton: 40+ receiving yards,yes,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-40,0.31,0.32,0.0155,0.3355,0.3607,2.52,7.53,8,False,0.387,5.07,False,False
+DENPIT,No · Courtland Sutton: 40+ receiving yards,no,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-40,0.69,0.7,0.015,0.715,0.6393,-7.57,-10.59,8,False,0.387,-5.07,False,False
+DENPIT,Courtland Sutton: 10+ receiving yards,yes,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-10,0.795,0.8,0.0117,0.8117,0.7656,-4.6,-5.67,8,False,0.999,-2.94,False,False
+DENPIT,No · Courtland Sutton: 10+ receiving yards,no,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-10,0.205,0.21,0.0117,0.2217,0.2344,1.27,5.71,8,False,0.999,2.94,False,False
+DENPIT,Jaylen Warren: 20+ receiving yards,yes,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-20,0.465,0.47,0.0176,0.4876,0.4752,-1.24,-2.54,8,False,0.05,1.02,False,False
+DENPIT,No · Jaylen Warren: 20+ receiving yards,no,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-20,0.535,0.54,0.0178,0.5578,0.5248,-3.3,-5.91,8,False,0.05,-1.02,False,False
+DENPIT,Pat Bryant: 50+ receiving yards,yes,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-50,0.23,0.24,0.0129,0.2529,0.2608,0.79,3.12,8,False,0.572,3.08,False,False
+DENPIT,No · Pat Bryant: 50+ receiving yards,no,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-50,0.77,0.78,0.0125,0.7925,0.7392,-5.33,-6.73,8,False,0.572,-3.08,False,False
+DENPIT,Jaylen Waddle: 25+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-25,0.725,0.74,0.0138,0.7538,0.7229,-3.09,-4.1,8,False,0.534,-0.21,False,False
+DENPIT,No · Jaylen Waddle: 25+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-25,0.275,0.29,0.0147,0.3047,0.2771,-2.76,-9.07,8,False,0.534,0.21,False,False
+DENPIT,Evan Engram: 30+ receiving yards,yes,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-30,0.365,0.38,0.0165,0.3965,0.383,-1.35,-3.41,8,False,0.304,1.8,False,False
+DENPIT,No · Evan Engram: 30+ receiving yards,no,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-30,0.635,0.65,0.016,0.666,0.617,-4.9,-7.36,8,False,0.304,-1.8,False,False
+DENPIT,Jaylen Waddle: 70+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-70,0.22,0.23,0.0126,0.2426,0.2266,-1.6,-6.6,8,False,0.483,0.66,False,False
+DENPIT,No · Jaylen Waddle: 70+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-70,0.78,0.79,0.0117,0.8017,0.7734,-2.82,-3.52,8,False,0.483,-0.66,False,False
+DENPIT,Evan Engram: 10+ receiving yards,yes,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-10,0.75,0.77,0.0125,0.7825,0.7693,-1.32,-1.68,8,False,0.806,1.93,False,True
+DENPIT,No · Evan Engram: 10+ receiving yards,no,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-10,0.25,0.27,0.0141,0.2841,0.2307,-5.34,-18.8,8,False,0.806,-1.93,False,False
+DENPIT,Pat Bryant: 20+ receiving yards,yes,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-20,0.62,0.64,0.0167,0.6567,0.6031,-5.36,-8.16,8,False,0.329,-1.69,False,False
+DENPIT,No · Pat Bryant: 20+ receiving yards,no,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-20,0.38,0.4,0.0168,0.4168,0.3969,-1.99,-4.77,8,False,0.329,1.69,False,False
+DENPIT,Jonah Coleman: 50+ receiving yards,yes,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-50,0.14,0.15,0.0089,0.1589,0.1428,-1.61,-10.13,8,False,0.808,0.28,False,False
+DENPIT,No · Jonah Coleman: 50+ receiving yards,no,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-50,0.86,0.87,0.0082,0.8782,0.8572,-2.1,-2.39,8,False,0.808,-0.28,False,False
+DENPIT,Evan Engram: 40+ receiving yards,yes,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-40,0.235,0.24,0.0129,0.2529,0.2504,-0.26,-1.01,8,False,0.588,1.54,False,False
+DENPIT,No · Evan Engram: 40+ receiving yards,no,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-40,0.765,0.77,0.0125,0.7825,0.7496,-3.29,-4.2,8,False,0.588,-1.54,False,False
+DENPIT,Marvin Mims Jr.: 20+ receiving yards,yes,rec_yds,Marvin Mims Jr.,DEN,KXNFLRECYDS-26NOV27DENPIT-DENMMIMS19-20,0.275,0.28,0.0143,0.2943,0.3748,8.05,27.36,4,False,0.769,9.98,False,False
+DENPIT,No · Marvin Mims Jr.: 20+ receiving yards,no,rec_yds,Marvin Mims Jr.,DEN,KXNFLRECYDS-26NOV27DENPIT-DENMMIMS19-20,0.725,0.73,0.0138,0.7438,0.6252,-11.86,-15.95,4,False,0.769,-9.98,False,False
+DENPIT,Courtland Sutton: 20+ receiving yards,yes,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-20,0.62,0.64,0.0167,0.6567,0.6027,-5.4,-8.22,8,False,0.329,-1.73,False,False
+DENPIT,No · Courtland Sutton: 20+ receiving yards,no,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-20,0.38,0.4,0.0168,0.4168,0.3973,-1.95,-4.67,8,False,0.329,1.73,False,False
+DENPIT,Courtland Sutton: 30+ receiving yards,yes,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-30,0.455,0.46,0.0176,0.4776,0.4692,-0.85,-1.77,8,False,0.104,1.42,False,False
+DENPIT,No · Courtland Sutton: 30+ receiving yards,no,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-30,0.545,0.55,0.0178,0.5678,0.5308,-3.69,-6.51,8,False,0.104,-1.42,False,False
+DENPIT,Jaylen Waddle: 20+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-20,0.79,0.8,0.0117,0.8117,0.7875,-2.42,-2.98,8,False,0.752,-0.25,False,False
+DENPIT,No · Jaylen Waddle: 20+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-20,0.21,0.22,0.0122,0.2322,0.2125,-1.97,-8.49,8,False,0.752,0.25,False,False
+DENPIT,Jaylen Waddle: 40+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-40,0.525,0.53,0.0178,0.5478,0.5302,-1.75,-3.2,8,False,0.071,0.52,False,False
+DENPIT,No · Jaylen Waddle: 40+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-40,0.475,0.48,0.0175,0.4975,0.4698,-2.77,-5.58,8,False,0.071,-0.52,False,False
+DENPIT,Jaylen Waddle: 50+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-50,0.405,0.42,0.0174,0.4374,0.4081,-2.93,-6.7,8,False,0.149,0.31,False,False
+DENPIT,No · Jaylen Waddle: 50+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-50,0.595,0.61,0.0169,0.6269,0.5919,-3.5,-5.58,8,False,0.149,-0.31,False,False
+DENPIT,Jaylen Waddle: 80+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-80,0.16,0.17,0.01,0.18,0.1595,-2.05,-11.37,8,False,0.615,-0.05,False,False
+DENPIT,No · Jaylen Waddle: 80+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-80,0.84,0.85,0.0091,0.8591,0.8405,-1.86,-2.17,8,False,0.615,0.05,False,True
+DENPIT,Jaylen Waddle: 110+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-110,0.045,0.07,0.0046,0.0746,0.0483,-2.63,-35.22,2,False,0.932,0.33,False,False
+DENPIT,No · Jaylen Waddle: 110+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-110,0.955,0.98,0.002,0.982,0.9517,-3.03,-3.09,2,False,0.932,-0.33,False,False
+DENPIT,Jonah Coleman: 20+ receiving yards,yes,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-20,0.55,0.56,0.0176,0.5776,0.5501,-2.76,-4.77,8,False,0.093,0.01,False,False
+DENPIT,No · Jonah Coleman: 20+ receiving yards,no,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-20,0.45,0.46,0.0176,0.4776,0.4499,-2.77,-5.8,8,False,0.093,-0.01,False,False
+DENPIT,Rico Dowdle: 20+ receiving yards,yes,rec_yds,Rico Dowdle,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRDOWDLE13-20,0.225,0.23,0.0126,0.2426,0.309,6.65,27.4,2,False,0.769,8.4,False,False
+DENPIT,No · Rico Dowdle: 20+ receiving yards,no,rec_yds,Rico Dowdle,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRDOWDLE13-20,0.775,0.78,0.0125,0.7925,0.691,-10.15,-12.81,2,False,0.769,-8.4,False,False
+DENPIT,Rico Dowdle: 10+ receiving yards,yes,rec_yds,Rico Dowdle,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRDOWDLE13-10,0.455,0.46,0.0176,0.4776,0.4799,0.22,0.47,2,False,0.1,2.49,False,False
+DENPIT,No · Rico Dowdle: 10+ receiving yards,no,rec_yds,Rico Dowdle,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRDOWDLE13-10,0.545,0.55,0.0178,0.5678,0.5201,-4.76,-8.39,2,False,0.1,-2.49,False,False
+DENPIT,Rico Dowdle: 25+ receiving yards,yes,rec_yds,Rico Dowdle,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRDOWDLE13-25,0.155,0.16,0.0095,0.1695,0.2408,7.13,42.06,2,False,0.987,8.58,False,False
+DENPIT,No · Rico Dowdle: 25+ receiving yards,no,rec_yds,Rico Dowdle,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRDOWDLE13-25,0.845,0.85,0.0091,0.8591,0.7592,-9.99,-11.63,2,False,0.987,-8.58,False,False
+DENPIT,Jaylen Warren: 10+ receiving yards,yes,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-10,0.705,0.72,0.0146,0.7346,0.7157,-1.89,-2.58,8,False,0.619,1.07,False,True
+DENPIT,No · Jaylen Warren: 10+ receiving yards,no,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-10,0.295,0.31,0.015,0.325,0.2843,-4.07,-12.52,8,False,0.619,-1.07,False,False
+DENPIT,Jaylen Warren: 40+ receiving yards,yes,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-40,0.17,0.18,0.0104,0.1904,0.1629,-2.75,-14.42,8,False,0.731,-0.71,False,False
+DENPIT,No · Jaylen Warren: 40+ receiving yards,no,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-40,0.83,0.84,0.01,0.85,0.8371,-1.29,-1.52,8,False,0.731,0.71,False,True
+DENPIT,Jaylen Warren: 25+ receiving yards,yes,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-25,0.365,0.37,0.0167,0.3867,0.3802,-0.65,-1.69,8,False,0.268,1.52,False,False
+DENPIT,No · Jaylen Warren: 25+ receiving yards,no,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-25,0.635,0.64,0.0167,0.6567,0.6198,-3.68,-5.61,8,False,0.268,-1.52,False,False
+DENPIT,Pat Bryant: 10+ receiving yards,yes,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-10,0.775,0.79,0.0117,0.8017,0.7661,-3.56,-4.44,8,False,0.999,-0.89,False,False
+DENPIT,No · Pat Bryant: 10+ receiving yards,no,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-10,0.225,0.24,0.0129,0.2529,0.2339,-1.9,-7.52,8,False,0.999,0.89,False,False
+DENPIT,Pat Bryant: 15+ receiving yards,yes,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-15,0.7,0.72,0.0146,0.7346,0.6821,-5.25,-7.15,8,False,0.609,-1.79,False,False
+DENPIT,No · Pat Bryant: 15+ receiving yards,no,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-15,0.3,0.32,0.0155,0.3355,0.3179,-1.76,-5.24,8,False,0.609,1.79,False,False
+DENPIT,Pat Bryant: 25+ receiving yards,yes,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-25,0.53,0.54,0.0178,0.5578,0.5383,-1.95,-3.49,8,False,0.111,0.83,False,False
+DENPIT,No · Pat Bryant: 25+ receiving yards,no,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-25,0.47,0.48,0.0175,0.4975,0.4617,-3.58,-7.2,8,False,0.111,-0.83,False,False
+DENPIT,Pat Bryant: 40+ receiving yards,yes,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-40,0.335,0.34,0.0159,0.3559,0.361,0.52,1.45,8,False,0.351,2.6,False,False
+DENPIT,No · Pat Bryant: 40+ receiving yards,no,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-40,0.665,0.67,0.0157,0.6857,0.639,-4.67,-6.81,8,False,0.351,-2.6,False,False
+DENPIT,Jonah Coleman: 15+ receiving yards,yes,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-15,0.66,0.67,0.0157,0.6857,0.6495,-3.62,-5.28,8,False,0.373,-1.05,False,False
+DENPIT,No · Jonah Coleman: 15+ receiving yards,no,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-15,0.34,0.35,0.0161,0.3661,0.3505,-1.56,-4.25,8,False,0.373,1.05,False,False
+DENPIT,Evan Engram: 15+ receiving yards,yes,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-15,0.64,0.65,0.016,0.666,0.6651,-0.09,-0.13,8,False,0.416,2.51,False,True
+DENPIT,No · Evan Engram: 15+ receiving yards,no,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-15,0.36,0.37,0.0167,0.3867,0.3349,-5.18,-13.39,8,False,0.416,-2.51,False,False
+DENPIT,Evan Engram: 20+ receiving yards,yes,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-20,0.555,0.56,0.0176,0.5776,0.5619,-1.57,-2.72,8,False,0.137,0.69,False,False
+DENPIT,No · Evan Engram: 20+ receiving yards,no,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-20,0.445,0.45,0.0177,0.4677,0.4381,-2.97,-6.34,8,False,0.137,-0.69,False,False
+DENPIT,Evan Engram: 25+ receiving yards,yes,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-25,0.455,0.47,0.0176,0.4876,0.4605,-2.71,-5.57,8,False,0.125,0.55,False,False
+DENPIT,No · Evan Engram: 25+ receiving yards,no,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-25,0.545,0.56,0.0176,0.5776,0.5395,-3.81,-6.6,8,False,0.125,-0.55,False,False
+DENPIT,Evan Engram: 50+ receiving yards,yes,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-50,0.15,0.16,0.0095,0.1695,0.1624,-0.71,-4.2,8,False,0.808,1.24,False,False
+DENPIT,No · Evan Engram: 50+ receiving yards,no,rec_yds,Evan Engram,DEN,KXNFLRECYDS-26NOV27DENPIT-DENEENGRAM1-50,0.85,0.86,0.0091,0.8691,0.8376,-3.15,-3.62,8,False,0.808,-1.24,False,False
+DENPIT,Marvin Mims Jr.: 15+ receiving yards,yes,rec_yds,Marvin Mims Jr.,DEN,KXNFLRECYDS-26NOV27DENPIT-DENMMIMS19-15,0.35,0.36,0.0163,0.3763,0.4356,5.93,15.75,4,False,0.49,8.56,False,False
+DENPIT,No · Marvin Mims Jr.: 15+ receiving yards,no,rec_yds,Marvin Mims Jr.,DEN,KXNFLRECYDS-26NOV27DENPIT-DENMMIMS19-15,0.65,0.66,0.016,0.676,0.5644,-11.16,-16.5,4,False,0.49,-8.56,False,False
+DENPIT,Marvin Mims Jr.: 25+ receiving yards,yes,rec_yds,Marvin Mims Jr.,DEN,KXNFLRECYDS-26NOV27DENPIT-DENMMIMS19-25,0.215,0.22,0.0122,0.2322,0.3209,8.86,38.17,4,False,0.987,10.59,False,False
+DENPIT,No · Marvin Mims Jr.: 25+ receiving yards,no,rec_yds,Marvin Mims Jr.,DEN,KXNFLRECYDS-26NOV27DENPIT-DENMMIMS19-25,0.785,0.79,0.0117,0.8017,0.6791,-12.25,-15.28,4,False,0.987,-10.59,False,False
+DENPIT,Courtland Sutton: 15+ receiving yards,yes,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-15,0.715,0.73,0.0138,0.7438,0.682,-6.18,-8.31,8,False,0.609,-3.3,False,False
+DENPIT,No · Courtland Sutton: 15+ receiving yards,no,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-15,0.285,0.3,0.0148,0.3148,0.318,0.31,0.99,8,False,0.609,3.3,False,False
+DENPIT,Courtland Sutton: 60+ receiving yards,yes,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-60,0.14,0.15,0.0089,0.1589,0.1913,3.24,20.36,8,False,0.788,5.13,False,False
+DENPIT,No · Courtland Sutton: 60+ receiving yards,no,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-60,0.86,0.87,0.0082,0.8782,0.8087,-6.95,-7.91,8,False,0.788,-5.13,False,False
+DENPIT,Jaylen Waddle: 60+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-60,0.3,0.32,0.0155,0.3355,0.3088,-2.67,-7.95,8,False,0.33,0.88,False,False
+DENPIT,No · Jaylen Waddle: 60+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-60,0.7,0.72,0.0146,0.7346,0.6912,-4.34,-5.91,8,False,0.33,-0.88,False,False
+DENPIT,Jaylen Waddle: 30+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-30,0.665,0.68,0.0157,0.6957,0.6618,-3.39,-4.88,8,False,0.355,-0.32,False,False
+DENPIT,No · Jaylen Waddle: 30+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-30,0.335,0.35,0.0161,0.3661,0.3382,-2.78,-7.61,8,False,0.355,0.32,False,False
+DENPIT,Jaylen Waddle: 100+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-100,0.065,0.09,0.0058,0.0958,0.072,-2.38,-24.82,8,False,0.837,0.7,False,False
+DENPIT,No · Jaylen Waddle: 100+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-100,0.935,0.96,0.003,0.963,0.928,-3.5,-3.63,8,False,0.837,-0.7,False,False
+DENPIT,Jaylen Waddle: 15+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-15,0.85,0.86,0.0091,0.8691,0.8405,-2.86,-3.29,8,False,1.032,-0.95,False,False
+DENPIT,No · Jaylen Waddle: 15+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-15,0.15,0.16,0.0095,0.1695,0.1595,-1.0,-5.9,8,False,1.032,0.95,False,False
+DENPIT,Jaylen Warren: 30+ receiving yards,yes,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-30,0.285,0.29,0.0147,0.3047,0.2893,-1.54,-5.05,8,False,0.447,0.43,False,False
+DENPIT,No · Jaylen Warren: 30+ receiving yards,no,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-30,0.715,0.72,0.0146,0.7346,0.7107,-2.39,-3.26,8,False,0.447,-0.43,False,False
+DENPIT,Courtland Sutton: 25+ receiving yards,yes,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-25,0.555,0.56,0.0176,0.5776,0.538,-3.97,-6.87,8,False,0.111,-1.7,False,False
+DENPIT,No · Courtland Sutton: 25+ receiving yards,no,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-25,0.445,0.45,0.0177,0.4677,0.462,-0.57,-1.21,8,False,0.111,1.7,False,False
+DENPIT,Germie Bernard: 50+ receiving yards,yes,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-50,0.15,0.16,0.0095,0.1695,0.1907,2.12,12.52,8,False,0.765,4.07,False,False
+DENPIT,No · Germie Bernard: 50+ receiving yards,no,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-50,0.85,0.86,0.0091,0.8691,0.8093,-5.98,-6.88,8,False,0.765,-4.07,False,False
+DENPIT,Darnell Washington: 20+ receiving yards,yes,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-20,0.435,0.45,0.0177,0.4677,0.4306,-3.72,-7.95,8,False,0.217,-0.44,False,False
+DENPIT,No · Darnell Washington: 20+ receiving yards,no,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-20,0.565,0.58,0.0171,0.5971,0.5694,-2.76,-4.63,8,False,0.217,0.44,False,False
+DENPIT,Darnell Washington: 25+ receiving yards,yes,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-25,0.345,0.35,0.0161,0.3661,0.3347,-3.14,-8.56,8,False,0.435,-1.03,False,False
+DENPIT,No · Darnell Washington: 25+ receiving yards,no,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-25,0.655,0.66,0.016,0.676,0.6653,-1.07,-1.59,8,False,0.435,1.03,False,True
+DENPIT,Darnell Washington: 30+ receiving yards,yes,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-30,0.27,0.28,0.0143,0.2943,0.2454,-4.89,-16.62,8,False,0.614,-2.46,False,False
+DENPIT,No · Darnell Washington: 30+ receiving yards,no,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-30,0.73,0.74,0.0138,0.7538,0.7546,0.08,0.11,8,False,0.614,2.46,False,True
+DENPIT,Darnell Washington: 40+ receiving yards,yes,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-40,0.17,0.18,0.0104,0.1904,0.1509,-3.95,-20.72,3,False,0.898,-1.91,False,False
+DENPIT,No · Darnell Washington: 40+ receiving yards,no,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-40,0.83,0.84,0.01,0.85,0.8491,-0.09,-0.11,3,False,0.898,1.91,False,True
+DENPIT,Roman Wilson: 30+ receiving yards,yes,rec_yds,Roman Wilson,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRWILSON14-30,0.225,0.23,0.0126,0.2426,0.3455,10.29,42.42,5,False,0.815,12.05,False,False
+DENPIT,No · Roman Wilson: 30+ receiving yards,no,rec_yds,Roman Wilson,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRWILSON14-30,0.775,0.78,0.0125,0.7925,0.6545,-13.8,-17.41,5,False,0.815,-12.05,False,False
+DENPIT,Michael Pittman Jr.: 10+ receiving yards,yes,rec_yds,Michael Pittman Jr.,PIT,KXNFLRECYDS-26NOV27DENPIT-PITMPITTMAN11-10,0.525,0.53,0.0178,0.5478,0.525,-2.28,-4.17,8,False,0.091,-0.0,False,False
+DENPIT,No · Michael Pittman Jr.: 10+ receiving yards,no,rec_yds,Michael Pittman Jr.,PIT,KXNFLRECYDS-26NOV27DENPIT-PITMPITTMAN11-10,0.475,0.48,0.0175,0.4975,0.475,-2.25,-4.51,8,False,0.091,0.0,False,False
+DENPIT,Michael Pittman Jr.: 20+ receiving yards,yes,rec_yds,Michael Pittman Jr.,PIT,KXNFLRECYDS-26NOV27DENPIT-PITMPITTMAN11-20,0.3,0.31,0.015,0.325,0.4285,10.35,31.83,8,False,0.578,12.85,False,False
+DENPIT,No · Michael Pittman Jr.: 20+ receiving yards,no,rec_yds,Michael Pittman Jr.,PIT,KXNFLRECYDS-26NOV27DENPIT-PITMPITTMAN11-20,0.7,0.71,0.015,0.725,0.5715,-15.35,-21.17,8,False,0.578,-12.85,False,False
+DENPIT,Jaylen Waddle: 90+ receiving yards,yes,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-90,0.1,0.12,0.0075,0.1275,0.1081,-1.94,-15.2,8,False,0.733,0.81,False,False
+DENPIT,No · Jaylen Waddle: 90+ receiving yards,no,rec_yds,Jaylen Waddle,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJWADDLE17-90,0.9,0.92,0.006,0.926,0.8919,-3.41,-3.68,8,False,0.733,-0.81,False,False
+DENPIT,Jonah Coleman: 25+ receiving yards,yes,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-25,0.44,0.45,0.0177,0.4677,0.4555,-1.23,-2.62,8,False,0.125,1.55,False,False
+DENPIT,No · Jonah Coleman: 25+ receiving yards,no,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-25,0.56,0.57,0.0176,0.5876,0.5445,-4.31,-7.34,8,False,0.125,-1.55,False,False
+DENPIT,Jonah Coleman: 30+ receiving yards,yes,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-30,0.355,0.36,0.0163,0.3763,0.3741,-0.22,-0.58,8,False,0.304,1.91,False,False
+DENPIT,No · Jonah Coleman: 30+ receiving yards,no,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-30,0.645,0.65,0.016,0.666,0.6259,-4.01,-6.03,8,False,0.304,-1.91,False,False
+DENPIT,Jonah Coleman: 40+ receiving yards,yes,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-40,0.23,0.24,0.0129,0.2529,0.2331,-1.98,-7.85,8,False,0.588,0.31,False,False
+DENPIT,No · Jonah Coleman: 40+ receiving yards,no,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-40,0.77,0.78,0.0125,0.7925,0.7669,-2.56,-3.23,8,False,0.588,-0.31,False,False
+DENPIT,Jonah Coleman: 10+ receiving yards,yes,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-10,0.765,0.77,0.0125,0.7825,0.7492,-3.33,-4.25,8,False,0.762,-1.58,False,False
+DENPIT,No · Jonah Coleman: 10+ receiving yards,no,rec_yds,Jonah Coleman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENJCOLEMAN20-10,0.235,0.24,0.0129,0.2529,0.2508,-0.21,-0.85,8,False,0.762,1.58,False,False
+DENPIT,Michael Pittman Jr.: 25+ receiving yards,yes,rec_yds,Michael Pittman Jr.,PIT,KXNFLRECYDS-26NOV27DENPIT-PITMPITTMAN11-25,0.23,0.24,0.0129,0.2529,0.3842,13.12,51.89,8,False,0.796,15.42,False,False
+DENPIT,No · Michael Pittman Jr.: 25+ receiving yards,no,rec_yds,Michael Pittman Jr.,PIT,KXNFLRECYDS-26NOV27DENPIT-PITMPITTMAN11-25,0.77,0.78,0.0125,0.7925,0.6158,-17.67,-22.29,8,False,0.796,-15.42,False,False
+DENPIT,Darnell Washington: 10+ receiving yards,yes,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-10,0.655,0.67,0.0157,0.6857,0.6974,1.16,1.7,8,False,0.452,4.24,False,True
+DENPIT,No · Darnell Washington: 10+ receiving yards,no,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-10,0.345,0.36,0.0163,0.3763,0.3026,-7.36,-19.57,8,False,0.452,-4.24,False,False
+DENPIT,Darnell Washington: 15+ receiving yards,yes,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-15,0.535,0.55,0.0178,0.5678,0.5573,-1.05,-1.85,8,False,0.063,2.23,False,False
+DENPIT,No · Darnell Washington: 15+ receiving yards,no,rec_yds,Darnell Washington,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDWASHINGTON80-15,0.465,0.48,0.0175,0.4975,0.4427,-5.48,-11.01,8,False,0.063,-2.23,False,False
+DENPIT,Jaylen Warren: 15+ receiving yards,yes,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-15,0.585,0.59,0.0175,0.6075,0.6022,-0.53,-0.87,8,False,0.23,1.72,False,False
+DENPIT,No · Jaylen Warren: 15+ receiving yards,no,rec_yds,Jaylen Warren,PIT,KXNFLRECYDS-26NOV27DENPIT-PITJWARREN30-15,0.415,0.42,0.0174,0.4374,0.3978,-3.96,-9.05,8,False,0.23,-1.72,False,False
+DENPIT,Germie Bernard: 10+ receiving yards,yes,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-10,0.755,0.77,0.0125,0.7825,0.7347,-4.78,-6.11,8,False,0.806,-2.03,False,False
+DENPIT,No · Germie Bernard: 10+ receiving yards,no,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-10,0.245,0.26,0.0137,0.2737,0.2653,-0.84,-3.05,8,False,0.806,2.03,False,False
+DENPIT,Germie Bernard: 15+ receiving yards,yes,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-15,0.66,0.67,0.0157,0.6857,0.6325,-5.33,-7.77,8,False,0.416,-2.75,False,False
+DENPIT,No · Germie Bernard: 15+ receiving yards,no,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-15,0.34,0.35,0.0161,0.3661,0.3675,0.15,0.4,8,False,0.416,2.75,False,False
+DENPIT,Germie Bernard: 20+ receiving yards,yes,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-20,0.565,0.58,0.0171,0.5971,0.5521,-4.5,-7.54,8,False,0.137,-1.29,False,False
+DENPIT,No · Germie Bernard: 20+ receiving yards,no,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-20,0.435,0.45,0.0177,0.4677,0.4479,-1.98,-4.23,8,False,0.137,1.29,False,False
+DENPIT,Germie Bernard: 25+ receiving yards,yes,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-25,0.47,0.48,0.0175,0.4975,0.4702,-2.73,-5.48,8,False,0.082,0.02,False,False
+DENPIT,No · Germie Bernard: 25+ receiving yards,no,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-25,0.53,0.54,0.0178,0.5578,0.5298,-2.8,-5.02,8,False,0.082,-0.02,False,False
+DENPIT,Germie Bernard: 30+ receiving yards,yes,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-30,0.38,0.39,0.0168,0.4068,0.4058,-0.1,-0.24,8,False,0.261,2.58,False,False
+DENPIT,No · Germie Bernard: 30+ receiving yards,no,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-30,0.62,0.63,0.0167,0.6467,0.5942,-5.25,-8.12,8,False,0.261,-2.58,False,False
+DENPIT,Germie Bernard: 40+ receiving yards,yes,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-40,0.245,0.25,0.0133,0.2632,0.2788,1.55,5.89,8,False,0.544,3.38,False,False
+DENPIT,No · Germie Bernard: 40+ receiving yards,no,rec_yds,Germie Bernard,PIT,KXNFLRECYDS-26NOV27DENPIT-PITGBERNARD17-40,0.755,0.76,0.0131,0.7731,0.7212,-5.18,-6.71,8,False,0.544,-3.38,False,False
+DENPIT,Pat Freiermuth: 10+ receiving yards,yes,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-10,0.735,0.76,0.0131,0.7731,0.7525,-2.06,-2.66,8,False,0.762,1.75,False,True
+DENPIT,No · Pat Freiermuth: 10+ receiving yards,no,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-10,0.265,0.29,0.0147,0.3047,0.2475,-5.72,-18.77,8,False,0.762,-1.75,False,False
+DENPIT,Pat Freiermuth: 15+ receiving yards,yes,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-15,0.625,0.64,0.0167,0.6567,0.6504,-0.63,-0.96,8,False,0.373,2.54,False,True
+DENPIT,No · Pat Freiermuth: 15+ receiving yards,no,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-15,0.375,0.39,0.0168,0.4068,0.3496,-5.72,-14.06,8,False,0.373,-2.54,False,False
+DENPIT,Pat Freiermuth: 25+ receiving yards,yes,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-25,0.44,0.45,0.0177,0.4677,0.4345,-3.33,-7.11,8,False,0.171,-0.55,False,False
+DENPIT,No · Pat Freiermuth: 25+ receiving yards,no,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-25,0.56,0.57,0.0176,0.5876,0.5655,-2.21,-3.76,8,False,0.171,0.55,False,False
+DENPIT,Pat Freiermuth: 20+ receiving yards,yes,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-20,0.535,0.54,0.0178,0.5578,0.5331,-2.47,-4.43,8,False,0.093,-0.19,False,False
+DENPIT,No · Pat Freiermuth: 20+ receiving yards,no,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-20,0.465,0.47,0.0176,0.4876,0.4669,-2.07,-4.24,8,False,0.093,0.19,False,False
+DENPIT,Pat Freiermuth: 50+ receiving yards,yes,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-50,0.135,0.14,0.0085,0.1485,0.1393,-0.91,-6.15,7,False,0.854,0.43,False,False
+DENPIT,No · Pat Freiermuth: 50+ receiving yards,no,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-50,0.865,0.87,0.0082,0.8782,0.8607,-1.75,-1.99,7,False,0.854,-0.43,False,False
+DENPIT,Pat Freiermuth: 30+ receiving yards,yes,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-30,0.345,0.35,0.0161,0.3661,0.3576,-0.85,-2.31,8,False,0.35,1.26,False,False
+DENPIT,No · Pat Freiermuth: 30+ receiving yards,no,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-30,0.655,0.66,0.016,0.676,0.6424,-3.36,-4.97,8,False,0.35,-1.26,False,False
+DENPIT,Pat Freiermuth: 40+ receiving yards,yes,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-40,0.215,0.22,0.0122,0.2322,0.2262,-0.6,-2.58,8,False,0.633,1.12,False,False
+DENPIT,No · Pat Freiermuth: 40+ receiving yards,no,rec_yds,Pat Freiermuth,PIT,KXNFLRECYDS-26NOV27DENPIT-PITPFREIERMUTH88-40,0.785,0.79,0.0117,0.8017,0.7738,-2.79,-3.48,8,False,0.633,-1.12,False,False
+DENPIT,DK Metcalf: 10+ receiving yards,yes,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-10,0.79,0.8,0.0117,0.8117,0.7664,-4.53,-5.58,8,False,1.033,-2.36,False,False
+DENPIT,No · DK Metcalf: 10+ receiving yards,no,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-10,0.21,0.22,0.0122,0.2322,0.2336,0.14,0.6,8,False,1.033,2.36,False,False
+DENPIT,DK Metcalf: 20+ receiving yards,yes,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-20,0.625,0.64,0.0167,0.6567,0.6036,-5.31,-8.08,8,False,0.364,-2.14,False,False
+DENPIT,No · DK Metcalf: 20+ receiving yards,no,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-20,0.375,0.39,0.0168,0.4068,0.3964,-1.04,-2.55,8,False,0.364,2.14,False,False
+DENPIT,DK Metcalf: 15+ receiving yards,yes,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-15,0.71,0.72,0.0146,0.7346,0.6828,-5.18,-7.05,8,False,0.644,-2.72,False,False
+DENPIT,No · DK Metcalf: 15+ receiving yards,no,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-15,0.29,0.3,0.0148,0.3148,0.3172,0.23,0.73,8,False,0.644,2.72,False,False
+DENPIT,DK Metcalf: 50+ receiving yards,yes,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-50,0.225,0.23,0.0126,0.2426,0.2621,1.96,8.07,8,False,0.572,3.71,False,False
+DENPIT,No · DK Metcalf: 50+ receiving yards,no,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-50,0.775,0.78,0.0125,0.7925,0.7379,-5.46,-6.89,8,False,0.572,-3.71,False,False
+DENPIT,DK Metcalf: 40+ receiving yards,yes,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-40,0.325,0.33,0.0157,0.3457,0.3623,1.67,4.83,8,False,0.351,3.73,False,False
+DENPIT,No · DK Metcalf: 40+ receiving yards,no,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-40,0.675,0.68,0.0157,0.6957,0.6377,-5.81,-8.35,8,False,0.351,-3.73,False,False
+DENPIT,DK Metcalf: 30+ receiving yards,yes,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-30,0.485,0.49,0.0175,0.5075,0.4704,-3.71,-7.31,8,False,0.068,-1.46,False,False
+DENPIT,No · DK Metcalf: 30+ receiving yards,no,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-30,0.515,0.52,0.0179,0.5379,0.5296,-0.83,-1.54,8,False,0.068,1.46,False,False
+DENPIT,DK Metcalf: 60+ receiving yards,yes,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-60,0.155,0.17,0.01,0.18,0.1935,1.35,7.49,8,False,0.753,3.85,False,False
+DENPIT,No · DK Metcalf: 60+ receiving yards,no,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-60,0.845,0.86,0.0091,0.8691,0.8065,-6.26,-7.2,8,False,0.753,-3.85,False,False
+DENPIT,DK Metcalf: 70+ receiving yards,yes,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-70,0.095,0.12,0.0075,0.1275,0.1272,-0.03,-0.22,4,False,0.906,3.22,False,False
+DENPIT,No · DK Metcalf: 70+ receiving yards,no,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-70,0.905,0.93,0.005,0.935,0.8728,-6.22,-6.65,4,False,0.906,-3.22,False,False
+DENPIT,Roman Wilson: 15+ receiving yards,yes,rec_yds,Roman Wilson,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRWILSON14-15,0.455,0.46,0.0176,0.4776,0.4757,-0.19,-0.4,7,False,0.138,2.07,False,False
+DENPIT,No · Roman Wilson: 15+ receiving yards,no,rec_yds,Roman Wilson,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRWILSON14-15,0.545,0.55,0.0178,0.5678,0.5243,-4.35,-7.66,7,False,0.138,-2.07,False,False
+DENPIT,Roman Wilson: 10+ receiving yards,yes,rec_yds,Roman Wilson,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRWILSON14-10,0.57,0.58,0.0171,0.5971,0.5256,-7.15,-11.97,7,False,0.251,-4.44,False,False
+DENPIT,No · Roman Wilson: 10+ receiving yards,no,rec_yds,Roman Wilson,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRWILSON14-10,0.43,0.44,0.0173,0.4573,0.4744,1.72,3.75,7,False,0.251,4.44,False,False
+DENPIT,Roman Wilson: 20+ receiving yards,yes,rec_yds,Roman Wilson,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRWILSON14-20,0.365,0.37,0.0167,0.3867,0.43,4.33,11.2,7,False,0.418,6.5,False,False
+DENPIT,No · Roman Wilson: 20+ receiving yards,no,rec_yds,Roman Wilson,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRWILSON14-20,0.635,0.64,0.0167,0.6567,0.57,-8.66,-13.19,7,False,0.418,-6.5,False,False
+DENPIT,Roman Wilson: 25+ receiving yards,yes,rec_yds,Roman Wilson,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRWILSON14-25,0.295,0.3,0.0148,0.3148,0.3818,6.69,21.26,7,False,0.636,8.68,False,False
+DENPIT,No · Roman Wilson: 25+ receiving yards,no,rec_yds,Roman Wilson,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRWILSON14-25,0.705,0.71,0.015,0.725,0.6182,-10.68,-14.73,7,False,0.636,-8.68,False,False
+DENPIT,Courtland Sutton: 50+ receiving yards,yes,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-50,0.21,0.22,0.0122,0.2322,0.2607,2.85,12.26,8,False,0.608,5.07,False,False
+DENPIT,No · Courtland Sutton: 50+ receiving yards,no,rec_yds,Courtland Sutton,DEN,KXNFLRECYDS-26NOV27DENPIT-DENCSUTTON14-50,0.79,0.8,0.0117,0.8117,0.7393,-7.24,-8.92,8,False,0.608,-5.07,False,False
+DENPIT,Pat Bryant: 60+ receiving yards,yes,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-60,0.16,0.17,0.01,0.18,0.1915,1.15,6.42,8,False,0.753,3.15,False,False
+DENPIT,No · Pat Bryant: 60+ receiving yards,no,rec_yds,Pat Bryant,DEN,KXNFLRECYDS-26NOV27DENPIT-DENPBRYANT13-60,0.84,0.85,0.0091,0.8591,0.8085,-5.06,-5.89,8,False,0.753,-3.15,False,False
+DENPIT,Michael Pittman Jr.: 15+ receiving yards,yes,rec_yds,Michael Pittman Jr.,PIT,KXNFLRECYDS-26NOV27DENPIT-PITMPITTMAN11-15,0.4,0.41,0.0171,0.4271,0.4765,4.94,11.56,8,False,0.298,7.65,False,False
+DENPIT,No · Michael Pittman Jr.: 15+ receiving yards,no,rec_yds,Michael Pittman Jr.,PIT,KXNFLRECYDS-26NOV27DENPIT-PITMPITTMAN11-15,0.6,0.61,0.0169,0.6269,0.5235,-10.33,-16.49,8,False,0.298,-7.65,False,False
+DENPIT,Rico Dowdle: 15+ receiving yards,yes,rec_yds,Rico Dowdle,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRDOWDLE13-15,0.315,0.32,0.0155,0.3355,0.3919,5.64,16.82,2,False,0.49,7.69,False,False
+DENPIT,No · Rico Dowdle: 15+ receiving yards,no,rec_yds,Rico Dowdle,PIT,KXNFLRECYDS-26NOV27DENPIT-PITRDOWDLE13-15,0.685,0.69,0.015,0.705,0.6081,-9.69,-13.75,2,False,0.49,-7.69,False,False
+DENPIT,DK Metcalf: 25+ receiving yards,yes,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-25,0.545,0.56,0.0176,0.5776,0.5386,-3.91,-6.76,8,False,0.146,-0.64,False,False
+DENPIT,No · DK Metcalf: 25+ receiving yards,no,rec_yds,DK Metcalf,PIT,KXNFLRECYDS-26NOV27DENPIT-PITDMETCALF4-25,0.455,0.47,0.0176,0.4876,0.4614,-2.62,-5.38,8,False,0.146,0.64,False,False
+DENPIT,Adam Trautman: 5+ receiving yards,yes,rec_yds,Adam Trautman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENATRAUTMAN82-5,0.49,0.5,0.0175,0.5175,0.4969,-2.06,-3.98,5,False,0.0,0.69,False,False
+DENPIT,No · Adam Trautman: 5+ receiving yards,no,rec_yds,Adam Trautman,DEN,KXNFLRECYDS-26NOV27DENPIT-DENATRAUTMAN82-5,0.51,0.52,0.0179,0.5379,0.5031,-3.48,-6.47,5,False,0.0,-0.69,False,False
+DENPIT,Rico Dowdle: 40+ rushing yards,yes,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-40,0.345,0.35,0.0161,0.3661,0.3696,0.36,0.97,8,False,0.22,2.46,False,False
+DENPIT,No · Rico Dowdle: 40+ rushing yards,no,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-40,0.655,0.66,0.016,0.676,0.6304,-4.56,-6.75,8,False,0.22,-2.46,False,False
+DENPIT,Jonah Coleman: 80+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-80,0.425,0.43,0.0174,0.4474,0.4383,-0.91,-2.03,8,False,0.051,1.33,False,False
+DENPIT,No · Jonah Coleman: 80+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-80,0.575,0.58,0.0171,0.5971,0.5617,-3.54,-5.92,8,False,0.051,-1.33,False,False
+DENPIT,Rico Dowdle: 15+ rushing yards,yes,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-15,0.795,0.8,0.0117,0.8117,0.7938,-1.79,-2.21,8,False,0.74,-0.12,False,False
+DENPIT,No · Rico Dowdle: 15+ rushing yards,no,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-15,0.205,0.21,0.0117,0.2217,0.2062,-1.55,-6.97,8,False,0.74,0.12,False,False
+DENPIT,Jaylen Warren: 80+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-80,0.295,0.31,0.015,0.325,0.3073,-1.77,-5.45,8,False,0.206,1.23,False,False
+DENPIT,No · Jaylen Warren: 80+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-80,0.705,0.72,0.0146,0.7346,0.6927,-4.19,-5.7,8,False,0.206,-1.23,False,False
+DENPIT,Jonah Coleman: 90+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-90,0.355,0.36,0.0163,0.3763,0.3561,-2.02,-5.36,8,False,0.168,0.11,False,False
+DENPIT,No · Jonah Coleman: 90+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-90,0.645,0.65,0.016,0.666,0.6439,-2.21,-3.32,8,False,0.168,-0.11,False,False
+DENPIT,Jaylen Warren: 90+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-90,0.22,0.24,0.0129,0.2529,0.2146,-3.83,-15.14,8,False,0.323,-0.54,False,False
+DENPIT,No · Jaylen Warren: 90+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-90,0.78,0.8,0.0117,0.8117,0.7854,-2.63,-3.24,8,False,0.323,0.54,False,True
+DENPIT,Rico Dowdle: 25+ rushing yards,yes,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-25,0.615,0.62,0.0169,0.6369,0.6155,-2.14,-3.35,8,False,0.243,0.05,False,True
+DENPIT,No · Rico Dowdle: 25+ rushing yards,no,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-25,0.385,0.39,0.0168,0.4068,0.3845,-2.23,-5.49,8,False,0.243,-0.05,False,False
+DENPIT,Jonah Coleman: 100+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-100,0.245,0.26,0.0137,0.2737,0.2578,-1.59,-5.81,8,False,0.273,1.28,False,False
+DENPIT,No · Jonah Coleman: 100+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-100,0.755,0.77,0.0125,0.7825,0.7422,-4.03,-5.15,8,False,0.273,-1.28,False,False
+DENPIT,Rico Dowdle: 30+ rushing yards,yes,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-30,0.515,0.53,0.0178,0.5478,0.5282,-1.96,-3.58,8,False,0.064,1.32,False,False
+DENPIT,No · Rico Dowdle: 30+ rushing yards,no,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-30,0.485,0.5,0.0175,0.5175,0.4718,-4.57,-8.83,8,False,0.064,-1.32,False,False
+DENPIT,Jaylen Warren: 110+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-110,0.11,0.13,0.008,0.138,0.1025,-3.55,-25.71,8,False,0.523,-0.75,False,False
+DENPIT,No · Jaylen Warren: 110+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-110,0.89,0.91,0.006,0.916,0.8975,-1.85,-2.02,8,False,0.523,0.75,False,True
+DENPIT,Jonah Coleman: 110+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-110,0.17,0.19,0.011,0.201,0.1778,-2.31,-11.51,8,False,0.368,0.78,False,False
+DENPIT,No · Jonah Coleman: 110+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-110,0.83,0.85,0.0091,0.8591,0.8222,-3.69,-4.3,8,False,0.368,-0.78,False,False
+DENPIT,Jaylen Warren: 120+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-120,0.08,0.1,0.0063,0.1063,0.0693,-3.7,-34.84,8,False,0.61,-1.07,False,False
+DENPIT,No · Jaylen Warren: 120+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-120,0.92,0.94,0.004,0.944,0.9307,-1.33,-1.41,8,False,0.61,1.07,False,True
+DENPIT,Rico Dowdle: 50+ rushing yards,yes,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-50,0.22,0.23,0.0126,0.2426,0.2518,0.93,3.83,8,False,0.441,3.18,False,False
+DENPIT,No · Rico Dowdle: 50+ rushing yards,no,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-50,0.78,0.79,0.0117,0.8017,0.7482,-5.35,-6.67,8,False,0.441,-3.18,False,False
+DENPIT,Bo Nix: 10+ rushing yards,yes,rush_yds,Bo Nix,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENBNIX10-10,0.515,0.52,0.0179,0.5379,0.5416,0.37,0.69,8,False,0.091,2.66,False,False
+DENPIT,No · Bo Nix: 10+ rushing yards,no,rush_yds,Bo Nix,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENBNIX10-10,0.485,0.49,0.0175,0.5075,0.4584,-4.91,-9.67,8,False,0.091,-2.66,False,False
+DENPIT,Rico Dowdle: 60+ rushing yards,yes,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-60,0.14,0.15,0.0089,0.1589,0.1541,-0.49,-3.08,8,False,0.621,1.41,False,False
+DENPIT,No · Rico Dowdle: 60+ rushing yards,no,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-60,0.86,0.87,0.0082,0.8782,0.8459,-3.22,-3.67,8,False,0.621,-1.41,False,False
+DENPIT,Bo Nix: 15+ rushing yards,yes,rush_yds,Bo Nix,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENBNIX10-15,0.395,0.4,0.0168,0.4168,0.3519,-6.49,-15.57,8,False,0.298,-4.31,False,False
+DENPIT,No · Bo Nix: 15+ rushing yards,no,rush_yds,Bo Nix,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENBNIX10-15,0.605,0.61,0.0169,0.6269,0.6481,2.12,3.39,8,False,0.298,4.31,True,True
+DENPIT,Jaylen Warren: 30+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-30,0.88,0.9,0.0064,0.9064,0.8539,-5.25,-5.79,8,False,0.764,-2.61,False,False
+DENPIT,No · Jaylen Warren: 30+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-30,0.12,0.14,0.0085,0.1485,0.1461,-0.23,-1.56,8,False,0.764,2.61,False,False
+DENPIT,Jonah Coleman: 40+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-40,0.87,0.88,0.0082,0.8882,0.887,-0.12,-0.14,8,False,0.636,1.7,False,True
+DENPIT,No · Jonah Coleman: 40+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-40,0.13,0.14,0.0085,0.1485,0.113,-3.54,-23.86,8,False,0.636,-1.7,False,False
+DENPIT,Bo Nix: 20+ rushing yards,yes,rush_yds,Bo Nix,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENBNIX10-20,0.27,0.28,0.0143,0.2943,0.2204,-7.39,-25.11,8,False,0.578,-4.96,False,False
+DENPIT,No · Bo Nix: 20+ rushing yards,no,rush_yds,Bo Nix,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENBNIX10-20,0.73,0.74,0.0138,0.7538,0.7796,2.57,3.42,8,False,0.578,4.96,False,True
+DENPIT,Rico Dowdle: 80+ rushing yards,yes,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-80,0.04,0.06,0.004,0.064,0.0657,0.18,2.76,3,False,0.907,2.57,False,False
+DENPIT,No · Rico Dowdle: 80+ rushing yards,no,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-80,0.96,0.98,0.002,0.982,0.9343,-4.77,-4.86,3,False,0.907,-2.57,False,False
+DENPIT,Jonah Coleman: 140+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-140,0.06,0.08,0.0052,0.0852,0.0511,-3.41,-40.06,8,False,0.608,-0.89,False,False
+DENPIT,No · Jonah Coleman: 140+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-140,0.94,0.96,0.003,0.963,0.9489,-1.41,-1.46,8,False,0.608,0.89,False,True
+DENPIT,Bo Nix: 25+ rushing yards,yes,rush_yds,Bo Nix,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENBNIX10-25,0.18,0.19,0.011,0.201,0.1269,-7.41,-36.87,8,False,0.796,-5.31,False,False
+DENPIT,No · Bo Nix: 25+ rushing yards,no,rush_yds,Bo Nix,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENBNIX10-25,0.82,0.83,0.01,0.84,0.8731,3.31,3.94,8,False,0.796,5.31,False,True
+DENPIT,Jonah Coleman: 60+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-60,0.665,0.67,0.0157,0.6857,0.6734,-1.23,-1.8,8,False,0.235,0.84,False,True
+DENPIT,No · Jonah Coleman: 60+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-60,0.335,0.34,0.0159,0.3559,0.3266,-2.92,-8.22,8,False,0.235,-0.84,False,False
+DENPIT,Jaylen Warren: 50+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-50,0.645,0.65,0.016,0.666,0.6343,-3.17,-4.77,8,False,0.26,-1.07,False,False
+DENPIT,No · Jaylen Warren: 50+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-50,0.355,0.36,0.0163,0.3763,0.3657,-1.06,-2.81,8,False,0.26,1.07,False,False
+DENPIT,Jonah Coleman: 150+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-150,0.035,0.05,0.0034,0.0534,0.0358,-1.76,-32.91,8,False,0.677,0.08,False,False
+DENPIT,No · Jonah Coleman: 150+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-150,0.965,0.98,0.002,0.982,0.9642,-1.78,-1.81,8,False,0.677,-0.08,False,False
+DENPIT,Jonah Coleman: 70+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-70,0.54,0.55,0.0178,0.5678,0.5622,-0.56,-0.99,8,False,0.082,2.22,False,False
+DENPIT,No · Jonah Coleman: 70+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-70,0.46,0.47,0.0176,0.4876,0.4378,-4.98,-10.21,8,False,0.082,-2.22,False,False
+DENPIT,Jaylen Warren: 60+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-60,0.55,0.57,0.0176,0.5876,0.5319,-5.58,-9.49,8,False,0.079,-1.81,False,False
+DENPIT,No · Jaylen Warren: 60+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-60,0.45,0.47,0.0176,0.4876,0.4681,-1.95,-4.0,8,False,0.079,1.81,False,False
+DENPIT,Rico Dowdle: 20+ rushing yards,yes,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-20,0.71,0.72,0.0146,0.7346,0.7102,-2.44,-3.32,8,False,0.461,0.02,False,True
+DENPIT,No · Rico Dowdle: 20+ rushing yards,no,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-20,0.29,0.3,0.0148,0.3148,0.2898,-2.51,-7.97,8,False,0.461,-0.02,False,False
+DENPIT,Rico Dowdle: 70+ rushing yards,yes,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-70,0.075,0.1,0.0063,0.1063,0.1007,-0.56,-5.29,8,False,0.774,2.57,False,False
+DENPIT,No · Rico Dowdle: 70+ rushing yards,no,rush_yds,Rico Dowdle,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITRDOWDLE13-70,0.925,0.95,0.004,0.954,0.8993,-5.47,-5.73,8,False,0.774,-2.57,False,False
+DENPIT,Jaylen Warren: 40+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-40,0.78,0.8,0.0117,0.8117,0.7403,-7.14,-8.79,8,False,0.481,-3.97,False,False
+DENPIT,No · Jaylen Warren: 40+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-40,0.22,0.24,0.0129,0.2529,0.2597,0.68,2.67,8,False,0.481,3.97,False,False
+DENPIT,Jaylen Warren: 70+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-70,0.42,0.43,0.0174,0.4474,0.4084,-3.9,-8.72,8,False,0.074,-1.16,False,False
+DENPIT,No · Jaylen Warren: 70+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-70,0.58,0.59,0.0175,0.6075,0.5916,-1.59,-2.61,8,False,0.074,1.16,False,False
+DENPIT,Jaylen Warren: 100+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-100,0.16,0.18,0.0104,0.1904,0.149,-4.14,-21.72,8,False,0.428,-1.1,False,False
+DENPIT,No · Jaylen Warren: 100+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-100,0.84,0.86,0.0091,0.8691,0.851,-1.81,-2.08,8,False,0.428,1.1,False,True
+DENPIT,Jonah Coleman: 50+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-50,0.775,0.79,0.0117,0.8017,0.7954,-0.63,-0.78,8,False,0.415,2.04,False,True
+DENPIT,No · Jonah Coleman: 50+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-50,0.225,0.24,0.0129,0.2529,0.2046,-4.83,-19.1,8,False,0.415,-2.04,False,False
+DENPIT,Jaylen Warren: 130+ rushing yards,yes,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-130,0.055,0.07,0.0046,0.0746,0.0423,-3.23,-43.25,8,False,0.689,-1.27,False,False
+DENPIT,No · Jaylen Warren: 130+ rushing yards,no,rush_yds,Jaylen Warren,PIT,KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-130,0.945,0.96,0.003,0.963,0.9577,-0.53,-0.55,8,False,0.689,1.27,False,True
+DENPIT,Jonah Coleman: 130+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-130,0.085,0.1,0.0063,0.1063,0.078,-2.83,-26.63,8,False,0.534,-0.7,False,False
+DENPIT,No · Jonah Coleman: 130+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-130,0.915,0.93,0.005,0.935,0.922,-1.3,-1.39,8,False,0.534,0.7,False,True
+DENPIT,Jonah Coleman: 120+ rushing yards,yes,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-120,0.105,0.12,0.0075,0.1275,0.1208,-0.67,-5.23,8,False,0.454,1.58,False,False
+DENPIT,No · Jonah Coleman: 120+ rushing yards,no,rush_yds,Jonah Coleman,DEN,KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-120,0.895,0.91,0.006,0.916,0.8792,-3.68,-4.02,8,False,0.454,-1.58,False,False
+DENPIT,Bo Nix: 150+ passing yards,yes,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-150,0.805,0.81,0.0108,0.8208,0.7594,-6.14,-7.48,8,False,0.307,-4.56,False,False
+DENPIT,No · Bo Nix: 150+ passing yards,no,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-150,0.195,0.2,0.0112,0.2112,0.2406,2.94,13.92,8,False,0.307,4.56,False,False
+DENPIT,Bo Nix: 250+ passing yards,yes,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-250,0.245,0.26,0.0137,0.2737,0.2173,-5.64,-20.62,8,False,0.203,-2.77,False,False
+DENPIT,No · Bo Nix: 250+ passing yards,no,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-250,0.755,0.77,0.0125,0.7825,0.7827,0.02,0.03,8,False,0.203,2.77,False,True
+DENPIT,Bo Nix: 175+ passing yards,yes,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-175,0.685,0.69,0.015,0.705,0.6469,-5.81,-8.24,8,False,0.153,-3.81,False,False
+DENPIT,No · Bo Nix: 175+ passing yards,no,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-175,0.315,0.32,0.0155,0.3355,0.3531,1.76,5.25,8,False,0.153,3.81,False,False
+DENPIT,Bo Nix: 200+ passing yards,yes,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-200,0.535,0.54,0.0178,0.5578,0.51,-4.78,-8.57,8,False,0.02,-2.5,False,False
+DENPIT,No · Bo Nix: 200+ passing yards,no,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-200,0.465,0.47,0.0176,0.4876,0.49,0.24,0.49,8,False,0.02,2.5,False,False
+DENPIT,Bo Nix: 225+ passing yards,yes,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-225,0.375,0.38,0.0165,0.3965,0.3626,-3.39,-8.56,8,False,0.098,-1.24,False,False
+DENPIT,No · Bo Nix: 225+ passing yards,no,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-225,0.625,0.63,0.0167,0.6467,0.6374,-0.93,-1.43,8,False,0.098,1.24,False,True
+DENPIT,Bo Nix: 275+ passing yards,yes,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-275,0.155,0.16,0.0095,0.1695,0.127,-4.25,-25.08,6,False,0.298,-2.8,False,False
+DENPIT,No · Bo Nix: 275+ passing yards,no,pass_yds,Bo Nix,DEN,KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-275,0.845,0.85,0.0091,0.8591,0.873,1.39,1.62,6,False,0.298,2.8,False,True
+DENPIT,Mason Rudolph: 175+ passing yards,yes,pass_yds,Mason Rudolph,PIT,KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-175,0.475,0.48,0.0175,0.4975,0.4957,-0.18,-0.36,8,False,0.006,2.07,False,False
+DENPIT,No · Mason Rudolph: 175+ passing yards,no,pass_yds,Mason Rudolph,PIT,KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-175,0.525,0.53,0.0178,0.5478,0.5043,-4.35,-7.94,8,False,0.006,-2.07,False,False
+DENPIT,Mason Rudolph: 200+ passing yards,yes,pass_yds,Mason Rudolph,PIT,KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-200,0.335,0.34,0.0159,0.3559,0.3911,3.53,9.91,8,False,0.133,5.61,False,False
+DENPIT,No · Mason Rudolph: 200+ passing yards,no,pass_yds,Mason Rudolph,PIT,KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-200,0.665,0.67,0.0157,0.6857,0.6089,-7.69,-11.21,8,False,0.133,-5.61,False,False
+DENPIT,Mason Rudolph: 225+ passing yards,yes,pass_yds,Mason Rudolph,PIT,KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-225,0.215,0.22,0.0122,0.2322,0.301,6.88,29.62,8,False,0.251,8.6,False,False
+DENPIT,No · Mason Rudolph: 225+ passing yards,no,pass_yds,Mason Rudolph,PIT,KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-225,0.785,0.79,0.0117,0.8017,0.699,-10.27,-12.81,8,False,0.251,-8.6,False,False
+DENPIT,Mason Rudolph: 125+ passing yards,yes,pass_yds,Mason Rudolph,PIT,KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-125,0.775,0.78,0.0125,0.7925,0.6516,-14.09,-17.78,7,False,0.335,-12.34,False,False
+DENPIT,No · Mason Rudolph: 125+ passing yards,no,pass_yds,Mason Rudolph,PIT,KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-125,0.225,0.23,0.0126,0.2426,0.3484,10.58,43.63,7,False,0.335,12.34,False,False
+DENPIT,Mason Rudolph: 150+ passing yards,yes,pass_yds,Mason Rudolph,PIT,KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-150,0.635,0.64,0.0167,0.6567,0.576,-8.07,-12.29,8,False,0.154,-5.9,False,False
+DENPIT,No · Mason Rudolph: 150+ passing yards,no,pass_yds,Mason Rudolph,PIT,KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-150,0.365,0.37,0.0167,0.3867,0.424,3.74,9.66,8,False,0.154,5.9,False,False
+DENPIT,Jaylen Warren: 80+ rushing and receiving yards combined,yes,rr_yds,Jaylen Warren,PIT,KXNFLRRYDS-26NOV27DENPIT-PITJWARREN30-80,0.56,0.57,0.0176,0.5876,0.562,-2.57,-4.37,5,False,0.072,0.2,False,False
+DENPIT,No · Jaylen Warren: 80+ rushing and receiving yards combined,no,rr_yds,Jaylen Warren,PIT,KXNFLRRYDS-26NOV27DENPIT-PITJWARREN30-80,0.44,0.45,0.0177,0.4677,0.438,-2.97,-6.35,5,False,0.072,-0.2,False,False
+DENPIT,Jaylen Warren: 105+ rushing and receiving yards combined,yes,rr_yds,Jaylen Warren,PIT,KXNFLRRYDS-26NOV27DENPIT-PITJWARREN30-105,0.32,0.33,0.0157,0.3457,0.2799,-6.57,-19.02,5,False,0.199,-4.01,False,False
+DENPIT,No · Jaylen Warren: 105+ rushing and receiving yards combined,no,rr_yds,Jaylen Warren,PIT,KXNFLRRYDS-26NOV27DENPIT-PITJWARREN30-105,0.68,0.69,0.015,0.705,0.7201,1.51,2.14,5,False,0.199,4.01,False,True
+DENPIT,Rico Dowdle: 90+ rushing and receiving yards combined,yes,rr_yds,Rico Dowdle,PIT,KXNFLRRYDS-26NOV27DENPIT-PITRDOWDLE13-90,0.08,0.1,0.0063,0.1063,0.1072,0.09,0.86,5,False,0.688,2.72,False,False
+DENPIT,No · Rico Dowdle: 90+ rushing and receiving yards combined,no,rr_yds,Rico Dowdle,PIT,KXNFLRRYDS-26NOV27DENPIT-PITRDOWDLE13-90,0.92,0.94,0.004,0.944,0.8928,-5.12,-5.42,5,False,0.688,-2.72,False,False
+DENPIT,Marvin Mims Jr.: 10+ rushing and receiving yards combined,yes,rr_yds,Marvin Mims Jr.,DEN,KXNFLRRYDS-26NOV27DENPIT-DENMMIMS19-10,0.645,0.66,0.016,0.676,0.6136,-6.24,-9.23,3,False,0.511,-3.14,False,False
+DENPIT,No · Marvin Mims Jr.: 10+ rushing and receiving yards combined,no,rr_yds,Marvin Mims Jr.,DEN,KXNFLRRYDS-26NOV27DENPIT-DENMMIMS19-10,0.355,0.37,0.0167,0.3867,0.3864,-0.03,-0.07,3,False,0.511,3.14,False,False
+DENPIT,Rico Dowdle: 65+ rushing and receiving yards combined,yes,rr_yds,Rico Dowdle,PIT,KXNFLRRYDS-26NOV27DENPIT-PITRDOWDLE13-65,0.225,0.24,0.0129,0.2529,0.2631,1.02,4.03,5,False,0.364,3.81,False,False
+DENPIT,No · Rico Dowdle: 65+ rushing and receiving yards combined,no,rr_yds,Rico Dowdle,PIT,KXNFLRRYDS-26NOV27DENPIT-PITRDOWDLE13-65,0.775,0.79,0.0117,0.8017,0.7369,-6.48,-8.08,5,False,0.364,-3.81,False,False
+DENPIT,Jaylen Warren: 130+ rushing and receiving yards combined,yes,rr_yds,Jaylen Warren,PIT,KXNFLRRYDS-26NOV27DENPIT-PITJWARREN30-130,0.155,0.17,0.01,0.18,0.0956,-8.44,-46.89,5,False,0.411,-5.94,False,False
+DENPIT,No · Jaylen Warren: 130+ rushing and receiving yards combined,no,rr_yds,Jaylen Warren,PIT,KXNFLRRYDS-26NOV27DENPIT-PITJWARREN30-130,0.845,0.86,0.0091,0.8691,0.9044,3.53,4.06,5,False,0.411,5.94,True,True
+DENPIT,Jonah Coleman: 140+ rushing and receiving yards combined,yes,rr_yds,Jonah Coleman,DEN,KXNFLRRYDS-26NOV27DENPIT-DENJCOLEMAN20-140,0.195,0.21,0.0117,0.2217,0.1634,-5.83,-26.29,5,False,0.315,-3.16,False,False
+DENPIT,No · Jonah Coleman: 140+ rushing and receiving yards combined,no,rr_yds,Jonah Coleman,DEN,KXNFLRRYDS-26NOV27DENPIT-DENJCOLEMAN20-140,0.805,0.82,0.0108,0.8308,0.8366,0.57,0.69,5,False,0.315,3.16,False,True
+DENPIT,Marvin Mims Jr.: 35+ rushing and receiving yards combined,yes,rr_yds,Marvin Mims Jr.,DEN,KXNFLRRYDS-26NOV27DENPIT-DENMMIMS19-35,0.225,0.24,0.0129,0.2529,0.2692,1.63,6.45,3,False,0.707,4.42,False,False
+DENPIT,No · Marvin Mims Jr.: 35+ rushing and receiving yards combined,no,rr_yds,Marvin Mims Jr.,DEN,KXNFLRRYDS-26NOV27DENPIT-DENMMIMS19-35,0.775,0.79,0.0117,0.8017,0.7308,-7.09,-8.84,3,False,0.707,-4.42,False,False
+DENPIT,Jonah Coleman: 90+ rushing and receiving yards combined,yes,rr_yds,Jonah Coleman,DEN,KXNFLRRYDS-26NOV27DENPIT-DENJCOLEMAN20-90,0.635,0.64,0.0167,0.6567,0.6294,-2.73,-4.15,5,False,0.125,-0.56,False,False
+DENPIT,No · Jonah Coleman: 90+ rushing and receiving yards combined,no,rr_yds,Jonah Coleman,DEN,KXNFLRRYDS-26NOV27DENPIT-DENJCOLEMAN20-90,0.365,0.37,0.0167,0.3867,0.3706,-1.61,-4.16,5,False,0.125,0.56,False,False
+DENPIT,Jonah Coleman: 115+ rushing and receiving yards combined,yes,rr_yds,Jonah Coleman,DEN,KXNFLRRYDS-26NOV27DENPIT-DENJCOLEMAN20-115,0.385,0.4,0.0168,0.4168,0.3766,-4.02,-9.64,5,False,0.119,-0.84,False,False
+DENPIT,No · Jonah Coleman: 115+ rushing and receiving yards combined,no,rr_yds,Jonah Coleman,DEN,KXNFLRRYDS-26NOV27DENPIT-DENJCOLEMAN20-115,0.615,0.63,0.0167,0.6467,0.6234,-2.33,-3.6,5,False,0.119,0.84,False,True
+DENPIT,Rico Dowdle: 40+ rushing and receiving yards combined,yes,rr_yds,Rico Dowdle,PIT,KXNFLRRYDS-26NOV27DENPIT-PITRDOWDLE13-40,0.55,0.56,0.0176,0.5776,0.54,-3.76,-6.51,5,False,0.116,-1.0,False,False
+DENPIT,No · Rico Dowdle: 40+ rushing and receiving yards combined,no,rr_yds,Rico Dowdle,PIT,KXNFLRRYDS-26NOV27DENPIT-PITRDOWDLE13-40,0.45,0.46,0.0176,0.4776,0.46,-1.76,-3.69,5,False,0.116,1.0,False,False
+DENPIT,Darnell Washington: 1+ touchdowns,yes,td,Darnell Washington,PIT,KXNFLTD-26NOV27DENPIT-PITDWASHINGTON80-1,0.145,0.15,0.0089,0.1589,0.1556,-0.33,-2.07,6,True,0.0,1.06,False,False
+DENPIT,No · Darnell Washington: 1+ touchdowns,no,td,Darnell Washington,PIT,KXNFLTD-26NOV27DENPIT-PITDWASHINGTON80-1,0.855,0.86,0.0091,0.8691,0.8444,-2.47,-2.85,6,True,0.0,-1.06,False,False
+DENPIT,Adam Trautman: 1+ touchdowns,yes,td,Adam Trautman,DEN,KXNFLTD-26NOV27DENPIT-DENATRAUTMAN82-1,0.055,0.06,0.004,0.064,0.0619,-0.21,-3.27,6,True,0.0,0.69,False,False
+DENPIT,No · Adam Trautman: 1+ touchdowns,no,td,Adam Trautman,DEN,KXNFLTD-26NOV27DENPIT-DENATRAUTMAN82-1,0.945,0.95,0.004,0.954,0.9381,-1.59,-1.66,6,True,0.0,-0.69,False,False
+DENPIT,Jaylen Warren: 2+ touchdowns,yes,td,Jaylen Warren,PIT,KXNFLTD-26NOV27DENPIT-PITJWARREN30-2,0.055,0.06,0.004,0.064,0.063,-0.1,-1.6,6,True,0.3,0.8,False,False
+DENPIT,No · Jaylen Warren: 2+ touchdowns,no,td,Jaylen Warren,PIT,KXNFLTD-26NOV27DENPIT-PITJWARREN30-2,0.945,0.95,0.004,0.954,0.937,-1.7,-1.78,6,True,0.3,-0.8,False,False
+DENPIT,Bo Nix: 2+ touchdowns,yes,td,Bo Nix,DEN,KXNFLTD-26NOV27DENPIT-DENBNIX10-2,0.015,0.02,0.0014,0.0214,0.0125,-0.88,-41.38,6,True,0.3,-0.25,False,False
+DENPIT,No · Bo Nix: 2+ touchdowns,no,td,Bo Nix,DEN,KXNFLTD-26NOV27DENPIT-DENBNIX10-2,0.985,0.99,0.001,0.991,0.9875,-0.35,-0.36,6,True,0.3,0.25,False,False
+DENPIT,Jaylen Warren: 1+ touchdowns,yes,td,Jaylen Warren,PIT,KXNFLTD-26NOV27DENPIT-PITJWARREN30-1,0.315,0.32,0.0155,0.3355,0.3324,-0.31,-0.93,6,True,0.0,1.74,False,False
+DENPIT,No · Jaylen Warren: 1+ touchdowns,no,td,Jaylen Warren,PIT,KXNFLTD-26NOV27DENPIT-PITJWARREN30-1,0.685,0.69,0.015,0.705,0.6676,-3.74,-5.3,6,True,0.0,-1.74,False,False
+DENPIT,Jonah Coleman: 1+ touchdowns,yes,td,Jonah Coleman,DEN,KXNFLTD-26NOV27DENPIT-DENJCOLEMAN20-1,0.515,0.52,0.0179,0.5379,0.5463,0.84,1.56,6,True,0.0,3.13,False,False
+DENPIT,No · Jonah Coleman: 1+ touchdowns,no,td,Jonah Coleman,DEN,KXNFLTD-26NOV27DENPIT-DENJCOLEMAN20-1,0.485,0.49,0.0175,0.5075,0.4537,-5.38,-10.59,6,True,0.0,-3.13,False,False
+DENPIT,Germie Bernard: 1+ touchdowns,yes,td,Germie Bernard,PIT,KXNFLTD-26NOV27DENPIT-PITGBERNARD17-1,0.125,0.13,0.008,0.138,0.1406,0.25,1.84,6,True,0.0,1.56,False,False
+DENPIT,No · Germie Bernard: 1+ touchdowns,no,td,Germie Bernard,PIT,KXNFLTD-26NOV27DENPIT-PITGBERNARD17-1,0.875,0.88,0.0082,0.8882,0.8594,-2.87,-3.24,6,True,0.0,-1.56,False,False
+DENPIT,Rico Dowdle: 1+ touchdowns,yes,td,Rico Dowdle,PIT,KXNFLTD-26NOV27DENPIT-PITRDOWDLE13-1,0.205,0.21,0.0117,0.2217,0.2049,-1.68,-7.58,6,True,0.0,-0.01,False,False
+DENPIT,No · Rico Dowdle: 1+ touchdowns,no,td,Rico Dowdle,PIT,KXNFLTD-26NOV27DENPIT-PITRDOWDLE13-1,0.795,0.8,0.0117,0.8117,0.7951,-1.66,-2.04,6,True,0.0,0.01,False,False
+DENPIT,Roman Wilson: 1+ touchdowns,yes,td,Roman Wilson,PIT,KXNFLTD-26NOV27DENPIT-PITRWILSON14-1,0.1,0.11,0.0069,0.1169,0.1161,-0.08,-0.69,6,True,0.0,1.61,False,False
+DENPIT,No · Roman Wilson: 1+ touchdowns,no,td,Roman Wilson,PIT,KXNFLTD-26NOV27DENPIT-PITRWILSON14-1,0.9,0.91,0.006,0.916,0.8839,-3.21,-3.5,6,True,0.0,-1.61,False,False
+DENPIT,Nate Adkins: 1+ touchdowns,yes,td,Nate Adkins,DEN,KXNFLTD-26NOV27DENPIT-DENNADKINS45-1,0.07,0.08,0.0052,0.0852,0.0798,-0.54,-6.33,6,True,0.0,0.98,False,False
+DENPIT,No · Nate Adkins: 1+ touchdowns,no,td,Nate Adkins,DEN,KXNFLTD-26NOV27DENPIT-DENNADKINS45-1,0.93,0.94,0.004,0.944,0.9202,-2.38,-2.52,6,True,0.0,-0.98,False,False
+DENPIT,Pat Bryant: 1+ touchdowns,yes,td,Pat Bryant,DEN,KXNFLTD-26NOV27DENPIT-DENPBRYANT13-1,0.155,0.16,0.0095,0.1695,0.1685,-0.1,-0.6,6,True,0.0,1.35,False,False
+DENPIT,No · Pat Bryant: 1+ touchdowns,no,td,Pat Bryant,DEN,KXNFLTD-26NOV27DENPIT-DENPBRYANT13-1,0.845,0.85,0.0091,0.8591,0.8315,-2.76,-3.21,6,True,0.0,-1.35,False,False
+DENPIT,Evan Engram: 1+ touchdowns,yes,td,Evan Engram,DEN,KXNFLTD-26NOV27DENPIT-DENEENGRAM1-1,0.145,0.15,0.0089,0.1589,0.1545,-0.45,-2.81,6,True,0.0,0.95,False,False
+DENPIT,No · Evan Engram: 1+ touchdowns,no,td,Evan Engram,DEN,KXNFLTD-26NOV27DENPIT-DENEENGRAM1-1,0.855,0.86,0.0091,0.8691,0.8455,-2.36,-2.71,6,True,0.0,-0.95,False,False
+DENPIT,Troy Franklin: 1+ touchdowns,yes,td,Troy Franklin,DEN,KXNFLTD-26NOV27DENPIT-DENTFRANKLIN11-1,0.065,0.07,0.0046,0.0746,0.0755,0.09,1.19,6,True,0.0,1.05,False,False
+DENPIT,No · Troy Franklin: 1+ touchdowns,no,td,Troy Franklin,DEN,KXNFLTD-26NOV27DENPIT-DENTFRANKLIN11-1,0.935,0.94,0.004,0.944,0.9245,-1.95,-2.06,6,True,0.0,-1.05,False,False
+DENPIT,Marvin Mims Jr.: 1+ touchdowns,yes,td,Marvin Mims Jr.,DEN,KXNFLTD-26NOV27DENPIT-DENMMIMS19-1,0.095,0.1,0.0063,0.1063,0.1158,0.95,8.91,6,True,0.0,2.08,False,False
+DENPIT,No · Marvin Mims Jr.: 1+ touchdowns,no,td,Marvin Mims Jr.,DEN,KXNFLTD-26NOV27DENPIT-DENMMIMS19-1,0.905,0.91,0.006,0.916,0.8842,-3.18,-3.47,6,True,0.0,-2.08,False,False
+DENPIT,Courtland Sutton: 1+ touchdowns,yes,td,Courtland Sutton,DEN,KXNFLTD-26NOV27DENPIT-DENCSUTTON14-1,0.195,0.2,0.0112,0.2112,0.1993,-1.19,-5.63,6,True,0.0,0.43,False,False
+DENPIT,No · Courtland Sutton: 1+ touchdowns,no,td,Courtland Sutton,DEN,KXNFLTD-26NOV27DENPIT-DENCSUTTON14-1,0.805,0.81,0.0108,0.8208,0.8007,-2.01,-2.45,6,True,0.0,-0.43,False,False
+DENPIT,Jaylen Waddle: 1+ touchdowns,yes,td,Jaylen Waddle,DEN,KXNFLTD-26NOV27DENPIT-DENJWADDLE17-1,0.235,0.24,0.0129,0.2529,0.2478,-0.51,-2.02,6,True,0.0,1.28,False,False
+DENPIT,No · Jaylen Waddle: 1+ touchdowns,no,td,Jaylen Waddle,DEN,KXNFLTD-26NOV27DENPIT-DENJWADDLE17-1,0.765,0.77,0.0125,0.7825,0.7522,-3.03,-3.87,6,True,0.0,-1.28,False,False
+DENPIT,Germie Bernard: 2+ touchdowns,yes,td,Germie Bernard,PIT,KXNFLTD-26NOV27DENPIT-PITGBERNARD17-2,0.005,0.01,0.0007,0.0107,0.0104,-0.03,-2.48,6,True,0.3,0.54,False,False
+DENPIT,Rico Dowdle: 2+ touchdowns,yes,td,Rico Dowdle,PIT,KXNFLTD-26NOV27DENPIT-PITRDOWDLE13-2,0.025,0.03,0.002,0.032,0.0227,-0.93,-29.14,6,True,0.3,-0.23,False,False
+DENPIT,No · Rico Dowdle: 2+ touchdowns,no,td,Rico Dowdle,PIT,KXNFLTD-26NOV27DENPIT-PITRDOWDLE13-2,0.975,0.98,0.002,0.982,0.9773,-0.47,-0.48,6,True,0.3,0.23,False,False
+DENPIT,Pat Freiermuth: 2+ touchdowns,yes,td,Pat Freiermuth,PIT,KXNFLTD-26NOV27DENPIT-PITPFREIERMUTH88-2,0.015,0.02,0.0014,0.0214,0.0101,-1.13,-52.66,6,True,0.3,-0.49,False,False
+DENPIT,No · Pat Freiermuth: 2+ touchdowns,no,td,Pat Freiermuth,PIT,KXNFLTD-26NOV27DENPIT-PITPFREIERMUTH88-2,0.985,0.99,0.001,0.991,0.9899,-0.11,-0.11,6,True,0.3,0.49,False,False
+DENPIT,DK Metcalf: 2+ touchdowns,yes,td,DK Metcalf,PIT,KXNFLTD-26NOV27DENPIT-PITDMETCALF4-2,0.015,0.02,0.0014,0.0214,0.0198,-0.16,-7.56,6,True,0.3,0.48,False,False
+DENPIT,No · DK Metcalf: 2+ touchdowns,no,td,DK Metcalf,PIT,KXNFLTD-26NOV27DENPIT-PITDMETCALF4-2,0.985,0.99,0.001,0.991,0.9802,-1.08,-1.09,6,True,0.3,-0.48,False,False
+DENPIT,Darnell Washington: 2+ touchdowns,yes,td,Darnell Washington,PIT,KXNFLTD-26NOV27DENPIT-PITDWASHINGTON80-2,0.015,0.02,0.0014,0.0214,0.0128,-0.85,-39.92,6,True,0.3,-0.22,False,False
+DENPIT,No · Darnell Washington: 2+ touchdowns,no,td,Darnell Washington,PIT,KXNFLTD-26NOV27DENPIT-PITDWASHINGTON80-2,0.985,0.99,0.001,0.991,0.9872,-0.38,-0.39,6,True,0.3,0.22,False,False
+DENPIT,Marvin Mims Jr.: 2+ touchdowns,yes,td,Marvin Mims Jr.,DEN,KXNFLTD-26NOV27DENPIT-DENMMIMS19-2,0.005,0.01,0.0007,0.0107,0.0071,-0.36,-33.29,6,True,0.3,0.21,False,False
+DENPIT,Courtland Sutton: 2+ touchdowns,yes,td,Courtland Sutton,DEN,KXNFLTD-26NOV27DENPIT-DENCSUTTON14-2,0.025,0.03,0.002,0.032,0.0214,-1.06,-33.2,6,True,0.3,-0.36,False,False
+DENPIT,No · Courtland Sutton: 2+ touchdowns,no,td,Courtland Sutton,DEN,KXNFLTD-26NOV27DENPIT-DENCSUTTON14-2,0.975,0.98,0.002,0.982,0.9786,-0.34,-0.35,6,True,0.3,0.36,False,False
+DENPIT,Jaylen Waddle: 2+ touchdowns,yes,td,Jaylen Waddle,DEN,KXNFLTD-26NOV27DENPIT-DENJWADDLE17-2,0.025,0.03,0.002,0.032,0.0337,0.17,5.28,6,True,0.3,0.87,False,False
+DENPIT,No · Jaylen Waddle: 2+ touchdowns,no,td,Jaylen Waddle,DEN,KXNFLTD-26NOV27DENPIT-DENJWADDLE17-2,0.975,0.98,0.002,0.982,0.9663,-1.57,-1.6,6,True,0.3,-0.87,False,False
+DENPIT,Adam Prentice: 1+ touchdowns,yes,td,Adam Prentice,DEN,KXNFLTD-26NOV27DENPIT-DENAPRENTICE46-1,0.035,0.04,0.0027,0.0427,0.0591,1.64,38.35,6,True,0.0,2.41,False,False
+DENPIT,No · Adam Prentice: 1+ touchdowns,no,td,Adam Prentice,DEN,KXNFLTD-26NOV27DENPIT-DENAPRENTICE46-1,0.965,0.97,0.003,0.973,0.9409,-3.21,-3.3,6,True,0.0,-2.41,False,False
+DENPIT,Jaylen Warren: 3+ touchdowns,yes,td,Jaylen Warren,PIT,KXNFLTD-26NOV27DENPIT-PITJWARREN30-3,0.005,0.01,0.0007,0.0107,0.0083,-0.24,-22.63,6,True,0.3,0.33,False,False
+DENPIT,Jonah Coleman: 3+ touchdowns,yes,td,Jonah Coleman,DEN,KXNFLTD-26NOV27DENPIT-DENJCOLEMAN20-3,0.035,0.04,0.0027,0.0427,0.0461,0.34,8.02,6,True,0.3,1.11,False,False
+DENPIT,No · Jonah Coleman: 3+ touchdowns,no,td,Jonah Coleman,DEN,KXNFLTD-26NOV27DENPIT-DENJCOLEMAN20-3,0.965,0.97,0.003,0.973,0.9539,-1.91,-1.97,6,True,0.3,-1.11,False,False
+DENPIT,Mason Rudolph: 1+ touchdowns,yes,td,Mason Rudolph,PIT,KXNFLTD-26NOV27DENPIT-PITMRUDOLPH2-1,0.045,0.05,0.0034,0.0534,0.0565,0.31,5.84,6,True,0.0,1.15,False,False
+DENPIT,No · Mason Rudolph: 1+ touchdowns,no,td,Mason Rudolph,PIT,KXNFLTD-26NOV27DENPIT-PITMRUDOLPH2-1,0.955,0.96,0.003,0.963,0.9435,-1.95,-2.02,6,True,0.0,-1.15,False,False
+DENPIT,DK Metcalf: 1+ touchdowns,yes,td,DK Metcalf,PIT,KXNFLTD-26NOV27DENPIT-PITDMETCALF4-1,0.18,0.19,0.011,0.201,0.1919,-0.91,-4.5,6,True,0.0,1.19,False,False
+DENPIT,No · DK Metcalf: 1+ touchdowns,no,td,DK Metcalf,PIT,KXNFLTD-26NOV27DENPIT-PITDMETCALF4-1,0.82,0.83,0.01,0.84,0.8081,-3.19,-3.8,6,True,0.0,-1.19,False,False
+DENPIT,Roman Wilson: 2+ touchdowns,yes,td,Roman Wilson,PIT,KXNFLTD-26NOV27DENPIT-PITRWILSON14-2,0.005,0.01,0.0007,0.0107,0.007,-0.37,-34.25,6,True,0.3,0.2,False,False
+DENPIT,Jonah Coleman: 2+ touchdowns,yes,td,Jonah Coleman,DEN,KXNFLTD-26NOV27DENPIT-DENJCOLEMAN20-2,0.165,0.17,0.01,0.18,0.1879,0.79,4.36,6,True,0.3,2.29,False,False
+DENPIT,No · Jonah Coleman: 2+ touchdowns,no,td,Jonah Coleman,DEN,KXNFLTD-26NOV27DENPIT-DENJCOLEMAN20-2,0.835,0.84,0.01,0.85,0.8121,-3.79,-4.45,6,True,0.3,-2.29,False,False
+DENPIT,Pat Bryant: 2+ touchdowns,yes,td,Pat Bryant,DEN,KXNFLTD-26NOV27DENPIT-DENPBRYANT13-2,0.015,0.02,0.0014,0.0214,0.0151,-0.63,-29.38,6,True,0.3,0.01,False,False
+DENPIT,No · Pat Bryant: 2+ touchdowns,no,td,Pat Bryant,DEN,KXNFLTD-26NOV27DENPIT-DENPBRYANT13-2,0.985,0.99,0.001,0.991,0.9849,-0.61,-0.62,6,True,0.3,-0.01,False,False
+DENPIT,Pat Freiermuth: 1+ touchdowns,yes,td,Pat Freiermuth,PIT,KXNFLTD-26NOV27DENPIT-PITPFREIERMUTH88-1,0.135,0.14,0.0085,0.1485,0.1383,-1.01,-6.83,6,True,0.0,0.33,False,False
+DENPIT,No · Pat Freiermuth: 1+ touchdowns,no,td,Pat Freiermuth,PIT,KXNFLTD-26NOV27DENPIT-PITPFREIERMUTH88-1,0.865,0.87,0.0082,0.8782,0.8617,-1.65,-1.88,6,True,0.0,-0.33,False,False
+DENPIT,Bo Nix: 1+ touchdowns,yes,td,Bo Nix,DEN,KXNFLTD-26NOV27DENPIT-DENBNIX10-1,0.145,0.15,0.0089,0.1589,0.1537,-0.52,-3.29,6,True,0.0,0.87,False,False
+DENPIT,No · Bo Nix: 1+ touchdowns,no,td,Bo Nix,DEN,KXNFLTD-26NOV27DENPIT-DENBNIX10-1,0.855,0.86,0.0091,0.8691,0.8463,-2.28,-2.62,6,True,0.0,-0.87,False,False
+DENPIT,Michael Pittman Jr.: 1+ touchdowns,yes,td,Michael Pittman Jr.,PIT,KXNFLTD-26NOV27DENPIT-PITMPITTMAN11-1,0.085,0.09,0.0058,0.0958,0.1015,0.58,6.02,6,True,0.0,1.65,False,False
+DENPIT,No · Michael Pittman Jr.: 1+ touchdowns,no,td,Michael Pittman Jr.,PIT,KXNFLTD-26NOV27DENPIT-PITMPITTMAN11-1,0.915,0.92,0.006,0.926,0.8985,-2.75,-2.97,6,True,0.0,-1.65,False,False
+DENPIT,Evan Engram: 2+ touchdowns,yes,td,Evan Engram,DEN,KXNFLTD-26NOV27DENPIT-DENEENGRAM1-2,0.015,0.02,0.0014,0.0214,0.0126,-0.88,-40.97,6,True,0.3,-0.24,False,False
+DENPIT,No · Evan Engram: 2+ touchdowns,no,td,Evan Engram,DEN,KXNFLTD-26NOV27DENPIT-DENEENGRAM1-2,0.985,0.99,0.001,0.991,0.9874,-0.36,-0.37,6,True,0.3,0.24,False,False
